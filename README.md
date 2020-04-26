@@ -1,7 +1,18 @@
-# srl
+
+---
+
+Implementation of our ACL 2020 paper: Structured Tuning for Semantic Role Labeling
+```
+@inproceedings{li2020structuredtuningsrl,
+      author    = {Li, Tao and Jawale, Parth and Palmer, Martha and Srikumar, Vivek},
+      title     = {Structured Tuning for Semantic Role Labeling},
+      booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+      year      = {2020}
+  }
+```
 
 
-# Prerequisites
+## Prerequisites
 ```
 perl	# for evaluation script
 huggingface transformers
@@ -52,7 +63,7 @@ python3 preprocess_frameset.py --train conll2012.train.orig_tok_grouped.txt \
 ```
 
 
-# Training on CONLL-05
+## Training on CONLL-05
 
 ```
 mkdir models
@@ -137,7 +148,7 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
 where ``TEST=test1`` is for WSJ set. Set ``TEST=test2`` to evaluate on Brown set.
 
-# Training on CONLL-2012
+## Training on CONLL-2012
 
 ```
 
