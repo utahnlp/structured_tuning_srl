@@ -106,7 +106,7 @@ LOSS=crf,unique_role,frame_role,overlap_role
 SEED=1
 PERC=1
 WARM=0.1
-LAMBD=1,1,0.1,0.1
+LAMBD=1,1,0.5,0.1
 LOAD=./models/bert_${BERT}_crf_lr000003_drop05_gold${USE_GOLD}_epoch30_seed${SEED}_perc${PERC//.}
 MODEL=./models/bert2_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --bert_gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.hdf5 --val_data conll05.val.hdf5 \
@@ -190,10 +190,10 @@ EPOCH=5
 PERC=1
 VAL_PERC=1
 WARM=0.1
-LOSS=crf
-LAMBD=1
+LOSS=crf,unique_role,frame_role,overlap_role
+LAMBD=1,1,1,0.1
 SEED=1
-LOAD=./models/bert2_2012_${BERT}_crf_lr000003_drop${DROP//.}_gold${USE_GOLD}_epoch20_seed${SEED}_perc${PERC//.}
+LOAD=./models/bert2012_${BERT}_crf_lr000003_drop${DROP//.}_gold${USE_GOLD}_epoch30_seed${SEED}_perc${PERC//.}
 MODEL=./models/bert2_2012_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --bert_gpuid $GPUID --dir ./data/srl/ --train_data conll2012.train.hdf5 --val_data conll2012.val.hdf5 \
 	--train_res conll2012.train.orig_tok_grouped.txt,conll2012.train.frame.hdf5,conll2012.frame_pool.hdf5 \
@@ -217,17 +217,17 @@ HIDDEN=768
 USE_GOLD=1
 LR=0.00001
 EPOCH=5
-SEED=3
+SEED=1
 PERC=1
 LOSS=crf,unique_role,frame_role,overlap_role
-LAMBD=1,0.5,1,0.1
+LAMBD=1,1,1,0.1
 TEST=test1
 MODEL=./models/bert2_2012_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u eval.py --gpuid $GPUID --bert_gpuid $GPUID --dir ./data/srl/ --data conll2012.${TEST}.hdf5 \
 --res conll2012.${TEST}.orig_tok_grouped.txt,conll2012.${TEST}.frame.hdf5,conll2012.frame_pool.hdf5 \
 --label_dict conll2012.label.dict \
 --dropout 0 --compact_mode whole_word \
---bert_type roberta-${BERT} --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+--bert_type roberta-base --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 --num_label 129 --loss $LOSS  --lambd $LAMBD \
 --conll_output ${MODEL} --load_file ${MODEL} | tee ${MODEL}.testlog.txt
 
