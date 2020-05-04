@@ -5,7 +5,7 @@
 Implementation of our ACL 2020 paper: Structured Tuning for Semantic Role Labeling
 ```
 @inproceedings{li2020structuredtuningsrl,
-      author    = {Li, Tao and Jawale, Parth and Palmer, Martha and Srikumar, Vivek},
+      author    = {Li, Tao and Jawale, Parth Anand and Palmer, Martha and Srikumar, Vivek},
       title     = {Structured Tuning for Semantic Role Labeling},
       booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
       year      = {2020}
