@@ -2,7 +2,7 @@
 
 ---
 
-Implementation of our ACL 2020 paper: Structured Tuning for Semantic Role Labeling
+Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Labeling](https://arxiv.org/abs/2005.00496)
 ```
 @inproceedings{li2020structuredtuningsrl,
       author    = {Li, Tao and Jawale, Parth Anand and Palmer, Martha and Srikumar, Vivek},
