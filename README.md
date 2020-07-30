@@ -22,6 +22,18 @@ nividia apex
 and potentially more...
 ```
 
+**Propbank Frameset**
+
+Extract and preprocess framesets for CONLL-2012 as an example:
+```
+python3 extract_frameset.py --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
+python3 preprocess_frameset.py --train conll2012.train.orig_tok_grouped.txt \
+--val conll2012.val.orig_tok_grouped.txt --test1 conll2012.test1.orig_tok_grouped.txt \
+--roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
+```
+For CONLL-05, changing ``conll2012`` to ``conll05`` would work.
+
+
 **CONLL 2005 and Preprocessing**
 ```
 cd ./data/srl
@@ -51,16 +63,6 @@ git clone https://github.com/yuchenlin/OntoNotes-5.0-NER-BIO.git
 ./make_conll2012_data.sh ../data/OntoNotes-5.0-NER-BIO/conll-formatted-ontonotes-5.0/
 
 python3 preprocess.py --dir ./data/srl/ --batch_size 20 --bert_type roberta-base --max_seq_l 410 --max_num_v 45 --train conll2012.train.txt --val conll2012.devel.txt --test1 conll2012.test.txt --test2 "" --tokenizer_output conll2012 --output conll2012
-```
-
-**Propbank Frameset**
-
-Extract and preprocess framesets for CONLL-2012 as an example:
-```
-python3 extract_frameset.py --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
-python3 preprocess_frameset.py --train conll2012.train.orig_tok_grouped.txt \
---val conll2012.val.orig_tok_grouped.txt --test1 conll2012.test1.orig_tok_grouped.txt \
---roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
 ```
 
 
