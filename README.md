@@ -24,6 +24,8 @@ and potentially more...
 
 **Propbank Frameset**
 
+First make sure propbank frames are downloaded and extracted to ``./data/propbank-frames/frames/``
+
 Extract and preprocess framesets for CONLL-2012 as an example:
 ```
 python3 extract_frameset.py --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
