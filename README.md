@@ -252,4 +252,4 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 
 
 ## To-dos
-- [ ] Sanity check
+- [x] Sanity check (Thanks Ghazaleh Kazeminejad for helping me do the checking)
