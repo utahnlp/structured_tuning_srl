@@ -59,14 +59,26 @@ python3 preprocess.py --dir ./data/srl/ --batch_size 20 --bert_type roberta-base
 ```
 
 **Frameset Preprocessing**
-Extract and preprocess framesets for CONLL-2012 as an example:
+
+Extract framesets:
 ```
 python3 extract_frameset.py --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
+```
+
+Preprocess framesets for CONLL-2005:
+```
+python3 preprocess_frameset.py --roleset_dict conll05.roleset_id.dict --label_dict conll05.label.dict \
+--train conll05.train.orig_tok_grouped.txt --val conll05.val.orig_tok_grouped.txt \
+--test1 conll05.test1.orig_tok_grouped.txt --test2 conll05.test2.orig_tok_grouped.txt \
+--output conll05
+```
+
+Preprocess framesets for CONLL-2012:
+```
 python3 preprocess_frameset.py --train conll2012.train.orig_tok_grouped.txt \
 --val conll2012.val.orig_tok_grouped.txt --test1 conll2012.test1.orig_tok_grouped.txt \
 --roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
 ```
-For CONLL-05, changing ``conll2012`` to ``conll05`` would work.
 
 ## Training on CONLL-05
 
