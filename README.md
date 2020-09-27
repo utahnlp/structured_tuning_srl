@@ -16,6 +16,8 @@ Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Label
 ## Prerequisites
 ```
 perl	# for evaluation script
+allennlp
+spacy (en model)
 huggingface transformers
 pip install sacremoses	# used by huggingface
 nividia apex
