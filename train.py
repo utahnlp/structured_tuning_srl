@@ -41,7 +41,6 @@ parser.add_argument('--weight_decay', help="The factor of weight decay", type=fl
 parser.add_argument('--num_label', help="The number of label", type=int, default=106)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
-parser.add_argument('--bert_gpuid', help="The GPU index for bert, if -1 then use CPU", type=int, default=-1)
 parser.add_argument('--fix_bert', help="Whether to fix bert update", type=int, default=0)
 parser.add_argument('--bert_size', help="The input bert dim", type=int, default=768)
 parser.add_argument('--warmup_perc', help="The percentages of total expectec updates to warmup", type=float, default=0.1)
