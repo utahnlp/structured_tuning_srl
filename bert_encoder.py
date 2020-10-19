@@ -15,7 +15,7 @@ class BertEncoder(torch.nn.Module):
 		self.shared = shared
 
 		self.zero = Variable(torch.zeros(1), requires_grad=False)
-		self.zero = to_device(self.zero, self.opt.bert_gpuid)
+		self.zero = to_device(self.zero, self.opt.gpuid)
 		
 		print('loading BERT model...')
 		self.bert = self._get_bert(self.opt.bert_type)
@@ -31,7 +31,7 @@ class BertEncoder(torch.nn.Module):
 				for p in n.parameters():
 					p.requires_grad = False
 
-		self.customize_cuda_id = self.opt.bert_gpuid
+		self.customize_cuda_id = self.opt.gpuid
 		#self.fp16 = opt.fp16 == 1	# this is no longer needed
 
 
@@ -44,7 +44,7 @@ class BertEncoder(torch.nn.Module):
 
 
 	def forward(self, tok_idx):
-		tok_idx = to_device(tok_idx, self.opt.bert_gpuid)
+		tok_idx = to_device(tok_idx, self.opt.gpuid)
 
 		if self.opt.fix_bert == 1:
 			with torch.no_grad():
