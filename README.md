@@ -16,6 +16,8 @@ Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Label
 ## Prerequisites
 ```
 perl	# for evaluation script
+allennlp
+spacy (en model)
 huggingface transformers
 pip install sacremoses	# used by huggingface
 nividia apex
@@ -252,4 +254,4 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 
 
 ## To-dos
-- [ ] Sanity check
+- [x] Sanity check (Thanks Ghazaleh Kazeminejad for helping me do the checking)
