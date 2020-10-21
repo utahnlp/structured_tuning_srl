@@ -8,6 +8,14 @@ import re
 from collections import Counter
 import numpy as np
 
+def get_special_tokens(tokenizer):
+	CLS, SEP = tokenizer.cls_token, tokenizer.sep_token
+	if CLS is None or SEP is None:
+		CLS, SEP = tokenizer.bos_token, tokenizer.eos_token
+	if CLS is None:
+		CLS = SEP
+	return CLS, SEP
+
 def to_device(x, gpuid):
 	if gpuid == -1:
 		return x.cpu()

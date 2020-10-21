@@ -31,7 +31,7 @@ class BertEncoder(torch.nn.Module):
 				for p in n.parameters():
 					p.requires_grad = False
 
-		self.customize_cuda_id = self.opt.gpuid
+		#self.customize_cuda_id = self.opt.gpuid
 		#self.fp16 = opt.fp16 == 1	# this is no longer needed
 
 

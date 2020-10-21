@@ -63,7 +63,6 @@ parser.add_argument('--use_gold_frame', help="Whether to use gold frame for fram
 parser.add_argument('--conll_output', help="The prefix of conll formated output", default='conll05')
 # frame specs
 parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=38)
-parser.add_argument('--hard_decoding', help="Whether to use hard constraints for viterbi decoding", type=int, default=1)
 
 
 
