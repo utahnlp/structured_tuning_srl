@@ -136,18 +136,20 @@ class CRFLoss(torch.nn.Module):
 
 			# pred_idx (batch_l, max_orig_l, max_orig_l, ...)
 			pred_idx = log_pa[:, :max_orig_l, :max_orig_l].argmax(-1)
+
 			loss = self.crf(a_score, a_gold, a_mask)
+
+			# analyze
+			pred_v_roles = batch_index1_select(pred_idx, v_label, nul_idx=0)	# batch_l, max_v_num, max_orig_l
+			pred_v_roles = pred_v_roles[:, :role_label.shape[1], :]	# "only" take the gold predicates
+			batch_acc_sum = self._count_quick_acc(pred_v_roles, role_label) * batch_l
+			self.quick_acc_sum += batch_acc_sum
 		else:
 			# during evaluation, no need to compute the loss, just =0
 			loss = to_device(torch.zeros(1), self.opt.gpuid)
 
 			pred_idx, v_label, v_l = self.decode(log_pa, score)
 
-		# analyze
-		pred_v_roles = batch_index1_select(pred_idx, v_label, nul_idx=0)	# batch_l, max_v_num, max_orig_l
-		pred_v_roles = pred_v_roles[:, :role_label.shape[1], :]	# "only" take the gold predicates
-		batch_acc_sum = self._count_quick_acc(pred_v_roles, role_label) * batch_l
-		self.quick_acc_sum += batch_acc_sum
 		self.num_ex += batch_l
 		self.shared.viterbi_pred = pred_idx
 
