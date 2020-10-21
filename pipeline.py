@@ -101,7 +101,7 @@ class Pipeline(torch.nn.Module):
 			print('uninitialized fields: {0}'.format(missed_names))
 
 
-	def forward(self, tok_idx):
+	def forward(self, tok_idx, skip_loss_forward=False):
 		shared = self.shared
 
 		# encoder
@@ -110,12 +110,18 @@ class Pipeline(torch.nn.Module):
 		# classifier
 		log_pa, score, extra = self.classifier(enc)
 
-		loss_acc, pred = self.loss[0](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
-		#print('******* {0}'.format(loss_acc.data.item()))
-		for k in range(1, len(self.loss)):
-			l, _ = self.loss[k](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
-			#print(l.data.item())
-			loss_acc = loss_acc + l * self.lambd[k]
+		if not skip_loss_forward:
+			# always assume the first loss is crf loss which gives viterbi decoding
+			loss_acc, pred = self.loss[0](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
+			#print('******* {0}'.format(loss_acc.data.item()))
+			for k in range(1, len(self.loss)):
+				l, _ = self.loss[k](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
+				#print(l.data.item())
+				loss_acc = loss_acc + l * self.lambd[k]
+		else:
+			# skip loss forward pass, just do viterbi decoding
+			loss_acc = None
+			pred, _ = self.loss[0].decode(log_pa, score)
 
 		return loss_acc, pred
 
@@ -201,14 +207,15 @@ class Pipeline(torch.nn.Module):
 		#print('skipped fields:', skipped_fields)
 		return param_dict
 
-	def set_param_dict(self, param_dict):
+	def set_param_dict(self, param_dict, verbose=True):
 		skipped_fields = []
 		rec_fields = []
 		for n, p in self.named_parameters():
 			if n in param_dict:
 				rec_fields.append(n)
 				# load everything we have
-				print('setting {0}'.format(n))
+				if verbose:
+					print('setting {0}'.format(n))
 				p.data.copy_(torch.from_numpy(param_dict[n][:]))
 			else:
 				skipped_fields.append(n)

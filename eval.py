@@ -48,7 +48,6 @@ parser.add_argument('--use_gold_predicate', help="Whether to use ground truth pr
 parser.add_argument('--use_gold_frame', help="Whether to use gold frame for frame_role_loss", type=int, default=1)
 parser.add_argument('--conll_output', help="The prefix of conll formated output", default='conll05')
 parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=38)
-parser.add_argument('--hard_decoding', help="Whether to use hard constraints for viterbi decoding", type=int, default=1)
 
 # the default fwd pass for multiclass loss
 def forward_pass(m, tok_idx, batch_ex_idx, batch_l, seq_l, orig_seq_l, sub2tok_idx, res_map):	
