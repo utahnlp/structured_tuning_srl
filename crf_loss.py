@@ -36,8 +36,8 @@ class CRFLoss(torch.nn.Module):
 		a_score = []
 		a_mask = []
 
-		v_label = torch.zeros(batch_l, max_orig_l).long()
-		v_l = torch.zeros(batch_l).long()
+		v_label = to_device(torch.zeros(batch_l, max_orig_l).long(), self.opt.gpuid)
+		v_l = to_device(torch.zeros(batch_l).long(), self.opt.gpuid)
 
 		# use heuristic to get predicates
 		for i in range(batch_l):
@@ -49,8 +49,6 @@ class CRFLoss(torch.nn.Module):
 			v_l[i] = max_v_idx.shape[0]
 			v_label[i, :v_l[i]] = max_v_idx
 
-		v_label = to_device(v_label, self.opt.gpuid)
-		v_l = to_device(v_l, self.opt.gpuid)
 
 		# pack everything into (batch_l*acc_orig_l, max_orig_l, ...)
 		for i in range(batch_l):
@@ -59,7 +57,7 @@ class CRFLoss(torch.nn.Module):
 			a_mask_i = torch.zeros(v_l[i], max_orig_l).byte()
 			a_mask_i[:, :orig_l[i]] = True
 			a_mask.append(a_mask_i)
-
+			
 			a_score_i = score[i].index_select(0, v_label[i, :v_l[i]])[:, :max_orig_l]
 			a_score.append(a_score_i)
 

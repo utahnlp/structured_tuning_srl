@@ -10,6 +10,7 @@ from util import *
 import spacy
 from preprocess import pad
 from roberta_for_srl import *
+import traceback
 
 spacy_nlp = spacy.load('en')
 
@@ -93,11 +94,11 @@ def pretty_print_pred(opt, shared, m, pred_idx):
 def run(opt, shared, m, tokenizer, seq):
 	tok_idx, sub2tok_idx, toks, orig_toks = process(opt, tokenizer, seq)
 
-	m.update_context(orig_seq_l=torch.tensor([len(orig_toks)]).int(), 
-		sub2tok_idx=torch.tensor([sub2tok_idx]).int(), 
+	m.update_context(orig_seq_l=to_device(torch.tensor([len(orig_toks)]).int(), opt.gpuid), 
+		sub2tok_idx=to_device(torch.tensor([sub2tok_idx]).int(), opt.gpuid), 
 		res_map={'orig_tok_grouped': [orig_toks]})
 
-	tok_idx = Variable(torch.tensor([tok_idx]), requires_grad=False)
+	tok_idx = to_device(Variable(torch.tensor([tok_idx]), requires_grad=False), opt.gpuid)
 
 	with torch.no_grad():
 		pred_idx = m.forward(tok_idx)
@@ -111,7 +112,7 @@ def init(opt):
 	shared = Holder()
 
 	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type)
-	m = RobertaForSRL.from_pretrained(opt.load_file, shared=shared)
+	m = RobertaForSRL.from_pretrained(opt.load_file, overwrite_opt = opt, shared=shared)
 
 	if opt.gpuid != -1:
 		m.cuda(opt.gpuid)
@@ -122,6 +123,15 @@ def init(opt):
 def main(args):
 	opt = parser.parse_args(args)
 	opt, shared, m, tokenizer = init(opt)
+
+	print('Here is a sample prediction for input:')
+	seq = "The keys, which were needed to access the building, were locked in the car."
+	print('>>', seq)
+	orig_toks, log = run(opt, shared, m, tokenizer, seq)
+	print('***********************************')
+	print(' '.join(orig_toks))
+	print(log)
+
 
 	while True:
 		try:
@@ -134,7 +144,7 @@ def main(args):
 		except KeyboardInterrupt:
 			return
 		except BaseException as e:
-			print(e)
+			traceback.print_tb(e.__traceback__)
 
 
 if __name__ == '__main__':
