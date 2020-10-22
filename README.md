@@ -13,7 +13,7 @@ Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Label
 ```
 
 
-## Prerequisites
+# Prerequisites
 ```
 perl	# for evaluation script
 allennlp
@@ -82,7 +82,7 @@ python3 preprocess_frameset.py --train conll2012.train.orig_tok_grouped.txt \
 --roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
 ```
 
-## Training on CONLL-05
+# Training and Evaluation on CONLL-05
 
 ```
 mkdir models
@@ -167,7 +167,7 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
 where ``TEST=test1`` is for WSJ set. Set ``TEST=test2`` to evaluate on Brown set.
 
-## Training on CONLL-2012
+# Training and Evlauation on CONLL-2012
 
 ```
 
@@ -252,6 +252,14 @@ python3 -u eval.py --gpuid $GPUID --dir ./data/srl/ --data conll2012.${TEST}.hdf
 perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
 
+# Demo
+You can use a trained model to do inference interactively. First you can download pre-trained model(s) from [here](https://drive.google.com/drive/folders/1V4e8zrFJ9QOq2qpkd2bXiZBsCPPlOPAc?usp=sharing) and put them under ``./models/``.
 
-## To-dos
+Then you can run:
+```
+python3 -u demo.py --load_file ./models/[MODEL] --gpuid [GPUID]
+```
+where ``[MODEL]`` is a model file located at ``./models/`` (without the hdf5 extention), and ``[GPUID]`` is, again, the GPU device index.
+
+# Acknowledgements
 - [x] Sanity check (Thanks Ghazaleh Kazeminejad for helping me do the checking)
