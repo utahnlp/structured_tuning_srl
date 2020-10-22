@@ -14,15 +14,8 @@ Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Label
 
 
 # Prerequisites
-```
-perl	# for evaluation script
-allennlp
-spacy (en model)
-huggingface transformers
-pip install sacremoses	# used by huggingface
-nividia apex
-and potentially more...
-```
+
+In addition to dependencies in ``requirements.txt``, please install perl for evaluation and [Nvidia-apex](https://github.com/NVIDIA/apex) for GPU speedup.
 
 **Propbank Frameset**
 
