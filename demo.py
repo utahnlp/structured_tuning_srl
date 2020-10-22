@@ -122,10 +122,10 @@ def main(args):
 	opt = parser.parse_args(args)
 	opt, shared, m, tokenizer = init(opt)
 
-	print('Here is a sample prediction for input:')
-	seq = "The keys, which were needed to access the building, were locked in the car."
-	print('>>', seq)
+	seq = "The keys, which were needed to access the building, were locked in the car."	
 	orig_toks, log = run(opt, shared, m, tokenizer, seq)
+	print('Here is a sample prediction for input:')
+	print('>>', seq)
 	print('***********************************')
 	print(' '.join(orig_toks))
 	print(log)
