@@ -23,23 +23,13 @@ class OverlapRoleLoss(torch.nn.Module):
 		self.num_prop = 0
 		self.num_ex = 0
 		self.loss_acc = 0.0
-
-		self.labels = {}
-		self.label_map_inv = {}
-		with open(self.opt.label_dict, 'r') as f:
-			for l in f:
-				if l.strip() == '':
-					continue
-				toks = l.rstrip().split()
-				self.label_map_inv[int(toks[1])] = toks[0]
-				self.labels[toks[0]] = int(toks[1])
 		
 		self.covered_labels = {}
 		self.covered_label_idx_b = []
 		self.covered_label_idx_i = []
-		for l, idx in self.labels.items():
-			if l.startswith('B-') and ('I-' + l[2:]) in self.labels:
-				self.covered_labels[l[2:]] = [idx, self.labels['I-' + l[2:]]]
+		for l, idx in self.opt.labels.items():
+			if l.startswith('B-') and ('I-' + l[2:]) in self.opt.labels:
+				self.covered_labels[l[2:]] = [idx, self.opt.labels['I-' + l[2:]]]
 		for l, (idx1, idx2) in self.covered_labels.items():
 			self.covered_label_idx_b.append(idx1)
 			self.covered_label_idx_i.append(idx2)

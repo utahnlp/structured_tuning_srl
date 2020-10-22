@@ -8,6 +8,19 @@ import re
 from collections import Counter
 import numpy as np
 
+
+def load_label_dict(label_dict):
+	labels = []
+	label_map_inv = {}
+	with open(label_dict, 'r') as f:
+		for l in f:
+			if l.strip() == '':
+				continue
+			toks = l.rstrip().split()
+			labels.append(toks[0])
+			label_map_inv[int(toks[1])] = toks[0]
+	return labels, label_map_inv
+
 def get_special_tokens(tokenizer):
 	CLS, SEP = tokenizer.cls_token, tokenizer.sep_token
 	if CLS is None or SEP is None:

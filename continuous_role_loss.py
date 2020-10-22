@@ -20,22 +20,14 @@ class ContinuousRoleLoss(torch.nn.Module):
 		self.violation_cnt = 0
 		self.num_prop = 0
 		self.num_ex = 0
-
-		self.labels = {}
-		with open(self.opt.label_dict, 'r') as f:
-			for l in f:
-				if l.strip() == '':
-					continue
-				toks = l.rstrip().split()
-				self.labels[toks[0]] = int(toks[1])
 		
 		self.covered_labels = []
 		self.covered_b_idx = []
 		self.covered_bc_idx = []
-		for l, idx in self.labels.items():
+		for l, idx in self.opt.labels.items():
 			if l.startswith('B-C-'):
 				self.covered_labels.append(l[4:])
-				self.covered_b_idx.append(self.labels['B-' + l[4:]])
+				self.covered_b_idx.append(self.opt.labels['B-' + l[4:]])
 				self.covered_bc_idx.append(idx)
 		print('continuous role constraint applies to: ', self.covered_labels)
 

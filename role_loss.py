@@ -20,15 +20,6 @@ class RoleLoss(torch.nn.Module):
 
 		self.gold_log = []
 		self.pred_log = []
-
-		self.labels = []
-		with open(self.opt.label_dict, 'r') as f:
-			for l in f:
-				if l.strip() == '':
-					continue
-				toks = l.rstrip().split()
-				self.labels.append(toks[0])
-		self.labels = np.asarray(self.labels)
 		
 
 	def forward(self, log_pa, score, v_label, v_l, role_label, roleset_id, extra={}):
@@ -75,7 +66,7 @@ class RoleLoss(torch.nn.Module):
 		batch_l, source_l, _, _ = log_pa.shape
 		orig_l = self.shared.orig_seq_l
 		pred = np.argmax(log_pa.numpy(), axis=3)
-		bv_idx = int(np.where(self.labels == 'B-V')[0][0])
+		bv_idx = int(np.where(np.asarray(self.opt.labels) == 'B-V')[0][0])
 
 		for i in range(batch_l):
 			orig_l_i = orig_l[i].item()	# convert to scalar
@@ -130,7 +121,7 @@ class RoleLoss(torch.nn.Module):
 		header = ['-' for _ in range(seq_l)]
 		role_lines = []
 		for row in role_labels:
-			roles = self.labels[row].tolist()
+			roles = self.opt.labels[row].tolist()
 			roles = roles + ['O']	# TODO, the convert_role_labels prefers the last label to be O, so bit hacky here
 			if 'B-V' in roles:
 				v_idx = roles.index('B-V')

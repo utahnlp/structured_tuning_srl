@@ -104,7 +104,7 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.
 	--val_res conll05.val.orig_tok_grouped.txt,conll05.val.frame.hdf5,conll05.frame_pool.hdf5 \
 	 --label_dict conll05.label.dict --num_frame 39 \
 	--loss $LOSS --optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 	--percent $PERC --val_percent 1 --seed $SEED --conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
 done
 ```
@@ -132,7 +132,7 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.
 	--val_res conll05.val.orig_tok_grouped.txt,conll05.val.frame.hdf5,conll05.frame_pool.hdf5 \
 	--label_dict conll05.label.dict --num_frame 39 \
 	--optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 	--loss $LOSS --lambd $LAMBD \
 	--load $LOAD \
 	--percent $PERC --val_percent 1 --seed $SEED --conll_output ${MODEL} --save_file $MODEL | tee ${MODEL}.txt
@@ -159,7 +159,7 @@ python3 -u eval.py --gpuid $GPUID --dir ./data/srl/ --data conll05.${TEST}.hdf5 
 	--res conll05.${TEST}.orig_tok_grouped.txt,conll05.${TEST}.frame.hdf5,conll05.frame_pool.hdf5 \
 	--label_dict conll05.label.dict --num_frame 39 \
 	--dropout 0 --compact_mode whole_word \
-	--bert_type roberta-${BERT} --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 	--loss $LOSS --lambd $LAMBD \
 	--conll_output ${MODEL} --load_file ${MODEL} | tee ${MODEL}.testlog.txt
 
@@ -189,7 +189,7 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.trai
 	--val_res conll2012.val.orig_tok_grouped.txt,conll2012.val.frame.hdf5,conll2012.frame_pool.hdf5 \
 	--label_dict conll2012.label.dict \
 	--loss $LOSS --optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 	--num_label 129 --percent $PERC --val_percent $VAL_PERC \
 	--seed $SEED --conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
 ```
@@ -218,7 +218,7 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.trai
 	--val_res conll2012.val.orig_tok_grouped.txt,conll2012.val.frame.hdf5,conll2012.frame_pool.hdf5 \
 	--label_dict conll2012.label.dict \
 	--optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 	--num_label 129 --percent $PERC --val_percent $VAL_PERC --loss $LOSS --lambd $LAMBD \
 	--load $LOAD \
 	--seed $SEED --conll_output ${MODEL} --save_file $MODEL | tee ${MODEL}.txt
@@ -245,7 +245,7 @@ python3 -u eval.py --gpuid $GPUID --dir ./data/srl/ --data conll2012.${TEST}.hdf
 --res conll2012.${TEST}.orig_tok_grouped.txt,conll2012.${TEST}.frame.hdf5,conll2012.frame_pool.hdf5 \
 --label_dict conll2012.label.dict \
 --dropout 0 --compact_mode whole_word \
---bert_type roberta-base --bert_size $HIDDEN --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
+--bert_type roberta-base --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
 --num_label 129 --loss $LOSS  --lambd $LAMBD \
 --conll_output ${MODEL} --load_file ${MODEL} | tee ${MODEL}.testlog.txt
 
@@ -253,13 +253,15 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
 
 # Demo
-You can use a trained model to do inference interactively. First you can download pre-trained model(s) from [here](https://drive.google.com/drive/folders/1V4e8zrFJ9QOq2qpkd2bXiZBsCPPlOPAc?usp=sharing) and put them under ``./models/``.
-
-Then you can run:
+You can use a trained model to do inference interactively:
 ```
-python3 -u demo.py --load_file ./models/[MODEL] --gpuid [GPUID]
+python3 -u demo.py --load_file tli8hf/robertabase-crf-conll2012 --gpuid [GPUID]
 ```
-where ``[MODEL]`` is a model file located at ``./models/`` (without the hdf5 extention), and ``[GPUID]`` is, again, the GPU device index.
+which will automatically download a trained RoBERTa+CRF model on the CoNLL2012 data to be used for interactive prediction.
 
 # Acknowledgements
-- [x] Sanity check (Thanks Ghazaleh Kazeminejad for helping me do the checking)
+- [x] Sanity check (Thanks to Ghazaleh Kazeminejad for helping me with sanity check)
+
+# TODO
+- [ ] Upload more models to HuggingFace hub
+- [ ] Make a separate predicate classifier

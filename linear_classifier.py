@@ -14,10 +14,10 @@ class LinearClassifier(torch.nn.Module):
 
 		# transformation to get phi_vs(x)
 		self.f_v = nn.Sequential(
-			nn.Linear(opt.bert_size, opt.hidden_size))
+			nn.Linear(opt.hidden_size, opt.hidden_size))
 
 		self.f_a = nn.Sequential(
-			nn.Linear(opt.bert_size, opt.hidden_size))
+			nn.Linear(opt.hidden_size, opt.hidden_size))
 
 		self.g_va = nn.Sequential(
 			#nn.Dropout(opt.dropout),
@@ -37,7 +37,7 @@ class LinearClassifier(torch.nn.Module):
 			
 
 	def _compact(self, enc):
-		batch_l, source_l, bert_size = enc.shape
+		batch_l, source_l, hidden_size = enc.shape
 		if self.opt.compact_mode == 'whole_word':
 			enc = batch_index2_select(enc, self.shared.sub2tok_idx, nul_idx=-1)
 			return enc.sum(2)	# (batch_l, seq_l, hidden_size)
@@ -49,11 +49,11 @@ class LinearClassifier(torch.nn.Module):
 
 
 	def forward(self, enc):
-		(batch_l, source_l, bert_size) = enc.shape
+		(batch_l, source_l, hidden_size) = enc.shape
 		enc = self._compact(enc)
 
-		v_enc = self.f_v(enc.view(-1, bert_size)).view(batch_l, source_l, 1, self.opt.hidden_size)
-		a_enc = self.f_a(enc.view(-1, bert_size)).view(batch_l, 1, source_l, self.opt.hidden_size)
+		v_enc = self.f_v(enc.view(-1, hidden_size)).view(batch_l, source_l, 1, self.opt.hidden_size)
+		a_enc = self.f_a(enc.view(-1, hidden_size)).view(batch_l, 1, source_l, self.opt.hidden_size)
 		# forming a large tensor
 		va_enc = torch.cat([
 			v_enc.expand(batch_l, source_l, source_l, self.opt.hidden_size),

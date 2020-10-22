@@ -14,18 +14,9 @@ class CRFLoss(torch.nn.Module):
 		self.opt = opt
 		self.shared = shared
 
-		self.labels = []
-		label_map_inv = {}
-		with open(self.opt.label_dict, 'r') as f:
-			for l in f:
-				if l.strip() == '':
-					continue
-				toks = l.rstrip().split()
-				self.labels.append(toks[0])
-				label_map_inv[int(toks[1])] = toks[0]
-		self.labels = np.asarray(self.labels)
+		self.labels = np.asarray(self.opt.labels)
 
-		constraints = allowed_transitions("BIO", label_map_inv)
+		constraints = allowed_transitions("BIO", self.opt.label_map_inv)
 
 		self.crf = ConditionalRandomField(num_tags=opt.num_label, constraints=constraints, gpuid=opt.gpuid)
 
