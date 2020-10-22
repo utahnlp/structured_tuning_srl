@@ -110,6 +110,8 @@ class Pipeline(torch.nn.Module):
 		# classifier
 		log_pa, score, extra = self.classifier(enc)
 
+		assert(isinstance(self.loss[0], CRFLoss))
+
 		if not skip_loss_forward:
 			# always assume the first loss is crf loss which gives viterbi decoding
 			loss_acc, pred = self.loss[0](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
@@ -121,7 +123,7 @@ class Pipeline(torch.nn.Module):
 		else:
 			# skip loss forward pass, just do viterbi decoding
 			loss_acc = None
-			pred, _ = self.loss[0].decode(log_pa, score)
+			pred, _, _ = self.loss[0].decode(log_pa, score)
 
 		return loss_acc, pred
 
