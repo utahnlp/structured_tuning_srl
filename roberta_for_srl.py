@@ -22,6 +22,9 @@ class RobertaForSRL(RobertaPreTrainedModel):
 		if 'overwrite_opt' in model_kwargs:
 			for k, v in model_kwargs['overwrite_opt'].__dict__.items():
 				setattr(config, k, v)
+			for k, v in config.__dict__.items():
+				setattr(model_kwargs['overwrite_opt'], k, v)
+
 
 		self.num_labels = config.num_labels
 

@@ -72,8 +72,6 @@ def fix_opt(opt):
 	opt.dropout = 0
 	opt.lambd = "1.0"
 	opt.param_init_type = 'xavier_uniform'
-	opt.labels, opt.label_map_inv = load_label_dict(opt.label_dict)
-	opt.num_label = len(opt.labels)
 	return opt
 
 def pretty_print_pred(opt, shared, m, pred_idx):
