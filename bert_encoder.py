@@ -25,15 +25,6 @@ class BertEncoder(torch.nn.Module):
 				p.skip_init = True
 				p.is_bert = True	# tag as bert fields
 
-		# if to lock bert
-		if opt.fix_bert == 1:
-			for n in self.bert.children():
-				for p in n.parameters():
-					p.requires_grad = False
-
-		#self.customize_cuda_id = self.opt.gpuid
-		#self.fp16 = opt.fp16 == 1	# this is no longer needed
-
 
 	def _get_bert(self, key):
 		model_map={"bert-base-uncased": (BertModel, BertTokenizer),
@@ -46,11 +37,7 @@ class BertEncoder(torch.nn.Module):
 	def forward(self, tok_idx):
 		tok_idx = to_device(tok_idx, self.opt.gpuid)
 
-		if self.opt.fix_bert == 1:
-			with torch.no_grad():
-				last, pooled = self.bert(tok_idx)
-		else:
-			last, pooled = self.bert(tok_idx)
+		last, pooled = self.bert(tok_idx)
 
 		last = last + pooled.unsqueeze(1) * self.zero
 

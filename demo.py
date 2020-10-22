@@ -1,5 +1,4 @@
 import sys
-from pipeline import *
 import argparse
 import h5py
 import numpy as np
@@ -10,6 +9,7 @@ from holder import *
 from util import *
 import spacy
 from preprocess import pad
+from roberta_for_srl import *
 
 spacy_nlp = spacy.load('en')
 
@@ -21,11 +21,9 @@ parser.add_argument('--label_dict', help="The path to label dictionary", default
 ## pipeline specs
 parser.add_argument('--max_num_subtok', help="Maximal number subtokens in a word", type=int, default=8)
 parser.add_argument('--hidden_size', help="The general hidden size of the pipeline", type=int, default=768)
-parser.add_argument('--num_label', help="The number of label", type=int, default=129)
 parser.add_argument('--max_seq_l', help="Maximal sequence length", type=int, default=200)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
-parser.add_argument('--bert_size', help="The input bert dim", type=int, default=768)
 parser.add_argument('--compact_mode', help="How word pieces be mapped to word level label", default='whole_word')
 ## pipeline stages
 parser.add_argument('--enc', help="The type of encoder, e.g., bert", default='bert')
@@ -70,16 +68,17 @@ def process(opt, tokenizer, seq):
 def fix_opt(opt):
 	opt.loss = 'crf'
 	opt.use_gold_predicate = 0
-	opt.fix_bert = 0
 	opt.dropout = 0
 	opt.lambd = "1.0"
 	opt.param_init_type = 'xavier_uniform'
+	opt.labels, opt.label_map_inv = load_label_dict(opt.label_dict)
+	opt.num_label = len(opt.labels)
 	return opt
 
 def pretty_print_pred(opt, shared, m, pred_idx):
 	batch_l = shared.batch_l
 	orig_l = shared.orig_seq_l
-	bv_idx = int(np.where(m.loss[0].labels == 'B-V')[0][0])
+	bv_idx = int(np.where(np.asarray(opt.labels) == 'B-V')[0][0])
 
 	pred_log =[]
 	for i in range(batch_l):
@@ -87,50 +86,42 @@ def pretty_print_pred(opt, shared, m, pred_idx):
 		a_pred_i = pred_idx[i, :orig_l_i, :orig_l_i]
 
 		orig_tok_grouped = shared.res_map['orig_tok_grouped'][i][1:-1]
-		pred_log.append(m.loss[0].compose_log(orig_tok_grouped, a_pred_i[1:-1, 1:-1].cpu(), transpose=False))
+		pred_log.append(m.crf_loss.compose_log(orig_tok_grouped, a_pred_i[1:-1, 1:-1].cpu(), transpose=False))
 	return pred_log
 
 
 def run(opt, shared, m, tokenizer, seq):
 	tok_idx, sub2tok_idx, toks, orig_toks = process(opt, tokenizer, seq)
 
-	m.update_context([0], 1, torch.tensor([len(tok_idx)]).int(), torch.tensor([len(orig_toks)]).int(), torch.tensor([sub2tok_idx]).int(), {'orig_tok_grouped': [orig_toks]})
+	m.update_context(orig_seq_l=torch.tensor([len(orig_toks)]).int(), 
+		sub2tok_idx=torch.tensor([sub2tok_idx]).int(), 
+		res_map={'orig_tok_grouped': [orig_toks]})
 
 	tok_idx = Variable(torch.tensor([tok_idx]), requires_grad=False)
 
 	with torch.no_grad():
-		_, pred_idx = m.forward(tok_idx, skip_loss_forward=True)
+		pred_idx = m.forward(tok_idx)
 
 	log = pretty_print_pred(opt, shared, m, pred_idx)[0]
 	return orig_toks[1:-1], log
 
 
-def init(args):
-	opt = parser.parse_args(args)
+def init(opt):
 	opt = fix_opt(opt)
 	shared = Holder()
 
-	if opt.gpuid != -1:
-		torch.cuda.set_device(opt.gpuid)
-
-	# build model
-	m = Pipeline(opt, shared)
-
-	# initializing from pretrained
-	print('loading pretrained model from {0}...'.format(opt.load_file))
-	param_dict = load_param_dict('{0}.hdf5'.format(opt.load_file))
-	m.set_param_dict(param_dict, verbose=False)
-
-	if opt.gpuid != -1:
-		m.distribute()	# distribute to multigpu
-
 	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type)
+	m = RobertaForSRL.from_pretrained(opt.load_file, shared=shared)
+
+	if opt.gpuid != -1:
+		m.cuda(opt.gpuid)
 
 	return opt, shared, m, tokenizer
 
 
 def main(args):
-	opt, shared, m, tokenizer = init(args)
+	opt = parser.parse_args(args)
+	opt, shared, m, tokenizer = init(opt)
 
 	while True:
 		try:
@@ -143,7 +134,7 @@ def main(args):
 		except KeyboardInterrupt:
 			return
 		except BaseException as e:
-			print(e.with_traceback)
+			print(e)
 
 
 if __name__ == '__main__':

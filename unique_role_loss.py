@@ -21,17 +21,9 @@ class UniqueRoleLoss(torch.nn.Module):
 		self.num_prop = 0
 		self.num_ex = 0
 
-		self.label_map_inv = {}
-		with open(self.opt.label_dict, 'r') as f:
-			for l in f:
-				if l.strip() == '':
-					continue
-				toks = l.rstrip().split()
-				self.label_map_inv[int(toks[1])] = toks[0]
-		
 		self.core_labels = []
 		self.core_label_idx = []
-		for idx, l in self.label_map_inv.items():
+		for idx, l in self.opt.label_map_inv.items():
 			if 'B-A' in l and l[-1].isnumeric():	# only applies to B-A*
 				self.core_labels.append(l)
 				self.core_label_idx.append(idx)

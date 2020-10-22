@@ -41,8 +41,6 @@ parser.add_argument('--weight_decay', help="The factor of weight decay", type=fl
 parser.add_argument('--num_label', help="The number of label", type=int, default=106)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
-parser.add_argument('--fix_bert', help="Whether to fix bert update", type=int, default=0)
-parser.add_argument('--bert_size', help="The input bert dim", type=int, default=768)
 parser.add_argument('--warmup_perc', help="The percentages of total expectec updates to warmup", type=float, default=0.1)
 parser.add_argument('--compact_mode', help="How word pieces be mapped to word level label", default='whole_word')
 ## pipeline stages
@@ -249,8 +247,6 @@ def validate(opt, shared, m, val_data, val_idx):
 	return (perf, extra_perf, val_loss / num_batch, num_ex)
 
 
-
-
 def main(args):
 	opt = parser.parse_args(args)
 	shared = Holder()
@@ -260,7 +256,7 @@ def main(args):
 	opt.val_data = opt.dir + opt.val_data
 	opt.train_res = '' if opt.train_res == ''  else ','.join([opt.dir + path for path in opt.train_res.split(',')])
 	opt.val_res = '' if opt.val_res == ''  else ','.join([opt.dir + path for path in opt.val_res.split(',')])
-	opt.label_dict = opt.dir + opt.label_dict
+	opt.labels, opt.label_map_inv = load_label_dict(opt.dir + opt.label_dict)
 
 	torch.manual_seed(opt.seed)
 	if opt.gpuid != -1:
