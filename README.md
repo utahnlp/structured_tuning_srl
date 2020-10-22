@@ -255,7 +255,7 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 # Demo
 You can use a trained model to do inference interactively:
 ```
-python3 -u demo.py --load_file tli8hf/robertabase-crf-conll2012 --gpuid [GPUID]
+python3 -u demo.py --load_file tli8hf/robertabase-crf-conll2012 --gpuid -1
 ```
 which will automatically download a trained RoBERTa+CRF model on the CoNLL2012 data to be used for interactive prediction.
 
