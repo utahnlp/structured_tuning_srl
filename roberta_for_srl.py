@@ -18,6 +18,11 @@ class RobertaForSRL(RobertaPreTrainedModel):
 		# from json to dict lost track of data type, enforce types here
 		config.label_map_inv = {int(k): v for k, v in config.label_map_inv.items()}
 
+		# options can be overwritten by externally specified ones
+		if 'overwrite_opt' in model_kwargs:
+			for k, v in model_kwargs['overwrite_opt'].__dict__.items():
+				setattr(config, k, v)
+
 		self.num_labels = config.num_labels
 
 		self.shared = model_kwargs['shared']
