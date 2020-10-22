@@ -22,7 +22,6 @@ parser.add_argument('--label_dict', help="The path to label dictionary", default
 ## pipeline specs
 parser.add_argument('--max_num_subtok', help="Maximal number subtokens in a word", type=int, default=8)
 parser.add_argument('--hidden_size', help="The general hidden size of the pipeline", type=int, default=768)
-parser.add_argument('--max_seq_l', help="Maximal sequence length", type=int, default=200)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
 parser.add_argument('--compact_mode', help="How word pieces be mapped to word level label", default='whole_word')
@@ -60,9 +59,8 @@ def process(opt, tokenizer, seq):
 		sub2tok_idx.append(pad([p for p in range(acc, acc+l)], opt.max_num_subtok, -1))
 		assert(len(sub2tok_idx[-1]) <= opt.max_num_subtok)
 		acc += l
-	#sub2tok_idx = pad(sub2tok_idx, opt.max_seq_l, [-1 for _ in range(opt.max_num_subtok)])
+	sub2tok_idx = pad(sub2tok_idx, len(tok_idx), [-1 for _ in range(opt.max_num_subtok)])
 	sub2tok_idx = np.array(sub2tok_idx, dtype=int)
-
 	return tok_idx, sub2tok_idx, toks, orig_toks
 
 
@@ -122,7 +120,7 @@ def main(args):
 	opt = parser.parse_args(args)
 	opt, shared, m, tokenizer = init(opt)
 
-	seq = "The keys, which were needed to access the building, were locked in the car."	
+	seq = "He said he knows it."	
 	orig_toks, log = run(opt, shared, m, tokenizer, seq)
 	print('Here is a sample prediction for input:')
 	print('>>', seq)
