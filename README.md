@@ -168,7 +168,6 @@ LR=0.00003
 EPOCH=30
 LOSS=crf
 PERC=1
-WARM=0.1
 SEED=1
 MODEL=./models/roberta_base_2012_${LOSS//,}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.train.hdf5 --val_data conll2012.val.hdf5 \
@@ -188,7 +187,6 @@ DROP=0.5
 LR=0.00001
 EPOCH=5
 PERC=1
-WARM=0.1
 LOSS=crf,unique_role,frame_role,overlap_role
 LAMBD=1,1,1,0.1
 SEED=1
