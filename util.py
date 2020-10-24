@@ -8,7 +8,6 @@ import re
 from collections import Counter
 import numpy as np
 
-
 def load_label_dict(label_dict):
 	labels = []
 	label_map_inv = {}

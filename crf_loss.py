@@ -76,7 +76,7 @@ class CRFLoss(torch.nn.Module):
 		assert(row_idx == len(decoded))
 		pred_idx = to_device(pred_idx, self.opt.gpuid)
 
-		return pred_idx, v_label, v_l
+		return pred_idx, {'v_label': v_label, 'v_l': v_l}
 
 
 	def forward(self, log_pa, score, v_label, v_l, role_label, roleset_id, extra={}):

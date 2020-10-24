@@ -60,6 +60,6 @@ class RobertaForSRL(RobertaPreTrainedModel):
 
 		log_pa, score, extra = self.classifier(enc)
 
-		pred, _, _ = self.crf_loss.decode(log_pa, score)
+		pred, _ = self.crf_loss.decode(log_pa, score)
 
 		return pred
