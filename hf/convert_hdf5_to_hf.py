@@ -8,6 +8,7 @@ from util.holder import *
 from util.util import *
 from .roberta_for_srl import *
 from modules import pipeline
+from loss.crf_loss import CRFLoss
 import logging
 
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
@@ -63,6 +64,7 @@ def main(args):
 		# move parameters
 		m_hf.roberta = m.encoder.bert
 		m_hf.classifier = m.classifier
+		assert(isinstance(m.loss[0], CRFLoss))
 		m_hf.crf_loss = m.loss[0]
 	else:
 		raise Exception('unrecognized model type {0}'.format(opt.bert_type))

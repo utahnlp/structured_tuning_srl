@@ -137,7 +137,9 @@ class CRFLoss(torch.nn.Module):
 			# during evaluation, no need to compute the loss, just =0
 			loss = to_device(torch.zeros(1), self.opt.gpuid)
 
-			pred_idx, v_label, v_l = self.decode(log_pa, score)
+			pred_idx, extra_pred = self.decode(log_pa, score)
+			v_label = extra_pred['v_label']
+			v_l = extra_pred['v_l']
 
 		self.num_ex += batch_l
 		self.shared.viterbi_pred = pred_idx

@@ -239,11 +239,19 @@ python3 -u -m hf.demo --load_file tli8hf/robertabase-crf-conll2012 --gpuid [GPUI
 where ``[GPUID]`` is the GPU device index. Set it to ``-1`` to run on CPU.
 
 The demo will automatically download a trained RoBERTa+CRF model on the CoNLL2012 data to be used for interactive prediction.
-On the CoNLL-2012 test set, the model has ``86.5`` F1 with gold predicates, and ``85.9`` without gold predicates. 
+Available models are:
+
+| Model    |  --load_file  |  CoNLL-2012 test F1  |
+|----------|:-------------|:------|
+| RoBERTa+CRF |  tli8hf/robertabase-crf-conll2012 | 85.9* |
+| RoBERTa+U,F,O |  tli8hf/robertabase-structured-tuning-srl-conll2012   | 86.6 |
+
+F1 scores with ``*``: trained without gold predicate (i.e. ``--use_gold_predicate 0``).
 
 # Acknowledgements
 - [x] Sanity check (Thanks to Ghazaleh Kazeminejad for helping me with sanity check)
 
 # TODO
-- [ ] Upload more models to HuggingFace hub
+- [x] Upload more models to HuggingFace hub
+- [ ] extend demo interface to accept predicate
 - [ ] Make a separate predicate classifier
