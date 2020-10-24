@@ -3,22 +3,23 @@ import torch
 from torch import nn
 from torch import cuda
 from torch.autograd import Variable
-from holder import *
 import numpy as np
-from optimizer import *
 import time
-from bert_encoder import *
-from linear_classifier import *
-from predicate_classifier import *
-from role_loss import *
-from crf_loss import *
-from predicate_crf_loss import *
-from frame_loss import *
-from frame_role_loss import *
-from unique_role_loss import *
-from overlap_role_loss import *
-from prep_modifier_loss import *
-from continuous_role_loss import *
+from .bert_encoder import *
+from .linear_classifier import *
+from .predicate_classifier import *
+from .optimizer import *
+from loss.role_loss import *
+from loss.crf_loss import *
+from loss.predicate_crf_loss import *
+from loss.frame_loss import *
+from loss.frame_role_loss import *
+from loss.unique_role_loss import *
+from loss.overlap_role_loss import *
+from loss.prep_modifier_loss import *
+from loss.continuous_role_loss import *
+from util.holder import *
+from util.util import *
 
 class Pipeline(torch.nn.Module):
 	def __init__(self, opt, shared):

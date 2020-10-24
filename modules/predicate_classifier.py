@@ -2,8 +2,8 @@ import sys
 import torch
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 class PredicateClassifier(torch.nn.Module):
 	def __init__(self, opt, shared):

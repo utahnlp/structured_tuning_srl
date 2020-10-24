@@ -3,8 +3,8 @@ import numpy as np
 import torch
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 # DEPRECATED
 # predicate-argument Loss, standard nll loss

@@ -10,7 +10,7 @@ import torch
 
 from allennlp.common.checks import ConfigurationError
 import allennlp.nn.util as util
-from util import *
+from util.util import *
 
 
 def allowed_transitions(constraint_type: str, labels: Dict[int, str]) -> List[Tuple[int, int]]:

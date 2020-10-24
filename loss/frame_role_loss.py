@@ -3,8 +3,8 @@ import numpy as np
 import torch
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 # loss on frame and role prediction
 # Note that this loss only cares about the interaction of frame and role

@@ -3,8 +3,8 @@ import numpy as np
 import torch
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 # loss on overlap core argument across multiple predicates
 class OverlapRoleLoss(torch.nn.Module):
@@ -27,9 +27,10 @@ class OverlapRoleLoss(torch.nn.Module):
 		self.covered_labels = {}
 		self.covered_label_idx_b = []
 		self.covered_label_idx_i = []
-		for l, idx in self.opt.labels.items():
-			if l.startswith('B-') and ('I-' + l[2:]) in self.opt.labels:
-				self.covered_labels[l[2:]] = [idx, self.opt.labels['I-' + l[2:]]]
+		self.label_map = {idx: l for l, idx in self.opt.label_map_inv.items()}
+		for l, idx in self.label_map.items():
+			if l.startswith('B-') and ('I-' + l[2:]) in self.label_map:
+				self.covered_labels[l[2:]] = [idx, self.label_map['I-' + l[2:]]]
 		for l, (idx1, idx2) in self.covered_labels.items():
 			self.covered_label_idx_b.append(idx1)
 			self.covered_label_idx_i.append(idx2)
@@ -45,9 +46,6 @@ class OverlapRoleLoss(torch.nn.Module):
 		loss = torch.zeros(1)
 		if self.opt.gpuid != -1:
 			loss = to_device(loss, self.opt.gpuid)
-
-
-		#self._gold_role = role_label
 
 		num_prop = 0
 		for i in range(batch_l):
@@ -107,11 +105,6 @@ class OverlapRoleLoss(torch.nn.Module):
 			# TODO, loss might need to be averaged by k
 			loss = loss + loss_i
 			num_prop += v_l[i]
-
-			#spans = self.get_spans(log_pa.argmax(-1)[i, v_i, :orig_l[i]].data.cpu())
-			#cnt = self.count_overlap(spans)
-			#if cnt != 0:
-			#	print(loss_i.data.item(), cnt)
 
 			if loss_i.data.item() != 1e-4:
 				self.grad_coverage_cnt += 1

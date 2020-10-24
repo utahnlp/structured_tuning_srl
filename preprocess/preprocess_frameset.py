@@ -1,7 +1,7 @@
 import sys
 import argparse
 import numpy as np
-from preprocess import Indexer, load_frameset
+from .preprocess import Indexer, load_frameset
 import spacy
 from spacy.tokenizer import Tokenizer
 import h5py

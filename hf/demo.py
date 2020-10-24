@@ -1,15 +1,15 @@
 import sys
 import argparse
+import spacy
 import h5py
 import numpy as np
 import torch
 from torch import nn
 from torch import cuda
-from holder import *
-from util import *
-import spacy
-from preprocess import pad
-from roberta_for_srl import *
+from util.holder import *
+from util.util import *
+from preprocess.preprocess import pad
+from hf.roberta_for_srl import *
 import traceback
 
 spacy_nlp = spacy.load('en')
@@ -106,7 +106,7 @@ def init(opt):
 	opt = fix_opt(opt)
 	shared = Holder()
 
-	opt = opt.complete_opt(opt)
+	opt = complete_opt(opt)
 
 	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type)
 	m = RobertaForSRL.from_pretrained(opt.load_file, overwrite_opt = opt, shared=shared)

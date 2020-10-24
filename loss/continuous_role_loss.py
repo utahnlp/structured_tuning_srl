@@ -3,8 +3,8 @@ import numpy as np
 import torch
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 # if there is an B-C-x, then there must be a B-x before it
 class ContinuousRoleLoss(torch.nn.Module):
@@ -24,10 +24,11 @@ class ContinuousRoleLoss(torch.nn.Module):
 		self.covered_labels = []
 		self.covered_b_idx = []
 		self.covered_bc_idx = []
-		for l, idx in self.opt.labels.items():
+		self.label_map = {idx: l for l, idx in self.opt.label_map_inv.items()}
+		for l, idx in self.label_map.items():
 			if l.startswith('B-C-'):
 				self.covered_labels.append(l[4:])
-				self.covered_b_idx.append(self.opt.labels['B-' + l[4:]])
+				self.covered_b_idx.append(self.label_map['B-' + l[4:]])
 				self.covered_bc_idx.append(idx)
 		print('continuous role constraint applies to: ', self.covered_labels)
 
