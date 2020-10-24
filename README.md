@@ -246,7 +246,7 @@ Available models are:
 | RoBERTa+CRF |  tli8hf/robertabase-crf-conll2012 | 85.9* |
 | RoBERTa+U,F,O |  tli8hf/robertabase-structured-tuning-srl-conll2012   | 86.6 |
 
-F1 scores with ``*``: trained without gold predicate (i.e. ``--use_gold_predicate 0``).
+F1 scores with ``*``: trained and evaluated without gold predicate (i.e. ``--use_gold_predicate 0``).
 
 # Acknowledgements
 - [x] Sanity check (Thanks to Ghazaleh Kazeminejad for helping me with sanity check)
