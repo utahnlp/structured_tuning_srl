@@ -19,7 +19,7 @@ The flow of this readme is:
 * [Preprocessing](#preprocessing): dataset preprocessing
 * [CoNLL-05](#conll05): Training and evlauation for CoNLL-05 dataset
 * [CoNLL-2012](#conll2012): Training and evlauation for CoNLL-2012 dataset
-* [Demo](#demo): A very easy-to-use **demo** that fetch trained model(s) to interactively predict user inputs
+* [Demo](#demo): A very easy-to-use **demo** that fetches trained model(s) to interactively predict user inputs
 ---
 
 <a name="preprocessing"></a>
