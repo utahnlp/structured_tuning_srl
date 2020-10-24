@@ -114,7 +114,6 @@ where ``[GPUID]`` is the GPU device index.
 **2nd round of finetuning**
 
 ```
-
 GPUID=[GPUID]
 DROP=0.5
 LR=0.00001
@@ -137,7 +136,6 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.
 
 **Evaluation**
 ```
-
 GPUID=[GPUID]
 DROP=0.5
 LR=0.00001
@@ -163,7 +161,6 @@ where ``TEST=test1`` is for WSJ set. Set ``TEST=test2`` to evaluate on Brown set
 # Training and Evlauation on CoNLL-2012
 
 ```
-
 GPUID=[GPUID]
 DROP=0.5
 USE_GOLD=1
@@ -186,7 +183,6 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.trai
 **2nd round of finetuning**
 
 ```
-
 GPUID=[GPUID]
 DROP=0.5
 LR=0.00001
@@ -210,7 +206,6 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.trai
 **Evaluation**
 
 ```
-
 GPUID=0
 DROP=0.5
 LR=0.00001
