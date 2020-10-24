@@ -3,11 +3,11 @@ import argparse
 import h5py
 import numpy as np
 import torch
-from holder import *
-from util import *
 from transformers import *
-from roberta_for_srl import *
-import pipeline
+from util.holder import *
+from util.util import *
+from .roberta_for_srl import *
+from modules import pipeline
 import logging
 
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
@@ -16,9 +16,6 @@ parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.A
 
 parser.add_argument('--load_file', help="Path to where HDF5 model to be loaded.", default="")
 parser.add_argument('--label_dict', help="The path to label dictionary", default = "./data/srl/conll2012.label.dict")
-parser.add_argument('--num_label', help="The number of label", type=int, default=129)
-## dim specs
-parser.add_argument('--hidden_size', help="The general hidden size of the pipeline", type=int, default=768)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
 parser.add_argument('--compact_mode', help="How word pieces be mapped to word level label", default='whole_word')
@@ -39,12 +36,6 @@ def main(args):
 	opt.loss = 'crf'
 	opt.lambd = "1.0"
 	shared = Holder()
-
-	# fix some hyperparameters automatically
-	if 'base' in opt.bert_type:
-		opt.hidden_size = 768
-	elif 'large'in opt.bert_type:
-		opt.hidden_size = 1024
 
 	# load model
 	m = pipeline.Pipeline(opt, shared)

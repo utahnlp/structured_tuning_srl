@@ -3,8 +3,8 @@ import numpy as np
 import torch
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 # if an argument is LOC/TMP for a predicate, then it can only be LOC/TMP or O for any other predicate
 class PrepModifierLoss(torch.nn.Module):

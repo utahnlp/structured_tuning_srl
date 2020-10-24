@@ -8,7 +8,6 @@ import re
 from collections import Counter
 import numpy as np
 
-
 def complete_opt(opt):
 	if 'base' in opt.bert_type:
 		opt.hidden_size = 768

@@ -4,8 +4,8 @@ from torch import cuda
 from transformers import *
 from torch import nn
 from torch.autograd import Variable
-from holder import *
-from util import *
+from util.holder import *
+from util.util import *
 
 # encoder with Elmo
 class BertEncoder(torch.nn.Module):

@@ -3,7 +3,6 @@ import os
 import sys
 import argparse
 
-
 def load_xml(path):
 	print(path)
 	lemma = os.path.basename(path).split('.xml')[0]

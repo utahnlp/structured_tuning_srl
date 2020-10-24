@@ -1,9 +1,9 @@
 import torch
 from transformers import *
 from transformers.modeling_roberta import RobertaPreTrainedModel
-from crf_loss import *
-from linear_classifier import *
-from util import *
+from loss.crf_loss import *
+from modules.linear_classifier import *
+from util.util import *
 
 
 # RoBERTa for SRL, only meant for inference/demo

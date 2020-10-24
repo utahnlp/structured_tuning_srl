@@ -35,7 +35,10 @@ tar xf srlconll-1.1.tgz
 cd conll_extract/
 ./make_conll2005_data.sh ../data/treebank_3/
 
-python3 preprocess.py --dir ./data/srl/ --batch_size 24 --bert_type roberta-base --train conll05.train.txt --val conll05.devel.txt --test1 conll05.test.wsj.txt --test2 conll05.test.brown.txt --tokenizer_output conll05 --output conll05
+python3 -u -m preprocess.preprocess --dir ./data/srl/ \
+	--batch_size 24 --bert_type roberta-base \
+	--train conll05.train.txt --val conll05.devel.txt --test1 conll05.test.wsj.txt --test2 conll05.test.brown.txt \
+	--tokenizer_output conll05 --output conll05
 ```
 
 **CONLL 2012 and Preprocessing**
@@ -50,29 +53,32 @@ cd ./data/
 git clone https://github.com/yuchenlin/OntoNotes-5.0-NER-BIO.git
 ./make_conll2012_data.sh ../data/OntoNotes-5.0-NER-BIO/conll-formatted-ontonotes-5.0/
 
-python3 preprocess.py --dir ./data/srl/ --batch_size 20 --bert_type roberta-base --max_seq_l 410 --max_num_v 45 --train conll2012.train.txt --val conll2012.devel.txt --test1 conll2012.test.txt --test2 "" --tokenizer_output conll2012 --output conll2012
+python3 -u -m preprocess.preprocess --dir ./data/srl/ \
+	--batch_size 20 --bert_type roberta-base --max_seq_l 410 --max_num_v 45 \
+	--train conll2012.train.txt --val conll2012.devel.txt --test1 conll2012.test.txt --test2 "" \
+	--tokenizer_output conll2012 --output conll2012
 ```
 
 **Frameset Preprocessing**
 
 Extract framesets:
 ```
-python3 extract_frameset.py --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
+python3 -u -m preprocess.extract_frameset --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
 ```
 
 Preprocess framesets for CONLL-2005:
 ```
-python3 preprocess_frameset.py --roleset_dict conll05.roleset_id.dict --label_dict conll05.label.dict \
---train conll05.train.orig_tok_grouped.txt --val conll05.val.orig_tok_grouped.txt \
---test1 conll05.test1.orig_tok_grouped.txt --test2 conll05.test2.orig_tok_grouped.txt \
---output conll05
+python3 -u -m preprocess.preprocess_frameset --roleset_dict conll05.roleset_id.dict --label_dict conll05.label.dict \
+	--train conll05.train.orig_tok_grouped.txt --val conll05.val.orig_tok_grouped.txt \
+	--test1 conll05.test1.orig_tok_grouped.txt --test2 conll05.test2.orig_tok_grouped.txt \
+	--output conll05
 ```
 
 Preprocess framesets for CONLL-2012:
 ```
-python3 preprocess_frameset.py --train conll2012.train.orig_tok_grouped.txt \
---val conll2012.val.orig_tok_grouped.txt --test1 conll2012.test1.orig_tok_grouped.txt \
---roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
+python3 -u -m preprocess.preprocess_frameset --train conll2012.train.orig_tok_grouped.txt \
+	--val conll2012.val.orig_tok_grouped.txt --test1 conll2012.test1.orig_tok_grouped.txt \
+	--roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
 ```
 
 # Training and Evaluation on CONLL-05
@@ -95,8 +101,8 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.
 	--bert_type roberta-base --loss $LOSS --epochs $EPOCH --learning_rate $LR --dropout $DROP  \
 	--percent $PERC --seed $SEED \
 	--conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
-done
 ```
+where ``[GPUID]`` is the GPU device index.
 
 **2nd round of finetuning**
 
@@ -218,9 +224,12 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 # Demo
 You can use a trained model to do inference interactively:
 ```
-python3 -u demo.py --load_file tli8hf/robertabase-crf-conll2012 --gpuid [GPUID]
+python3 -u -m hf.demo --load_file tli8hf/robertabase-crf-conll2012 --gpuid [GPUID]
 ```
-which will automatically download a trained RoBERTa+CRF model on the CoNLL2012 data to be used for interactive prediction.
+where ``[GPUID]`` is the GPU device index. Set it to ``-1`` to run on CPU.
+
+The demo will automatically download a trained RoBERTa+CRF model on the CoNLL2012 data to be used for interactive prediction.
+On the CoNLL-2012 test set, the model has ``86.5`` F1 with gold predicates, and ``85.9`` without gold predicates. 
 
 # Acknowledgements
 - [x] Sanity check (Thanks to Ghazaleh Kazeminejad for helping me with sanity check)

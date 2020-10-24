@@ -2,12 +2,11 @@ import sys
 import math
 import torch
 from torch import nn
-from holder import *
-from util import *
 from apex import amp
 from transformers.optimization import *
-#from apex.fp16_utils import FP16_Optimizer
 from transformers import AdamW
+from util.holder import *
+from util.util import *
 
 
 def warmup_cosine(x, warmup=0.002):
