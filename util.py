@@ -8,6 +8,22 @@ import re
 from collections import Counter
 import numpy as np
 
+
+def complete_opt(opt):
+	if 'base' in opt.bert_type:
+		opt.hidden_size = 768
+	elif 'large' in opt.bert_type:
+		opt.hidden_size = 1024
+
+	if hasattr(opt, 'label_dict'):
+		opt.labels, opt.label_map_inv = load_label_dict(opt.label_dict)
+
+	# if opt is loaded as argparse.Namespace from json, it would lose track of data type, enforce types here
+	opt.label_map_inv = {int(k): v for k, v in opt.label_map_inv.items()}
+	opt.num_label = len(opt.labels)
+
+	return opt
+
 def load_label_dict(label_dict):
 	labels = []
 	label_map_inv = {}

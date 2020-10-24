@@ -24,9 +24,7 @@ parser.add_argument('--label_dict', help="The path to label dictionary", default
 parser.add_argument('--res', help="Path to test resource files, seperated by comma.", default="")
 ## pipeline specs
 parser.add_argument('--max_num_subtok', help="Maximal number subtokens in a word", type=int, default=8)
-parser.add_argument('--hidden_size', help="The general hidden size of the pipeline", type=int, default=768)
 parser.add_argument('--dropout', help="The dropout probability", type=float, default=0.0)
-parser.add_argument('--num_label', help="The number of label", type=int, default=106)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
 parser.add_argument('--compact_mode', help="How word pieces be mapped to word level label", default='whole_word')
@@ -99,7 +97,8 @@ def main(args):
 	# 
 	opt.data = opt.dir + opt.data
 	opt.res = '' if opt.res == ''  else ','.join([opt.dir + path for path in opt.res.split(',')])
-	opt.labels, opt.label_map_inv = load_label_dict(opt.dir + opt.label_dict)
+	opt.label_dict = opt.dir + opt.label_dict
+	opt = complete_opt(opt)
 
 	torch.manual_seed(opt.seed)
 	if opt.gpuid != -1:

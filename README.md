@@ -82,23 +82,19 @@ mkdir models
 
 GPUID=[GPUID]
 DROP=0.5
-BERT=base
-HIDDEN=768
-USE_GOLD=1
 LR=0.00003
 EPOCH=30
 LOSS=crf
 PERC=1
-WARM=0.1
 SEED=1
-MODEL=./models/bert_${BERT}_${LOSS}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
+MODEL=./models/roberta_base_${LOSS}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.hdf5 --val_data conll05.val.hdf5 \
 	--train_res conll05.train.orig_tok_grouped.txt,conll05.train.frame.hdf5,conll05.frame_pool.hdf5 \
 	--val_res conll05.val.orig_tok_grouped.txt,conll05.val.frame.hdf5,conll05.frame_pool.hdf5 \
-	 --label_dict conll05.label.dict --num_frame 39 \
-	--loss $LOSS --optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
-	--percent $PERC --val_percent 1 --seed $SEED --conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
+	--label_dict conll05.label.dict \
+	--bert_type roberta-base --loss $LOSS --epochs $EPOCH --learning_rate $LR --dropout $DROP  \
+	--percent $PERC --seed $SEED \
+	--conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
 done
 ```
 
@@ -108,27 +104,21 @@ done
 
 GPUID=[GPUID]
 DROP=0.5
-BERT=base
-HIDDEN=768
-USE_GOLD=1
 LR=0.00001
 EPOCH=5
 LOSS=crf,unique_role,frame_role,overlap_role
 SEED=1
 PERC=1
-WARM=0.1
 LAMBD=1,1,0.5,0.1
-LOAD=./models/bert_${BERT}_crf_lr000003_drop05_gold${USE_GOLD}_epoch30_seed${SEED}_perc${PERC//.}
-MODEL=./models/bert2_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
+LOAD=./models/roberta_base_crf_lr000003_drop05_gold1_epoch30_seed${SEED}_perc${PERC//.}
+MODEL=./models/roberta2_base_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.hdf5 --val_data conll05.val.hdf5 \
 	--train_res conll05.train.orig_tok_grouped.txt,conll05.train.frame.hdf5,conll05.frame_pool.hdf5 \
 	--val_res conll05.val.orig_tok_grouped.txt,conll05.val.frame.hdf5,conll05.frame_pool.hdf5 \
-	--label_dict conll05.label.dict --num_frame 39 \
-	--optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
-	--loss $LOSS --lambd $LAMBD \
-	--load $LOAD \
-	--percent $PERC --val_percent 1 --seed $SEED --conll_output ${MODEL} --save_file $MODEL | tee ${MODEL}.txt
+	--label_dict conll05.label.dict \
+	--bert_type roberta-base --loss $LOSS --epochs $EPOCH --learning_rate $LR --dropout $DROP --lambd $LAMBD \
+	--percent $PERC --seed $SEED \
+	--load $LOAD --conll_output ${MODEL} --save_file $MODEL | tee ${MODEL}.txt
 ```
 
 
@@ -137,9 +127,6 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll05.train.
 
 GPUID=[GPUID]
 DROP=0.5
-BERT=base
-HIDDEN=768
-USE_GOLD=1
 LR=0.00001
 EPOCH=5
 LOSS=crf,unique_role,frame_role,overlap_role
@@ -147,14 +134,12 @@ LAMBD=1,1,0.5,0.1
 SEED=1
 PERC=1
 TEST=test1
-MODEL=./models/bert2_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
+MODEL=./models/roberta2_base_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u eval.py --gpuid $GPUID --dir ./data/srl/ --data conll05.${TEST}.hdf5 \
 	--res conll05.${TEST}.orig_tok_grouped.txt,conll05.${TEST}.frame.hdf5,conll05.frame_pool.hdf5 \
-	--label_dict conll05.label.dict --num_frame 39 \
-	--dropout 0 --compact_mode whole_word \
-	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
-	--loss $LOSS --lambd $LAMBD \
-	--conll_output ${MODEL} --load_file ${MODEL} | tee ${MODEL}.testlog.txt
+	--label_dict conll05.label.dict \
+	--bert_type roberta-base --loss $LOSS --lambd $LAMBD \
+	--load_file ${MODEL} --conll_output ${MODEL} | tee ${MODEL}.testlog.txt
 
 perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
@@ -166,25 +151,21 @@ where ``TEST=test1`` is for WSJ set. Set ``TEST=test2`` to evaluate on Brown set
 
 GPUID=[GPUID]
 DROP=0.5
-BERT=base
-HIDDEN=768
 USE_GOLD=1
 LR=0.00003
 EPOCH=30
 LOSS=crf
 PERC=1
-VAL_PERC=1
 WARM=0.1
 SEED=1
-MODEL=./models/bert2012_${BERT}_${LOSS//,}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
+MODEL=./models/roberta_base_2012_${LOSS//,}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.train.hdf5 --val_data conll2012.val.hdf5 \
 	--train_res conll2012.train.orig_tok_grouped.txt,conll2012.train.frame.hdf5,conll2012.frame_pool.hdf5 \
 	--val_res conll2012.val.orig_tok_grouped.txt,conll2012.val.frame.hdf5,conll2012.frame_pool.hdf5 \
 	--label_dict conll2012.label.dict \
-	--loss $LOSS --optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
-	--num_label 129 --percent $PERC --val_percent $VAL_PERC \
-	--seed $SEED --conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
+	--bert_type roberta-base --loss $LOSS  --epochs $EPOCH --learning_rate $LR --dropout $DROP \
+	--percent $PERC --seed $SEED \
+	--conll_output $MODEL --save_file $MODEL | tee ${MODEL}.txt
 ```
 
 **2nd round of finetuning**
@@ -193,28 +174,22 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.trai
 
 GPUID=[GPUID]
 DROP=0.5
-BERT=base
-HIDDEN=768
-USE_GOLD=1
 LR=0.00001
 EPOCH=5
 PERC=1
-VAL_PERC=1
 WARM=0.1
 LOSS=crf,unique_role,frame_role,overlap_role
 LAMBD=1,1,1,0.1
 SEED=1
-LOAD=./models/bert2012_${BERT}_crf_lr000003_drop${DROP//.}_gold${USE_GOLD}_epoch30_seed${SEED}_perc${PERC//.}
-MODEL=./models/bert2_2012_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
+LOAD=./models/roberta_base_2012_crf_lr000003_drop${DROP//.}_gold1_epoch30_seed${SEED}_perc${PERC//.}
+MODEL=./models/roberta2_base_2012_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.train.hdf5 --val_data conll2012.val.hdf5 \
 	--train_res conll2012.train.orig_tok_grouped.txt,conll2012.train.frame.hdf5,conll2012.frame_pool.hdf5 \
 	--val_res conll2012.val.orig_tok_grouped.txt,conll2012.val.frame.hdf5,conll2012.frame_pool.hdf5 \
 	--label_dict conll2012.label.dict \
-	--optim adamw_fp16 --epochs $EPOCH --warmup_perc $WARM --learning_rate $LR --dropout $DROP --compact_mode whole_word \
-	--bert_type roberta-${BERT} --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
-	--num_label 129 --percent $PERC --val_percent $VAL_PERC --loss $LOSS --lambd $LAMBD \
-	--load $LOAD \
-	--seed $SEED --conll_output ${MODEL} --save_file $MODEL | tee ${MODEL}.txt
+	--bert_type roberta-base --loss $LOSS --epochs $EPOCH --learning_rate $LR --dropout $DROP --lambd $LAMBD \
+	--percent $PERC --seed $SEED \
+	--load $LOAD --conll_output ${MODEL} --save_file $MODEL | tee ${MODEL}.txt
 ```
 
 **Evaluation**
@@ -223,9 +198,6 @@ python3 -u train.py --gpuid $GPUID --dir ./data/srl/ --train_data conll2012.trai
 
 GPUID=0
 DROP=0.5
-BERT=base
-HIDDEN=768
-USE_GOLD=1
 LR=0.00001
 EPOCH=5
 SEED=1
@@ -233,14 +205,12 @@ PERC=1
 LOSS=crf,unique_role,frame_role,overlap_role
 LAMBD=1,1,1,0.1
 TEST=test1
-MODEL=./models/bert2_2012_${BERT}_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold${USE_GOLD}_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
+MODEL=./models/roberta2_base_2012_${LOSS//,}_lambd${LAMBD//.}_lr${LR//.}_drop${DROP//.}_gold1_epoch${EPOCH}_seed${SEED}_perc${PERC//.}
 python3 -u eval.py --gpuid $GPUID --dir ./data/srl/ --data conll2012.${TEST}.hdf5 \
---res conll2012.${TEST}.orig_tok_grouped.txt,conll2012.${TEST}.frame.hdf5,conll2012.frame_pool.hdf5 \
---label_dict conll2012.label.dict \
---dropout 0 --compact_mode whole_word \
---bert_type roberta-base --hidden_size $HIDDEN --use_gold_predicate $USE_GOLD \
---num_label 129 --loss $LOSS  --lambd $LAMBD \
---conll_output ${MODEL} --load_file ${MODEL} | tee ${MODEL}.testlog.txt
+	--res conll2012.${TEST}.orig_tok_grouped.txt,conll2012.${TEST}.frame.hdf5,conll2012.frame_pool.hdf5 \
+	--label_dict conll2012.label.dict \
+	--bert_type roberta-base --loss $LOSS --lambd $LAMBD \
+	--load_file ${MODEL} --conll_output ${MODEL} | tee ${MODEL}.testlog.txt
 
 perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
