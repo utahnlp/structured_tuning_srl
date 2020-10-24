@@ -18,20 +18,11 @@ class BertEncoder(torch.nn.Module):
 		self.zero = to_device(self.zero, self.opt.gpuid)
 		
 		print('loading BERT model...')
-		self.bert = self._get_bert(self.opt.bert_type)
+		self.bert = AutoModel.from_pretrained(self.opt.bert_type)
 
 		for n in self.bert.children():
 			for p in n.parameters():
 				p.skip_init = True
-				p.is_bert = True	# tag as bert fields
-
-
-	def _get_bert(self, key):
-		model_map={"bert-base-uncased": (BertModel, BertTokenizer),
-			"roberta-base": (RobertaModel, RobertaTokenizer),
-			"roberta-large": (RobertaModel, RobertaTokenizer)}
-		model_cls, _ = model_map[key]
-		return model_cls.from_pretrained(key)
 
 
 	def forward(self, tok_idx):

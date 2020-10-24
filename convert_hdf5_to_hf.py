@@ -33,11 +33,11 @@ parser.add_argument('--max_num_subtok', help="Maximal number subtokens in a word
 
 def main(args):
 	opt = parser.parse_args(args)
+	opt = complete_opt(opt)
 	opt.gpuid = -1
 	opt.dropout = 0
 	opt.loss = 'crf'
 	opt.lambd = "1.0"
-	opt.labels, opt.label_map_inv = load_label_dict(opt.label_dict)
 	shared = Holder()
 
 	# fix some hyperparameters automatically

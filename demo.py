@@ -21,7 +21,6 @@ parser.add_argument('--load_file', help="The path to pretrained model (optional)
 parser.add_argument('--label_dict', help="The path to label dictionary", default = "./data/srl/conll2012.label.dict")
 ## pipeline specs
 parser.add_argument('--max_num_subtok', help="Maximal number subtokens in a word", type=int, default=8)
-parser.add_argument('--hidden_size', help="The general hidden size of the pipeline", type=int, default=768)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
 parser.add_argument('--compact_mode', help="How word pieces be mapped to word level label", default='whole_word')
@@ -106,6 +105,8 @@ def run(opt, shared, m, tokenizer, seq):
 def init(opt):
 	opt = fix_opt(opt)
 	shared = Holder()
+
+	opt = opt.complete_opt(opt)
 
 	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type)
 	m = RobertaForSRL.from_pretrained(opt.load_file, overwrite_opt = opt, shared=shared)

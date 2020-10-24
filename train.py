@@ -38,7 +38,6 @@ parser.add_argument('--learning_rate', help="The learning rate for training", ty
 parser.add_argument('--clip', help="The norm2 threshold to clip, set it to negative to disable", type=float, default=1.0)
 parser.add_argument('--adam_betas', help="The betas used in adam", default='0.9,0.999')
 parser.add_argument('--weight_decay', help="The factor of weight decay", type=float, default=0.01)
-parser.add_argument('--num_label', help="The number of label", type=int, default=106)
 # bert specs
 parser.add_argument('--bert_type', help="The type of bert encoder from huggingface, eg. roberta-base",default = "roberta-base")
 parser.add_argument('--warmup_perc', help="The percentages of total expectec updates to warmup", type=float, default=0.1)
@@ -60,8 +59,7 @@ parser.add_argument('--use_gold_predicate', help="Whether to use ground truth pr
 parser.add_argument('--use_gold_frame', help="Whether to use gold frame for frame_role_loss", type=int, default=1)
 parser.add_argument('--conll_output', help="The prefix of conll formated output", default='conll05')
 # frame specs
-parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=38)
-
+parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=39)
 
 
 # train batch by batch, accumulate batches until the size reaches acc_batch_size
@@ -256,7 +254,9 @@ def main(args):
 	opt.val_data = opt.dir + opt.val_data
 	opt.train_res = '' if opt.train_res == ''  else ','.join([opt.dir + path for path in opt.train_res.split(',')])
 	opt.val_res = '' if opt.val_res == ''  else ','.join([opt.dir + path for path in opt.val_res.split(',')])
-	opt.labels, opt.label_map_inv = load_label_dict(opt.dir + opt.label_dict)
+	opt.label_dict = opt.dir + opt.label_dict
+
+	opt = complete_opt(opt)
 
 	torch.manual_seed(opt.seed)
 	if opt.gpuid != -1:
