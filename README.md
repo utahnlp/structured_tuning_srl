@@ -11,25 +11,29 @@ Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Label
       year      = {2020}
   }
 ```
-
-The flow of this readme is:
-* [Prerequisites](#prerequisites): Dependency and dataset preprocessing
-* [CoNLL-05](#conll05): Training and evlauation for CoNLL-05 dataset
-* [CoNLL-2012](#conll2012): Training and evlauation for CoNLL-2012 dataset
-* [Demo](#demo): A **demo** that uses trained model(s) to interactively predict user inputs
 ---
-
-<a name="prerequisites"></a>
-# Prerequisites
 
 In addition to dependencies in ``requirements.txt``, please install perl for evaluation and [Nvidia-apex](https://github.com/NVIDIA/apex) for GPU speedup.
 
-**Propbank Frameset**
+The flow of this readme is:
+* [Preprocessing](#preprocessing): dataset preprocessing
+* [CoNLL-05](#conll05): Training and evlauation for CoNLL-05 dataset
+* [CoNLL-2012](#conll2012): Training and evlauation for CoNLL-2012 dataset
+* [Demo](#demo): An very easy-to-use **demo** that fetch trained model(s) to interactively predict user inputs
+---
 
-First make sure propbank frames are downloaded and extracted to ``./data/propbank-frames/frames/``
+<a name="preprocessing"></a>
+# Preprocessing
 
+**Extracting Propbank Frameset**
 
-**CONLL 2005 and Preprocessing**
+First make sure propbank frames are downloaded and extracted to ``./data/propbank-frames/frames/``.
+Then extract framesets:
+```
+python3 -u -m preprocess.extract_frameset --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
+```
+
+**Preprocessing CoNLL 2005**
 ```
 cd ./data/srl
 wget http://www.lsi.upc.edu/~srlconll/conll05st-release.tar.gz
@@ -48,7 +52,7 @@ python3 -u -m preprocess.preprocess --dir ./data/srl/ \
 	--tokenizer_output conll05 --output conll05
 ```
 
-**CONLL 2012 and Preprocessing**
+**Preprocessing CoNLL 2012**
 ```
 # generating from ontonotes 5.0 data
 # 	get ontonotes 5.0 release of propbank
@@ -66,14 +70,9 @@ python3 -u -m preprocess.preprocess --dir ./data/srl/ \
 	--tokenizer_output conll2012 --output conll2012
 ```
 
-**Frameset Preprocessing**
+**Preprocessing Frameset for CoNLL-05 and CoNLL-2012**
 
-Extract framesets:
-```
-python3 -u -m preprocess.extract_frameset --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt
-```
-
-Preprocess framesets for CONLL-2005:
+To preprocess framesets for CoNLL-05:
 ```
 python3 -u -m preprocess.preprocess_frameset --roleset_dict conll05.roleset_id.dict --label_dict conll05.label.dict \
 	--train conll05.train.orig_tok_grouped.txt --val conll05.val.orig_tok_grouped.txt \
@@ -81,7 +80,7 @@ python3 -u -m preprocess.preprocess_frameset --roleset_dict conll05.roleset_id.d
 	--output conll05
 ```
 
-Preprocess framesets for CONLL-2012:
+To preprocess framesets for CoNLL-2012:
 ```
 python3 -u -m preprocess.preprocess_frameset --train conll2012.train.orig_tok_grouped.txt \
 	--val conll2012.val.orig_tok_grouped.txt --test1 conll2012.test1.orig_tok_grouped.txt \
