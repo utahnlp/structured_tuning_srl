@@ -231,7 +231,7 @@ python3 -u -m hf.demo --load_file tli8hf/robertabase-crf-conll2012 --gpuid [GPUI
 ```
 where ``[GPUID]`` is the GPU device index. Set it to ``-1`` to run on CPU.
 
-The demo will automatically download a trained RoBERTa+CRF model on the CoNLL2012 data to be used for interactive prediction.
+The demo will automatically download a RoBERTa+CRF model pre-trained on the CoNLL2012 data, and use it for interactive prediction.
 Available models are:
 
 | Model    |  --load_file  |  CoNLL-2012 test F1  |
