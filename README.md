@@ -16,7 +16,7 @@ The flow of this readme is:
 * [Prerequisites](#prerequisites): Dependency and dataset preprocessing
 * [CoNLL-05](#conll05): Training and evlauation for CoNLL-05 dataset
 * [CoNLL-2012](#conll2012): Training and evlauation for CoNLL-2012 dataset
-* [Demo](#demo): A demo that uses trained model(s) to interactively predict user inputs
+* [Demo](#demo): A **demo** that uses trained model(s) to interactively predict user inputs
 ---
 
 <a name="prerequisites"></a>
