@@ -9,8 +9,10 @@ from optimizer import *
 import time
 from bert_encoder import *
 from linear_classifier import *
+from predicate_classifier import *
 from role_loss import *
 from crf_loss import *
+from predicate_crf_loss import *
 from frame_loss import *
 from frame_role_loss import *
 from unique_role_loss import *
@@ -34,6 +36,8 @@ class Pipeline(torch.nn.Module):
 
 		if opt.cls == 'linear':
 			self.classifier = LinearClassifier(opt, shared)
+		elif opt.cls == 'predicate':
+			self.classifier = PredicateClassifier(opt, shared)
 		else:
 			assert(False)
 
@@ -43,6 +47,8 @@ class Pipeline(torch.nn.Module):
 				loss.append(RoleLoss(opt, shared))
 			elif l == 'crf':
 				self.loss.append(CRFLoss(opt, shared))
+			elif l == 'predicate_crf':
+				self.loss.append(PredicateCRFLoss(opt, shared))
 			elif l == 'frame':
 				self.loss.append(FrameLoss(opt, shared))
 			elif l == 'frame_role':
@@ -108,22 +114,22 @@ class Pipeline(torch.nn.Module):
 		enc = self.encoder(tok_idx)
 
 		# classifier
-		log_pa, score, extra = self.classifier(enc)
+		log_p, score, extra = self.classifier(enc)
 
-		assert(isinstance(self.loss[0], CRFLoss))
+		assert(isinstance(self.loss[0], CRFLoss) or isinstance(self.loss[0], PredicateCRFLoss))
 
 		if not skip_loss_forward:
 			# always assume the first loss is crf loss which gives viterbi decoding
-			loss_acc, pred = self.loss[0](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
+			loss_acc, pred = self.loss[0](log_p, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
 			#print('******* {0}'.format(loss_acc.data.item()))
 			for k in range(1, len(self.loss)):
-				l, _ = self.loss[k](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
+				l, _ = self.loss[k](log_p, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
 				#print(l.data.item())
 				loss_acc = loss_acc + l * self.lambd[k]
 		else:
 			# skip loss forward pass, just do viterbi decoding
 			loss_acc = None
-			pred, _, _ = self.loss[0].decode(log_pa, score)
+			pred, _ = self.loss[0].decode(log_p, score)
 
 		return loss_acc, pred
 
