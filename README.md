@@ -12,7 +12,14 @@ Implementation of our ACL 2020 paper: [Structured Tuning for Semantic Role Label
   }
 ```
 
+The flow of this readme is:
+* [Prerequisites](#prerequisites): Dependency and dataset preprocessing
+* [CoNLL-05](#conll05): Training and evlauation for CoNLL-05 dataset
+* [CoNLL-2012](#conll2012): Training and evlauation for CoNLL-2012 dataset
+* [Demo](#demo): A demo that uses trained model(s) to interactively predict user inputs
+---
 
+<a name="prerequisites"></a>
 # Prerequisites
 
 In addition to dependencies in ``requirements.txt``, please install perl for evaluation and [Nvidia-apex](https://github.com/NVIDIA/apex) for GPU speedup.
@@ -81,6 +88,7 @@ python3 -u -m preprocess.preprocess_frameset --train conll2012.train.orig_tok_gr
 	--roleset_dict conll2012.roleset_id.dict --label_dict conll2012.label.dict --output conll2012
 ```
 
+<a name="conll05"></a>
 # Training and Evaluation on CONLL-05
 
 ```
@@ -151,6 +159,8 @@ perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
 where ``TEST=test1`` is for WSJ set. Set ``TEST=test2`` to evaluate on Brown set.
 
+
+<a name="conll2012"></a>
 # Training and Evlauation on CONLL-2012
 
 ```
@@ -221,6 +231,7 @@ python3 -u eval.py --gpuid $GPUID --dir ./data/srl/ --data conll2012.${TEST}.hdf
 perl srl-eval.pl ${MODEL}.gold.txt ${MODEL}.pred.txt
 ```
 
+<a name="demo"></a>
 # Demo
 You can use a trained model to do inference interactively:
 ```
