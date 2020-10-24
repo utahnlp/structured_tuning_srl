@@ -88,7 +88,7 @@ python3 -u -m preprocess.preprocess_frameset --train conll2012.train.orig_tok_gr
 ```
 
 <a name="conll05"></a>
-# Training and Evaluation on CONLL-05
+# Training and Evaluation on CoNLL-05
 
 ```
 mkdir models
@@ -160,7 +160,7 @@ where ``TEST=test1`` is for WSJ set. Set ``TEST=test2`` to evaluate on Brown set
 
 
 <a name="conll2012"></a>
-# Training and Evlauation on CONLL-2012
+# Training and Evlauation on CoNLL-2012
 
 ```
 
