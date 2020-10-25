@@ -39,17 +39,9 @@ class RobertaForSRL(RobertaPreTrainedModel):
 		self.shared.sub2tok_idx = sub2tok_idx
 		self.shared.res_map = res_map
 
-	# loss context is only visible to the pipeline during loss computation (to avoid accidental contamination)
-	# update the contextual info of current batch for loss calculation
-	def update_loss_context(self, v_label, v_l, role_label, v_roleset_id):
-		self._loss_context.v_label = v_label
-		self._loss_context.v_l = v_l
-		self._loss_context.role_label = role_label
-		self._loss_context.v_roleset_id = v_roleset_id
-
 	# shared: a namespace or a Holder instance that contains information for the current input batch
 	#	such as, predicate labels, subtok to tok index mapping, etc
-	def forward(self, input_ids):
+	def forward(self, input_ids, v_label = None, v_l = None):
 		self.shared.batch_l = input_ids.shape[0]
 		self.shared.seq_l = input_ids.shape[1]
 
@@ -57,6 +49,6 @@ class RobertaForSRL(RobertaPreTrainedModel):
 
 		log_pa, score, extra = self.classifier(enc)
 
-		pred, _ = self.crf_loss.decode(log_pa, score)
+		pred, _ = self.crf_loss.decode(log_pa, score, v_label, v_l)
 
 		return pred

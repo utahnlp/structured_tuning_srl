@@ -246,5 +246,5 @@ F1 scores with ``*``: trained and evaluated without gold predicate (i.e. ``--use
 
 # TODO
 - [x] Upload more models to HuggingFace hub
-- [ ] extend demo interface to accept predicate
+- [x] Extend demo interface to accept predicate
 - [x] Make a separate predicate classifier

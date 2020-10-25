@@ -26,7 +26,7 @@ class CRFLoss(torch.nn.Module):
 		self.gold_log = []
 		self.pred_log = []
 
-	def decode(self, log_pa, score):
+	def decode(self, log_pa, score, v_label=None, v_l=None):
 		batch_l, source_l, _, _ = score.shape
 		orig_l = self.shared.orig_seq_l
 		max_orig_l = orig_l.max()
@@ -36,24 +36,26 @@ class CRFLoss(torch.nn.Module):
 		a_score = []
 		a_mask = []
 
-		v_label = to_device(torch.zeros(batch_l, max_orig_l).long(), self.opt.gpuid)
-		v_l = to_device(torch.zeros(batch_l).long(), self.opt.gpuid)
+		if v_label is None:
+			v_label = to_device(torch.zeros(batch_l, max_orig_l).long(), self.opt.gpuid)
+			v_l = to_device(torch.zeros(batch_l).long(), self.opt.gpuid)
 
-		# use heuristic to get predicates
-		for i in range(batch_l):
-			max_v_idx = (score[i].argmax(-1) == bv_idx).diagonal().nonzero().view(-1)
-			# if no predicate candidate found, just take the one with the max score on B-V
-			if max_v_idx.numel() == 0:
-				max_v_idx = score[i, :, :, bv_idx].max(-1)[0].argmax(-1).view(1)
-			max_v_idx = max_v_idx[:max_num_v]
-			v_l[i] = max_v_idx.shape[0]
-			v_label[i, :v_l[i]] = max_v_idx
-
+			# use heuristic to get predicates
+			for i in range(batch_l):
+				max_v_idx = (score[i].argmax(-1) == bv_idx).diagonal().nonzero().view(-1)
+				# if no predicate candidate found, just take the one with the max score on B-V
+				if max_v_idx.numel() == 0:
+					max_v_idx = score[i, :, :, bv_idx].max(-1)[0].argmax(-1).view(1)
+				max_v_idx = max_v_idx[:max_num_v]
+				v_l[i] = max_v_idx.shape[0]
+				v_label[i, :v_l[i]] = max_v_idx
+		else:
+			v_label = to_device(v_label, self.opt.gpuid)
+			v_l = to_device(v_l, self.opt.gpuid)
 
 		# pack everything into (batch_l*acc_orig_l, max_orig_l, ...)
 		for i in range(batch_l):
-			v_i = v_label[i, :v_l[i]]
-	
+
 			a_mask_i = torch.zeros(v_l[i], max_orig_l).byte()
 			a_mask_i[:, :orig_l[i]] = True
 			a_mask.append(a_mask_i)

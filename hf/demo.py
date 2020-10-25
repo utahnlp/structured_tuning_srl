@@ -1,6 +1,5 @@
 import sys
 import argparse
-import spacy
 import h5py
 import numpy as np
 import torch
@@ -12,7 +11,12 @@ from preprocess.preprocess import pad
 from hf.roberta_for_srl import *
 import traceback
 
-spacy_nlp = spacy.load('en')
+#import spacy
+#spacy_nlp = spacy.load('en')
+# use nltk instead as it has better token-char mapping
+import nltk
+from nltk.tokenize import TreebankWordTokenizer
+tb_tokenizer = TreebankWordTokenizer()
 
 
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -33,19 +37,28 @@ parser.add_argument('--verbose', help="Whether to print out every prediction", t
 parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=38)
 
 
-def process(opt, tokenizer, seq):
+def process(opt, tokenizer, seq, predicates):
 	bos_tok, eos_tok = get_special_tokens(tokenizer)
-	ws = spacy_nlp(seq)
-	sent_subtoks = [tokenizer.tokenize(t.text) for t in ws]
+
+	char_spans = list(tb_tokenizer.span_tokenize(seq))
+	orig_toks = [seq[s:e] for s, e in char_spans]
+
+	v_label = [next((i for i, span in enumerate(char_spans) if span == (seq.index(p), seq.index(p)+len(p))), None) for p in predicates if p in seq]
+	v_label = [i for i in v_label if i is not None]
+
+	if len(v_label) != len(predicates):
+		print('valid predicates: ', ','.join([orig_toks[i] for i in v_label]))
+
+	sent_subtoks = [tokenizer.tokenize(t) for t in orig_toks]
 	tok_l = [len(subtoks) for subtoks in sent_subtoks]
 	toks = [p for subtoks in sent_subtoks for p in subtoks]	# flatterning
-	orig_toks = [t.text for t in ws]
 
 	# pad for CLS and SEP
 	CLS, SEP = tokenizer.cls_token, tokenizer.sep_token
 	toks = [CLS] + toks + [SEP]
 	tok_l = [1] + tok_l + [1]
 	orig_toks = [CLS] + orig_toks + [SEP]
+	v_label = [l+1 for l in v_label]
 
 	tok_idx = np.array(tokenizer.convert_tokens_to_ids(toks), dtype=int)
 
@@ -60,7 +73,7 @@ def process(opt, tokenizer, seq):
 		acc += l
 	sub2tok_idx = pad(sub2tok_idx, len(tok_idx), [-1 for _ in range(opt.max_num_subtok)])
 	sub2tok_idx = np.array(sub2tok_idx, dtype=int)
-	return tok_idx, sub2tok_idx, toks, orig_toks
+	return tok_idx, sub2tok_idx, toks, orig_toks, v_label
 
 
 def fix_opt(opt):
@@ -70,6 +83,7 @@ def fix_opt(opt):
 	opt.lambd = "1.0"
 	opt.param_init_type = 'xavier_uniform'
 	return opt
+
 
 def pretty_print_pred(opt, shared, m, pred_idx):
 	batch_l = shared.batch_l
@@ -86,8 +100,8 @@ def pretty_print_pred(opt, shared, m, pred_idx):
 	return pred_log
 
 
-def run(opt, shared, m, tokenizer, seq):
-	tok_idx, sub2tok_idx, toks, orig_toks = process(opt, tokenizer, seq)
+def run(opt, shared, m, tokenizer, seq, predicates=[]):
+	tok_idx, sub2tok_idx, toks, orig_toks, v_label = process(opt, tokenizer, seq, predicates)
 
 	m.update_context(orig_seq_l=to_device(torch.tensor([len(orig_toks)]).int(), opt.gpuid), 
 		sub2tok_idx=to_device(torch.tensor([sub2tok_idx]).int(), opt.gpuid), 
@@ -95,8 +109,14 @@ def run(opt, shared, m, tokenizer, seq):
 
 	tok_idx = to_device(Variable(torch.tensor([tok_idx]), requires_grad=False), opt.gpuid)
 
+	if len(v_label) != 0:
+		v_l = to_device(torch.Tensor([len(v_label)]).long().view(1), opt.gpuid)
+		v_label = to_device(torch.Tensor(v_label).long().view(1, -1), opt.gpuid)
+	else:
+		v_label, v_l = None, None
+
 	with torch.no_grad():
-		pred_idx = m.forward(tok_idx)
+		pred_idx = m.forward(tok_idx, v_label, v_l)
 
 	log = pretty_print_pred(opt, shared, m, pred_idx)[0]
 	return orig_toks[1:-1], log
@@ -108,7 +128,7 @@ def init(opt):
 
 	opt = complete_opt(opt)
 
-	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type)
+	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type, add_special_tokens=False, use_fast=True)
 	m = RobertaForSRL.from_pretrained(opt.load_file, overwrite_opt = opt, shared=shared)
 
 	if opt.gpuid != -1:
@@ -122,19 +142,31 @@ def main(args):
 	opt, shared, m, tokenizer = init(opt)
 
 	seq = "He said he knows it."	
-	orig_toks, log = run(opt, shared, m, tokenizer, seq)
+	predicates = ['said', 'knows']
+	#predicates = []
+	orig_toks, log = run(opt, shared, m, tokenizer, seq, predicates)
+
+	print('###################################')
 	print('Here is a sample prediction for input:')
-	print('>>', seq)
-	print('***********************************')
+	print('>> Input: ', seq)
+	print('>> Predicates: ', ','.join(predicates))	# predicates empty
 	print(' '.join(orig_toks))
 	print(log)
 
+	print('###################################')
+	print('#           Instructions          #')
+	print('###################################')
+	print('>> Enter a input senquence as prompted.')
+	print('>> You may also specify ground truth predicates, or leave it empty.')
 
 	while True:
 		try:
+			print('###################################')
 			seq = input("Enter a sequence: ")
-			orig_toks, log = run(opt, shared, m, tokenizer, seq)
-			print('***********************************')
+			predicates = input('Enter predicates: ')
+			predicates = predicates.strip().split(',')
+
+			orig_toks, log = run(opt, shared, m, tokenizer, seq, predicates)
 			print(' '.join(orig_toks))
 			print(log)
 
