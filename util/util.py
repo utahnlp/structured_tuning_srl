@@ -1,4 +1,5 @@
 import sys
+from os import path
 import h5py
 import torch
 from torch import nn
@@ -15,11 +16,17 @@ def complete_opt(opt):
 		opt.hidden_size = 1024
 
 	if hasattr(opt, 'label_dict'):
-		opt.labels, opt.label_map_inv = load_label_dict(opt.label_dict)
+		if path.exists(opt.label_dict):
+			print('loading label dict from', opt.label_dict)
+			opt.labels, opt.label_map_inv = load_label_dict(opt.label_dict)
+		else:
+			print("using default label dict since the specified label dict doesn't exists", opt.label_dict)
 
 	# if opt is loaded as argparse.Namespace from json, it would lose track of data type, enforce types here
-	opt.label_map_inv = {int(k): v for k, v in opt.label_map_inv.items()}
-	opt.num_label = len(opt.labels)
+	if hasattr(opt, 'label_map_inv'):
+		opt.label_map_inv = {int(k): v for k, v in opt.label_map_inv.items()}
+	if hasattr(opt, 'labels'):
+		opt.num_label = len(opt.labels)
 
 	return opt
 

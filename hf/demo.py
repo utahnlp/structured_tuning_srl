@@ -124,12 +124,12 @@ def run(opt, shared, m, tokenizer, seq, predicates=[]):
 
 def init(opt):
 	opt = fix_opt(opt)
-	shared = Holder()
-
 	opt = complete_opt(opt)
 
+	shared = Holder()
+
 	tokenizer = AutoTokenizer.from_pretrained(opt.bert_type, add_special_tokens=False, use_fast=True)
-	m = RobertaForSRL.from_pretrained(opt.load_file, overwrite_opt = opt, shared=shared)
+	m = RobertaForSRL.from_pretrained(opt.load_file, global_opt = opt, shared=shared)
 
 	if opt.gpuid != -1:
 		m.cuda(opt.gpuid)

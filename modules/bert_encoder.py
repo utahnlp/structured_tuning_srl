@@ -7,7 +7,6 @@ from torch.autograd import Variable
 from util.holder import *
 from util.util import *
 
-# encoder with Elmo
 class BertEncoder(torch.nn.Module):
 	def __init__(self, opt, shared):
 		super(BertEncoder, self).__init__()

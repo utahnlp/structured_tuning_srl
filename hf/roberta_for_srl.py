@@ -15,12 +15,17 @@ class RobertaForSRL(RobertaPreTrainedModel):
 	def __init__(self, config, *model_args, **model_kwargs):
 		super().__init__(config)
 
+		# the config and global opt should be handled better here, for now it's hacky
 		# options can be overwritten by externally specified ones
-		if 'overwrite_opt' in model_kwargs:
-			for k, v in model_kwargs['overwrite_opt'].__dict__.items():
+		if 'global_opt' in model_kwargs:
+			for k, v in model_kwargs['global_opt'].__dict__.items():
 				setattr(config, k, v)
 			for k, v in config.__dict__.items():
-				setattr(model_kwargs['overwrite_opt'], k, v)
+				setattr(model_kwargs['global_opt'], k, v)
+		# explicitly trigger ad-hoc fix for options
+		#	some options will have wrong data type after being loaded from config.json
+		complete_opt(config)
+		complete_opt(model_kwargs['global_opt'])
 
 		self.num_labels = config.num_labels
 
