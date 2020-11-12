@@ -81,8 +81,8 @@ def print_new_sentence():
 
 for root, dirs, files in os.walk(input_data_path):
   for f in files:
-    #if not 'gold_conll' in f:
-    #  continue
+    if not '.conll' in f:
+      continue
     #print root, dirs, f
     dpath = root.split('/')
     #domain = '_'.join(dpath[dpath.index('annotations')+1:-1])
