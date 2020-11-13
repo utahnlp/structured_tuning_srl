@@ -64,7 +64,7 @@ def print_new_sentence():
   propid_labels = ['O' for _ in words]
   for t in range(len(props)):
     assert(len(tags[t]) == len(words))
-    assert(tags[t][props[t]] in {"B-V", "B-I"})
+    #assert(tags[t][props[t]] in {"B-V", "B-I"})
     fout.write(str(props[t]) + " " + " ".join(words) + " ||| " + " ".join(tags[t]) + " ||| " + frames[t] + " \n")
     propid_labels[props[t]] = 'V'
     #fd_out.write(domain + '\n')
