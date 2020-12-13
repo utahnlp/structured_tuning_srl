@@ -14,9 +14,18 @@ class CRFLoss(torch.nn.Module):
 		self.opt = opt
 		self.shared = shared
 
-		self.labels = np.asarray(self.opt.labels)
+		self.labels = []
+		label_map_inv = {}
+		with open(self.opt.label_dict, 'r') as f:
+			for l in f:
+				if l.strip() == '':
+					continue
+				toks = l.rstrip().split()
+				self.labels.append(toks[0])
+				label_map_inv[int(toks[1])] = toks[0]
+		self.labels = np.asarray(self.labels)
 
-		constraints = allowed_transitions("BIO", self.opt.label_map_inv)
+		constraints = allowed_transitions("BIO", label_map_inv)
 
 		self.crf = ConditionalRandomField(num_tags=opt.num_label, constraints=constraints, gpuid=opt.gpuid)
 
@@ -26,6 +35,7 @@ class CRFLoss(torch.nn.Module):
 		self.gold_log = []
 		self.pred_log = []
 
+	# the decode function is for the demo where gold predicate might not present
 	def decode(self, log_pa, score, v_label=None, v_l=None):
 		batch_l, source_l, _, _ = score.shape
 		orig_l = self.shared.orig_seq_l
@@ -86,63 +96,77 @@ class CRFLoss(torch.nn.Module):
 		orig_l = self.shared.orig_seq_l
 		max_orig_l = orig_l.max()
 
-		if self.shared.is_train:
-			a_score = []
-			a_gold = []
-			a_mask = []
-	
-			if self.opt.use_gold_predicate == 1:
-				# pack everything into (batch_l*acc_v_l, max_orig_l, ...)
-				for i in range(batch_l):
-					v_i = v_label[i, :v_l[i]]
-					a_gold_i = torch.zeros(v_l[i], max_orig_l).long()	# O has idx 0
-					a_gold_i[:, :orig_l[i]] = role_label[i, :v_l[i], :orig_l[i]]	# (num_v, orig_l)
-					a_gold.append(a_gold_i)
-	
-					a_mask_i = torch.zeros(v_l[i], max_orig_l).byte()
-					a_mask_i[:, :orig_l[i]] = True
-					a_mask.append(a_mask_i)
-	
-					a_score_i = score[i].index_select(0, v_label[i, :v_l[i]])[:, :max_orig_l]
-					a_score.append(a_score_i)
-			else:
-				# pack everything into (batch_l*acc_orig_l, max_orig_l, ...)
-				for i in range(batch_l):
-					v_i = v_label[i, :v_l[i]]
-					role_i = role_label[i, :v_l[i], :orig_l[i]]	# (num_v, orig_l)
-					a_gold_i = torch.zeros(orig_l[i], max_orig_l).long()	# O has idx 0
-					for k, role_k in enumerate(role_i):
-						a_gold_i[v_i[k], :orig_l[i]] = role_k
-					a_gold.append(a_gold_i)
-		
-					a_mask_i = torch.zeros(orig_l[i], max_orig_l).byte()
-					a_mask_i[:, :orig_l[i]] = True
-					a_mask.append(a_mask_i)
-	
-					a_score.append(score[i, :orig_l[i], :max_orig_l])
-	
-			a_gold = to_device(torch.cat(a_gold, dim=0), self.opt.gpuid)
-			a_score = to_device(torch.cat(a_score, dim=0), self.opt.gpuid)
-			a_mask = to_device(torch.cat(a_mask, dim=0), self.opt.gpuid)
+		a_score = []
+		a_gold = []
+		a_mask = []
+		if self.opt.use_gold_predicate == 1:
+			# pack everything into (batch_l*acc_v_l, max_orig_l, ...)
+			for i in range(batch_l):
+				v_i = v_label[i, :v_l[i]]
+				a_gold_i = torch.zeros(v_l[i], max_orig_l).long()	# O has idx 0
+				a_gold_i[:, :orig_l[i]] = role_label[i, :v_l[i], :orig_l[i]]	# (num_v, orig_l)
+				a_gold.append(a_gold_i)
 
-			# pred_idx (batch_l, max_orig_l, max_orig_l, ...)
-			pred_idx = log_pa[:, :max_orig_l, :max_orig_l].argmax(-1)
+				a_mask_i = torch.zeros(v_l[i], max_orig_l).byte()
+				a_mask_i[:, :orig_l[i]] = True
+				a_mask.append(a_mask_i)
 
-			loss = self.crf(a_score, a_gold, a_mask)
-
-			# analyze
-			pred_v_roles = batch_index1_select(pred_idx, v_label, nul_idx=0)	# batch_l, max_v_num, max_orig_l
-			pred_v_roles = pred_v_roles[:, :role_label.shape[1], :]	# "only" take the gold predicates
-			batch_acc_sum = self._count_quick_acc(pred_v_roles, role_label) * batch_l
-			self.quick_acc_sum += batch_acc_sum
+				a_score_i = score[i].index_select(0, v_label[i, :v_l[i]])[:, :max_orig_l]
+				a_score.append(a_score_i)
 		else:
-			# during evaluation, no need to compute the loss, just =0
-			loss = to_device(torch.zeros(1), self.opt.gpuid)
+			# pack everything into (batch_l*acc_orig_l, max_orig_l, ...)
+			for i in range(batch_l):
+				v_i = v_label[i, :v_l[i]]
+				role_i = role_label[i, :v_l[i], :orig_l[i]]	# (num_v, orig_l)
+				a_gold_i = torch.zeros(orig_l[i], max_orig_l).long()	# O has idx 0
+				for k, role_k in enumerate(role_i):
+					a_gold_i[v_i[k], :orig_l[i]] = role_k
+				a_gold.append(a_gold_i)
+	
+				a_mask_i = torch.zeros(orig_l[i], max_orig_l).byte()
+				a_mask_i[:, :orig_l[i]] = True
+				a_mask.append(mask_i)
 
-			pred_idx, extra_pred = self.decode(log_pa, score)
-			v_label = extra_pred['v_label']
-			v_l = extra_pred['v_l']
+				a_score.append(score[i, :orig_l[i], :max_orig_l])
 
+		a_gold = to_device(torch.cat(a_gold, dim=0), self.opt.gpuid)
+		a_score = to_device(torch.cat(a_score, dim=0), self.opt.gpuid)
+		a_mask = to_device(torch.cat(a_mask, dim=0), self.opt.gpuid)
+
+		if self.shared.is_train:
+			# pred_idx (batch_l, max_orig_l, max_orig_l, ...)
+			pred_idx = log_pa[:, :max_orig_l, :max_orig_l].argmax(-1).cpu()
+			loss = self.crf(a_score, a_gold, a_mask)
+		else:
+			# in validation mode, no need to count the loss here
+			loss = torch.zeros(1)
+			if self.opt.gpuid != -1:
+				loss = to_device(loss, self.opt.gpuid)
+
+			decoded = self.crf.viterbi_tags(a_score, a_mask)
+			# unpack pred_idx to (batch_l, max_orig_l, max_orig_l, ...)
+			pred_idx = torch.zeros(batch_l, max_orig_l, max_orig_l).long()
+
+			if self.opt.use_gold_predicate == 1:
+				row_idx = 0
+				for i in range(batch_l):
+					for k in range(v_l[i]):
+						pred_idx[i, v_label[i, k], :orig_l[i]] = torch.Tensor(decoded[row_idx][0]).long()
+						row_idx += 1
+				assert(row_idx == len(decoded))
+			else:
+				acc_l = 0
+				for i in range(batch_l):
+					pred_idx[i, :orig_l[i], :orig_l[i]] = torch.Tensor([p[0] for p in decoded[acc_l:acc_l+orig_l[i]]]).long()
+					acc_l += orig_l[i]
+		
+		pred_idx = to_device(pred_idx, self.opt.gpuid)
+
+		# analyze
+		pred_v_roles = batch_index1_select(pred_idx, v_label, nul_idx=0)	# batch_l, max_v_num, max_orig_l
+		pred_v_roles = pred_v_roles[:, :role_label.shape[1], :]	# "only" take the gold predicates
+		batch_acc_sum = self._count_quick_acc(pred_v_roles, role_label) * batch_l
+		self.quick_acc_sum += batch_acc_sum
 		self.num_ex += batch_l
 		self.shared.viterbi_pred = pred_idx
 
@@ -226,7 +250,7 @@ class CRFLoss(torch.nn.Module):
 	# compose log for one example
 	#	role_labels of shape (seq_l, seq_l)
 	def compose_log(self, orig_toks, role_labels, transpose=True):
-		role_labels = role_labels.cpu().numpy()
+		role_labels = role_labels.numpy()
 		seq_l = role_labels.shape[0]
 #
 		header = ['-' for _ in range(seq_l)]
@@ -266,7 +290,6 @@ class CRFLoss(torch.nn.Module):
 
 if __name__ == '__main__':
 	pass
-
 
 
 

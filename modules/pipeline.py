@@ -108,29 +108,21 @@ class Pipeline(torch.nn.Module):
 			print('uninitialized fields: {0}'.format(missed_names))
 
 
-	def forward(self, tok_idx, skip_loss_forward=False):
+	def forward(self, tok_idx):
 		shared = self.shared
 
 		# encoder
 		enc = self.encoder(tok_idx)
 
 		# classifier
-		log_p, score, extra = self.classifier(enc)
+		log_pa, score, extra = self.classifier(enc)
 
-		assert(isinstance(self.loss[0], CRFLoss) or isinstance(self.loss[0], PredicateCRFLoss))
-
-		if not skip_loss_forward:
-			# always assume the first loss is crf loss which gives viterbi decoding
-			loss_acc, pred = self.loss[0](log_p, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
-			#print('******* {0}'.format(loss_acc.data.item()))
-			for k in range(1, len(self.loss)):
-				l, _ = self.loss[k](log_p, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
-				#print(l.data.item())
-				loss_acc = loss_acc + l * self.lambd[k]
-		else:
-			# skip loss forward pass, just do viterbi decoding
-			loss_acc = None
-			pred, _ = self.loss[0].decode(log_p, score)
+		loss_acc, pred = self.loss[0](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
+		#print('******* {0}'.format(loss_acc.data.item()))
+		for k in range(1, len(self.loss)):
+			l, _ = self.loss[k](log_pa, score, self._loss_context.v_label, self._loss_context.v_l, self._loss_context.role_label, self._loss_context.v_roleset_id, extra)
+			#print(l.data.item())
+			loss_acc = loss_acc + l * self.lambd[k]
 
 		return loss_acc, pred
 

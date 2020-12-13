@@ -59,7 +59,7 @@ parser.add_argument('--use_gold_predicate', help="Whether to use ground truth pr
 parser.add_argument('--use_gold_frame', help="Whether to use gold frame for frame_role_loss", type=int, default=1)
 parser.add_argument('--conll_output', help="The prefix of conll formated output", default='conll05')
 # frame specs
-parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=39)
+parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=38)
 
 
 # train batch by batch, accumulate batches until the size reaches acc_batch_size
