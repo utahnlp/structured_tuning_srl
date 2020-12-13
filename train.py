@@ -86,6 +86,7 @@ def train_epoch(opt, shared, m, optim, data, epoch_id, sub_idx):
 	shared.is_train = True
 	m.train(True)
 	m.begin_pass()
+	data.begin_pass(batch_order)
 	for i in range(data_size):
 		shared.epoch = epoch_id
 		shared.has_gold = True
@@ -139,7 +140,7 @@ def train_epoch(opt, shared, m, optim, data, epoch_id, sub_idx):
 				print(stats)
 
 	perf, extra_perf = m.get_epoch_metric()
-
+	data.end_pass()
 	m.end_pass()
 
 	return perf, extra_perf, train_loss / num_ex, num_ex
@@ -221,6 +222,7 @@ def validate(opt, shared, m, val_data, val_idx):
 	print('validating on the {0} batches...'.format(data_size))
 
 	m.begin_pass()
+	val_data.begin_pass(val_idx)
 	for i in range(data_size):
 		cur_data, cur_idx = all_val[i]
 		(data_name, tok_idx, batch_ex_idx, batch_l, seq_l, orig_seq_l, sub2tok_idx, v_label, v_l, role_label, v_roleset_id, res_map) = cur_data[cur_idx]
@@ -241,6 +243,7 @@ def validate(opt, shared, m, val_data, val_idx):
 		num_batch += 1
 
 	perf, extra_perf = m.get_epoch_metric()	# we only use the first loss's corresponding metric to select models
+	val_data.end_pass()
 	m.end_pass()
 	return (perf, extra_perf, val_loss / num_batch, num_ex)
 

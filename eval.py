@@ -66,6 +66,7 @@ def evaluate(opt, shared, m, data):
 	print('validating on the {0} batches {1} examples...'.format(data_size, val_num_ex))
 
 	m.begin_pass()
+	data.begin_pass(val_idx)
 	for i in range(data_size):
 		(data_name, tok_idx, batch_ex_idx, batch_l, seq_l, orig_seq_l, sub2tok_idx, v_label, v_l, role_label, v_roleset_id, res_map) = data[i]
 		tok_idx = Variable(tok_idx, requires_grad=False)
@@ -85,6 +86,7 @@ def evaluate(opt, shared, m, data):
 		num_batch += 1
 
 	perf, extra_perf = m.get_epoch_metric()
+	data.end_pass()
 	m.end_pass()
 	return (perf, extra_perf, val_loss / num_batch, num_ex)
 

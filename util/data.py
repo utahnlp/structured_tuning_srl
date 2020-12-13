@@ -6,58 +6,26 @@ from torch import cuda
 import numpy as np
 import ujson
 from .util import *
+from tqdm import tqdm
 
 class Data():
 	def __init__(self, opt, data_file, res_files=None, triple_mode=False):
 		self.opt = opt
 		self.data_name = data_file
+		self.data_file = data_file
+
+		self.preloading_block_size = 2000
 
 		print('loading data from {0}'.format(data_file))
 		f = h5py.File(data_file, 'r')
-		self.tok_idx = f['tok_idx'][:]	# indices to glove tokens
-		self.seq_l = f['seq_l'][:].astype(np.int32)
-		self.orig_seq_l = f['orig_seq_l'][:].astype(np.int32)
-		self.sub2tok_idx = f['sub2tok_idx'][:].astype(np.int32)
-		self.v_idx = f['v_idx'][:].astype(np.int32)
-		self.role_label = f['role_label'][:].astype(np.int32)
-		self.v_l = f['v_l'][:].astype(np.int32)
-		self.v_roleset_id = f['v_roleset_id'][:].astype(np.int32)
+		self.f = f
+
 		self.batch_l = f['batch_l'][:].astype(np.int32)
 		self.batch_idx = f['batch_idx'][:].astype(np.int32)
 		self.ex_idx = f['ex_idx'][:].astype(np.int32)
 		self.length = self.batch_l.shape[0]
 
-		self.tok_idx = torch.from_numpy(self.tok_idx)
-		self.seq_l = torch.from_numpy(self.seq_l)
-		self.orig_seq_l = torch.from_numpy(self.orig_seq_l)
-		self.sub2tok_idx = torch.from_numpy(self.sub2tok_idx)
-		self.v_idx = torch.from_numpy(self.v_idx)
-		self.role_label = torch.from_numpy(self.role_label)
-		self.v_l = torch.from_numpy(self.v_l)
-		self.v_roleset_id = torch.from_numpy(self.v_roleset_id)
-
-		self.batches = []
-		for i in range(self.length):
-			start = self.batch_idx[i]
-			end = start + self.batch_l[i]
-
-			# get example token indices
-			tok_idx_i = self.tok_idx[start:end, 0:self.seq_l[i]]
-			sub2tok_idx_i = self.sub2tok_idx[start:end, 0:self.seq_l[i]]
-			v_idx_i = self.v_idx[start:end]
-			v_l_i = self.v_l[start:end]
-			v_roleset_id_i = self.v_roleset_id[start:end]
-			orig_seq_l_i = self.orig_seq_l[start:end]
-			role_label_i = self.role_label[start:end, 0:v_l_i.max(), 0:orig_seq_l_i.max()]
-
-			# sanity check
-			assert(self.tok_idx[start:end, self.seq_l[i]:].sum() == 0)
-			for k in range(start, end):
-				assert((self.sub2tok_idx[k, self.orig_seq_l[k]:] != -1).sum() == 0)
-				assert(self.v_idx[k, self.v_l[k]:].sum() == 0)
-				assert((self.v_idx[k, :self.v_l[k]] == 0).sum() == 0)	# there is no zero (0-th is <BOS>)
-
-			self.batches.append((tok_idx_i, self.seq_l[i], orig_seq_l_i, sub2tok_idx_i, v_idx_i, v_l_i, role_label_i, v_roleset_id_i))
+		self.f.close()
 
 		# count examples
 		self.num_ex = 0
@@ -86,6 +54,33 @@ class Data():
 				else:
 					assert(False)
 				self.res_names.extend(res_names)
+
+
+	def __preload(self, batches):
+		self.batches = []
+		self.batch_map = {}
+		for i in tqdm(range(len(batches)), desc='preloading {0} batches'.format(len(batches))):
+			b = batches[i]
+			start = self.batch_idx[b]
+			end = start + self.batch_l[b]
+
+			ex_idx_i = [self.ex_idx[k] for k in range(start, end)]
+
+			# get example token indices
+			seq_l_i = self.f['seq_l'][b]
+			tok_idx_i = torch.from_numpy(self.f['tok_idx'][start:end][:, 0:seq_l_i].astype(np.int32))
+			sub2tok_idx_i = torch.from_numpy(self.f['sub2tok_idx'][start:end][:, 0:seq_l_i].astype(np.int32))
+			v_idx_i = torch.from_numpy(self.f['v_idx'][start:end].astype(np.int32))
+			v_l_i = torch.from_numpy(self.f['v_l'][start:end].astype(np.int32))
+			v_roleset_id_i = torch.from_numpy(self.f['v_roleset_id'][start:end].astype(np.int32))
+			orig_seq_l_i = torch.from_numpy(self.f['orig_seq_l'][start:end].astype(np.int32))
+			role_label_i = torch.from_numpy(self.f['role_label'][start:end][:, 0:v_l_i.max(), 0:orig_seq_l_i.max()].astype(np.int32))
+
+			self.batches.append((ex_idx_i, tok_idx_i, seq_l_i, orig_seq_l_i, sub2tok_idx_i, v_idx_i, v_l_i, role_label_i, v_roleset_id_i))
+
+			if isinstance(b, torch.Tensor):
+				b = b.item()
+			self.batch_map[b] = i
 
 
 	def subsample(self, ratio, minimal_num=0):
@@ -232,7 +227,16 @@ class Data():
 
 
 	def __getitem__(self, idx):
-		(tok_idx, seq_l, orig_seq_l, sub2tok_idx, v_idx, v_l, role_label, v_roleset_id) = self.batches[idx]
+		if isinstance(idx, torch.Tensor):
+			idx = idx.item()
+
+		if idx not in self.batch_map:
+			start = self.batch_ls.index(idx)
+			batches_to_load = self.batch_ls[start:start+self.preloading_block_size]
+			self.__preload(batches_to_load)
+
+		b = self.batch_map[idx]
+		(batch_ex_idx, tok_idx, seq_l, orig_seq_l, sub2tok_idx, v_idx, v_l, role_label, v_roleset_id) = self.batches[b]
 
 		# convert all indices to long format
 		tok_idx = tok_idx.long()
@@ -250,7 +254,6 @@ class Data():
 			v_roleset_id = v_roleset_id.cuda(self.opt.gpuid)
 
 		# get batch ex indices
-		batch_ex_idx = [self.ex_idx[i] for i in range(self.batch_idx[idx], self.batch_idx[idx] + self.batch_l[idx])]
 		res_map = self.__get_res(idx)
 
 		return (self.data_name, tok_idx, batch_ex_idx, self.batch_l[idx], seq_l, orig_seq_l, sub2tok_idx, v_idx, v_l, role_label, v_roleset_id, res_map)
@@ -261,7 +264,8 @@ class Data():
 		if len(self.res_names) == 0:
 			return None
 
-		batch_ex_idx = [self.ex_idx[i] for i in range(self.batch_idx[idx], self.batch_idx[idx] + self.batch_l[idx])]
+		b = self.batch_map[idx]
+		(batch_ex_idx, tok_idx, seq_l, orig_seq_l, sub2tok_idx, v_idx, v_l, role_label, v_roleset_id) = self.batches[b]
 
 		all_res = {}
 		for res_n in self.res_names:
@@ -279,9 +283,13 @@ class Data():
 
 	# something at the beginning of each pass of training/eval
 	#	e.g. setup preloading
-	def begin_pass(self):
-		pass
-
+	def begin_pass(self, batch_ls):
+		self.batches = []
+		self.batch_map = {}
+		self.batch_ls = batch_ls
+		if isinstance(self.batch_ls, torch.Tensor):
+			self.batch_ls = self.batch_ls.tolist()
+		self.f = h5py.File(self.data_file, 'r')
 
 	def end_pass(self):
-		pass
+		self.f.close()
