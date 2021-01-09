@@ -109,16 +109,16 @@ def convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, to
 	grouped_input = group_tokenized_with_labels(toks, tok_l, labels, roleset_ids, orig_toks, tokenizer_output)
 	num_ex = len(grouped_input)
 
-	tok_idx = np.zeros((num_ex, opt.max_seq_l), dtype=int)
-	sub2tok_idx = np.zeros((num_ex, opt.max_seq_l, opt.max_num_subtok), dtype=int) - 1	# empty is -1
-	v_idx = np.zeros((num_ex, opt.max_num_v), dtype=int)
-	role_label = np.zeros((num_ex, opt.max_num_v, opt.max_seq_l), dtype=int)
-	v_length = np.zeros((num_ex,), dtype=int)	# number of v
-	v_roleset_id = np.zeros((num_ex, opt.max_num_v), dtype=int)
-	prop_idx = np.zeros((num_ex, opt.max_seq_l), dtype=int)
-	seq_length = np.zeros((num_ex,), dtype=int)
-	orig_seq_length = np.zeros((num_ex,), dtype=int)
-	ex_idx = np.zeros(num_ex, dtype=int)
+	tok_idx = np.zeros((num_ex, opt.max_seq_l), dtype=np.int32)
+	sub2tok_idx = np.zeros((num_ex, opt.max_seq_l, opt.max_num_subtok), dtype=np.int32) - 1	# empty is -1
+	v_idx = np.zeros((num_ex, opt.max_num_v), dtype=np.int32)
+	role_label = np.zeros((num_ex, opt.max_num_v, opt.max_seq_l), dtype=np.int32)
+	v_length = np.zeros((num_ex,), dtype=np.int32)	# number of v
+	v_roleset_id = np.zeros((num_ex, opt.max_num_v), dtype=np.int32)
+	prop_idx = np.zeros((num_ex, opt.max_seq_l), dtype=np.int32)
+	seq_length = np.zeros((num_ex,), dtype=np.int32)
+	orig_seq_length = np.zeros((num_ex,), dtype=np.int32)
+	ex_idx = np.zeros(num_ex, dtype=np.int32)
 	batch_keys = np.array([None for _ in range(num_ex)])
 
 	ex_id = 0
@@ -423,8 +423,8 @@ def process(opt):
 	print('label size: {}'.format(len(label_indexer.d)))
 	print('frame size: {}'.format(len(roleset_indexer.d)))
 
-	convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, train_toks, train_tok_l, train_labels, train_roleset_ids, train_orig_toks, tokenizer_output+'.train', opt.output + ".train.hdf5")
 	convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, val_toks, val_tok_l, val_labels, val_roleset_ids, val_orig_toks, tokenizer_output+'.val', opt.output + ".val.hdf5")
+	convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, train_toks, train_tok_l, train_labels, train_roleset_ids, train_orig_toks, tokenizer_output+'.train', opt.output + ".train.hdf5")
 	convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, test1_toks, test1_tok_l, test1_labels, test1_roleset_ids, test1_orig_toks, tokenizer_output+'.test1', opt.output + ".test1.hdf5")	
 	if opt.test2 != opt.dir:
 		convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, test2_toks, test2_tok_l, test2_labels, test2_roleset_ids, test2_orig_toks, tokenizer_output+'.test2', opt.output + ".test2.hdf5")	
