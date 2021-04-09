@@ -73,6 +73,7 @@ class AdamWFp16:
 	def backward(self, m, loss):
 		with amp.scale_loss(loss, self.optim) as scaled_loss:
 			scaled_loss.backward()
+
 		grad_norm2 = torch.nn.utils.clip_grad_norm_(amp.master_params(self.optim), self.opt.clip)
 
 		return grad_norm2
@@ -87,6 +88,15 @@ def get_optimizer(opt, shared):
 		assert(False)
 	return optim
 
+
+def grad_check(m, verbose=True):
+	for n, p in m.named_parameters():
+		if p.grad.isinf().any() or p.grad.isnan().any():
+			if verbose:
+				print('{0} has inf/nan gradient'.format(n))
+				print(p.grad, p.grad.sum())
+			return False
+	return True
 
 def grad_sanity_check(optim, m, batch_size):
 	optim.__SANITY_FLAG = False

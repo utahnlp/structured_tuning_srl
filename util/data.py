@@ -9,12 +9,12 @@ from .util import *
 from tqdm import tqdm
 
 class Data():
-	def __init__(self, opt, data_file, res_files=None, triple_mode=False):
+	def __init__(self, opt, data_file, res_files=None, triple_mode=False, preload_block_size=2000):
 		self.opt = opt
 		self.data_name = data_file
 		self.data_file = data_file
 
-		self.preloading_block_size = 2000
+		self.preload_block_size = preload_block_size
 
 		print('loading data from {0}'.format(data_file))
 		f = h5py.File(data_file, 'r')
@@ -232,7 +232,7 @@ class Data():
 
 		if idx not in self.batch_map:
 			start = self.batch_ls.index(idx)
-			batches_to_load = self.batch_ls[start:start+self.preloading_block_size]
+			batches_to_load = self.batch_ls[start:start+self.preload_block_size]
 			self.__preload(batches_to_load)
 
 		b = self.batch_map[idx]

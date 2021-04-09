@@ -16,7 +16,7 @@ class BertEncoder(torch.nn.Module):
 		self.zero = Variable(torch.zeros(1), requires_grad=False)
 		self.zero = to_device(self.zero, self.opt.gpuid)
 		
-		print('loading BERT model...')
+		print('loading transformer...')
 		self.bert = AutoModel.from_pretrained(self.opt.bert_type)
 
 		for n in self.bert.children():
@@ -27,7 +27,7 @@ class BertEncoder(torch.nn.Module):
 	def forward(self, tok_idx):
 		tok_idx = to_device(tok_idx, self.opt.gpuid)
 
-		last, pooled = self.bert(tok_idx)
+		last, pooled = self.bert(tok_idx, return_dict=False)
 
 		last = last + pooled.unsqueeze(1) * self.zero
 

@@ -98,10 +98,14 @@ class FrameRoleLoss(torch.nn.Module):
 					frame_pred[i, v_label[i, k]] = roleset_id[i, k]
 			self._analyze(role_pred, frame_pred, frame_pool, frame_idx, v_label, v_l)
 
+		if not self.shared.is_train:
+			self._log_gold(frame_pool, frame_idx, v_label, v_l, roleset_id)
+
 		# # average over number of predicates or num_ex
 		normalizer = float(num_prop) if self.opt.use_gold_predicate == 1 else sum([orig_l[i] for i in range(batch_l)])
 		#print('framrrole', loss / normalizer)
 		return loss / normalizer, None
+
 
 	def _analyze(self, role_pred, frame_pred, frame_pool, frame_idx, v_label, v_l):
 		batch_l, source_l = frame_pred.shape

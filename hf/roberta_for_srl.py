@@ -1,9 +1,18 @@
 import torch
+import transformers
 from transformers import *
-from transformers.modeling_roberta import RobertaPreTrainedModel
 from loss.crf_loss import *
 from modules.linear_classifier import *
 from util.util import *
+from packaging import version
+if version.parse(transformers.__version__) < version.parse('4.0'):
+	# for transformers 3+
+	from transformers.modeling_roberta import RobertaPreTrainedModel
+	from transformers.configuration_roberta import RobertaConfig
+else:
+	# for transformers 4+
+	from transformers.models.roberta.modeling_roberta import RobertaPreTrainedModel
+	from transformers.models.roberta.configuration_roberta import RobertaConfig
 
 
 # RoBERTa for SRL, only meant for inference/demo

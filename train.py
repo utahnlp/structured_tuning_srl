@@ -23,6 +23,7 @@ parser.add_argument('--val_data', help="Path to validation data hdf5 file.", def
 parser.add_argument('--save_file', help="Path to where model to be saved.", default="model")
 parser.add_argument('--load_file', help="The path to pretrained model (optional)", default = "")
 parser.add_argument('--label_dict', help="The path to label dictionary", default = "conll05.label.dict")
+parser.add_argument('--roleset_dict', help="The path to roleset dictionary", default = "conll05.roleset_id.dict")
 # resource specs
 parser.add_argument('--train_res', help="Path to training resource files, seperated by comma.", default="")
 parser.add_argument('--val_res', help="Path to validation resource files, seperated by comma.", default="")
@@ -258,6 +259,7 @@ def main(args):
 	opt.train_res = '' if opt.train_res == ''  else ','.join([opt.dir + path for path in opt.train_res.split(',')])
 	opt.val_res = '' if opt.val_res == ''  else ','.join([opt.dir + path for path in opt.val_res.split(',')])
 	opt.label_dict = opt.dir + opt.label_dict
+	opt.roleset_dict = opt.dir + opt.roleset_dict
 
 	opt = complete_opt(opt)
 
@@ -280,9 +282,10 @@ def main(args):
 		m.set_param_dict(param_dict)
 	else:
 		m.init_weight()
-		model_parameters = filter(lambda p: p.requires_grad, m.parameters())
-		num_params = sum([np.prod(p.size()) for p in model_parameters])
-		print('total number of trainable parameters: {0}'.format(num_params))
+	
+	model_parameters = filter(lambda p: p.requires_grad, m.parameters())
+	num_params = sum([np.prod(p.size()) for p in model_parameters])	
+	print('total number of trainable parameters: {0}'.format(num_params))
 	
 	if opt.gpuid != -1:
 		m.distribute()	# distribute to multigpu

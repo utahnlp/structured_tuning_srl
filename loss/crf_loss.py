@@ -15,25 +15,41 @@ class CRFLoss(torch.nn.Module):
 		self.shared = shared
 
 		self.labels = []
-		label_map_inv = {}
+		self.label_groups = []
+		self.label_group_map = {}
+		self.label_map_inv = {}
 		with open(self.opt.label_dict, 'r') as f:
 			for l in f:
 				if l.strip() == '':
 					continue
 				toks = l.rstrip().split()
 				self.labels.append(toks[0])
-				label_map_inv[int(toks[1])] = toks[0]
+				self.label_map_inv[int(toks[1])] = toks[0]
+
+				group = toks[0][2:]	if toks[0] != 'O' else toks[0] # take off B- and I-
+				if group not in self.label_groups:
+					self.label_groups.append(group)
+				self.label_group_map[int(toks[1])] = self.label_groups.index(group)
+
 		self.labels = np.asarray(self.labels)
 
-		constraints = allowed_transitions("BIO", label_map_inv)
+		constraints = allowed_transitions("BIO", self.label_map_inv)
 
 		self.crf = ConditionalRandomField(num_tags=opt.num_label, constraints=constraints, gpuid=opt.gpuid)
 
 		self.quick_acc_sum = 0.0
 		self.num_ex = 0
 		self.inconsistent_bio_cnt = 0
-		self.gold_log = []
+		self.gold_log = []	# log used for srl eval
 		self.pred_log = []
+		self.pretty_gold = []	# log used for pretty print
+		self.pretty_pred = []
+		self.orig_toks = []
+		self.conf_map = torch.zeros(len(self.opt.labels), len(self.opt.labels))
+
+		self.log_types = []
+		if hasattr(self.opt, 'logs'):
+			self.log_types = self.opt.logs.strip().split(',')
 
 	# the decode function is for the demo where gold predicate might not present
 	def decode(self, log_pa, score, v_label=None, v_l=None):
@@ -171,7 +187,7 @@ class CRFLoss(torch.nn.Module):
 		self.shared.viterbi_pred = pred_idx
 
 		if not self.shared.is_train:
-			self.analyze(pred_idx, v_label, v_l, role_label)
+			self.analyze(pred_idx, v_label, v_l, role_label, roleset_id)
 
 		# # average over number of predicates or num_ex
 		num_prop = sum([v_l[i] for i in range(batch_l)])
@@ -192,15 +208,18 @@ class CRFLoss(torch.nn.Module):
 			return 1.0
 
 
-	def analyze(self, pred_idx, v_label, v_l, role_label):
+	def analyze(self, pred_idx, v_label, v_l, role_label, roleset_id):
 		batch_l = self.shared.batch_l
 		orig_l = self.shared.orig_seq_l
 		bv_idx = int(np.where(self.labels == 'B-V')[0][0])
+		frame_idx = self.shared.res_map['frame']	# batch_l, source_l
+		frame_pool = self.shared.res_map['frame_pool']	# num_prop, num_frame, num_label
 
 		for i in range(batch_l):
 			orig_l_i = orig_l[i].item()	# convert to scalar
 			v_i = v_label[i, :v_l[i]]
 			role_i = role_label[i, :v_l[i], :orig_l_i]	# (num_v, orig_l)
+			gold_frame_pool_i = frame_pool[frame_idx[i, v_i]]
 
 			a_gold_i = torch.zeros(orig_l_i, orig_l_i).long()	# O has idx 0
 			for k, role_k in enumerate(role_i):
@@ -219,6 +238,56 @@ class CRFLoss(torch.nn.Module):
 			orig_tok_grouped = self.shared.res_map['orig_tok_grouped'][i][1:-1]
 			self.gold_log.append(self.compose_log(orig_tok_grouped, a_gold_i[1:-1, 1:-1]))
 			self.pred_log.append(self.compose_log(orig_tok_grouped, a_pred_i[1:-1, 1:-1]))
+
+			if 'pretty' in self.log_types:
+				self.orig_toks.append(orig_tok_grouped)
+
+				gold_log = self.compose_log(orig_tok_grouped, a_gold_i[1:-1, 1:-1]).split('\n')
+				gold_log = gold_log[:-1]	# rip the last newline
+				assert(len(gold_log) == len(orig_tok_grouped))
+				gold_log = [tok + ' ' + row for tok, row in zip(orig_tok_grouped, gold_log)]
+				gold_frame_log = self.compose_frame_log(gold_frame_pool_i, self.shared.res_map['orig_tok_grouped'][i], v_i, a_gold_i[v_i], roleset_id[i, :v_l[i]])
+				gold_log = gold_log + ['-------- FRAME --------'] + gold_frame_log
+				self.pretty_gold.append('\n'.join(gold_log) + '\n')
+
+				pred_log = self.compose_log(orig_tok_grouped, a_pred_i[1:-1, 1:-1]).split('\n')
+				pred_log = pred_log[:-1]	# rip the last newline
+				assert(len(pred_log) == len(orig_tok_grouped))
+				pred_log = [tok + ' ' + row for tok, row in zip(orig_tok_grouped, pred_log)]
+				self.pretty_pred.append('\n'.join(pred_log) + '\n')
+
+			if 'confusion' in self.log_types and self.opt.use_gold_predicate == 1:
+				for k, _ in enumerate(role_i):
+					g = a_gold_i[v_i[k]]
+					p = a_pred_i[v_i[k]]
+					for p_j, g_j in zip(p, g):
+						p_j, g_j = self.label_group_map[int(p_j)], self.label_group_map[int(g_j)]
+						self.conf_map[g_j, p_j] += 1
+
+
+	def compose_frame_log(self, frame_pool, orig_tok_grouped, v_label, role_label, roleset_id):
+		def merge_roles(roles):
+			unique = roles
+			unique = set([r[2:] if r.startswith('B-') or r.startswith('I-') else r for r in unique])
+			unique = set([r[2:] if r.startswith('C-') or r.startswith('R-') else r for r in unique])
+			return sorted(list(unique))
+
+		log = []
+		for k in range(len(v_label)):
+			valid_roles = frame_pool[k, roleset_id[k]]
+			roleset_name = self.opt.roleset_map_inv[int(roleset_id[k].item())]
+			roles = torch.zeros(valid_roles.shape).scatter(0, role_label[k].unique(), 1)
+			has_violation = ((valid_roles - roles) < 0).any()
+			has_violation = 'HAS_VIOLATION' if has_violation else 'GOOD'
+
+			if (valid_roles[1:] == 0).all():
+				log.append('DISABLED_ROLE {0}: {1}|ALL {2}'.format(orig_tok_grouped[v_label[k]], roleset_name, has_violation))
+			elif (valid_roles[1:] == 1).all():
+				log.append('DISABLED_ROLE {0}: {1}|NONE {2}'.format(orig_tok_grouped[v_label[k]], roleset_name, has_violation))	
+			else:
+				valid_role_idx = [j for j in range(len(valid_roles)) if valid_roles[j] == 0]
+				log.append('DISABLED_ROLE {0}: {1}|{2} {3}'.format(orig_tok_grouped[v_label[k]], roleset_name, ','.join(merge_roles([self.opt.label_map_inv[j] for j in valid_role_idx])), has_violation))
+		return log
 
 
 	# return a string of stats
@@ -283,10 +352,39 @@ class CRFLoss(torch.nn.Module):
 		self.num_ex = 0
 		self.gold_log = []
 		self.pred_log = []
+		self.pretty_gold = []
+		self.pretty_pred = []
+		self.orig_toks = []
 		self.inconsistent_bio_cnt = 0
+		self.conf_map = torch.zeros(len(self.label_groups), len(self.label_groups))
+		self.frame_log = []
 
 	def end_pass(self):
-		pass
+		if 'pretty' in self.log_types:
+			print('writing pretty gold to {}'.format(self.opt.conll_output + '.pretty_gold.txt'))
+			with open(self.opt.conll_output + '.pretty_gold.txt', 'w') as f:
+				for toks, ex in zip(self.orig_toks, self.pretty_gold):
+					#f.write(' '.join(toks)+'\n')
+					f.write(ex + '\n')
+			print('writing pretty pred to {}'.format(self.opt.conll_output + '.pretty_pred.txt'))
+			with open(self.opt.conll_output + '.pretty_pred.txt', 'w') as f:
+				for toks, ex in zip(self.orig_toks, self.pretty_pred):
+					#f.write(' '.join(toks)+'\n')
+					f.write(ex + '\n')
+
+		if 'confusion' in self.log_types and self.opt.use_gold_predicate == 1:
+
+			label_cnt = self.conf_map.sum(-1).tolist()
+			sorted_labels = sorted([(i,j) for i, j in zip(self.label_groups, label_cnt)], key=lambda x:x[1], reverse=True)
+			sorted_labels = [i for i, _ in sorted_labels]
+			sorted_label_idx = [self.label_groups.index(l) for l in sorted_labels]
+			sorted_conf_map = [[row[i] for i in sorted_label_idx] for row in self.conf_map[sorted_label_idx]]
+
+			print('writing confusion matrix to {}'.format(self.opt.conll_output + '.confusion.txt'))
+			with open(self.opt.conll_output + '.confusion.txt', 'w') as f:
+				f.write('gold\\pred\t' + '\t'.join(sorted_labels) + '\n')
+				for i, row in enumerate(sorted_conf_map):
+					f.write(sorted_labels[i] + '\t' + '\t'.join([str(int(p)) for p in row]) + '\n')
 
 if __name__ == '__main__':
 	pass

@@ -1,13 +1,11 @@
-import sys
 from os import path
 import h5py
 import torch
 from torch import nn
 from torch import cuda
-import string
-import re
 from collections import Counter
 import numpy as np
+from preprocess.preprocess import *
 
 def complete_opt(opt):
 	if 'base' in opt.bert_type:
@@ -27,6 +25,9 @@ def complete_opt(opt):
 		opt.label_map_inv = {int(k): v for k, v in opt.label_map_inv.items()}
 	if hasattr(opt, 'labels'):
 		opt.num_label = len(opt.labels)
+
+	if hasattr(opt, 'roleset_dict'):
+		opt.roleset, opt.roleset_map_inv = load_label_dict(opt. roleset_dict)
 
 	return opt
 
@@ -192,7 +193,7 @@ def system_call_eval(gold_path, pred_path):
 	import subprocess
 	rs = subprocess.check_output(['perl', 'srl-eval.pl', gold_path, pred_path])
 	target_line = rs.decode('utf-8').split('\n')[6].split()
-	f1 = float(target_line[-1])*0.01	# make percent to [0,1]
+	f1 = float(target_line[-1]) * 0.01		# make percent to [0,1]
 	return f1
 
 

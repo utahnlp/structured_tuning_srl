@@ -115,7 +115,6 @@ def convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, to
 	role_label = np.zeros((num_ex, opt.max_num_v, opt.max_seq_l), dtype=np.int32)
 	v_length = np.zeros((num_ex,), dtype=np.int32)	# number of v
 	v_roleset_id = np.zeros((num_ex, opt.max_num_v), dtype=np.int32)
-	prop_idx = np.zeros((num_ex, opt.max_seq_l), dtype=np.int32)
 	seq_length = np.zeros((num_ex,), dtype=np.int32)
 	orig_seq_length = np.zeros((num_ex,), dtype=np.int32)
 	ex_idx = np.zeros(num_ex, dtype=np.int32)
@@ -125,7 +124,6 @@ def convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, to
 	for _, (cur_toks, cur_tok_l, cur_list_labels, cur_roleset_ids, cur_orig_toks) in enumerate(grouped_input):
 		cur_toks = cur_toks.strip().split()
 		cur_tok_l = [int(p) for p in cur_tok_l.strip().split()]
-		cur_v_l = len(cur_list_labels)
 
 		tok_idx[ex_id, :len(cur_toks)] = np.array(tokenizer.convert_tokens_to_ids(cur_toks), dtype=int)
 		v_length[ex_id] = len(cur_list_labels)
@@ -147,7 +145,6 @@ def convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, to
 		seq_length[ex_id] = len(cur_toks)
 		batch_keys[ex_id] = seq_length[ex_id]
 
-		role_labels = []
 		for l_id, cur_labels in enumerate(cur_list_labels):
 			cur_labels = cur_labels.strip().split()
 			v_idx[ex_id, l_id] = cur_labels.index('B-V')	# there MUST be a B-V since we are reading from role labels
@@ -159,7 +156,7 @@ def convert(opt, tokenizer, all_word_indexer, label_indexer, roleset_indexer, to
 		ex_id += 1
 		if ex_id % 10000 == 0:
 			print("{}/{} sentences processed".format(ex_id, num_ex))
-	
+
 	if opt.shuffle == 1:
 		rand_idx = np.random.permutation(ex_id)
 		tok_idx = tok_idx[rand_idx]

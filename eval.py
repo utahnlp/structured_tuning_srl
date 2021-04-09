@@ -20,6 +20,7 @@ parser.add_argument('--data', help="Path to test data hdf5 file.", default="conl
 parser.add_argument('--save_file', help="Path to where model to be saved.", default="model")
 parser.add_argument('--load_file', help="The path to pretrained model (optional)", default = "")
 parser.add_argument('--label_dict', help="The path to label dictionary", default = "conll05.label.dict")
+parser.add_argument('--roleset_dict', help="The path to roleset dictionary", default = "conll05.roleset_id.dict")
 # resource specs
 parser.add_argument('--res', help="Path to test resource files, seperated by comma.", default="")
 ## pipeline specs
@@ -37,13 +38,15 @@ parser.add_argument('--lambd', help="The weight of losses, separated by ,; ignor
 parser.add_argument('--gpuid', help="The GPU index, if -1 then use CPU", type=int, default=-1)
 parser.add_argument('--seed', help="The random seed", type=int, default=3435)
 parser.add_argument('--verbose', help="Whether to print out every prediction", type=int, default=0)
-parser.add_argument('--pred_output', help="The prefix to the path of prediction output", default='pred')
 parser.add_argument('--param_init_type', help="The type of parameter initialization", default='xavier_normal')
 #
 parser.add_argument('--use_gold_predicate', help="Whether to use ground truth predicate during evaluation", type=int, default=1)
 parser.add_argument('--use_gold_frame', help="Whether to use gold frame for frame_role_loss", type=int, default=1)
 parser.add_argument('--conll_output', help="The prefix of conll formated output", default='conll05')
 parser.add_argument('--num_frame', help="The number of frame for each proposition", type=int, default=38)
+parser.add_argument('--logs', help="The list of logs, separated by comma", default='')
+#
+parser.add_argument('--preload_block_size', help="The block size for preloading in data object", type=int, default=2000)
 
 # the default fwd pass for multiclass loss
 def forward_pass(m, tok_idx, batch_ex_idx, batch_l, seq_l, orig_seq_l, sub2tok_idx, res_map):	
@@ -100,6 +103,7 @@ def main(args):
 	opt.data = opt.dir + opt.data
 	opt.res = '' if opt.res == ''  else ','.join([opt.dir + path for path in opt.res.split(',')])
 	opt.label_dict = opt.dir + opt.label_dict
+	opt.roleset_dict = opt.dir + opt.roleset_dict
 	opt = complete_opt(opt)
 
 	torch.manual_seed(opt.seed)
@@ -121,7 +125,7 @@ def main(args):
 
 	# loading data
 	res_files = None if opt.res == '' else opt.res.split(',')
-	data = Data(opt, opt.data, res_files)
+	data = Data(opt, opt.data, res_files, preload_block_size=opt.preload_block_size)
 
 	#
 	perf, extra_perf, avg_loss, num_ex = evaluate(opt, shared, m, data)
