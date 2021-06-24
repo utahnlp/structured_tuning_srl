@@ -14,22 +14,18 @@ class CRFLoss(torch.nn.Module):
 		self.opt = opt
 		self.shared = shared
 
-		self.labels = []
+		self.labels = self.opt.labels
 		self.label_groups = []
 		self.label_group_map = {}
-		self.label_map_inv = {}
-		with open(self.opt.label_dict, 'r') as f:
-			for l in f:
-				if l.strip() == '':
-					continue
-				toks = l.rstrip().split()
-				self.labels.append(toks[0])
-				self.label_map_inv[int(toks[1])] = toks[0]
+		self.label_map_inv = self.opt.label_map_inv
 
-				group = toks[0][2:]	if toks[0] != 'O' else toks[0] # take off B- and I-
-				if group not in self.label_groups:
-					self.label_groups.append(group)
-				self.label_group_map[int(toks[1])] = self.label_groups.index(group)
+		for i, l in enumerate(self.labels):
+			group = l[2:] if l != 'O' else l # take off B- and I-
+			if group.startswith('C-') or group.startswith('R-'):
+				group = group[2:]
+			if group not in self.label_groups:
+				self.label_groups.append(group)
+			self.label_group_map[i] = self.label_groups.index(group)
 
 		self.labels = np.asarray(self.labels)
 
