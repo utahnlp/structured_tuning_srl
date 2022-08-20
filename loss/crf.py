@@ -13,6 +13,28 @@ import torch
 from util.util import *
 from util.viterbi import *
 
+# allennlp.util.logsumexp
+# https://github.com/allenai/allennlp/blob/39c40fe38cd2fd36b3465b0b3c031f54ec824160/allennlp/nn/util.py#L1137
+def logsumexp(tensor: torch.Tensor, dim: int = -1, keepdim: bool = False) -> torch.Tensor:
+    """
+    A numerically stable computation of logsumexp. This is mathematically equivalent to
+    `tensor.exp().sum(dim, keep=keepdim).log()`.  This function is typically used for summing log
+    probabilities.
+    # Parameters
+    tensor : `torch.FloatTensor`, required.
+        A tensor of arbitrary size.
+    dim : `int`, optional (default = `-1`)
+        The dimension of the tensor to apply the logsumexp to.
+    keepdim: `bool`, optional (default = `False`)
+        Whether to retain a dimension of size one at the dimension we reduce over.
+    """
+    max_score, _ = tensor.max(dim, keepdim=keepdim)
+    if keepdim:
+        stable_vec = tensor - max_score
+    else:
+        stable_vec = tensor - max_score.unsqueeze(dim)
+    return max_score + (stable_vec.exp().sum(dim, keepdim=keepdim)).log()
+
 
 def allowed_transitions(constraint_type: str, labels: Dict[int, str]) -> List[Tuple[int, int]]:
     """
@@ -260,7 +282,7 @@ class ConditionalRandomField(torch.nn.Module):
 
             # In valid positions (mask == 1) we want to take the logsumexp over the current_tag dimension
             # of ``inner``. Otherwise (mask == 0) we want to retain the previous alpha.
-            alpha = torch.logsumexp(inner, 1) * mask[i].view(batch_size, 1) + alpha * (
+            alpha = logsumexp(inner, 1) * mask[i].view(batch_size, 1) + alpha * (
                 1 - mask[i]
             ).view(batch_size, 1)
 
@@ -271,7 +293,7 @@ class ConditionalRandomField(torch.nn.Module):
             stops = alpha
 
         # Finally we log_sum_exp along the num_tags dim, result is (batch_size,)
-        return torch.logsumexp(stops)
+        return logsumexp(stops)
 
     def _joint_likelihood(
         self, logits: torch.Tensor, tags: torch.Tensor, mask: torch.LongTensor
