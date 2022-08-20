@@ -8,9 +8,10 @@ from typing import List, Tuple, Dict
 
 import torch
 
-from allennlp.common.checks import ConfigurationError
-import allennlp.nn.util as util
+#from allennlp.common.checks import ConfigurationError
+#import allennlp.nn.util as util
 from util.util import *
+from util.viterbi import *
 
 
 def allowed_transitions(constraint_type: str, labels: Dict[int, str]) -> List[Tuple[int, int]]:
@@ -155,7 +156,7 @@ def is_transition_allowed(
             ]
         )
     else:
-        raise ConfigurationError(f"Unknown constraint type: {constraint_type}")
+        raise Exception(f"Unknown constraint type: {constraint_type}")
 
 
 class ConditionalRandomField(torch.nn.Module):
@@ -259,7 +260,7 @@ class ConditionalRandomField(torch.nn.Module):
 
             # In valid positions (mask == 1) we want to take the logsumexp over the current_tag dimension
             # of ``inner``. Otherwise (mask == 0) we want to retain the previous alpha.
-            alpha = util.logsumexp(inner, 1) * mask[i].view(batch_size, 1) + alpha * (
+            alpha = torch.logsumexp(inner, 1) * mask[i].view(batch_size, 1) + alpha * (
                 1 - mask[i]
             ).view(batch_size, 1)
 
@@ -270,7 +271,7 @@ class ConditionalRandomField(torch.nn.Module):
             stops = alpha
 
         # Finally we log_sum_exp along the num_tags dim, result is (batch_size,)
-        return util.logsumexp(stops)
+        return torch.logsumexp(stops)
 
     def _joint_likelihood(
         self, logits: torch.Tensor, tags: torch.Tensor, mask: torch.LongTensor
@@ -408,7 +409,7 @@ class ConditionalRandomField(torch.nn.Module):
             tag_sequence[sequence_length + 1, end_tag] = 0.0
 
             # We pass the tags and the transitions to ``viterbi_decode``.
-            viterbi_path, viterbi_score = util.viterbi_decode(
+            viterbi_path, viterbi_score = viterbi_decode(
                 tag_sequence[: (sequence_length + 2)], _transitions
             )
             # Get rid of START and END sentinels and append.
