@@ -1,0 +1,7312 @@
+#	 
+sediment 01|0,1,2
+extinction 01|0,1 02|0,1
+dab 01|0,1,2
+list 01|0,1,2 02|0,1,2 03|1
+filch 01|0,1,2
+blow 01|0,1,M-DIR 11|0,1,2 02|0,1,2 03|0,1 04|1,M-LOC 08|0,1,2 09|0,1 10|0,1 13|1 14|0,1,2 05|0,1,2,3,4 06|0,1,2 07|0,1 12|1
+varnish 01|0,1,2
+recreate 01|0,1,2,3,4 02|0,1
+brick 01|0,1,2 02|0,1,2
+judge 01|0,1,2,3
+reminisce 01|0,1
+forgo 01|0,1,2,3 02|1,2
+qualify 01|0,1,2 02|0,1,2
+fate 01|1,2
+reresect 01|0,1,2
+send 01|0,1,2 02|0,1,2 03|0,1,2,3,4,5 04|0,1
+outstrip 01|0,1,2
+annex 01|0,1,2
+stave 01|0,1
+illusion 01|0,1
+implausible 01|1
+kickstart 01|0,1,2
+polish 01|0,1,2,3 02|0,1 03|0,1,2,3
+slam 01|0,1,2 02|0,1,2
+unmask 01|0,1
+depalmitoylate 01|0,1,2,3
+vascularize 01|0,1,2
+snow 01|0,1,2 02|0,1,2
+galvanize 01|0,1,2 02|0,1 03|0,1
+martyr 01|0,1
+anger 01|0,1
+preop 01|1,2
+dislocate 01|0,1
+startle 01|0,1
+unlace 01|0,1,2
+coagulate 01|0,1,2
+outrage 01|0,1 02|0,1
+plant 01|0,1,2
+email 01|0,1,2
+radicalize 01|0,1 02|1
+costume 01|0,1,2
+license 01|0,1,2
+circuit 01|0,1 02|0,1
+amaze 01|0,1
+tug 01|0,1,2 02|0,1 03|0,1,2
+epidemic 01|1,2,3,4
+pan 01|0,1 03|0,1,2 02|0
+mountaineer 01|0,1
+inundate 01|0,1,2
+manhandle 01|0,1
+pup 01|0,1
+toggle 01|0,1
+dis 01|0,1
+undervalue 01|0,1,2
+paste 01|0,1,2,3 02|1
+bud 01|1
+shrinkwrap 01|0,1,2
+cake 01|0,1,2
+unclasp 01|0,1,2
+detusk 01|0,1
+pattern 01|0,1,2
+desperate 01|0,1
+botch 01|0,1
+sulphur 01|0,1,2
+pave 01|0,1,2 02|0,1,2
+trade 01|0,1,2,3,4 02|0,1 03|0,1,2,3,4 04|0,1,2,3,4
+brown 01|0,1,2
+bonk 01|0,1
+vasodilate 01|0,1
+depopulate 01|0,1,2
+handcuff 01|0,1,2,3
+scoot 01|0,1,2,3
+sorry 01|1,2
+impoverish 01|0,1
+open 01|0,1,2,3 02|0,1,M-MNR,M-EXT 04|0,1,2 05|1,2 06|1,2 07|1,2,3 08|1,2 09|0,1,2,3 03|0,1,2,3
+appose 01|0,1
+rediscuss 01|0,1,2
+holler 01|0,1
+responsible 01|0,1 02|1 03|0,1,2
+selfteach 01|0,1,2
+profess 01|0,1,2,3
+gush 01|0,1 02|0,1
+directmessage 02|0,1,2
+pamper 01|0,1
+off 01|0,1,2 02|1 03|1 04|1,2 05|1
+alert 01|0,1,2 02|0
+unlabored 01|0,1
+tremble 01|1
+delint 01|0,1
+spawn 01|0,1
+omnipotent 01|1,2
+stress 01|0,1,2 02|0,1,2,3 04|0,1 03|0,1,2,3
+froth 01|1
+scope 101|0,1,2
+reinvest 01|0,1,2
+quilt 01|0,1,2,3
+compare 01|0,1,2 02|0,1,2 03|1,2
+interject 01|0,1,2
+busy 01|1,2 02|1
+interpose 01|0,1,2 02|0,1,2
+rediscover 01|0,1
+recommend 01|0,1,2,3,4
+terrible 01|1,2 02|1,2 03|1,2 04|1
+suit 01|0,1,2 02|0,1,2,3 03|0 04|1,2
+construe 01|0,1
+defund 01|0,1,2
+inhabit 01|0,1
+proximal 01|1,2
+out 01|0,1,2,3 02|1 03|1,2 04|1 05|1,2 06|1,2 07|0,1
+gang 01|0,1,2,3 03|0,1,2,3 02|0,1,2,3
+countersue 01|0,1,2,3
+same 01|1,2,3
+shiver 01|1
+overbid 01|0 02|0,1
+dehisce 01|1
+roger 01|0,1
+plan 01|0,1,2,3
+negate 01|1,2 02|0,1 03|0,1,2 05|1,2 06|1,2 04|0,1
+waddle 01|0
+formulate 01|0,1,2,3,4
+disinfest 01|0,1,2
+initiate 01|0,1,2 02|0,1,2,3 03|0,1
+tune 01|0,1,2 02|0,1,2 03|0,1
+domesticate 01|0,1,2
+privilege 01|0,1,2
+decide 01|0,1,2,3
+whup 01|0,1,2,3
+redeploy 01|0,1,2
+denominate 01|0,1,2
+tamper 01|0,1
+sunder 01|0,1,2
+unhappy 01|0,1,2
+sublet 01|0,1,2
+unchanged 01|0,1,2,3
+flinch 01|0
+enslave 01|0,1
+steal 01|0,1,2 02|0,1
+demarcate 01|0,1
+glisten 01|0
+boxplot 01|0,1
+tootle 01|0,1,2
+muck 01|0,1 02|0,1
+mimic 01|0,1
+maroon 01|0,1,2
+maul 01|0,1
+bluster 01|0,1,2
+slump 01|0,1,2,3,4
+funnel 01|0,1,2,3
+alienate 01|0,1,2
+tanyellow 01|1,2
+segment 01|0,1,2
+muster 01|0,1
+chemoprevent 01|0,1,2,3
+pioneer 01|0,1
+reverberate 01|1
+separate 01|0,1,2 02|0,1,2
+elbow 01|0,1
+suppurate 01|1
+reek 01|0,1
+drool 01|0,1,2 02|0,1
+motorcycle 01|0,1,2,3
+soon 01|1
+reauthorize 01|0,1,2,3
+curve 01|1
+mob 02|0,1
+impede 01|0,1,2,3
+underestimate 01|0,1,2
+gnash 01|0,1 02|0,1,2
+demonstrate 01|0,1,2
+castigate 01|0,1,2
+green 01|0,1 02|0,1 03|1
+awful 01|1,2 02|1,2 03|1,2
+chisel 01|0,1,2,4
+victory 01|0,1,2,3
+cavitate 01|0,1
+supreme 01|1,2
+abnormal 01|1
+trifurcate 01|0,1,2
+infest 01|0,1,2
+visible 01|0,1
+charm 01|0,1
+tumble 01|0,1,2,3,4,M-LOC
+dungeonmaster 01|0,1,2
+barmitzvah 01|0,1
+obviate 01|0,1
+shirk 01|0,1
+instrumentate 01|0,1,2 02|0,1,2
+disobey 01|0,1
+blank 01|0,1 02|0,1,2 03|0,1
+blacksmith 01|0,1,2,3
+pickle 01|0,1
+subsample 01|0,1,2
+resend 01|0,1,2
+edematous 01|1,2
+chlorinate 01|0,1,2
+cable 01|0,1,2 02|0,1,2,3
+ensnarl 01|0,1,2
+philosophize 01|0,1
+unethical 01|1
+nab 01|0,1,2
+table 01|0,1 02|0,1
+cube 01|0,1,2,3
+unhinge 01|0,1 02|0,1,2
+bitch 01|0,1,2
+reinstate 01|0,1,2
+beguile 01|0,1,2 02|0,1,2 03|0,1,2
+reimburse 01|0,1,2,3
+malform 01|0,1,2,3,4
+coculture 01|0,1
+debauch 01|0,1,2
+downgo 01|1
+obsolete 01|1
+kind 01|0,1,2
+benefit 01|0,1
+strap 01|0,1,2 02|0,1,2 03|0,1
+prickle 01|0,1 02|0,1
+rebut 01|0,1,2 02|0,1
+tank 01|0
+stupefy 01|0,1,2
+intake 01|0,1
+litter 01|0,1,2
+differential 01|0,1 02|0,1,2
+hangar 01|0,1,2
+mirror 01|1,2
+veto 01|0,1,2
+skirmish 01|0,1
+hear 01|0,1,2 02|0,1,2
+fortify 01|0,1,3 02|0,1,2
+roping 01|0,1,2
+refreeze 01|0,1,2
+accessorize 01|0,1,2
+forsake 01|0,1
+evince 01|0,1
+steel 01|0,1,2
+grudge 01|0,1,3
+lactate 01|0
+outgunned 01|0,1,2
+skip 01|0,1 02|0 03|0
+cosign 01|0,1,2
+betray 01|0,1
+unaltered 01|0,1,2,3
+refold 01|0,1,2,3
+transmogrify 01|0,1,2,3
+homemake 01|0,1,2,3 02|0
+abut 01|1,2
+station 01|0,1,2
+luxuriate 01|0,1
+leverage 01|0,1
+epoxy 01|0,1,2,3
+alkylate 01|0,1
+execrate 01|0,1
+publish 01|0,1
+wave 01|0,1,2 02|0,1,2 03|1,2,3,4,5 04|0,1,2
+forage 01|0,1,2
+reaffix 01|0,1,2,3
+bloat 01|0,1,2
+defect 01|0,1,2
+colonize 01|0,1
+confederate 01|0,1,2
+rubberize 01|0,1 02|0,1
+cry 01|0,1,2 02|0,1 03|0,1,2 05|0,1,2,3 04|0,1,2
+jinx 01|0,1
+surname 01|0,1,2
+dewater 01|0,1,2
+transfuse 101|0,1,2
+scratch 02|0,1,2,3 04|0,1 01|0,1,2 03|0,1,2
+fuddle 01|0,1
+coronate 01|0,1,2
+upstart 01|0
+grant 01|0,1,2
+bolster 01|0,1,2
+stream 01|0,1 02|1,2 03|0,1,2,3
+autoanticoagulate 01|0,1
+surfeit 01|0,1,2
+cystic 01|1
+hate 01|0,1,2
+risk 01|0,1,2 02|0,1,2
+whiff 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1 05|0,1 06|0,1
+gallop 01|0,1
+fed 01|0,1,2
+columnar 01|1
+brood 01|0,1
+snake 01|0,1
+ruffle 01|0,1 02|0,1
+chronic 01|1
+uneventful 01|1
+pose 01|0,1 02|0,1,2
+impersonate 01|0,1
+tactical 01|0,1
+autotitrate 01|0,1,2,3
+hyperphosphorylate 01|0,1,2,3
+sequence 01|0,1,2
+scrawl 01|0,1,2 02|0,1
+impart 01|0,1,2
+post 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2,3
+ration 01|0,1,2,3 02|0,1,2
+waltz 01|0,1
+hopeless 01|1,2 02|1,2
+object 01|0,1 02|0,1
+pollute 01|0,1
+perspire 01|0,1
+lionize 01|0,1
+bid 01|0,1,2 02|0,1,2,3 03|0,1,2 06|0,1 04|0,1,2
+foul 01|0,1,2
+oar 01|0,1,2,3
+counterchallenge 01|0,1,2
+casual 01|0,1
+propel 01|0,1,2
+prepare 01|0,1,2,3 02|0,1,2
+flagellate 01|0,1,2
+crochet 01|0,1,2
+fund 01|0,1,2
+spare 01|0,1,2 02|0,1
+subsaturation 01|0,1,2
+destroy 01|0,1,2
+shorten 01|0,1 02|0,1 03|0,1,2 05|1 06|1,2,3 07|1,2 08|0,1,2 04|0,1,2,3,4
+demilitarize 01|0,1,2
+deepfry 01|0,1,2
+drone 01|0
+horizontal 01|1,2
+squaredance 01|0,1,2
+sculpt 01|0,1,2,4
+hemorrhage 01|0,1
+latinamerican 01|1
+nod 01|0,1 02|0
+repudiate 01|0,1
+hibernate 01|0,1
+whiten 01|0,1 02|1 03|1,2
+retail 01|0,1,2,3,4
+beat 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2 05|0,1,2,3 06|0,1,2,3
+disparage 01|0,1
+blog 01|0,1,2
+postmark 01|0,1,2
+cessate 01|0,1,2
+replay 01|0,1,2
+erode 01|0,1
+unsettle 01|0,1,2 02|0,1,2,3
+distill 01|0,1,2
+selfadjust 01|0,2,3,4
+beautify 01|0,1,2 02|1
+collaborate 01|0,1,2
+drip 01|0,1,2,3 02|1,2
+grease 01|0,1,2
+inaccurate 01|0,1
+treacherous 01|1
+im 01|0,1,2
+confess 01|0,1,2
+chaperone 01|0,1
+overthrow 01|0,1
+burrow 01|0,1,2
+revise 01|0,1,2,3
+telecommunicate 01|0,1,2
+interlard 01|0,1,2
+undislodgeable 01|0,1,2
+umpire 01|0,1
+gun 01|0,1 02|0,1
+piece 01|0,1,2,3
+crimp 01|0,1
+reciprocate 01|0,1 02|0,1
+hack 01|0,1,2 03|0,1,2,3 04|0,1 05|0 06|0,1 07|0,1,2 02|0,1,2
+polymerize 01|0,1,2,3
+savage 01|0,1
+cochair 01|0,1,2
+dump 01|0,1,2 02|1
+impair 01|0,1
+pigeonhole 01|0,1,2
+scab 01|1
+jest 01|0,1,2
+binge 01|0,1
+transgress 01|0,1
+whip 01|0,1,2 02|0,1 03|0,1
+arch 01|0,1
+globalize 01|0,1
+unresectable 01|0,1,2
+raze 01|0,1,2
+roam 01|0,1
+coanchor 01|0,1
+sculpture 01|0,1,2,3,4
+drift 01|1
+rope 01|0,1,2,3
+mischaracterize 01|0,1,2
+gym 01|0
+guzzle 01|0,1
+precondition 01|0,1,2 02|0,1,2
+consume 01|0,1
+grow 01|0,1,2,3,4 02|1,2,3 03|0,1,2 04|1 05|1
+paw 01|0,1
+undeclared 01|0,1,2,3
+paraphrase 01|0,1,2
+entomb 01|0,1,2
+crest 01|0,1
+join 01|0,1,2,3 04|0,1,2 05|0,1 02|0,1
+reassign 01|0,1,2
+for 01|0,1
+conceive 01|0,1,2 02|0,1
+remember 01|0,1,2
+cough 01|0,1,2 02|0,1,2 03|0,1
+shit 01|0,1
+stone 01|0,1 02|0,1 03|1
+procreate 01|0,1
+dissociate 01|0,1,2
+relax 01|0,1
+translocate 01|0,1,2,3
+housesit 01|0,1,2
+exonerate 01|0,1,2
+eclipse 01|0,1
+occlude 01|0,1,2,3
+hatch 01|0,1
+cantankerous 01|1
+chastise 01|0,1,2
+hinder 01|0,1,2,3
+flare 01|1 02|0,1 03|0,1
+state 01|0,1,2,3
+capsize 01|0,1
+large 01|1
+cut 01|0,1,2,3,4 02|0,1,2,3,4 03|0,1 04|0,1,2,3,4 05|0,1,2,3,4 06|0,1,2 09|1,2 07|0,1,2 08|0,1 10|0,1,2 11|0,1,2,3,4
+landscape 01|0,1,2
+hairstyle 01|0,1
+behind 01|1,2,3 02|1,2 03|1,2,3,4
+hypotensive 01|1,2
+radio 01|0,1,2
+plait 01|0,1,2
+mesmerize 01|0,1,2
+transactivate 01|0,1,2
+woo 01|0,1
+delineate 01|0,1
+concur 01|0,1 02|1,2
+plonk 01|0,1,2
+climax 01|1,2,3
+occupy 01|0,1,2
+subject 01|0,1,2 02|1,2 03|1,2
+rumor 01|0,1
+amount 01|1,2 02|1,2
+encourage 01|0,1,2 02|0,1,2
+reemploy 01|0,1,2
+pine 01|0,1 02|0,1
+wring 01|0,1 02|0,1,2 03|0,1
+avail 01|0,1,2 02|1,2
+fulguration 01|0,1,2
+manacle 01|0,1,2,3
+plot 01|0,1,2 02|0,1
+exacerbate 01|0,1
+immense 01|1
+cynical 01|0,1
+microwave 01|0,1
+simmer 01|0,1
+way 01|0,1 02|0,1 03|
+permit 01|0,1,2 02|0,1,2 03|0,1,2
+discipline 01|0,1,2
+store 01|0,1,2 02|0,1,2
+prenegotiate 01|0,1,2
+disembowel 01|0,1,2,3
+diet 01|0,1
+dispossess 01|0,1,2
+backbite 01|0,1,2
+crucify 01|0,1 02|0,1
+prosecute 01|0,1,2,3
+homework 01|0,1
+hyperpigment 01|0,1
+amuse 01|0,1,2
+jeer 01|0,1
+mismanage 01|0,1
+reincorporate 01|0,1
+rove 01|0,1
+unforgettable 01|0,1
+bullock 01|0,1,2 02|0,1
+revel 01|0,1
+congest 01|0,1,2
+psych 01|0,1,2
+emplace 01|0,1,2
+even 02|1,2,3 03|1 01|0,1
+impend 01|1
+quantitate 01|0,1
+nonfocal 01|1,2
+tone 01|0,1
+reap 01|0,1,2
+misperceive 01|0,1,2
+deluster 01|0,1
+oversubscribe 01|0,1
+scarce 01|0,1
+marshal 01|0,1
+blossom 01|1
+dephosphorylate 01|0,1,2,3
+sponsor 01|0,1
+tiny 01|1,2
+resurface 01|0,1 02|1
+hazy 01|1,2
+romp 01|0,1
+seduce 01|0,1,2
+crap 01|0,1 02|1 03|1,2 04|1,2
+recondition 01|0,1,2
+friendly 01|1,2
+enact 01|0,1,2
+kennel 01|0,1,2
+decommission 01|0,1,2
+foal 01|0,1
+happy 01|0,1,2 02|1,2
+playfight 01|0,1
+impact 01|0,1 02|1,2 03|1
+fierce 01|0,1
+symbolize 01|1,2
+rag 01|0,1
+declare 01|0,1,2,3
+overlap 01|0,1,2
+envision 01|0,1
+selfconscious 01|0,1
+chauffeur 01|0,1
+sandbag 01|0,1,2
+assign 01|0,1,2
+encircle 01|0,1,2
+escalate 01|0,1
+cherish 01|0,1
+kickoff 01|0,1
+await 01|1,2,M-TMP
+parameterize 01|0,1,2
+anglicize 01|0,1,2
+tachycardic 01|1,2
+dissent 01|0,1
+call 01|0,1,2 02|0,1,2 03|0,1,2 07|0,1,2 09|0,1,2 10|0,1,2 11|0,1 13|0,1,2 14|0,1,2 16|0,1,2 08|0,1,2 04|0,1,2 17|0,1,2 05|0,1,2 06|0,1 12|0,1,2 15|0,1,2
+circumvent 01|0,1
+bop 01|0,1
+vulgarize 01|0,1,2 02|0
+dismiss 01|0,1,2 02|0,1,2
+wilt 01|0,1,2
+candy 01|0,1
+unsupervised 01|0,1
+inflame 01|0,1
+anterior 01|1,2
+sand 01|0,1,2
+permeate 01|0,1
+multifocal 01|1
+conjecture 01|0,1
+fowl 01|0,1,2,3
+exhilarate 01|0,1,2
+shuttle 01|0,1,2,3 02|0,1,2
+devolve 01|0,1,2 02|0,1,2,3
+gel 01|1,2
+pressgang 01|0,1,2
+mislay 01|0,1
+unamerican 01|1
+drive 01|0,1 02|0,1,2 03|0,1 04|0,1,2
+deglaze 01|0,1,2
+spirit 01|1 02|1,2 03|1
+prioritize 01|0,1,2
+bilk 01|0,1,2
+downsize 01|0,1
+headway 01|0,1
+browntan 01|1
+gulp 01|0,1 02|0,1
+debug 01|0,1
+remedy 01|0,1,2
+heat 01|0,1,2 02|0,1 03|1 04|0,1 05|1
+loot 01|0,1,2
+ferment 01|0,1,2
+transphosphorylate 01|0,1,2,3
+cavort 01|1,2,3,4
+pedal 01|0,1,2
+dodder 01|1,2,3,4
+treat 01|0,1,2 02|0,1,2 03|0,1,2,3 04|0,1,2 05|0,1 06|0,1,2,3
+dish 01|0,1 02|0,1,2 03|0,1,2
+ingrain 01|0,1,2
+enlarge 01|0,1,2,3,4
+deemphasize 01|0,1
+splash 01|0,1,2 03|0,1,2,3,4 02|0,1,2,3,4
+greet 01|0,1,2,3
+fade 01|0,1,2,3,4
+moderate 01|0,1,2 02|0,1 03|0,1,2
+reexperience 01|0,1
+backflip 01|0,1,2
+asphalt 01|0,1,2 02|0,1,2
+overbake 01|0,1
+worsen 01|0,1,2 02|1,2 03|1 04|1,2 05|1 07|0,1 06|1,2
+dream 01|0,1 02|0,1 03|0
+peddle 01|0,1,2,3
+gum 01|0,1,2,3 02|0,1 03|0,2
+blister 01|0,1 02|0,1
+rotate 01|0,1 02|0,1,2,3
+clink 01|1,0
+bin 01|0,1,2
+minister 01|0,1,2
+granular 01|1
+gill 01|0,1,2,3
+mindblowing 15|0,1
+convene 01|0,1
+restrain 01|0,1,2
+pg 01|1
+blur 01|0,1
+roof 01|0,1,2
+retrograde 01|1
+recontact 01|0,1
+roast 01|0,1
+decongest 01|0,1,2
+pump 01|0,1,2 04|0,1 02|0,1 03|0,1,2,3
+traffic 01|0,1,2
+exasperate 01|0,1,2
+alternate 01|0,1,2
+dishonest 01|1,2
+retrench 01|0
+stand 01|0,1,2 02|1,2 03|0,1 04|1,2 08|0,1 11|0,1,2 12|0,1 05|1 06|1 07|1,2 09|0,1 13|0,1 10|0,1,2 14|0,1 15|1,2 16|0,1,2 17|1,2
+curse 01|0,1,2 02|0,1,2
+civilize 01|0,1
+redesign 01|0,1,2
+sane 01|1
+jabber 01|0,1,2
+clench 01|0,1
+somali 01|1
+retrofit 01|0,1,2
+transverse 01|0,1
+coldcream 01|0,1
+revitalize 01|0,1
+freeze 01|0,1,2 02|0,1,2,3 03|1
+perfume 01|0,1,2
+update 01|0,1 02|0,1,2
+cba 01|1
+glitter 01|0
+bolshevize 01|0,1
+overreach 01|0,1 02|0,1
+strike 01|0,1,2 02|0,1 03|0,1,2 04|1,2,3 05|0,1,2 10|0,1 11|0,1 06|0,1,2 07|0,1,2 08|0,1,2 09|0,1,2
+tip 01|0,1,2 02|0,1,2 05|0,1,2 06|0,1,2 03|0,1 04|0,1
+rip 01|0,1,2 02|1 06|0,1,2,3 07|0,1,2 03|0,1 04|0,1 05|0,1
+switch 01|0,1,2,3 02|0,1,2,3
+trademark 01|0,1,2
+other 01|1,2,3
+unteach 01|0,1,2
+anchor 01|0,1
+antiassad 01|1
+liberate 01|0,1,2
+affront 01|0,1,2
+unknown 01|0,1,2
+irrupt 01|1,2
+jostle 01|0,1
+embalm 01|0,1,2
+afebrile 01|1
+apportion 01|0,1,2
+depigment 01|0,1,2
+dart 01|0,1,2,3,4 02|0,1,2 03|0,1
+meddle 01|0,1,2
+jitterbug 01|0,1
+supine 01|1
+gash 01|0,1,2,3
+debone 01|0,1,2
+rend 01|0,1
+legislate 01|0,1
+mean 01|0,1,2,3 02|0,1,2 03|0,1 04|0,1 05|0,1,2
+tighten 01|0,1 02|0,1 03|1,2 04|0,1 05|0,1
+repulse 01|0,1,2
+raincheck 01|0,1
+understate 01|0,1,2
+apprise 01|0,1,2
+unconstrain 01|0,1,2,3
+subscribe 01|0,1 02|0,1
+lug 01|0,1
+bellow 01|0,1,2
+tangle 01|0,1,2 03|0,1,2 02|0,1,2
+uplift 01|0,1
+pseudoprogress 01|1,2,3,4
+wing 01|0,1,2 02|0,1
+puke 01|0 02|0,1
+jones 01|0,1
+release 01|0,1,2 02|0,1,2
+resell 01|0,1,2,3,4
+lilt 01|0,1,2
+make 01|0,1,2,3 02|0,1 05|0,1,2 06|1,2 18|0,1 19|0,1,2 27|0,1,2 LV| 07|0,1 08|0,1 09|0,1 10|0,1,2,3 11|1,2 16|0,1,2 12|0,1 13|0,1,2 15|1 23|0,1,2 26|0,1 14|0,1 17|0,1 22|0,1,2,3 24|0,1 25|0,1 03|0,1
+polymicrobial 01|1
+inscribe 01|0,1,2 02|0,1,2
+supplicate 01|0,1,2
+acknowledge 01|0,1,2,3
+water 01|0,1 04|1 02|0,1 03|0,1
+prohibit 01|0,1,2,3 02|0,1,2
+caress 01|0,1
+work 01|0,1,2,3,4,5 06|0,1,3,4 07|0,1,2 08|0,1,2 09|0,1,2 10|0,1,2 11|1 12|0,1,2 13|1,2 02|0,1,2 03|0 05|0,1,2 04|0,1,2 101|0,1,2 14|0,1
+nurture 01|0,1
+reinterview 01|0,1,2
+typeset 01|0,1,2
+ensure 01|0,1,2 02|0,1
+epilate 01|0,1,2,3
+pass 01|0,1,2 02|0,1 03|1 04|0,1 05|0,1,2 06|1,2 07|1,2 08|0,1 20|1 21|0,1 22|0,1 17|0,1 18|0,1,2,3 09|0,1,2 19|0,1,2,3 14|0,1,2 15|1 10|0,1,2 11|0 12|0,1 13|0,1,2 16|1
+cow 01|0,1,2
+rile 01|0,1
+produce 01|0,1,2,3 02|0,1 03|0,1,2,3
+reword 01|0,1,2
+trump 01|0,1
+rank 01|0,1,2,3,4
+semiwatch 01|0,1
+mop 01|0,1,2
+snipe 01|0,1
+pathologic 01|1,2
+geminate 01|0,1
+float 01|0,1,2 02|0,1,2,3
+melt 01|0,1 02|0,1
+coopt 01|0,1,2
+naysay 01|0,1
+nonsymptomatic 01|0,1
+upturn 01|0,1
+myelosuppress 01|0,1
+camouflage 01|0,1,2
+fend 01|0,1 02|0,1,2
+banish 01|0,1,2
+overhang 01|0,1
+endure 01|1,2
+overlook 01|0,1 02|0,1
+herniate 01|1
+incapable 01|1,2
+tie 01|0,1,2,3,4 03|0,1 02|0,1,2 04|0,1 05|1,2 06|1,2
+recannulate 01|0,1,2
+squeegee 01|0,1
+overtax 01|0,1,2,3
+owe 01|0,1,2,3
+replaster 01|0,1,2,3
+chubby 01|1
+fedex 01|0,1,2
+page 01|0,1
+tree 01|0,1,2
+prospection 01|0,1,2
+lament 01|0,1
+quiz 01|0,1,2
+reconquest 01|0,1,2
+inaction 01|0,1
+beep 01|0,1 02|0,1
+pangreen 01|1
+snigger 01|0,1,2,3
+wither 01|0,1
+degas 01|0,1,2
+weightbear 01|0,1
+dynamic 01|1
+normalize 01|0,1 02|1,2,3
+convenient 01|0,1,2
+overpower 01|0,1
+want 01|0,1,2,3,4
+mitigate 01|0,1
+early 01|1,2 02|1,2
+rude 01|0,1,2
+impress 01|0,1,2 02|0,1,2 03|0,1
+die 01|1,2 05|0,1 02|1 03|1 04|1
+passe 01|1
+distort 01|0,1
+hairy 01|1 02|1
+yellow 01|0,1 02|0,1 03|1
+jade 01|0,1,2
+grade 01|0,1,2 02|0,1,2
+spar 01|0,1
+wreck 01|0,1,2
+opine 01|0,1,2
+febrile 01|1,2
+outface 01|0,1
+overturn 01|0,1
+pry 01|0,1,2 02|0,1
+cudgel 01|0,1,2
+unstitch 01|0,1,2
+pare 01|0,1,2,3 02|0,1,2,3,4 03|0,1,2,3 04|0,1,2,3,4
+dumb 01|1 02|1
+collect 01|0,1,2,3,4
+shoe 01|0,1,2
+oversell 01|0,1
+obscure 01|0,1,2 02|0,1,2
+solo 01|0,1
+distemper 01|0,1,2
+irradiate 01|0,1,2
+handle 01|0,1,2,3
+commend 01|0,1,2 02|0,1,2
+distance 01|0,1,2 02|0,1,2
+foot 01|0,1
+scribble 01|0,1,2
+landlock 01|0,1,2
+muse 01|0,1
+claim 01|0,1,2 02|0,1,2
+unforgivable 01|0,1,2
+poise 01|0,1,2
+palpitate 01|0,1
+dull 01|0,1 02|0,1 03|0,1 04|0,1
+elevate 01|0,1,2
+fibrose 01|0,1 02|0,1
+spindle 01|0,1,2
+terminate 01|0,1,M-TMP 02|0,1,2
+mold 01|0,1,2
+roar 01|0,1,2 02|0,1
+wheelspin 01|0,1,2
+brilliant 01|1,2 02|1
+shutter 01|0,1
+breastfeed 01|0,1,2
+stricture 01|0,1,2,3,4
+drawl 01|0,1,2
+nonreactive 01|0,1,2
+redetect 01|0,1,2
+unstaple 01|0,1,2
+scheme 01|0,1,2
+craze 01|0,1,2 02|0,1 03|1
+arbitrate 01|0,1,2 02|1,2
+stooge 01|0,1
+shepherd 01|0,1
+fatal 01|0,1
+complicit 01|1,2
+fess 01|0,1,2
+reveal 01|0,1,2,3
+develop 01|1,2 02|0,1,2,3,4,5
+bloom 01|0
+whirl 01|1,2 02|1,2,3,4,5,6
+chemosensitive 01|1
+hive 01|0,1 02|0,1
+gutter 01|1
+attenuate 01|0,1
+bleat 01|0 02|0,1 03|0,1
+tap 01|0,1,2 02|0,1,2,3 03|0,1
+uptight 01|0,1
+due 01|0,1,2 02|0,1 03|1,2
+grumble 01|0,1,2
+knead 01|0,1,2
+subsume 01|1,2
+debowel 01|0,1,2
+berate 01|0,1,2
+buzz 01|0,1 02|0,1 04|0,1 03|0
+blockade 01|0,1,2
+scrunch 01|0,1
+covet 01|0,1
+restore 01|0,1,2 02|0,1,2
+loiter 01|0
+satellite 01|0,1,2
+grovel 01|0
+rezone 01|0,1,2
+enthuse 01|0,1,2 02|0,1,2 03|0,1
+japanize 01|0,1
+incomprehensible 01|0,1
+broaden 01|0,1,2,3,4 02|1,2
+belittle 01|0,1
+idle 01|0,1
+bunt 01|0,1,2,3
+denounce 01|0,1,2
+submerge 01|0,1,2
+flabbergast 01|0,1
+subdue 01|0,1
+scandalize 01|0,1,2
+destabilize 01|0,1
+code 01|0,1 02|0,1 101|1 03|0,1,2,3
+pity 01|0,1 02|1
+boob 01|0
+dive 01|0,1,2 02|1,2,3,4
+balkanize 01|0,1,2
+ladder 01|0,1
+borderline 01|1,2
+stipple 01|0,1,2 02|0,1,2 03|0,1
+orient 01|0,1,2,3
+glaze 01|0,1 02|1
+recruit 01|0,1,2,3
+heatwave 01|1,2,3,4
+loop 01|0,1,2
+deter 01|0,1,2,3
+wield 01|0,1,2,3
+gchat 01|0,1,2
+twirl 01|0,1,2
+restress 01|0,1,2
+preexamine 01|0,1
+stimulate 01|0,1,2,3
+acetify 01|0,1,2
+jolt 01|0,1,2 02|0,1,2
+bay 01|0
+dispel 01|0,1
+intolerant 01|0,1 02|0,1
+supervise 01|0,1
+eke 01|0,1 02|0,1
+luteinize 101|0,1
+farcical 01|1
+ulcerate 01|0,1
+gasp 01|0,1 02|0,1,2
+drain 01|0,1,2
+airlift 01|0,1,2,3
+stall 01|0,1 02|0,1 03|0,1
+decentralize 01|0,1
+brighten 01|0,1 02|0,1 03|1
+on 01|1
+suck 01|0,1,2 03|0,1 02|0,1 04|0,1 05|0,1,2
+unlock 01|0,1,2
+abstain 01|0,1
+bead 01|0,1,2,3 02|0,1,2,3 03|0,1,2,3
+incandesce 01|1
+spend 01|0,1,2,3,4 02|0,1,2 04|1,2 03|0,1,2
+zap 01|0,1
+male 01|1
+coarsen 01|0,1,2
+ready 01|0,1,2 02|0,1,2
+refix 01|0,1,3
+hypopigment 01|0,1
+putrefy 01|0,1
+abominate 01|0,1 02|0,1
+lazy 01|1
+cold 01|1 02|0,1,2 03|0,1
+contain 01|0,1 02|0,1
+adorn 01|0,1,2
+diffuse 01|0,1 02|0,1
+compel 01|0,1,2
+bless 01|0,1,2
+meaningless 01|0,1,2
+dapple 01|0,1,2
+scotfree 01|1,2,3
+expire 01|1,M-TMP 02|0,1
+befall 01|0,1
+train 01|0,1,2 02|0,1,2
+hydrogenate 01|0,1,2,3
+misspend 01|0,1,2
+condition 01|0,1,2 02|0,1,2
+classify 01|0,1,2 02|0,1
+hurry 01|0,1,2 02|0,1,2
+lance 01|0,1,2 02|0,1
+incriminate 01|0,1
+ambitious 01|0,1
+murder 01|0,1,2
+payout 01|0,1,2,3
+clamp 01|0,1,2
+crump 01|1
+reemphasize 01|0,1,2
+oust 01|0,1,2
+shore 01|0,1 02|0,1,2
+presume 01|0,1 02|0
+flaunt 01|0,1
+conflict 01|0,1,2
+cuckold 01|0,1
+countervail 01|0,1
+bucket 01|1,M-DIR
+chasten 01|0,1
+atone 01|0,1
+christen 01|0,1,2
+exert 01|0,1,2
+harbor 01|0,1
+critique 01|0,1
+blacken 01|0,1 02|0 03|0,1 04|0,1,2 05|1 06|1,2 07|1
+crate 01|0,1,2
+detour 01|0,1,2
+mince 01|0,1 02|0,1,2
+whatsapp 01|0,1,2,3
+seroconvert 01|0,1,2
+espy 01|0,1,2
+tote 01|0,1,2,3,4
+drop 01|0,1,2,3,4,M-ADV 05|0,1,2 06|0,1 07|0,1,2 02|1,3,4 03|0,1,2 04|0,1 08|0,1
+plow 01|0,1,2
+rightsize 01|0,1,2
+impossible 01|1
+crash 01|0,1 02|0,1 04|0,1 03|0,1
+smudge 01|0,1,2
+finetune 01|0,1
+cash 01|0,1 02|0,1 03|0,1
+thank 01|0,1,2 02|0,1,2
+undo 01|0,1
+reduce 01|0,1,2,3,4,M-LOC
+howl 01|0,1,2 02|0,1 03|0,1
+crouch 01|0
+surface 01|1 02|0,1,2
+imperil 01|0,1
+destine 01|1,2
+dehydrate 01|0,1
+iterate 01|0,1,2,3
+grate 01|0,1,2 02|1,2
+suspect 01|0,1,2 02|0,1,2 03|1
+fame 01|0,1,2
+sway 01|0,1,2 02|0,1,2
+hypoperfuse 01|0,1,2
+peeve 01|0,1,2
+cringe 01|0
+oppress 01|0,1
+photocoagulate 01|0,1
+regional 01|1,2
+indispensable 01|1,2
+retreat 01|0,1,2 02|1,2,3,4,5 03|0,1,2
+convey 01|0,1,2
+landfill 01|0,1,2
+clerk 01|0,1
+ring 01|0,1,2 02|0,1,2 04|0,1 05|1,2 03|0,1
+unauthorized 01|0,1,2,3
+miniaturize 01|0,1
+enjoy 01|0,1 02|0,1
+rim 01|0,1,2
+idiotic 01|1
+nestle 01|0,1,2
+hush 01|0,1
+get 01|0,1,2,3,4 02|0,1 03|1,2 04|0,1 05|0,1,2 06|0,1 22|0,1 24| 28|0,1 30|0,1,2 07|0,1,2,3 08|0,1 09|0,1,2 10|1,2 19|0,1,2 25|0,1,2 11|1,2 23|0,1,2 29|0,1,2 12|0,1 13|0,1 18|1,2 17|0,1 15|1,2 27|0,1 16|0,1,2 14|0,1 20|1,2 21|0,1 26|0,1,2
+spree 01|0,1
+attract 01|0,1,2,3
+expiate 01|0,1
+nullify 01|0,1 02|0,1
+dorm 01|0,1,2
+fortunate 01|0,1,2
+rework 01|0,1
+spell 01|0,1,2 02|0,1 03|0,1
+unquote 01|0,1
+stool 101|0
+exercise 01|0,1 02|0,1
+insinuate 01|0,1
+whipsaw 01|0,1
+familiarize 01|0,1,2 02|0,1
+banter 01|0,1,2
+secure 01|0,1,2,3 02|0,1,2,3 03|0,1,2,3
+simplify 01|0,1 02|1 03|1
+sod 01|0,1,2
+surround 01|0,1,2
+germanize 01|0,1,2
+spit 01|0,1,2
+unavailable 01|1,2
+undesirable 01|0,1
+vacation 01|0,1,2
+refer 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2
+droop 01|0,1
+apprentice 01|0,1,2
+snack 01|0,1
+burp 01|0,1
+felicitate 01|0,1,2
+condescend 01|0,1
+repel 01|0,1,2
+clank 01|1 02|0,1
+skillful 01|1,2
+manifest 01|1,2,3
+tweet 01|0,1,2 02|0,1,2
+computerize 01|0,1
+virilize 01|0,1
+saw 03|0,1,2 04|0,1,2
+aspire 01|0,1 101|0,1,2 102|0,1,2
+abysmal 01|1,2 02|1,2
+plague 01|0,1,2
+pointless 01|0,1 02|1 03|1,2,3
+reconfirm 01|0,1,2
+rangebound 01|1
+loutish 01|0,1,2
+birch 01|0,1
+embattle 01|0,1,2,3,4
+crunch 01|0,1,2
+cream 01|0,1 02|0,1
+objectify 01|0,1
+trabeculate 01|0,1
+angle 01|0,1 02|0,1,2
+curbstomp 01|0,1
+collude 01|0,1,2
+laminate 01|0,1
+ripple 01|0,1
+nag 01|0,1,2
+retrain 01|0,1,2
+stamp 01|0,1,2 02|0,1,2 04|0,1 03|0,1 05|0,1
+slaughter 01|0,1
+wimp 01|0,1
+unconscious 01|0,1 02|1
+impatient 01|1,2,3
+subtract 01|0,1,2
+disclaim 01|0,1
+rut 01|0,1,2
+retransmit 01|0,1,2
+reoffer 01|0,1,2,3
+sprout 01|0,1,2
+calibrate 01|0,1 02|0,1,2
+explore 01|0,1,2
+deduce 01|0,1,2
+logistical 01|1
+scrub 01|0,1 02|0,1
+derelict 01|1 02|0,1
+tantamount 01|1,2,3
+bandage 01|0,1 03|0,1
+knockkneed 01|1
+enunciate 01|0,1
+canonize 01|0,1,2 02|0,1,2
+comb 01|0,1,2 02|0,1
+destruct 01|0,1
+designate 01|0,1,2
+filibuster 01|0,1
+adamant 01|0,1
+auguster 01|1,2
+sicken 01|0,1 02|1 03|1 04|0,1 05|0,1
+decant 01|0,1
+shove 01|0,1,2
+gondola 01|0,1,2,3
+misquote 01|0,1,2
+keep 01|0,1 02|0,1,2 03|0,1,2 04|0,1,2 06|1,2 LV| 05|0,1 10|0,1,2 08|0,1,2
+ding 01|0,1
+nuzzle 01|0,1
+overshoot 01|0,1,2,3
+disallow 01|0,1
+hypermetabolic 01|1
+newsworthy 01|1,2
+dni 01|0,1
+mend 01|0,1
+percuss 01|0,1,2
+electroplate 01|0,1,2
+rejoin 01|0,1,2
+swill 01|0,1
+deescalate 01|0,1
+hole 01|0,1
+slather 01|0,1,2
+subsidize 01|0,1
+discontinue 01|0,1
+rub 01|0,1,2,3
+sentence 01|0,1,2,3,4 02|0,1
+foolish 01|1
+kink 01|0,1,2
+lard 01|0,1,2
+wad 01|0,1,2
+whiz 01|1,2,3,4,M-DIR 03|0,1,2
+mechanize 01|0,1,2
+tenuous 01|1
+sell 01|0,1,2,3,4 02|0,1 03|0,1,2,3,4 04|0,1,2,3,4 05|0,1,2,3,4
+mute 01|0,1
+bottom 01|0
+ache 01|0
+cowrite 01|0,1,2,3
+scroll 01|0,1
+selfefface 01|0
+lead 01|0,1,2,3,4 02|0,1,2 03|0,1,2 04|0,1,2,3 05|1,2
+bruise 01|0,1
+conceited 01|1,2
+snicker 01|0,1,2,3
+septate 01|0,1
+spout 01|0,1 02|0,1,2,3
+unwinnable 01|0,1,2,3,4,5
+overestimate 01|0,1,2
+downwelling 01|1
+reshape 01|0,1
+balk 01|0,1
+garner 01|0,1
+trustee 01|0,1
+telework 01|0,1,2,3,4
+book 01|0,1,2,3 03|0,1,2,3,4,5 02|0,1
+crosspollinate 01|0,1
+communicate 01|0,1,2
+shy 01|0,1 02|0,1 03|1,2,3 04|0,1
+divulge 01|0,1,2
+blemish 01|0,1
+deign 01|0,1
+accredit 01|0,1,2
+tide 01|1 02|0,1,2
+overreact 01|0,1
+delude 01|0,1,2
+weekend 01|0,1
+nationalize 01|0,1
+prochina 01|1
+chuckle 01|0 02|0,1,2
+delegate 01|0,1,2
+presign 01|0,1,2
+demagnetize 01|0,1
+miserable 01|0,1
+splutter 01|0,1,2
+minute 01|1
+remit 01|0,1,2 02|0,1
+predate 01|1,2 02|0,1,2 03|0,1,2
+bootleg 01|0,1
+enforce 01|0,1
+listen 01|0,1
+dissect 01|0,1
+subselect 01|0,1,2,3
+transport 01|0,1,2,3,4
+defame 01|0,1,2
+sin 01|0,1
+dissemble 01|0
+bland 01|1
+sully 01|0,1,2
+rhyme 01|0,1,2
+lumber 01|0,1
+plaster 01|0,1,2,3
+renounce 01|0,1,2
+refine 01|0,1,2
+overhaul 01|0,1,2,3
+drag 01|0,1,2 02|0,1,2
+flounder 01|0
+excuse 01|0,1,2 02|0,1,2,3
+geranylgeranylate 01|0,1,2,3
+feminize 01|0,1
+lord 01|0,1,2
+lampoon 01|0,1
+hispanic 01|1
+literate 01|1,2
+avulse 101|0,1
+uncoil 01|0,1,2
+predominate 01|1,2
+overpursue 01|0,1
+starch 01|0,1,2
+wipe 01|0,1,2,3 02|0,1,2 03|0,1 04|0,1,2,3
+dogsled 01|0,1,2,3
+extol 01|0,1,2
+cuss 01|0,1,2
+burnish 01|0,1
+sew 01|0,1,2,3 02|0,1,2,4 03|0,1
+disgust 01|0,1
+cackle 01|0,1,2
+handcount 01|0,1
+purulent 01|1,2
+reel 01|1,2 03|0,1,2 02|0,1
+missell 01|0,1,2,3,4,5
+protect 01|0,1,2,3 02|0,1,2,3
+hoist 01|0,1,2
+mistake 01|0,1,2 02|0,1,2
+about 01|1 02|
+fatigue 01|0,1
+piss 01|0 03|0,1,2,3 02|0,1,2 04|1,2 05|0,1,2,3
+ovation 01|0,1,2
+tepid 01|1
+subsist 01|0,1
+overtake 01|0,1
+refuse 01|0,1,2
+zing 01|0
+ruthless 01|0,1,2
+ferry 01|0,1,2,3
+yoke 01|0,1,2,3
+videotape 01|0,1
+belch 01|0,1 02|0,1
+coumadinize 01|0,1
+max 01|0,1
+cloak 01|0,1,2
+trust 01|0,1,2 02|0,1 03|0,1,2
+reup 01|0,1
+claw 02|0,1,2,3
+hang 01|0,1,2 02|1,2 04|1,2 05|0,1,2 03|0,1,2 08|0,1,2 06|1,2 07|0,1,2,3
+granulate 01|0,1,2
+similar 01|1,2,3
+leaf 01|0,1,2 02|0,1
+possible 01|1
+milk 01|0,1,2 02|0,1,2
+palliate 01|0,1,2
+zonked 01|0,1
+toxic 01|0,1
+foster 01|0,1
+humble 01|0,1
+suggest 01|0,1,2 02|0,1,2
+beach 01|0,1,2
+patronize 01|0,1
+scrawk 01|0
+pinktan 01|1
+mild 01|1,2 02|1,2
+note 01|0,1,2,3 02|0,1,2 03|0,1,2 04|0,1,2
+converse 01|0,1,2 02|0,1
+groove 01|0,1,2 02|0,1
+degut 01|0,1,2
+sip 01|0,1,2
+bookmark 01|0,1,2,3,4
+rap 01|0,1,2 02|0,1,2,3
+ungrateful 01|0,1,2
+deviate 01|0,1
+hypovascular 01|1
+gray 01|0,1 02|0,1
+recuperate 01|1,2
+extend 01|0,1,2,3,4 02|0,1,2 03|1,2,3,4
+organize 01|0,1,2,3,4
+lymphocytic 01|1,2
+simper 01|0,1,2
+picture 01|0,1
+unreel 01|0,1
+divide 01|0,1,2,3 02|0,1,2,3 03|0,1,2
+cassette 01|0,1
+culminate 01|1,2
+adat 01|0
+sole 01|0,1,2
+cannulate 01|0,1
+seep 01|0,1,2
+buy 01|0,1,2,3,4 05|0,1 02|0,1,2,3,4 03|0,1,2,3,4 04|0,1 06|0,1,2
+age 01|0,1,2 02|0,1,2
+blip 01|1,2,3,4
+caution 01|0,1,2 02|0,1
+discourage 01|0,1,2
+invoice 01|0,1,2,3
+bullet 01|0,1,2
+desecrate 01|0,1
+carjack 01|0,1,2
+comprise 01|1,2
+indifferent 01|1,2
+recheck 01|0,1,2
+insensitive 01|0,1
+ground 01|0,1 02|0,1,2
+clown 01|0,1,2 02|0,1,2
+capable 01|1,2
+weep 01|0,1 02|0,1
+overstimulate 01|0,1,2,3
+abridge 01|0,1
+animalize 01|0,1
+singe 01|0,1,2
+needle 01|0,1,2
+embargo 01|0,1
+exenterate 01|0,1,2,3
+attempt 01|0,1
+wet 01|0,1,2
+exalt 01|0,1
+overdraw 01|0,1,2 02|0,1,2
+unspecified 01|0,1
+stigmatize 01|0,1,2
+little 01|1,2
+quarter 01|0,1,2 02|0,1 03|0,1,2
+pandemic 01|1,2,3,4
+sustain 01|0,1 02|0,1 03|0,1 04|0,1
+enamel 01|0,1,2
+reinnervate 01|1,2
+fellate 01|0,1
+dovetail 01|1,2
+thieve 01|0,1,2
+bet 01|0,1,2,3
+inspissate 01|0,1,2
+allege 01|0,1,2,3
+dictate 01|0,1,2 02|0,1,2
+entwine 01|0,1,2
+fort 01|0
+unthaw 01|0,1
+underpin 01|0,1
+recoup 01|0,1,2
+excel 01|0,1 02|1,2 03|1,2
+hoax 01|0,1,2,3
+admit 01|0,1,2 02|0,1,2
+transfer 01|0,1,2,3
+monogram 01|0,1,2
+litigate 01|0,1,2
+outgoing 01|1,3,4
+ballyhoo 01|0,1
+neoadjuvant 01|1,2
+behave 01|0,1
+sock 01|0,1,2 02|0,1,2
+multifactorial 01|1
+trap 01|0,1,2
+contemptuous 01|0,1
+underpenetrate 01|0,1
+regrow 01|0,1,2,3,4
+dance 01|0,1,2 02|0,1
+dj 01|0,1
+1500 01|1
+lavish 01|0,1,2
+jog 01|0,1 02|0,1,2
+reabsorb 01|0,1,2,3
+uppercut 01|0,1
+gall 01|0,1,2
+reappear 01|1
+medicate 01|0,1,2,3
+anemic 01|1,2
+verify 01|0,1
+program 01|0,1,2
+trickle 01|0,1,2
+spiritualize 01|0,1
+heel 01|0,1,2 02|0,1 03|0,1,2 04|0,1,2 05|0,1,2
+parent 01|0,1
+evolve 01|1,2,3 02|0,1,2
+moisturize 01|0,1,2
+leapfrog 01|0,1
+unclamp 01|0,1,2
+delight 01|0,1,2 03|0,1 02|0,1,2
+beef 01|0,1,2,3 02|0,1,2,3
+struggle 01|0,1,2 02|0,1
+sound 01|1,2,3 02|0,1,2,3 04|0,1 03|0,1
+sliver 01|0,1,2
+diction 01|0,1
+engrave 01|0,1,2
+masticate 01|0,1
+prostrate 01|0,1,2
+allegiant 01|1,2
+describe 01|0,1,2
+magnetize 01|0,1
+redeem 01|0,1,2
+bifurcate 01|0,1
+transmute 01|0,1,2,3
+ease 01|1,2,3,4,M-LOC 02|0,1 03|0,1,3,4 06|0,1 04|0,1 05|1
+rely 01|0,1,2 02|0,1,2
+cub 01|0,1
+scrabble 01|0,1,2
+argue 01|0,1,2 02|0,1,2 03|0,1,2
+abnegate 01|0,1,2
+stem 01|1,2 02|0,1 03|0,1
+uninformed 01|0,1,2
+instigate 01|0,1
+detach 01|0,1,2
+decorate 01|0,1,2
+anguish 01|0,1
+link 01|0,1,2,3 02|0,1,2,3
+canter 01|0,1
+warehouse 01|0,1,2
+glamorize 01|0,1,2
+cagey 01|0,1
+trample 01|0,1
+identify 01|0,1,2 02|0,1,2
+icegrill 01|0,1
+succinct 01|0,1
+humor 01|0,1
+quiver 01|1
+vacate 01|0,1
+interpolate 01|0,1,2,3,4
+applaud 01|0,1,2
+regress 01|0,1,3,4
+crossreference 01|0,1,2
+convolute 01|1
+flower 01|1
+say 01|0,1,2,3 02|
+voodoo 01|0,1
+equip 01|0,1,2
+dicker 01|0,1,2
+straddle 01|0,1
+strew 01|0,1,2
+prop 01|0,1,2
+change 01|0,1,2,3 02|1,2
+return 01|1,2,3,4,M-LOC 02|0,1,2 03|0,1,2 04|0,1,2 05|0,1,2,3 06|0,1,2 07|0,1,2
+urbanize 01|0,1,2 02|1
+synchronize 01|0,1,2 02|0,1,2
+accompany 01|0,1,3,4
+waste 01|0,1,2 02|0,1,2 03|0,1
+acclimatize 01|0,1,2
+consolidate 01|0,1,2,3
+trespass 01|0,1
+mudsling 01|0,1,2
+extravasate 01|0,1,2
+mistime 01|0,1,2,3
+clot 01|0,1,2
+purr 01|0 02|0,1,2
+reoccupy 01|0,1,2
+massacre 01|0,1,2
+whisper 01|0,1,2
+locate 01|0,1,M-LOC 02|0,1
+kidnap 01|0,1
+purse 01|0,1
+waft 01|0,1
+hypertensive 01|1
+smirk 01|0,1,2,3
+frown 01|0 02|0,1
+grok 01|0,1
+supervene 01|0,1
+tent 01|0,1,2 02|0,1,2 03|0,1,2,3
+cordon 01|0,1,2
+strategize 01|0,1,2,3
+decompress 01|0,1,2 02|0,1,2 03|1,2
+gladden 01|0,1,2 02|0,1
+burn 01|0,1 02|0,1 03|1 04|1,2
+outfly 01|0,1
+reignite 01|0,1
+redial 01|0,1
+cope 01|0,1
+scout 01|0,1 02|0,1,2
+toddle 01|0,1,2,3,4
+aromatize 01|0,1,2
+crimson 01|0,1
+outlast 01|0,1
+clinch 01|0,1
+overpresent 01|0,1
+convert 01|0,1,2,3
+clout 01|0,1
+homeschool 01|0,1
+charter 01|0,1,2
+equal 01|1,2,3 02|1,2 03|0,1,2
+dissimilar 01|1,2,3
+lightning 01|0,1
+resorb 01|0,1 02|0,1,2,3
+squat 01|1,2 02|0,1
+confront 01|0,1,2
+evaporate 01|0,1
+exile 01|0,1,2
+rock 01|0,1 03|0,1 04|0,1 02|0,1
+serrate 01|0,1,2
+practise 01|0,1,2
+scan 01|0,1,2 02|0,1,2
+slick 01|1
+ascertain 01|0,1
+rereview 01|0,1,2
+robe 01|0,1,2
+wow 01|0,1,2
+tussle 01|0,1
+champion 01|0,1 02|0,1,2
+yaw 01|0,1,2 02|0,1,2
+abstract 01|0,1,2
+superheat 01|0,1,2,3
+malfunction 01|0,1
+nondistended 01|0,1
+front 01|1,2 02|0,1,2
+bigoted 01|0,1,2,3
+participate 01|0,1
+occasional 01|1
+exterminate 01|0,1,2
+pyramid 01|0,1
+undertake 01|0,1
+rattle 01|0,1 02|0 03|0,1 04|0,1
+swoon 01|0,1 02|0,1
+overnight 01|0 02|0,1,2
+fastforward 01|0,1,2,3,4
+spin 01|0,1 03|0,1 04|0,1,2 02|0,1,2,3,4
+birding 01|0
+butter 01|0,1,2 02|0,1,2
+gas 01|0,1,2 03|0,1,2 02|0,1,2
+gasify 01|0,1
+controversial 01|0,1,2
+monetize 01|0,1
+weaken 01|0,1,2,3,4 02|1,2
+lucid 01|1
+seem 01|1,2
+curtain 01|0,1,2
+yoga 01|0
+smoke 01|0,1 02|0,1 03|0,1
+slough 01|0,1,2 02|0,1,2
+harangue 01|0,1
+overvalue 01|0,1
+honor 01|0,1,2,3 02|0,1 03|1
+immunocompromise 01|0,1
+idiopathic 01|1
+padlock 01|0,1,2
+ectatic 01|1
+smile 01|0,1,2 02|0,1,2
+preadmit 01|0,1,2
+gouge 01|0,1 02|0,1,2
+rest 01|0,1 02|1,2
+estimate 01|0,1,2
+vend 01|0,1
+boot 01|0,1,2 02|0 04|0,1 03|0,1
+obligate 01|0,1,2 02|0,1
+bust 01|0,1,2,3 06|0,1 02|0,1,2 05|0,1 03|0,1 04|0,1
+implant 01|0,1,2
+addend 01|0,1
+avoid 01|0,1
+hog 01|0,1
+pursue 01|0,1
+spoil 01|0,1
+delocalize 01|0,1,2
+unsubscribe 01|0,1
+pardon 01|0,1,2 02|0,1,2
+naff 01|1
+notch 01|0,1,2 02|0,1,2,3,4,M-LOC,M-DIR
+purport 01|0,1
+hypocritical 01|0,1,2,3
+relieve 01|0,1,2 02|0,1,2
+cuban 01|0,1,2
+discard 01|0,1,2
+splint 01|0,1
+hammer 01|0,1,2 02|0,1,2 03|0,1,2,3,4 04|0,1,2 05|0,1 06|1,2
+shimmy 01|0,1,2
+besiege 01|0,1,2
+renovate 01|0,1
+dare 01|0,1,2
+tack 01|0,1,2,3 02|0,1 04|0,1 03|1,2,3,4
+contend 01|0,1,2 02|0,1
+wriggle 01|0,1 02|0,1
+contraindicate 101|1,2
+flip 01|0,1,2 02|0,1 03|0,1
+condemn 01|0,1,2,3
+opacify 01|0,1,2
+cheat 01|0,1,2 02|0,1 03|0,1,2
+dimerize 01|0,1,2,3
+into 01|1,2
+stratify 01|0,1,2
+customize 01|0,1,2
+fibrillate 01|1,2
+right 01|0,1 02|1 03|1,2 04|1,2 05|1,2 06|1,2 08|1,2,3 07|1,2
+climb 01|0,1 02|1,2,3,4,5
+unfortunate 01|1,2
+deadlock 01|1
+confine 01|0,1,2
+percolate 01|0,1,2
+motion 01|0,1,2
+embolden 01|0,1,2 02|0,1 03|1
+maximize 01|0,1
+nourish 01|0,1,2
+gesture 01|0,1,2
+demonize 01|0,1
+deafen 01|0,1 02|0,1
+quaff 01|0,1
+nurse 01|0,1 02|0,1,2
+underlie 01|0,1
+crumple 01|0,1
+cosponsor 01|0,1
+intussuscept 01|0,1,2
+tattoo 01|0,1,2
+axe 01|0,1
+speechify 01|0,1
+throng 01|0,1
+peer 01|0,1
+supratherapeutic 01|1,2
+coup 01|0,1
+liberalize 01|0,1 02|1 03|1,2
+incorrect 01|1
+sign 01|0,1,2 02|0,1,2 03|0,1,2,3 04|0,1 05|0,1,2 06|0,1,2 07|0,1,2,3
+slop 01|0,1,2,3 02|0,1
+season 01|0,1,2
+fold 01|0,1,2 02|0,1 03|0,1,2,3,4 04|0 06|0,1 05|0,1,2,3,4
+soap 01|0,1
+junket 01|0,1 02|0,1
+unclear 01|0,1,2 02|1,2
+hamstring 01|0,1
+dither 01|0
+unbearable 01|0,1,2,3
+expound 01|0,1
+linedraw 01|0,1
+scollop 01|0,1 02|0
+glutenize 01|0,1
+evaluate 01|0,1,2 101|0,1,2
+valiant 01|0,1
+floss 01|0,1,2
+hedge 01|0,1,2,3
+tread 01|0,1
+brocade 01|0,1,2
+scuttle 01|0,1,2 02|0
+penalize 01|0,1,2
+star 01|1,2,3
+expropriate 01|0,1,2
+upbraid 01|0,1,2
+probe 01|0,1,2
+purpose 01|0,1,2
+overstretch 01|0,1
+lodge 01|0,1 02|0,1,2 03|0,1,2
+complex 01|1
+bother 01|0,1,2 02|0,1
+cuddle 01|1,2 02|0,1
+revive 01|0,1,2
+hat 01|0,1,2
+allocate 01|0,1,2
+inherit 01|0,1,2
+clap 01|0,1,2
+posttraumatic 01|1
+reheat 01|0,1
+weather 01|0,1
+vaunt 01|0,1,2
+load 01|0,1,2,3 03|0,1,2 04|0,1,2 02|0,1,2
+imprint 01|0,1,2
+feed 01|0,1,2 02|0,1 03|1,2
+germinate 01|0,1,2
+marvel 01|0,1 02|0,1,2
+microinvade 01|0,1
+grouse 01|0,1,2
+drawdown 01|0,1,2,3
+reenlist 01|0,1,2
+moot 01|0,1 02|1
+postwar 01|1
+shrug 01|0,1,2 03|0,1,2 02|0,1
+matter 01|1,2 02|
+encumber 01|0,1,2
+preapprove 01|0,1,2
+leave 11|0,1,2 12|0,1,2 13|0,1 14|0,1 15|0,1,2 16|0,1,2 17|1,2 02|0,1,2 05|0,1 09|0,1,2 10|0,1,2 03|0,1,2 07|0,1 08|0,1 18|0,1,2 19|1,2,3 20|1,2
+redirect 01|0,1,2
+transplant 01|0,1,2,3
+discontent 01|0,1
+annul 01|0,1
+miscommunicate 01|0,1,2
+consign 01|0,1,2
+mess 01|0,1 02|0,1
+rise 01|0,1,2,3,4,M-LOC 02|0,1 03|0,1,2
+select 01|0,1,2,3
+hunch 01|0
+pin 01|0,1,2,3 02|0,1,2,3
+bind 01|0,1,2,3 02|1 04|0,1,2,3 05|1,2 08|0 09|0,1 06|0,1,2,3 07|0,1
+fight 01|0,1,2 04|0,1,2 02|0,1,2 03|0,1
+gibber 01|0,1,2
+realign 01|0,1,2
+profane 01|0,1,2
+liaise 01|0,1,2
+redress 01|0,1
+butt 01|0
+peck 01|0,1 02|0,1,2,3
+request 01|0,1,2
+dope 01|0,1,2 02|0,1,2 04|1 03|0,1,2
+disassemble 01|0,1
+fabricate 01|0,1,2,3
+dribble 01|0,1 02|0,1,2,3,4
+sovereign 01|0,1
+titillate 01|0,1
+squint 01|0,1
+recalibrate 01|0,1
+twitter 01|0
+prowar 01|1
+immoral 01|1
+surge 01|0,1,2,3,4,5
+blurt 01|0,1,2
+riff 01|0,1
+handsewn 01|0,1,2,3
+defang 01|0,1,2
+segregate 01|0,1,2,3
+postpone 01|0,1,2,3,4
+favor 01|0,1,2,3 02|0,1 03|1,2 04|1,2
+author 01|0,1
+backward 01|1,2 02|1,2
+squeal 01|0
+scald 01|0,1,2
+criticize 01|0,1,2 02|1,2,3 03|1 04|0,1
+crisp 01|0,1 02|0,1
+war 01|0,1,2
+cancel 01|0,1
+suppress 01|0,1 02|0,1
+acquit 01|0,1,2
+reintroduce 01|0,1,2 02|0,1,2
+total 01|1,2 02|0,1 03|0,1
+effervesce 01|1
+shave 01|0,1,2,3
+dye 01|0,1,2
+bisect 01|0,1,2
+coast 01|0,1
+stack 01|0,1,2 02|1 03|0,1
+understand 01|0,1,2 02|0,1,2
+disentangle 01|0,1,2
+inconclusive 01|0,1
+absolve 01|0,1,2
+while 01|0,1,2
+slog 01|0,1
+despotic 01|1
+defat 01|0,1,2
+squabble 01|0,1,2
+arm 01|0,1,2 02|0,1,2 03|0,1,2
+contaminate 01|0,1,2
+reinvigorate 01|0,1
+coauthor 01|0,1,2
+it 01|0,1,2
+exchange 01|0,1,2,3,4
+batter 01|0,1,2,3
+squirt 01|0,1,2
+degerm 01|0,1,2
+stutter 01|0,1,2
+crown 01|0,1,2 02|0,1,2 03|1,2 04|0,1,2
+tally 01|0,1 02|0,1
+sacrifice 01|0,1,2
+transit 01|1,2 02|1,2
+foxtrot 01|0,1
+pack 01|0,1,2 03|0,1,2 05|0,1 02|0,1 04|0,1
+solicit 01|0,1,2
+be 01|1,2 02|1 03| 04|0,1 05|0,1,2
+strive 01|0,1
+rekindle 01|0,1
+gymnastics 01|0
+dorsiflex 01|0,1
+duststorm 01|1,2,3,4,5
+immiserate 01|0,1
+efflux 01|0,1
+fidget 01|0,1
+reintensify 01|0,1,2,3,4
+slime 01|0,1
+discern 01|0,1 02|0,1
+jot 01|0,1,2 02|0,1,2
+preform 01|0,1,2,3,4
+salaam 01|0,1,2
+scalp 01|0,1,2 02|0,1,2,3,4
+hobble 01|0,1,2 02|0,1,2
+drought 01|1,2,3,4,5
+hoodwink 01|0,1,2
+rustle 01|1 02|0,1
+shun 01|0,1
+grateful 01|0,1,2
+facetime 01|0,1,2
+titter 01|0,1,2,3
+rabbit 01|0,1,2,3
+perch 01|0,1,2
+fluoresce 01|1,2
+humanitarian 01|0,1,2
+sing 01|0,1,2
+salvage 01|0,1,2
+luncheon 01|0,1
+mentor 01|0,1,2
+disinherit 01|0,1,2
+stud 01|0,1,2
+improvise 01|0,1
+exist 01|1,2
+ward 01|0,1,2
+iceskate 01|0,1
+wink 01|0,1,2
+educate 01|0,1,2
+unchain 01|0,1,2
+boo 01|0,1,2
+inconvenience 01|0,1,2 02|0,1,2
+captain 01|0,1
+menstruate 01|1
+flavor 01|1,2 02|0,1,2
+peter 01|1 02|0,1,2,3
+document 01|0,1
+phase 01|0,1 02|0,1
+wharf 01|0,1,2 02|0,1,2 03|0,1,2
+shipwreck 01|0,1,2 02|0,1,2
+plagiarize 01|0,1,2
+accumulate 01|0,1,3
+moil 01|0,1 02|1,2
+invaluable 01|1,2
+radiograph 01|0,1
+wangle 01|0,1,2,3
+transect 01|0,1
+tolerate 01|0,1 02|0,1
+commodify 01|0,1,2
+hardboil 01|0,1
+pour 01|0,1,2,3 02|1
+glycosylate 01|0,1
+douchey 01|1
+disrupt 01|0,1
+mistrust 01|0,1,2
+disband 01|0,1
+triage 01|0,1,2,3
+intensify 01|0,1,2 02|1,2
+moneysaving 01|0,1,2
+regulate 01|0,1
+conveyancing 01|0,1,2,3
+excerpt 01|0,1,2
+yap 01|0,1,2
+nauseate 01|0,1
+board 01|0,1 02|0,1 03|0,1 04|0,1 05|0,1
+regain 01|0,1,2
+stew 01|0,1 02|0,1
+oink 01|0
+lose 01|1,2,3,4,M-LOC 02|0,1,2,3 03|0,1,2 04|0,1,2 07|1,2 06|0,1,2
+indignation 01|1,2
+unplug 01|0,1
+fire 01|0,1 02|0,1,2 03|0,1 04|0,1 05|1,2,3,4 06|0,1
+creak 01|0
+grind 01|0,1,2 03|1 04|0,1,2 05|0,1,2 02|0,1,2
+triple 01|0,1,2,3,4
+nonulcerated 01|1
+waffle 01|0,1
+frack 01|0,1,2
+fissure 101|0,1
+huckster 01|0,1
+parcel 01|0,1,2
+supersaturate 01|0,1,2
+part 01|0,1,2 02|0,1 03|0,1
+spur 01|0,1,2
+decondition 01|0,1,2
+retether 01|0,1,2
+encompass 01|0,1
+spellbind 01|0,1,2
+lay 01|0,1,2 04|0,1 07|1,2 08|0,1,2,3 03|0,1 02|0,1 06|0,1 05|0,1 09|1,2 10|0,1,2 11|1
+devein 01|0,1,2
+reenforce 01|0,1,2
+underrepresent 01|0,1,2
+highfive 01|0,1,2
+mint 01|0,1,2,3,4
+dehull 01|0,1,2
+parry 01|0,1,2
+nonwhite 01|1
+safeguard 01|0,1,2
+recirculate 01|0,1
+bus 01|0,1,2,3
+emit 01|0,1
+immunoblot 01|0,1,2,3
+kindle 01|0,1
+overweight 01|0,1,2 02|1,2,3
+envy 01|0,1,2
+inflict 01|0,1,2
+infer 01|0,1,2
+floor 01|0,1,2 02|0,1,2
+rename 01|0,1,2
+fleck 01|0,1,2
+mouth 01|0,1,2
+portray 01|0,1,2
+anesthetize 01|0,1,2
+antique 01|0,1,4
+press 01|0,1,2 02|0,1,M-DIR 03|0,1
+emblazon 01|0,1,2
+incursion 01|0,1
+soar 01|1,2,3,4,5 02|1
+misinterpret 01|0,1,2
+unjustifiable 01|0,1,2,3,4
+accustom 01|0,1,2
+recycle 01|0,1,2 02|0,1,2
+patient 01|1,2
+bumrush 01|0,1
+remove 01|0,1,2 02|0,1,2
+doublecross 01|0,1
+increase 01|0,1,2,3,4
+pervade 01|0,1
+subcontract 01|0,1,2
+discount 01|0,1,2,3,4 02|0,1,2
+incense 01|0,1
+arraign 01|0,1,2
+ebb 01|1
+gild 01|0,1,2
+tubulate 01|0,1
+hailstorm 01|1,2,3,4,5
+nudge 01|0,1,2,3,4,M-LOC,5 02|0,1,2
+blackmail 01|0,1
+contraflow 01|0
+can 01|0,1 02|0,1,2
+bartend 01|0,1,2
+walled 01|1,2
+sketch 01|0,1,2 02|0,1
+handwrite 01|0,1,2
+regret 01|0,1 02|0,1
+huddle 01|0 02|0,1
+uncomfortable 01|0,1
+cheep 01|0
+hull 01|0,1,2,3 02|0,1,2
+ionize 01|0,1
+glacierize 01|0,1
+warmonger 01|0
+reimpose 01|0,1,2
+embellish 01|0,1,2
+careen 01|0,1
+forest 01|0,1,2
+comprehensive 01|1
+restudy 01|0,1
+divert 01|0,1,2,3
+ranch 01|0,1
+desquamate 01|1,2
+head 01|0,1 02|0,1 03|0,1,2 04|0,1 05|1,2
+intelligent 01|1,2
+ruin 01|0,1,2
+massage 01|0,1
+shortsighted 01|1,2
+flaccid 01|1
+win 01|0,1,2,3,4,5 02|0,1,2
+tin 01|0,1,2
+benign 01|1,2,3
+swap 01|0,1,2,3,4
+task 01|0,1,2
+peculiar 01|1,2
+outleap 01|0,1
+incise 01|0,1,2
+seat 01|0,1,2 02|0,1
+reexamine 01|0,1,2
+embolize 01|0,1,2
+passivate 01|0,1,2,3
+crew 01|0,1
+farnesylate 01|0,1,2,3
+procure 01|0,1,2
+screen 01|0,1,2 03|0,1 02|0,1,2
+rocket 01|1,2,3,4,5
+orbit 01|0,1
+readmit 01|0,1,2
+zest 01|0,1
+disappear 01|0,1
+vociferate 01|0,1
+debit 01|0,1,2
+blackle 01|0,1
+holdover 01|0,1,2
+strangle 01|0,1
+rage 01|0,1,2 02|0,1
+denuclearize 01|0,1
+jibe 01|0,1,2
+scowl 01|0,1,2
+coedit 01|0,1
+alleviate 01|0,1
+roughen 01|0,1,2 02|0,1 03|0,1 04|1 05|1
+decorticate 01|0,1,2
+spank 01|0,1,2
+interlope 01|0
+fan 01|0,1
+charbroil 01|0,1
+gore 01|0,1,2
+normoactive 01|1
+personify 01|1,2
+pleasure 01|0,1
+resolve 01|0,1,2,3 02|0,1,2,3 03|0,1,2,3
+chagrin 01|0,1,2
+dumbfound 01|0,1,2
+define 01|0,1,2 02|0,1
+protrude 01|1,2
+discharge 01|0,1 101|0,1,2
+damn 01|0,1
+whistleblow 01|0,1,2,3
+accuse 01|0,1,2
+contextualize 01|0,1,2
+insane 01|1
+intermix 01|0,1,2
+blame 01|0,1,2
+overexpress 01|0,1,2
+execute 01|0,1,2 02|0,1,2,3
+sublimate 01|0,1,2,3,4 02|0,1,2,3
+rouse 01|0,1
+clobber 01|0,1,2
+recapitulate 01|0,1,2
+outmatch 01|0,1
+chink 01|0,1,2
+cork 01|0,1
+csection 01|0,1
+cowardly 01|1
+wed 01|0,1,2
+determine 01|0,1,2,3 02|0,1
+pop 01|0 02|0,1 04|0,1,2,3,4,5 05|0,1,2 03|0,1 06|0,1
+handwring 01|0,1
+thirst 01|0,1
+overjoy 01|0,1,2
+date 01|0,1,2 02|0,1
+demobilize 01|0,1
+relearn 01|0,1,2
+brag 01|0,1
+rejoice 01|0,1
+static 01|1
+puff 01|0,1 02|1 03|0,1 04|1
+overdramatic 01|1
+musical 01|1
+shortcut 01|0,1,2,3
+foreshadow 01|0,1,2
+emphaticize 01|0,1,2
+twinge 01|0,1
+underwrite 01|0,1
+sandwicheer 01|0
+anovulation 01|0,1
+fantasize 01|0,1 02|1,2 03|1,2 04|1,2
+shawl 01|0,1,2
+socialist 01|1
+tamp 01|0,1,2
+rationalize 01|0,1,2 02|1 03|1
+constrict 01|0,1,2,3,4
+much 01|1,2 02|1,2
+reculture 01|0,1
+umbilication 01|0,1
+ticket 01|0,1,2 02|0,1,2
+phrase 01|0,1,2
+swash 01|0,1,2
+flake 01|0,1,2,3 02|0,1 03|0,1
+cock 01|0,1
+mourn 01|0,1
+essay 01|0,1
+clomp 01|1,2
+kid 01|0,1,2
+withstand 01|0,1
+thorough 01|1
+wheedle 01|0,1,2
+bizarre 01|1
+enable 01|0,1,2
+festoon 01|0,1,2
+enflame 01|0,1
+hash 01|0,1
+smolder 01|0
+identical 01|1,2
+economize 01|0,1
+perambulate 01|1,2,3,4
+ballot 01|0,1,2
+british 01|1
+campaignmanage 01|0,1
+biopsy 101|0,1
+garland 01|0,1,2
+lease 01|0,1,2,3,4 02|0,1,2,3,4
+despise 01|0,1
+polka 01|0,1,2
+bleed 01|0,1 02|0,1 03|0,1 04|0,1 05|1
+facilitate 01|0,1
+disperse 01|0,1
+scapegoat 01|0,1,2
+cc 01|0,1,2
+knacker 01|0,1
+fart 01|0,1 02|0,1
+truncheon 01|0,1,2
+entertain 01|0,1,2 02|0,1
+consist 01|1,2
+hypercontrol 01|0,1,2
+offend 01|0,1,2 03|0,1 02|0,1
+noble 01|1,2 02|1
+golight 01|0
+reeducate 01|0,1,2
+irresponsible 01|1
+turf 01|0,1,2
+carouse 01|0,1
+marketize 01|0,1
+throttle 01|0,1
+iodize 01|0,1,2
+affect 01|0,1,2 02|0,1 03|0,1 04|0,1
+toast 01|0,1
+plaque 01|1
+deink 01|0,1,2
+emcee 01|0,1
+yummy 01|1
+scotch 01|0,1
+bloody 01|0,1
+twitch 01|0,1
+slobber 01|0,1
+emigrate 01|0,1,2
+catastrophic 01|0,1
+memorialize 01|0,1
+sexist 01|1,2
+reckless 01|1,2
+sanction 01|0,1 02|0,1,2
+scarify 01|0,1
+wake 01|0,1,2,3 04|0,1 02|0,1,2,3 03|1,2,3
+conduct 01|0,1 02|0,1 03|1,2
+form 01|0,1,2,3,4 02|0,1
+collar 01|0,1,2
+derange 01|0,1,2
+fray 01|0,1
+ubiquitinate 01|0,1,2,3
+mystify 01|0,1,2
+reply 01|0,1,2
+scam 01|0,1,2,3
+overtop 01|0,1
+respire 01|0 02|1
+merchandise 01|0,1
+franchise 01|0,1,2
+enervate 01|0,1
+confiscate 01|0,1,2
+levy 01|0,1,2
+bank 01|0,1,2 02|0,1 04|0,1,2 03|0,1,2
+brutalize 01|0,1,2,3 02|0,1,2
+retract 01|0,1
+disburse 01|0,1,2,3
+guffaw 01|0,1
+perish 01|0
+exhume 01|0,1
+stabilize 01|0,1,2 02|0,1,2 03|1,2
+traverse 01|0,1
+dominate 01|0,1
+invalidate 01|0,1
+foresee 01|0,1 02|0,1
+medium 01|1,2
+pepperspray 01|0,1,2
+imbed 01|0,1,2
+internalize 01|0,1,2 02|1,2
+natter 01|0,1
+fuck 01|0,1 02|0,1 03|0 04|0,1
+redefine 01|0,1,2
+don 01|0,1
+crank 01|0,1 02|0,1
+underline 01|0,1
+administer 01|0,1,2
+bellyflop 01|1
+compute 01|0,1,2
+chime 01|0 02|0,1,2
+ahead 01|1,2,3 02|1,2 03|1,2,3,4
+dick 01|0,1
+essential 01|1,2
+connote 01|0,1
+cooperate 01|0,1,2
+snatch 01|0,1,2 02|0,1,2,3
+wind 01|0,1,2 02|1,2 03|0,1,2 05|0,1 04|0,1
+canvass 01|0,1
+cheapen 01|0,1,2 02|1,3
+twinkle 01|1
+crawl 01|0,1
+stomp 01|0,1
+idolize 01|0,1
+lichenify 101|0,1
+energize 01|0,1,2
+flutter 01|0,1
+abdominal 01|1
+govern 01|0,1,2
+comfort 01|0,1,2 02|0,1
+juxtapose 01|0,1,2
+immigrate 01|0,1,2
+whistle 01|0,1,2
+enroll 01|0,1,2
+sig 01|0,1
+reinsure 01|0,1,2,3,4,5
+clay 01|0,1,2
+misconceive 01|0,1,2
+coexist 01|1,2
+relocate 01|0,1,2,3
+chemoradiate 01|0,1,2
+gestate 01|0,1
+unshackle 01|0,1,2
+unwise 01|1
+atrocity 01|0,1
+spackle 01|0,1,2
+blitz 01|0,1,2
+brandish 01|0,1
+expose 01|0,1,2
+report 01|0,1,2
+aid 01|0,1,2
+elude 01|0,1
+hint 01|0,1,2
+twiddle 01|0,1
+ply 01|0,1,2 02|0,1 03|0,1,2
+remunerate 01|0,1,2
+racket 01|0 02|0,1,2
+imprecate 01|0,1,2
+avert 01|0,1,2,3
+invest 01|0,1,2
+snorkel 01|0,1,2
+iodinate 01|0,1,2
+sniff 01|0,1 02|0,1,2 03|0,1
+talc 01|0,1,2
+expunge 01|0,1,2
+countenance 01|0,1
+diminish 01|0,1,2,3,4
+gesticulate 01|0
+blacktop 01|0,1
+palm 01|0,1
+unearth 01|0,1
+contusion 01|0,1
+befriend 01|0,1
+desist 01|0
+retrospect 01|0,1
+jab 01|0,1,2 02|0,1,2
+factor 01|0,1,2
+subpoena 01|0,1
+abet 01|0,1
+satisfy 01|0,1,2 02|0,1,2 03|1,2
+oscillate 01|0,1
+nuptials 01|0,1,2
+conquer 01|0,1,2
+debate 01|0,1,2 02|0,1,2
+revolt 01|0,1 02|0,1,2 03|0,1 04|1 05|0,1 06|1,2
+toil 01|0,1 02|0,1
+interdict 01|0,1,2
+conjoin 01|0,1,2
+mug 01|0,1,2
+lesson 01|0,1,2
+fudge 01|0,1 02|0,1
+holocaust 01|0,1,2
+intermarry 01|0,1,2
+lecture 01|0,1,2
+phat 01|1
+underachieve 01|0,1
+hawk 01|0,1,2 02|0,1
+walk 01|0,1,2 02|0,1 03|0,1,2 04|1 05|0,1,2
+catapult 01|0,1,2
+overburden 01|0,1,2
+bestow 01|0,1,2
+niggle 01|1,2
+mutilate 01|0,1
+glove 01|0,1,2
+deposit 01|0,1,2 02|0,1 03|0,1,2
+superimpose 01|0,1,2
+watch 01|0,1 03|0,1 02|0,1
+pronate 01|0,1
+disguise 01|0,1,2
+squall 01|0 02|0 03|1
+prune 01|0,1,2,3
+stuff 01|0,1,2
+accord 01|0,1,2 02|0,1,2 03|0,1,2
+derat 01|0,1
+retest 01|0,1,2
+brawl 01|0,1,2
+malinger 01|0
+barge 01|0,1,2
+dedicate 01|0,1,2
+reexcise 01|0,1,2
+hotheaded 01|0,1
+bottle 01|0,1 02|0,1
+churn 01|0,1,2
+bushfire 01|1,2,3,4
+wound 01|0,1,2
+assay 01|0,1,2
+prepossess 01|0,1,2
+odd 01|1 02|1
+specialize 01|0,1 02|1,2
+indurate 01|0,1,2
+sauce 01|0,1,2 02|0,1
+vigorous 01|1
+attribute 01|0,1,2 02|0,1,2
+host 01|0,1
+cluck 01|0
+womanize 01|0,1
+blab 01|0,1,2
+place 01|0,1,2
+rendezvous 01|0,1
+bond 01|0,1,2,3 02|1
+genocide 01|0,1,2
+frustrate 01|0,1,2
+retrial 01|0,1
+wire 01|0,1,2 02|0,1,2
+friend 01|0,1,2
+misgiving 01|0,1,2
+ensue 01|1,2
+detect 01|0,1,2 02|0,1,2
+divine 01|0,1
+oppose 01|0,1
+nosedive 01|1,2,3,4,M-LOC
+wrench 01|0,1,2 02|0,1 03|0,1
+outlaw 01|0,1
+poof 01|0,1 02|0,1
+restrict 01|0,1,2
+custody 01|0,1
+mask 01|0,1,2
+occult 01|1,2
+courtmartial 01|0,1,2,3
+telephone 01|0,1,2
+extraaxial 01|1
+oblivious 01|0,1
+delegitimize 01|0,1
+circle 01|0 02|0,1,2
+immolate 01|0,1,2
+excoriate 01|0,1,2 02|0,1,2
+codeletion 01|0,1,2
+impale 01|0,1,2
+ting 01|0,1,2
+woman 01|0,1
+expel 01|0,1,2
+proportion 01|0,1,2
+twist 01|0,1 02|0,1
+taint 01|0,1,2
+plump 01|0,1,2
+suffer 01|0,1
+stagger 01|1 02|0,1 03|0,1
+occluded 01|0,1,2,3
+sneer 01|0,1,2,3
+clutch 01|0,1 02|0,1
+cosh 01|0,1
+reconvene 01|0,1
+flipflop 01|0,1,2,3
+fasten 01|0,1,2,3
+adrenalectomize 01|0,1
+pale 01|1 02|1,2 03|1,2
+deride 01|0,1,2
+notify 01|0,1,2
+invite 01|0,1,2
+commiserate 01|0,1,2
+privatize 01|0,1 02|1,2 03|1
+chop 01|0,1,2 02|0,1,2 03|0,1,2
+tramp 01|0,1
+cobble 01|0,1,2
+prone 01|1,2 02|1
+reuse 01|0,1,2
+single 01|0,1,2,3 02|1,2 03|1
+repopulate 01|0,1,2
+posture 01|0,1
+diverge 01|0,1
+ragged 01|1
+solder 01|0,1,2,3
+disgruntle 01|0,1
+dethrone 01|0,1,2
+quarantine 01|0,1,2
+originate 01|0,1,2,3
+dim 01|0,1
+diabetic 01|1
+permanent 01|1,2
+retrieve 01|0,1,2,3
+partisan 01|1,2
+second 01|0,1,2
+normokinetic 01|1
+allow 01|0,1 02|0,1,2 03|0,1 04|0,1
+cadge 01|0,1
+riddle 01|0,1,2
+bamboozle 01|0,1,2
+prolong 01|0,1,2,3,4
+deem 01|0,1
+concus 01|0,1,2
+polite 01|1,2
+hemagglutinate 01|0,1,2
+skim 01|0,1 02|0,1,2 03|0,1,2
+agitate 01|0,1
+flamboyant 01|1
+meet 01|0,1 02|0,1 03|0,1 05|0,1,2 04|0,1
+restructure 01|0,1,2,3
+usurp 01|0,1
+haboob 01|1,2,3,4,5
+recline 01|0,1,2
+forestall 01|0,1
+rifle 01|0,1,2
+ventilate 01|0,1
+remarry 01|0,1,2
+relent 01|0,1
+engulf 01|0,1,2
+groundless 01|1
+decay 01|0
+rumble 01|0,1,2
+uninhabitable 01|0,1
+detrimental 01|0,1
+defog 01|0,1,2
+brief 01|0,1,2
+southbound 07|1,2
+rampant 01|1
+clunk 01|0,1
+unseat 01|0,1,2
+decease 01|1
+sneak 01|0,1,2,3 02|0,1,2 03|0,1
+sensitize 01|0,1,2
+appease 01|0,1
+shed 01|0,1 02|1,2,3,4,M-LOC 03|0,1,2
+hopscotch 01|0
+jettison 01|0,1
+glom 01|0,1,2,3
+imperfect 01|1,2
+leeway 01|0,1,2
+flatulent 01|0,1,2
+recase 01|0,1,2
+sop 01|0,1,2 02|0,1,2 03|0,1,2,3
+homicide 01|0,1,2
+vandalize 01|0,1,2
+conk 01|0,1
+affuse 01|0,1,2
+hungover 01|0,1
+nibble 01|0,1
+unreal 01|1
+crave 01|0,1
+deregulate 01|0,1,2,3
+rush 01|0,1,2
+dispose 01|0,1,2 02|0,1,2 03|0,1
+refill 01|0,1,2 02|0,1,2
+reirradiate 01|0,1,2
+frighten 01|0,1,2,3 02|0,1,2 03|0,1,2 04|0,1,2
+market 01|0,1,2,3,4
+wage 01|0,1,2
+yammer 01|0,1 02|0,1 03|0,1
+unobscured 01|0,1,2
+enchant 01|0,1,2
+goad 01|0,1,2
+hulk 01|1
+showcase 01|0,1,2
+reprobate 01|0,1
+severe 01|1 02|0,1,2 03|1
+explicate 01|0,1,2 02|1 03|0,1,2
+overhear 01|0,1,2
+debut 01|0,1
+malrotation 01|0,1
+ineffective 01|0,1
+atypical 01|1,2
+write 01|0,1,2 02|0,1,2 08|0,1 03|0,1 04|0,1,2,3,4 05|0,1 06|0,1,2 07|0,1,2
+bicycle 01|0,1
+foment 01|0,1
+spurt 01|1,2 02|1,2,3,4
+gunshot 11|0,1,2
+publicize 01|0,1,2 02|1,2
+cta 01|1
+untrustworthy 01|0,1,2
+harry 01|0,1
+extrapolate 01|0,1,2
+wolf 01|0,1
+create 01|0,1,2,3,4
+desmoplastic 01|1
+understaff 01|0,1,2
+overfit 01|0,1,2
+splinter 01|0,1,2
+discourse 01|0,1,2
+suboptimal 01|1,2
+criminalize 01|0,1,2 02|0,1,2 03|0,1,2
+screw 01|0,1 02|0,1 04|0,1,2 05|0,1
+indecipherable 01|0,1,2
+unconcerned 01|0,1
+impound 01|0,1
+chalk 01|0,1 02|0,1,2
+recuse 01|0,1,2
+pit 01|0,1,2 02|0,1 03|0,1
+swerve 01|0,1
+entreat 01|0,1,2
+immortalize 01|0,1 02|0,1,2 03|0,1,2 04|1
+count 01|0,1,2 02|0,1,2 03|0,1,2 04|1
+coat 01|0,1,2
+wikipedia 01|0,1
+incomparable 01|0,1,2
+comanage 01|0,1
+absorb 01|0,1,2,3
+redline 01|0,1,2
+save 01|0,1,2,3 02|0,1,2 03|0,1,2 04|0,1,2 05|0,1,2,3 06|0,1,2 07|0,1,2
+unbolt 01|0,1,2
+biotinylate 01|0,1,2,3
+detonate 01|0,1
+sleet 01|1
+blanch 01|0 02|0,1 03|0,1
+ambush 01|0,1
+taiwanize 01|0,1
+paper 01|0,1,2
+auction 01|0,1,2,3,4 02|0,1,2,3,4
+face 01|0,1 02|0,1 03|0,1
+fieldwork 01|0,1,2,3
+isomerize 01|0,1,2,3
+split 01|0,1,2,3,4 02|0,1 03|0,1,2
+fleece 01|0,1,2
+seal 01|0,1 02|0,1,2,3
+stow 01|0,1,2
+parade 01|0,1 02|1,2,3
+ogle 01|0,1
+refrigerate 01|0,1,2
+muggy 01|1
+equate 01|0,1,2
+incapacitate 01|0,1
+mix 01|0,1,2,3 02|0,1,2,3 03|0,1,2
+lick 01|0,1 02|0,1,2
+rue 01|0,1
+angioplasty 01|0,1
+snoop 01|0,1
+overindulge 01|0,1
+upsize 01|0,1,2,3,4
+inevitable 01|0,1,2
+novel 01|1,2
+start 01|0,1,2 06|0,1,2 101|0,1,2 03|0,1 09|1,2,3 02|0,1 04|0,1,2,3 05|0,1,2 07|0,1,2 08|0,1,2
+postulate 01|0,1
+shingle 01|0,1,2
+proselytize 01|0,1,2
+embrocate 01|0,1,2
+skulk 01|0,1
+mature 01|1 02|1 03|0,1,2,3
+twig 01|1
+outpouching 01|1
+immunofluoresce 01|1,2
+annotate 01|0,1
+crow 01|0,1
+reorganize 01|0,1,2,3,4,5
+stent 01|0,1
+curate 01|0,1
+atretic 01|1
+unconstitutional 01|1
+nuts 01|1 02|0,1
+hew 01|0,1,2 02|0,1
+skedaddle 01|1,2,3,4
+reread 01|0,1,2,3
+jetlag 01|0,1
+prate 01|0,1,2 02|0,1,2
+offer 01|0,1,2,3
+overstep 01|0,1,2
+deactivate 01|0,1
+evidence 01|0,1
+pearl 01|0,1,2,3
+swoop 01|0 02|0,1
+shirr 01|0,1
+stopper 01|0,1,2
+emerge 01|0,1 02|0,1
+freelance 01|0,1,2
+overcrowd 01|0,1,2
+joke 01|0,1,2 02|0,1,2
+partner 01|0,1
+twang 01|0,1,2 02|0,1,2,3 03|0,1,2 04|0,1,2
+swat 01|0,1,2
+manmade 01|0,1,2,3
+verge 01|1,2
+fossilize 01|0,1,2
+cheer 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1
+range 01|1,2,3,4,5
+decompose 01|0,1
+darken 01|0,1 02|1,2 03|1,2
+nonautistic 01|1
+ripen 01|0,1 02|1,2
+complement 01|1,2
+exhort 01|0,1,2
+perk 01|0,1
+rumba 01|0,1,2
+mail 01|0,1,2
+inexpensive 01|1,2,3
+blindside 01|0,1,2
+lope 01|1,2,3,4
+curious 01|0,1 02|1
+deaden 01|0,1,2
+bottleneck 01|0,1,2
+overstrain 01|0,1
+hit 01|0,1,2 02|0,1 03|0,1 06|0,1 07|0,1,2 04|0,1 05|0,1,2
+inspire 01|0,1,2 02|0,1
+flush 01|0,1,2 03|0,1,2 02|0,1
+tincture 01|0,1,2
+trawl 01|0,1,2
+mucinous 01|1
+exhibit 01|0,1,2
+mediate 01|0,1,2
+revisualize 01|0,1,2
+dam 01|0,1
+analyze 01|0,1
+jumpstart 01|0,1,2
+precipitate 01|0,1 02|1
+dizzy 01|0,1 02|0,1
+coax 01|0,1,2
+turn 01|0,1,M-LOC 02|0,1,2,3 03|0,1,2 14|0,1 16|0,1 18|0,1,2 04|0,1,2 05|0,1 06|0,1,2 22|0,1,2,3 13|0,1 07|0,1 08|0,1,2 09|0,1 10|0,1,2,3 11|1,2 17|0,1 12|0,1,2,3 15|0,1
+jump 01|1,2,3,4 02|0,1 03|0,1,2 06|0,1 07|0,1 08|0,1 04|0,1 05|0
+relapse 01|1,2
+caravan 01|0,1,2,3
+awkward 01|1 02|1,2
+skimp 01|0,1
+irrigate 01|0,1
+quadrangulate 01|0,1,2 02|0,1,2,3
+rouge 01|0,1,2
+trivialize 01|0,1
+falsify 01|0,1
+condone 01|0,1
+downmodulate 01|0,1,2,3,4
+genuflect 01|0,1
+deify 01|0,1
+surefire 01|1
+challenge 01|0,1,2
+wall 01|0,1,2
+reconsider 01|0,1
+endanger 01|0,1
+isolate 01|0,1,2
+necessitate 01|0,1 02|1,2
+diversify 01|0,1,2,3
+overplay 01|0,1
+jilt 01|0,1,3
+parrot 01|0,1,2
+park 01|0,1,2
+homeless 01|1
+useless 01|0,1,2
+laud 01|0,1,2
+premedicate 01|0,1,2,3
+herald 01|0,1,2
+grit 01|0,1
+prudent 01|1
+reinvent 01|0,1
+proscribe 01|0,1,2
+rofl 01|0,1
+storytelling 01|0,1,2
+box 01|0,1,2 02|0,1,2 03|0,1 04|0,1,2,3 05|0,1
+mutate 01|0,1,2,3
+vest 01|0,1,2
+recriminate 01|0,1
+section 01|0,1,2,3 02|0,1
+overlay 01|0,1,2
+embroider 01|0,1,2
+resign 01|0,1 02|1,2 03|0,1,2
+misuse 01|0,1
+excise 01|0,1,2
+sympathize 01|0,1
+infraction 01|0,1
+fragile 01|1
+misspell 01|0,1,2
+dogsit 01|0,1,2
+ah 01|0,1
+celebrate 01|0,1,2 02|0,1
+navigate 01|0,1,2
+shack 01|0,1
+inefficient 01|1,2
+pluck 01|0,1,2
+knit 01|0,1,2,4 02|1 03|0,1
+pledge 01|0,1,2
+disappoint 01|0,1,2
+wince 01|0,1
+noisy 01|1,2
+burgeon 01|1
+muzzle 01|0,1,2
+partition 01|0,1,2,3
+streamline 01|0,1
+know 01|0,1,2 02|0,1,2,3 03|0,1 04|0,1,2 05|0,1 06|0
+silly 01|1
+ladle 01|0,1,2
+democratize 01|0,1 02|1
+iatrogenic 01|1
+crush 01|0,1,2,3 02|0,1
+immunodetect 01|0,1,2,3
+purge 01|0,1,2
+molt 01|0,1,2
+tail 01|0,1
+baffle 01|0,1,2
+abbreviate 01|0,1,2,3,4
+devalue 01|0,1,2
+gift 01|0,1,2
+commingle 01|0,1,2,3
+continue 01|0,1 02|0,1,2,3
+counteraction 01|0,1,2
+clock 01|0,1,2,3 02|0,1,2
+secret 01|0,1,2 02|0,1
+dent 01|0,1,2
+freshen 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2
+pay 01|0,1,2,3 04|1 02|0,1,2 05|1 03|0,1,2,3 06|0,1 07|0,1,2,3
+police 01|0,1
+uneasy 01|0,1,2
+poison 01|0,1,2 02|0,1,2 03|1,2
+yank 01|0,1,2
+search 01|0,1,2
+barbaric 01|0,1,2
+arbitrage 01|0,1
+twotime 01|0,1,2
+downvalue 01|0,1,2,3
+sob 01|0 02|1
+pretreat 01|0,1,2,3
+observe 01|0,1 02|0,1,2,3
+session 01|0,1,2,M-TMP,M-LOC
+bronchodilation 01|0,1
+proctor 01|0,1
+honeymoon 01|0,1
+honk 01|0,1,2
+mortgage 01|0,1,2,3
+housekeep 01|0,1
+nebulize 01|0,1,2 02|0,1,2
+lift 01|0,1,2,3,4,M-LOC 02|0,1,2
+slurp 01|0,1
+attack 01|0,1,2
+exit 01|0,1
+inoperable 01|0,1
+live 01|0,1 02|0,1 08|1 06|0,1 03|1,2,3 04|0,1 05|0,1 07|1
+tout 01|0,1,2,3
+uncontrolled 01|0,1,2
+reimage 101|0,1
+stirfry 01|0,1
+eruct 01|0,1
+stampede 01|0,1,2
+gloss 01|0,1 02|0,1
+common 01|1,2 02|1 03|1,2
+polarize 01|0,1,2
+nice 01|1,2
+unstructured 01|0,1,2
+survey 01|0,1,2,3 02|0,1,2,3
+time 01|0,1,2 02|0,1,2 03|1,2
+parachute 01|0,1
+inadequate 01|1,2
+genuine 01|1,2 02|1
+blabber 01|0,1,2
+flap 01|0,1
+blue 01|0,1
+rave 01|0,1
+deparaffinize 01|0,1
+debark 01|0,1,2
+lump 01|0,1,2
+situate 01|0,1,2
+spring 01|1,2,3 02|1
+rooroo 01|0,1,2
+irregular 01|1,2
+rehabilitate 01|0,1,2
+dupe 01|0,1,2
+saunter 01|1,2,3,4
+interconnect 01|0,1
+important 01|1,2
+microcalcification 01|0,1,2
+unreported 01|0,1
+appall 01|0,1
+catalyze 01|0,1
+gaze 01|0,1
+stick 01|0,1,2 02|0,1 03|0 04|0,1
+unavoidable 01|0,1
+misfire 01|1
+lighten 01|0,1,2,3,4 02|0,1,2 03|0,1 09|0,1,2 04|0,1 05|1,2 06|1,2 07|1,2 08|0,1
+apply 01|0,1,2 02|0,1,2 03|0,1,2,3 04|0,1 05|0,1,2
+thrash 01|0,1,2 03|1 02|0,1,2
+function 01|0,1
+unhook 01|0,1,2
+tiedye 01|0,1,2
+resubmit 01|0,1,2,3
+iftar 01|0,1
+transpire 01|1,2
+moan 01|0,1
+languish 01|1,2 02|0,1
+victimize 01|0,1,2
+headline 01|0,1,2
+finish 01|0,1,2 02|1,M-MNR,M-EXT 03|0,1,2 07|0,1,2,3 04|0,1,2,3 05|0,1,2 06|0,1,2,3
+drum 02|0,1,2 01|0,1
+ail 01|0,1
+guilty 01|1,2
+quarry 01|0,1,2
+able 01|1,2
+headquarter 01|0,1,M-LOC
+upstage 01|0,1,2
+zonation 01|0,1,2
+bedevil 01|0,1,2
+shock 01|0,1,2
+tow 01|0,1,2,3
+stump 01|0,1 02|0,1
+cohost 01|0,1
+perforate 01|0,1,2
+universal 01|1,2
+thunder 01|0,1,2 02|0,1,2
+set 01|0,1,2 02|0,1,2 08|0,1,2 11|1 14|0,1,2 16|1,2 04|0,1 05|0,1 13|0,1 12|0,1 06|0,1 07|0,1 03|0,1,2 15|0,1,2 09|0,1,2 10|0,1 17|0,1
+butcher 01|0,1,2
+retort 01|0,1,2
+retrovert 01|0,1
+shortcircuit 01|0,1
+denude 01|0,1,2
+pouch 01|1
+immerse 01|0,1,2
+infrequent 01|1
+singleminded 01|1,2
+taste 01|0,1 02|1,2
+molder 01|0,1,2
+repent 01|0,1,2
+demolish 01|0,1,2
+clueless 01|1,2
+remodel 01|0,1
+vague 01|0,1
+desalinate 01|0,1
+illustrate 01|0,1,2 02|0,1,2
+whitetan 01|1
+luck 01|1 02|0,1,2
+proliferate 01|0
+chomp 01|0,1
+exfoliate 01|0,1,2,3
+diaper 01|0,1,2
+reallocate 01|0,1,2,3
+unpeg 01|0,1,2
+abide 01|0,1
+bias 01|0,1,2,3
+honest 01|0,1,2
+retransfer 01|0,1,2,3
+resound 01|1,2
+bulge 01|0,1,2
+brook 01|0,1
+platinum 01|0,1
+interrelate 01|0,1,2
+dredge 01|0,1,2 02|0,1,2
+caucus 01|0
+dust 01|0,1,2 02|0,1 03|0,1
+yacht 01|0,1,2,3
+fulfill 01|0,1 02|1,2
+control 01|0,1,2
+wail 01|0,1
+buck 01|0,1 02|0,1 03|0,1
+grin 01|0 02|0,1,2
+unrevealing 01|0,1,2,3
+pigment 01|0,1,2
+come 01|1,2,3,4 12|1 02|0,1 03|1,2 04|1,2 05|1,2,3 14|0,1,2 16|1,2 28|0,1 06|1,2 07|1,2 08|1 25|1 29|1,2 09|0,1,2 10|0,1 11|0,1 13|1,2 15|1,2,3 21|0,1 17|0,1 18|1 19|1 20|0,1 22|1,2 23|1,2 24|1,2 26|0,1 27|1 30|1,2
+homodimerize 01|0,1,2,3
+reengage 01|0,1,2
+salt 01|0,1,2 02|0,1
+do 01| 02|0,1,2,3,4 04|0,1,2 11|0,1 12|1,2 03|0,1 05|0,1 07|0,1 08|0,1 06|1 10|0,1
+withhold 01|0,1,2
+purchase 01|0,1,2,3,4
+deforest 01|0,1,2
+minor 01|1,2 02|1
+replace 01|0,1,2
+play 01|0,1,2,3 02|0,1 08|0,1 10|0,1,2 11|0,1,2 12|0,1,2 03|0,1 04|0,1 07|0,1 05|0,1,2 06|0,1 09|0,1,2
+reconnoitre 01|0,1,2
+sober 01|0,1,2,3 03|1,3 02|0,1
+chariot 01|0,1,2,3
+wrangle 01|0,1,2
+parquet 01|0,1,2
+cofound 01|0,1,2
+tempt 01|0,1,2,3
+schlep 01|0,1,2,3
+fuzz 01|0,1,2
+expedite 01|0,1
+recombine 01|0,1,2,3
+rein 01|0,1
+span 01|0,1
+golf 01|0
+refute 01|0,1
+crinkle 01|0,1
+avenge 01|0,1
+plural 01|1
+jell 01|1
+narrate 01|0,1,2
+reinform 01|0,1,2
+neigh 01|0,1,2
+detain 01|0,1,2
+arrive 01|1,2,3,4
+gabble 01|0,1,2
+extrafamilial 01|1
+quench 01|0,1,2
+dog 01|0,1
+wdwn 01|1
+stalemate 01|0,1,2
+dewax 01|0,1,2
+initial 01|0,1
+dignify 01|0,1,2
+wrest 01|0,1,2
+recur 01|0,1
+shoo 01|0,1,2
+impel 01|0,1,2
+inch 01|0,1,2,3,4,5
+advect 01|0,1
+visualize 01|0,1,2
+bracket 01|0,1,2,3
+infuriate 01|0,1 02|0,1
+wrap 01|0,1,2 04|0,1,2 02|0,1,2 03|0,1,2
+believe 01|0,1,2 02|0,1,2
+labor 01|0,1 02|0 03|0,1
+beware 01|0,1
+prompt 01|0,1 02|0,1,2 03|0,1
+exhaust 01|0,1
+nonspecific 01|1,2
+ironic 01|1,2
+recant 01|0,1
+abash 01|0,1,2
+horrible 01|1,2 02|1,2 03|1,2
+administrate 01|0,1
+playwriting 01|0,1
+cozen 01|0,1,2 02|0,1,2
+underbid 01|0,1,2
+skirt 01|1,2 02|0,1
+utilize 01|0,1 02|1
+erase 01|0,1,2,3
+reopen 01|0,1,2,3
+need 01|0,1
+benchsitting 01|0 02|0,1
+taunt 01|0,1
+sadden 01|0,1,2 02|0,1,2
+troll 01|0,1,2
+nonrevealing 01|0,1,2,3
+slot 01|0,1,2
+cull 01|0,1,2
+vacuum 01|0,1,2
+unleash 01|0,1
+rickshaw 01|0,1,2,3
+selfidentify 01|0,1,2
+idealize 01|0,1 02|0,1,2
+archive 01|0,1,2
+worship 01|0,1
+refocus 01|0,1,2
+core 01|0,1,2 02|1,2 03|0,1,2
+solitary 01|1
+arrogate 01|0,1,2
+line 01|0,1,2 03|0,1 02|0,1
+satiate 01|0,1,2
+generalize 01|0,1,2 02|1,2
+strangulate 01|0,1,2
+typhoon 01|1,2,3,4,5,6
+reappropriate 01|0,1,2
+thump 01|0,1 02|1
+rack 02|0,1 04|0,1 01|0,1,2,3,4
+manifold 01|1,2
+outgrow 01|0,1
+nose 01|0,1,2 02|0,1
+overproduce 01|0,1,2,3
+insecure 01|1,2 02|0,1
+jet 01|1,2
+sap 01|0,1,2
+pancytopenic 01|1
+entangle 01|0,1,2
+calumniate 01|0,1
+magical 01|0
+airstrike 12|0,1,2
+damage 01|0,1,2
+pm 01|0,1,2
+caudal 01|1,2
+amputate 01|0,1
+go 01|1,2,3,4 02|0,1,3,4 03|0,1 04| 05|0,1 06|0,1,2 07|1,2,3 08|1,2,3 09|1 10|1,2 11|1,2 12|1,2 14|1 21|1,2 22|1,2 23|0,1,2 24|M-ADV,1 29|0,1 31|0,1 32|0,1 15|1 25|0,1,2 16|1 17|0,1 18|1 34|0,1 19|1,2 20|0,1 26|0,1,2,M-COM 30|1 27|1 28|1,2 33|1
+presuppose 01|0,1
+spay 01|0,1
+shortcoming 01|0,1
+pilfer 01|0,1,2,3
+uncover 01|0,1,3
+atrophy 01|1
+surmise 01|0,1
+tour 01|0,1,2
+preown 01|0,1
+copy 01|0,1,2 03|0,1,2 02|0,1
+billow 01|1,2
+husk 01|0,1
+allure 01|0,1,2
+deficit 01|1,2,3
+cyclone 01|1,2,3,4,5,6
+exorcise 01|0,1,2
+rerelease 01|0,1,2
+think 01|0,1,2 02|0,1 03|0,1 04|0,1 05|1 06|0,1,2
+jingle 01|0,1
+disagree 01|0,1,2
+receive 01|0,1,2,3,4
+dismember 01|0,1
+coil 01|0,1,2 02|1
+pulse 01|1,2
+urinate 01|0
+crenate 01|0,1,2
+abandon 01|0,1,2 02|0,1,2 03|0,1,2
+garble 01|0,1
+okay 01|0,1,2 02|1,2 03|1,2 04|1,2
+err 01|0,1
+apostatize 01|0,1
+pet 01|0,1,2
+warp 01|0,1
+abrade 01|0,1,2
+monomorphic 01|1
+nulliparous 01|0
+chorus 01|0,1
+scissor 01|0,1,2,3,4 02|0,1
+lap 01|0,1
+rash 01|1
+implode 01|0,1
+blood 01|0,1 02|1,2
+finance 01|0,1,2,3 02|0,1,2 03|1
+deputize 01|0,1,2,3
+emphasize 01|0,1,2
+finesse 01|0,1
+uncooperative 01|0,1,2
+serious 01|1,2 02|1
+repatriate 01|0,1,2
+harp 01|0,1,2
+ignite 01|0,1
+postsurgical 01|1,2
+nobble 01|0,1,2,3
+flay 01|0,1,2
+whoop 01|0,1,2 02|0,1,2
+wholesale 01|0,1,2,3,4
+gurgling 01|0,1,2
+characterize 01|0,1,2 02|1,2
+tax 01|0,1,2,3 03|0,1,2 02|0,1,2,3
+break 01|0,1,2,3,4 02|0,1 13|0,1 16|0,1,2 18|0,1,2 19|0,1,2 20|0,1,2 21|0,1 14|0,1 11|0,1,2 12|0,1 27|0,1,2,3 05|0,1 17|0,1 03|0,1 04|0,1,2 06|0,1 07|1 10|0,1 08|0,1,2,3 09|1 22|0,1 26|0,1 23|1,2 24|1 25|1 28|0,1
+unravel 01|0,1
+appellation 01|0,1,2
+misunderstand 01|0,1,2,3
+hunger 01|0,1
+steady 01|0,1
+towel 01|0,1,2,3
+intercept 01|0,1,2,3
+scale 01|0,1,2,3,4,5 02|0,1,2 03|0,1 04|0,1
+baseless 01|1
+disrespect 01|0,1
+contravene 01|0,1
+reform 01|0,1,2,3
+row 01|0,1
+drizzle 01|0,1,2
+shred 01|0,1,2,3
+contract 01|1,2,3,4 02|0,1,2 04|1,2,3 03|0,1,2
+recentralize 01|0,1
+tabulate 01|0,1,2,3,4
+positive 01|0,1 02|0,1 03|1,2
+depress 01|0,1,2 02|0,1,2,3,4
+thwap 01|0,1,2
+roil 01|0,1
+neighbor 01|1,2
+budge 01|0,1,2
+fuse 01|0,1,2,3
+slip 01|1,2,3,4,5 02|0,1,2 03|0,1,2 04|0,1
+google 01|0,1
+gentle 01|0,1
+insignificant 01|1,2 02|1
+drill 01|0,1,2,3,4 02|0,1,2
+discriminate 01|0,1 02|0,1,2
+rescope 01|0,1,2
+fertilize 01|0,1
+inject 01|0,1,2
+fry 01|0,1 02|0,1
+prod 01|0,1,2
+budget 01|0,1,2
+blaze 01|1 02|0,1
+worthless 01|1,3
+agglomerate 01|0,1,2
+liquefy 01|0,1,2
+fond 01|0,1
+dot 01|0,1,2
+thrust 01|0,1,2
+shpritz 01|0,1,2
+sightsee 01|0
+contradict 01|0,1
+repack 01|0,1,2
+encase 01|0,1,2
+tame 01|0,1,2
+audit 01|0,1
+pirate 01|0,1,2
+skewer 01|0,1,2,3
+misstate 01|0,1
+prevent 01|0,1,2,3
+reoffend 01|0
+dose 01|0,1,2
+sinister 01|1
+patent 01|0,1,2 02|1
+doodle 01|0,1,2
+eek 01|0,1,2
+emulate 01|0,1
+wallop 01|0,1
+retroflex 01|0,1
+repolarize 01|0,1
+expand 01|0,1,2,3,4
+depressurize 01|0,1
+abase 01|0,1,2
+undevelop 01|0,1 02|0,1
+espouse 01|0,1
+wrongdoing 01|0,1
+wacky 01|1
+scold 01|0,1,2
+retrace 01|0,1
+wait 01|1,2,M-TMP 02|0,1 03|0,1
+preside 01|0,1
+autoreinvest 01|0,1,2
+interpret 01|0,1,2
+pith 01|0,1,2
+sheathe 01|0,1,2
+praise 01|0,1,2
+relevant 01|1,2
+ban 01|0,1,2
+reunite 01|0,1,2,3
+whisk 01|0,1,2
+corrode 01|0,1,2
+safe 01|0,1,2
+smite 01|0,1,2,3
+coddle 01|0,1 02|0,1,2
+scare 01|0,1,2,3 02|0,1,2,3 03|0,1,2,3
+prattle 01|0,1,2
+adept 01|1,2
+cohabit 01|0,1,2
+disable 01|0,1
+fall 01|1,2,3,4,M-LOC 04|1,2 05|1,2 07|1,2 10|1,2 12|0,1,2 08|0,1 02|1,2 03|1 06|1 09|1 11|1
+vilify 01|0,1 02|1
+decoct 01|0,1,2,3
+alligator 01|0,1
+nix 01|0,1
+block 01|0,1,2,3 02|0,1,2,3
+entropic 01|1
+misread 01|0,1,2
+nuke 01|0,1
+applique 01|0,1,2
+obey 01|0,1
+frock 01|0,1,2
+stain 01|0,1,2
+retch 01|0,1
+terrorize 01|0,1,2,3 02|0,1 03|0,1,2,3
+brain 01|0,1
+accident 01|0,1
+fluster 01|0,1
+equilibrate 01|0,1,2
+sext 01|0,1,2,3
+evulse 01|0,1,2
+undersell 01|0,1 02|0,1,2,3,4
+improve 01|0,1 02|1,2,3,4,M-LOC
+fix 01|0,1,3 02|0,1,2 03|0,1,2 04|0,1,2
+attain 01|0,1 02|0,1
+rightwing 01|1
+unindicted 01|0,1,2
+trundle 01|0,1
+gawk 01|0,1
+through 01|0,1 02|1,2,3 03|1,2
+court 01|0,1
+embody 01|1,2
+distress 01|0,1,2
+namedrop 01|0
+fob 01|0,1,2
+nucleate 01|0,1
+holster 01|0,1
+worthwhile 01|1,2
+zig 01|0,1
+outflank 01|1,2
+blunt 01|0,1 02|0,1,2
+flock 01|0 02|0,1
+invaginate 01|1,2
+innocuous 01|1,2
+pollinate 01|0,1
+proclaim 01|0,1
+let 01|0,1 05|0,1,2,3,4 02|0,1,2 03|0,1 04|0,1 06|0,1,2,3,4
+brew 01|0,1,2,3
+transact 01|0,1,2,3
+shudder 01|1,2
+compartmentalize 01|0,1,2
+imply 01|0,1,2
+dispense 01|0,1 02|0,1,2
+noncontributory 01|0,1,2
+disturb 01|0,1,2
+declaim 01|0,1
+stonewall 01|0,1
+hesitate 01|0,1
+extradite 01|0,1,2,3
+stage 01|0,1 02|0,1,2
+captivate 01|0,1
+multiply 01|0,1,2,3,4
+garnish 01|0,1,2 02|0,1,2
+learn 01|0,1,2
+lawbreak 01|0,1
+comeback 01|0
+anxious 01|0,1 02|1,2
+cancerize 01|1 02|1
+smear 01|0,1,2 02|0,1
+ham 01|0,1
+nonstenotic 01|1
+depart 01|0,1,2
+swindle 01|0,1,2
+tortuous 01|1
+probation 01|0,1,2
+primary 01|1,2,3
+effectuate 01|0,1
+condense 01|0,1,2
+talk 01|0,1,2 02|0,1,2 03|0,1,2
+tenure 01|0,1
+hop 01|0,3,4 02|0,1
+misinform 01|0,1,2
+hepatobiliary 01|1
+mime 01|0,1
+chaff 01|0,1
+otherwise 01|1,3
+conjure 01|0,1
+recauterize 01|0,1,2
+fructify 01|1,2
+anonymous 01|1
+contribute 01|0,1,2
+subordinate 01|0,1,2
+smuggle 01|0,1,2,3
+duel 01|0,1,2
+ultrafilter 01|0,1,2
+agree 01|0,1,2 02|0,1
+bereave 01|0,1,2
+linear 01|1
+vie 01|0,1,2
+interest 01|0,1,2
+illegal 01|1
+sulfurize 01|0,1
+nonafricanamerican 01|1
+nonfragmented 01|0,1
+vanish 01|1
+launch 01|0,1
+pivot 01|0,1,2
+volley 01|0,1,2 02|0,1,2
+imitate 01|0,1
+foil 01|0,1,2
+lawful 01|1
+exclaim 01|0,1,2
+assume 01|0,1,2,3,4 02|0,1,2
+erupt 01|1,2 02|0,1,2
+achieve 01|0,1
+journey 01|0
+feather 01|0,1
+sum 01|0,1,2 02|0,1,2,3
+jar 01|0,1
+cording 01|1
+cleave 01|0,1,2,3
+subtherapeutic 01|1,2
+squawk 01|0
+rebuke 01|0,1,2
+audacious 01|1
+certain 01|0,1
+quirk 01|0,1,2
+soothe 01|0,1
+assemble 01|0,1,2,4 02|0,1,2
+bar 01|0,1,2,3
+physiologic 01|1
+vamp 01|0,1 02|0,1
+buddy 01|0,1
+perfuse 01|0,1,2
+lasso 01|0,1,2,3
+introverted 01|1
+deserve 01|0,1,2
+cramp 01|0,1,2
+childrearing 01|0
+pause 01|0
+forbid 01|0,1,2
+allay 01|0,1
+intend 01|0,1 02|0,1
+rethink 01|0,1
+hustle 01|0,1,2
+decrypt 01|0,1
+snuff 01|0,1 02|0,1,2
+threedimensional 01|1
+noncompliant 01|0,1
+unopacified 01|0,1,2
+revascularize 01|0,1
+daydream 01|0,1
+slink 01|0,1,2,3,4
+localize 01|0,1 02|1,2
+type 01|0,1 03|0,1,2 02|0,1
+summarize 01|0,1,2
+keratinize 01|0,1
+tram 01|0,1,2,3,4
+noncircled 01|0,1
+disquiet 01|0,1,2
+excavate 01|0,1
+soulsearch 01|0
+pilgrimage 01|0
+invade 01|0,1
+shout 01|0,1,2 02|0,1 03|0,1,2
+surveil 01|0,1,2,3
+stock 01|0,1,2 02|0,1
+graduate 01|0,1,2,3
+cone 101|0,1
+amorous 01|0,1
+sense 01|0,1,2 02|1,2 03|0,1
+yell 01|0,1,2
+swear 01|0,1,2 02|0 04|0,1,2 05|0,1 07|0,1,2 03|0,1 06|0,1,2
+remortgage 01|0,1,2,3
+disarm 01|0,1,2
+word 01|0,1 02|0,1,2
+hostile 01|0,1
+pertinent 01|1,2
+motorbike 01|0,1,2,3
+illumine 01|0,1
+further 01|0,1
+enlighten 01|0,1,2,3
+loyal 01|1,2
+materialize 01|1
+weaponize 01|0,1,2
+fool 01|0,1 02|0
+dampen 01|0,1,2 02|0,1 03|1,2 04|0,1
+scavenge 01|0,1,2
+injure 01|0,1,2
+taxi 01|0,1,2,3
+propose 01|0,1,2,3
+adjust 01|0,1,2,3,4
+ink 01|0,1,2 02|0,1,2 03|0,1,2
+unfavorable 01|0,1,3
+repercussion 01|0,1,2
+screech 01|0,1 02|0,1,2 03|0,1,2
+hoe 01|0,1
+delve 01|0,1
+grapple 01|0,1
+scriptwrite 01|0,1,2
+embed 01|0,1,2
+vital 01|1,2
+reach 01|0,1 02|0,1 03|0,1,2 04|1,2,3
+locomote 01|0,1,2,3
+baste 01|0,1,2 02|0,1,2 03|0,1,2
+amicable 01|1,2
+misrepresent 01|0,1,2
+offset 01|0,1,2
+limber 01|0,1
+ace 01|0,1
+stash 01|0,1,2 02|0,1
+upheave 01|0,1
+put 01|0,1,2 02|0,1 03|0,1,2 05|0,1 06|0,1,2 07|0,1 08|0,1 09|0,1 10|0,1,2,3 14|0,1,2 11|0,1,2 12|0,1 13|0,1 04|0,1 15|0,1,2 16|0,1
+offload 01|0,1,2,3
+trouble 01|0,1,2
+cover 01|0,1,2,3 02|0,1,2 03|0,1 04|0,1 05|0,1,2 06|0,1,2
+embezzle 01|0,1,2
+disencumber 01|0,1,2
+deinstall 01|0,1,2
+recollect 01|0,1,2
+cease 01|0,1,2
+preexist 01|1,2
+indoctrinate 01|0,1,2
+rosin 01|0,1,2
+undecided 01|0,1,2
+pep 01|0,1
+suckle 01|0,1,2
+ream 01|0,1,2,3 02|0,1
+asphyxiate 01|0,1,2,3
+spew 01|0,1,2
+promiscuous 01|0,1
+calligraphy 01|0,1,2
+act 01|0,1 02|0,1 05|0,1,2 03|0,1 04|0 06|0,1
+grasp 01|0,1
+gobble 01|0,1 02|0 03|0,1
+imbibe 01|0,1,2
+lobulate 01|0,1,2
+sigh 01|0,1,2 02|0
+evil 01|0,1,2
+undulate 01|0,1
+guess 01|0,1
+wedge 01|0,1,2
+tweak 01|0,1 02|1,2
+bicker 01|0,1,2
+pend 01|1,2
+decipher 01|0,1,2
+morph 01|0,1,2,3
+side 01|0,1,2 02|0,1,2
+mate 01|0,1,2 02|0,1,2
+bargain 01|0,1,2
+orgasm 01|1,2
+crumble 01|0,1
+contrary 01|1,2
+fibroinflammatory 01|1
+drown 01|0,1 02|0,1 03|0,1
+complicate 01|0,1,2
+lipstick 01|0,1,2
+nutty 01|1
+female 01|1
+begrudge 01|0,1,2
+pip 01|0,1,2
+invert 01|0,1
+amplify 01|0,1,2
+revert 01|0,1,2,3
+preview 01|0,1
+salivate 01|0,1
+approve 01|0,1,2
+bustle 01|0,1
+grip 01|0,1,2,3 02|0,1
+immunoprecipitate 01|0,1,2,3
+refile 01|0,1,2,3,4 02|0,1
+gravel 01|0,1,2
+relinquish 01|0,1
+scintillate 01|0,1,2
+have 01| 02| 03|0,1 04|0,1 05|0,1 06|0,1 11|0,1,2 07|0,1,2 08|0,1 09|0,1,2 10|0,1
+metamorphose 01|0,1,2,3
+clumsy 01|1
+instill 01|0,1,2
+stake 01|0,1,2 02|0,1,2,3
+bewail 01|0,1
+optimistic 01|0,1
+adopt 01|0,1,2
+vomit 01|0,1 02|0,1
+squirrel 01|0,1,2
+acclaim 01|0,1,2
+preproduce 01|0,1,2,3
+postdilate 01|0,1
+dysplastic 01|1
+tauten 01|0,1
+file 01|0,1,2,3,4 03|0
+sputter 01|0
+implore 01|0,1,2
+deacetylate 01|0,1,2,3
+incubate 01|0,1,2,3,4
+hanker 01|0,1
+braise 01|0,1,2
+poststenotic 01|1
+crowd 01|0,1,2 02|0,1
+baptize 01|0,1,2 02|0,1
+misguide 01|0,1,2
+sashay 01|1,2,3,4
+disown 01|0,1
+fundoplicate 01|0,1
+cox 01|0,1
+swim 01|0,1,2,3 02|1,2
+model 01|0,1,2 02|0,1
+scutter 01|1,2,3,4
+relook 01|0,1,2
+microblog 01|0,1,2
+reinitiate 01|0,1,2
+tile 01|0,1,2
+railroad 01|0,1,2 02|0,1,2
+leash 01|0,1,2,3
+gab 01|0,1,2
+daunt 01|0,1
+savvy 01|0,1,2
+class 01|0,1,2 02|1
+reign 01|0,1
+abound 01|1,2
+snitch 01|0,1,2 02|0,1,2,3
+bleach 01|0,1,2
+aminate 01|0,1,2,3
+swaddle 01|0,1,2
+rhizomatic 01|1
+unroll 01|0,1
+great 01|1,2 02|1,2 03|1 04|1,2 05|1,2
+term 01|0,1,3
+unjust 01|0,1,2
+jeep 01|0,1,2,3
+manufacture 01|0,1,2,3
+uturn 01|0,1
+desert 01|0,1
+haze 01|0,1,2
+check 01|0,1,2 03|0,1 07|0,1 08|0,1 02|0,1,2 04|0,1 09|0,1,2 05|0,1,2 06|0,1,2
+preseparate 01|0,1,2
+research 01|0,1
+congregate 01|0,1
+react 01|0,1,2 02|0,1,2
+lull 01|0,1,2
+yodel 01|0,1,2
+traipse 01|0,1
+reflect 01|1,2 02|0,1
+primp 01|0,1,2
+uninvolved 01|0,1,2 02|1
+rant 01|0,1,2,3
+besmirch 01|0,1
+scramble 01|0,1 02|0,1,3 03|0,M-LOC
+peace 01|0,1
+promise 01|0,1,2
+intersperse 01|0,1,2
+cave 01|1 02|1
+bench 01|0,1,2
+tee 01|0,1
+shame 01|0,1,2 02|0,1,2
+thrill 01|0,1 02|0,1
+glide 01|0 02|0,1
+package 01|0,1,2,3
+bolt 01|0 02|0,1,2
+preconceive 01|0,1,2
+subdivide 01|0,1,2,3,4
+acquiesce 01|0,1
+battle 01|0,1,2
+circumnavigate 01|0,1,2
+guide 01|0,1,2,3
+explode 01|0,1,2 02|0,1,2,3,4 03|0,1,2
+upload 01|0,1,2
+ramify 01|0,1,2,3,4 02|0,1,2
+subtle 01|0,1
+jewy 01|1
+buttonhole 01|0,1,2
+moonlight 01|0,1
+swivel 01|0,1
+symmetric 01|1,2,3
+format 01|0,1,2
+embrace 01|0,1,2 02|0,1
+revalue 01|0,1,2
+wild 01|1 02|1 03|0,1
+foist 01|0,1,2
+crumb 01|0,1,2 02|0,1,2 03|0,1
+defer 01|0,1,2 02|0,1 03|0,1,2
+yearn 01|0,1
+jam 01|0,1,2 02|0,1,2 03|0
+rankle 01|0,1
+usher 02|0,1,2 01|0,1
+discombobulate 01|0,1,2
+blubber 01|0,1
+scorch 01|0,1
+pore 01|0,1
+pretend 01|0,1
+hattrick 01|0,1
+root 02|0,1,2 03|0,1 01|0,1
+semaphore 01|0,1,2
+efface 01|0,1,2 02|0,1 03|0,1
+confabulate 01|0,1,2 02|0,1
+ethical 01|1
+indent 01|0,1 02|0,1,2
+stink 01|1 02|1,2
+unclothe 01|0,1,2
+graffiti 01|0,1,2
+regroup 01|0
+slant 01|0,1
+mulch 01|0,1,2
+burden 01|0,1,2
+tragic 01|1,2 02|1,2
+dialyze 01|0,1,2
+troop 01|0,1,2,3,4
+angulate 01|0,1,2
+collide 01|0,1,2
+mental 01|1 02|1
+group 01|0,1,2
+browbeat 01|0,1,2
+swagger 01|0,1
+fistulize 01|0,1
+accept 01|0,1,2,3 02|0,1,2,3
+plank 01|0,1,2 02|0,1
+hinge 01|1,2
+arson 01|0,1
+vegetarian 01|1,2
+paragraph 01|0 02|0,1
+overawe 01|0,1,2
+parlay 01|0,1,2
+fallout 01|1,2
+new 01|1 02|1,2
+annihilate 01|0,1,2
+manage 01|0,1 02|0,1 03|0,1 04|0,1
+preincubate 01|0,1,2,3,4
+edify 01|0,1,2,3
+confide 01|0,1,2
+raise 01|0,1,2,3,4,5,M-LOC 02|0,1,2 03|0,1 04|0,1,2
+degrade 01|0,1,2
+flame 01|1
+preserve 01|0,1,2,3
+multilayered 01|1,2
+unwatchable 01|0,1
+cremate 01|0,1,2
+rehear 01|0,1,2
+reassert 01|0,1 02|0,1,2,3 03|0,1,2,3
+divaricate 01|0,1
+renew 01|0,1
+hasten 01|0,1
+unremarkable 01|0,1 02|1,2
+game 01|0,1 02|0,1
+sling 01|0,1,2
+pull 01|0,1,2,3 06|0,1,2 09|0,1,2 02|0,1,2 04|0,1 03|0,1 05|0,1,2 07|0,1 08|0,1,2,3
+potentiate 01|0,1,2,3
+fax 01|0,1,2
+slag 01|0,1,2 02|0,1,2
+slug 01|0,1,2 02|0,1,2 04|0,1 03|0,1,2,3
+abundant 01|1,2
+pederastize 01|0,1
+discuss 01|0,1,2
+sire 01|0,1
+dimple 01|0,1
+transparent 01|1,2
+disintegrate 01|0,1
+extubate 01|0,1
+restage 01|0,1,2
+lock 01|0,1,2,3 02|0,1,2 03|0,1,2 04|0,1 05|0,1,2 06|0,1
+scrounge 01|0,1
+growl 01|0,1
+structure 01|0,1,2
+prize 01|0,1,2
+influence 01|0,1,2
+progress 01|1,2,3,4 02|1,2
+traumatize 01|0,1,2
+source 01|0,1,2 02|0,1,2
+merge 01|0,1,2,3
+deduct 01|0,1,2
+rich 01|1,2 02|1,2
+bread 01|0,1,2
+rule 01|0,1,2,3 03|0,1 02|0,1,2
+witter 01|0,1,2
+abduct 01|0,1 02|0,1
+nick 01|0,1,3 02|0,1,2
+elect 01|0,1,2 02|0,1,2,3,4 03|1 04|0 05|0,1,2
+toll 01|0,1,2 02|0,1,2,3
+upregulate 01|0,1,2
+remand 01|0,1,2
+subclone 01|0,1,2,3
+bomb 01|0,1 02|1,2
+dyke 01|0,1
+categorize 01|0,1,2
+census 01|0,1
+trip 01|0,1 02|0,1,2 03|0,1,2,3 04|0,1
+uncertain 01|0,1
+interchange 01|0,1,2
+breakfast 01|0,1
+father 01|0,1
+huge 01|1 02|1,2
+braid 01|0,1,2
+cherrypick 01|0,1,2,3
+lamb 01|0,1
+respond 01|0,1,2 02|0,1
+centralize 01|0,1
+binarize 01|0,1,2
+compact 01|0,1
+readapt 01|0,1,2
+mete 01|0,1,2
+tailor 01|0,1,2
+obstruct 01|0,1
+noninjected 01|0,1,2
+fasttrack 01|0,1
+enclose 01|0,1,2
+rain 01|0,1,2
+ransack 01|0,1,2
+cohere 01|0,1
+belly 01|1,2
+sidle 01|0,1,2
+colocalize 01|1,2
+defibrillate 01|0,1,2
+recompense 01|0,1,2
+torture 01|0,1
+speechless 01|0,1,2
+deworm 01|0,1,2
+flashflood 01|1,2,3,4,5
+lob 01|0,1,2
+retrogress 01|1,3,4
+stammer 01|0,1,2
+impregnate 01|0,1,2
+school 01|0,1,2
+desire 01|0,1 02|0,1
+embitter 01|0,1,2
+underlay 01|0,1,2
+resurrect 01|0,1
+profile 01|0,1
+industrialize 01|0,1,2
+plateau 01|1
+rust 01|0,1
+strange 01|1,2
+roll 01|0,1,2 02|0,1 03|0,1,2 04|0,1
+effuse 01|0,1 02|0,1,2
+pervert 01|0,1,2
+neglect 01|0,1,2
+overemphasize 01|0,1,2
+pepper 01|0,1,2
+unveil 01|0,1,2
+override 01|0,1
+relay 01|0,1,2 02|0,1,2,3
+reelect 01|0,1,2
+deceive 01|0,1,2
+reflate 01|0,1
+delay 01|0,1,2
+premenopausal 01|1
+distrain 01|0,1
+lobotomize 01|0,1
+delimit 01|0,1,2
+align 01|0,1,2,3
+amalgamate 01|0,1
+vegetate 01|1,2
+painless 01|0,1
+cunning 01|1,2
+fragment 01|0,1
+nonreplication 01|0,1
+smash 01|0,1 02|1 03|0,1
+guesstimate 01|0,1,2
+unworkable 01|1,2 02|1,2
+shape 01|0,1,2 02|1,2 03|0,1
+rusticate 01|0,1
+rampage 01|0,1
+unzip 01|0,1,2
+room 01|0,1,2
+mulct 01|0,1,2,3
+disservice 01|0,1,2
+splodge 01|0,1,2
+strafe 01|0,1
+efficient 01|1,2
+smack 01|0,1 02|0,1,2 03|0,1,2
+misroute 01|0,1,2
+destarch 01|0,1
+vaporize 01|0,1
+sail 01|0,1
+countertraction 01|0,1
+cinch 01|0,1 02|0,1,2 03|0,1
+apologize 01|0,1,2,3
+psychological 01|1
+clever 01|1,2
+traduce 01|0,1
+hypervascular 01|1
+debride 01|0,1,2
+secondary 01|1,2
+stenose 101|0,1
+friable 01|0,1
+expedition 01|0,1,2
+mislead 01|0,1,2 02|0,1,2
+conscious 01|0,1 02|1
+carom 01|1,2,3,4
+indwell 01|1,2
+reluctant 01|0,1
+reclassify 01|0,1,2 02|0,1
+totter 01|1 02|1
+knife 01|0,1,2
+importune 01|0,1,2
+unpredictable 01|0,1
+infect 01|0,1,2
+issue 01|0,1,2,3 02|0,1
+untrustly 01|0,1,2
+detail 01|0,1 02|1
+antsy 01|0,1,2
+super 01|0,1,2
+brunch 01|0,1
+counterattack 01|0,1,2
+shunt 01|0,1,2
+bronze 01|0,1,2 02|0,1,2
+rebuff 01|0,1
+tribulate 01|0,1,2
+graze 01|0,1,2
+skindive 01|0,1,2
+unload 01|0,1,2 02|0,1,2,3
+eager 01|0,1
+rescind 01|0,1
+outdo 01|0,1
+peep 01|0 02|0,1
+overstate 01|0,1,2
+discgolf 01|0
+silt 01|0,1
+mobilize 01|0,1 02|1
+unscrupulous 01|1,2
+dandle 01|0,1
+sprawl 01|0,1,2
+pucker 01|0,1 02|0,1
+pool 01|0,1,2 02|1
+overspread 01|1,2
+approach 01|1,2 02|0,1,2 03|0,1
+chitchat 01|0,1,2
+advert 01|0,1
+africanamerican 01|1
+concrete 01|0,1 02|1
+regard 01|0,1,2
+tar 01|0,1,2
+counterproductive 01|0,1
+plop 01|0,1,2
+force 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2
+inspect 01|0,1,2
+proficient 01|1,2
+shovel 01|0,1
+labile 01|1
+zag 01|0,1
+descale 01|0,1
+boil 01|0,1 02|1 03|0,1,2,3
+chafe 01|0,1
+rearm 01|0,1
+result 01|1,2
+backpack 01|1,2,3,4
+yield 01|0,1 02|0,1,2 03|0,1,2 04|0,1,2
+reproach 01|0,1,2
+provincial 01|1 02|1
+unfounded 01|1
+epimutate 01|0,1,2,3
+rechallenge 01|0,1,2
+glut 01|0,1,2
+seek 01|0,1,2 02|0,1,2
+curdle 01|0,1
+overbudget 01|0,1,2
+chain 01|0,1,2,3
+conform 01|0,1,2
+prosper 01|0
+reprimand 01|0,1,2
+lounge 01|0
+pilates 01|0
+vindicate 01|0,1,2
+misdiagnose 01|0,1,2
+speciate 01|1,2,3
+stray 01|0,1
+bed 02|0,1,2 01|0
+susceptible 01|1,2
+referee 01|0,1
+lengthen 01|0,1,2,3,4 02|0,1 03|1,2
+sweeten 01|0,1,2 02|0,1,2,3 03|1,2 04|0,1,2 05|1
+cloister 01|0,1,2
+perfect 01|0,1 02|1,2
+look 01|0,1,2 02|0,1,2 04|0,1 09|0 03|0,1 05|0,1,2 06|0,1 07|0,1 08|0,1 10|0,1 11|0,1
+jeopardize 01|0,1
+weed 01|0,1,2
+africanize 01|0,1 02|1
+prep 01|0,1,2
+bum 01|0,1,2
+pomade 01|0,1,2
+bat 01|0,1 02|0,1,2,3,4 03|0,1
+old 01|1,2
+shrivel 01|0,1,2,3,4
+envelop 01|0,1,2
+distribute 01|0,1,2
+coexpress 01|1,2,3
+ascend 01|0,1 02|1,2,3,4
+prepay 01|0,1,2,3
+eternalize 01|0,1
+spoon 01|0,1
+immunostain 01|0,1,2,3
+photocopy 01|0,1
+pester 01|0,1
+incite 01|0,1
+flex 01|0,1 02|0,1,2,3 03|1,2 04|0,1,2,3
+putty 01|0,1,2
+exact 01|0,1,2
+divorce 01|0,1 02|0,1,2
+itemize 01|0,1
+photosynthesize 01|0,1,2,3
+accrete 01|0,1
+paint 01|0,1,2 02|0,1,2 03|0,1,2
+trash 01|0,1
+question 01|0,1,2 02|1,2 03|0,1
+winkle 01|0,1,2
+insist 01|0,1
+twister 01|1,2,3,4,5,6
+logical 01|1
+knee 01|0,1
+vault 01|0,1,2,3,4
+retweet 01|0,1,2
+query 01|0,1,2
+insure 01|0,1,2 02|0,1,2,3,4
+strain 01|0,1 02|0,1,2 03|0,1 04|1,2
+gnaw 01|0,1 02|0,1
+diseased 01|0,1
+proofread 01|0,1
+plumb 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2,3
+chance 01|0,1 02|0,1,2
+eddy 01|1
+hassle 01|0,1,2 02|0,1,2
+neck 01|0,1,2
+insufficient 01|0,1
+drydock 01|0,1,2
+resupply 01|0,1,2 02|0,1,2
+glimpse 01|0,1
+attend 01|0,1 02|0,1
+pressure 01|0,1,2 02|0,1,M-DIR
+thwart 01|0,1
+remonstrate 01|0,1,2 02|0,1,2
+digest 01|0,1
+eliminate 01|0,1,2
+destress 01|0,1,2
+repress 01|0,1,2
+heartless 01|0,1,2
+dissatisfy 01|0,1
+fit 01|0,1,2 03|1,2 04|1,2 05|1 06|1,2 02|1,2
+rummage 01|0,1
+voyage 01|0,1
+toss 01|0,1 02|0,1 03|0,1 04|0,1,2,3
+preen 01|0,1,2
+hallucinate 01|0,1
+demethylate 01|0,1,2,3
+beset 01|0,1
+grouch 01|0,1,2
+aggrieve 01|0,1,2
+thrive 01|1,2
+parody 01|0,1
+ideate 01|0,1
+temporary 01|1
+vulcanize 01|0,1
+befit 01|1,2
+lacerate 01|0,1,2
+bombard 01|0,1
+surprise 01|0,1,2
+lax 01|1,2
+euthymic 01|1
+fiddle 01|0,1
+alkalify 01|0,1,2
+view 01|0,1 02|0,1,2
+avidity 01|0,1
+unequal 01|1,2,3
+roboresponse 01|0,1,2
+overgrow 01|1,2
+degrit 01|0,1,2
+telecast 01|0,1,2
+bash 01|0,1 02|0,1
+lure 01|0,1,2,3
+nonindurated 01|0,1,2
+corral 01|0,1
+airdrop 09|0,1,2
+distract 01|0,1,2
+matchmake 01|0,1,2
+entrap 01|0,1
+dangle 01|0,1
+declaw 01|0,1,2
+hound 01|0,1
+unsure 01|0,1
+engender 01|0,1
+merry 01|0,1
+tick 01|0 04|0,1,2,3 05|0,1 02|0,1 03|0,1
+spill 01|0,1,2 02|1,2 03|1,2
+express 01|0,1,2 02|0,1,2 03|1,2,3
+respect 01|0,1,2 02|1
+target 01|0,1,2
+refurbish 01|0,1
+premiere 01|0,1
+scant 01|0,1 02|0,1
+undetectable 01|0,1,2
+caramelize 01|0,1,2
+homogenous 01|1 02|0,1
+systematize 01|0,1
+frame 01|0,1,2 03|0,1 02|0,1,2 04|0,1 06|0,1,2 05|0,1
+cost 01|1,2,3
+inappropriate 01|1,2
+ravage 01|0,1,2
+armor 01|0,1,2
+cower 01|0
+savor 01|0,1
+loll 01|0,1
+rewind 01|0,1
+absolute 01|1
+decamp 01|0,1,2
+temper 01|0,1
+unseal 01|0,1
+lunch 01|0,1
+tear 01|0,1,2 02|0,1 03|1 04|0,1 05|0,1 06|1
+descend 01|0,1
+drink 01|0,1,2 02|0,1 03|0,1
+heal 01|0,1,2
+reassess 01|0,1
+outrace 01|0,1
+cab 01|0,1,2,3,4
+appreciate 01|1,2,3,4 02|0,1 03|0,1
+potter 01|0,1
+reposition 01|0,1,2
+scandal 01|0,1
+sidetrack 01|0,1
+peacemake 01|0
+clad 01|0,1,2
+buffalo 01|0,1,2,3
+tailgate 01|0,1 02|0,1,2
+henna 01|0,1
+vary 01|0,1,2,3,4,5 02|0,1,2
+commute 01|0,1,2 02|0,1,2
+cite 01|0,1,2 02|0,1,2
+remark 01|0,1,2 02|0,1 03|1,2
+site 01|0,1,M-LOC
+backlash 01|0,1,2
+ballet 01|0,1
+abort 01|0,1
+wrinkle 01|0,1,2
+precassette 01|0,1
+verdict 01|0,1,2
+shield 01|0,1,2
+fancy 01|0,1 02|0,1
+conspire 01|0,1,2
+transmit 01|0,1,2
+jaundice 01|1
+hug 01|0,1
+pulverize 01|0,1
+pick 01|0,1,2,3 09|0,1 10|0,1 02|0,1 03|0,1,2 04|0,1,2,3,4 05|1,2,3,4 06|0,1 11|0,1 07|0,1 08|0,1,2 12|0,1
+wash 01|0,1,2,3,4 02|0 03|1 04|0,1,2 05|0,1,2 06|0,1,2,3
+flirt 01|0,1
+recommence 01|0,1,2
+lambaste 01|0,1,2
+lmk 01|0,1
+swing 01|1 02|0,1 03|1,2,3,4,5 04|1 05|0,1
+harden 01|0,1,2 02|1 03|0,1 04|0,1,2
+utter 01|0,1,2
+multimember 01|1
+mist 01|0,1,2 02|0,1,2 03|1 04|0,1,2 05|0,1,2
+noncardiac 01|1
+snort 01|0,1 02|0,1
+reset 01|0,1,2
+hyperplastic 01|1
+elongate 01|0,1
+compensate 01|0,1,2,3
+tender 01|0,1,2,3 02|0,1,2
+money 01|0,1,2
+premise 01|0,1,2
+seed 01|0 02|0,1,2 03|0,1,2,3 04|0,1,2
+pound 02|0,1,2 03|0,1,2 04|0,1 05|1 01|0,1
+caffeinate 01|0,1,2
+joust 01|0,1
+accomplish 01|0,1
+prolapse 01|1
+spike 01|0,1 02|0,1,2 03|0,1,2 04|1,2,3,4 05|1
+butler 01|0,1
+refrain 01|0,1
+fare 01|0,M-MNR
+mishandle 01|0,1
+expurgate 01|0,1,2
+fine 01|0,1,2,3 02|1,2 03|1 04|1,2
+revictimize 01|0,1,2
+resurge 01|0
+install 01|0,1,2
+pique 01|0,1,2
+unblock 01|0,1
+hook 01|0,1,2,3 03|0,1,2 02|0,1,2
+opt 01|0,1
+hypnotize 01|0,1
+corrupt 01|0,1,2,3
+disdain 01|0,1
+grill 01|0,1 02|0,1,2
+specify 01|0,1 02|1,2
+schmooze 01|0,1,2
+unlimited 01|0,1,2
+enumerate 01|0,1,2
+assess 01|0,1,2 02|0,1,2,3
+handy 01|1,2 02|1
+initialize 01|0,1,2
+falter 01|1
+despair 01|0,1
+overcharge 01|0,1,2,3
+tarnish 01|0,1
+quit 01|0,1
+spray 01|0,1,2
+whelp 01|0,1
+unlatch 01|0,1,2
+doze 01|0 02|0
+slay 01|0,1
+trolley 01|0,1,2,3
+stymie 01|0,1
+snag 01|0,1,2
+passionate 01|0,1
+starve 01|0,1,2
+purl 01|1
+march 01|0 02|1
+brushfire 01|1,2,3,4
+breach 01|0,1
+thoughtless 01|1
+cotton 01|0,1
+dally 01|0,1
+incentivize 01|0,1,2
+become 01|1,2 02|1,2 03|
+deaccent 01|0,1,2
+cruel 01|0,1,2
+uncomplicated 01|0,1,2
+uco 01|0,1
+demoralize 01|0,1,2
+multiple 01|1
+imperative 01|0,1,2
+substantiate 01|0,1 02|1,2
+moor 01|0,1,2
+circumcise 01|0,1
+refight 01|0,1,2
+paddywhack 01|0,1
+promulgate 01|0,1
+quote 01|0,1,2,3
+legalize 01|0,1 02|1
+persecute 01|0,1
+uncivilized 01|0,1
+superpose 01|0,1,2
+belt 01|0,1,2 02|0,1,2 03|0,1,2,3 05|0,1,2
+spectate 01|0,1
+loom 01|1
+coerce 01|0,1,2
+pulpation 01|0,1
+rive 01|0,1
+trick 01|0,1,2 02|1
+whack 01|0,1,2 02|0,1,2
+inhale 01|0,1
+jejunize 01|1
+decompensate 01|0,1,2,3
+amass 01|0,1,3
+mash 01|0,1
+wonder 01|0,1 02|0,1 03|1,2 04|1,2 05|1,2
+disfigure 01|0,1
+liable 01|1,2,3,4 02|1,2
+weird 01|1
+quip 01|0,1,2
+flounce 01|0
+earthmoving 01|0 02|1
+futile 01|1
+use 01|0,1,2 02|0,1 03| 04|0,1,2 05|0,1,2
+blush 01|0,1
+flintknapping 01|0,1,2,3
+hover 01|1,2
+desex 01|0,1,2
+volatilize 01|0,1,2
+burble 01|0,1
+inaccessible 01|0,1
+warrant 01|0,1
+snowball 01|1,2
+pounce 01|0,1
+flash 01|0,1,2 02|0,1 03|1,2
+puertorican 01|1
+ski 01|0,1
+ostracize 01|0,1,2
+recode 01|0,1,2,3
+cane 01|0,1
+bray 01|0
+fizzle 01|1
+reevaluate 01|0,1
+readdress 01|0,1,2
+reintegrate 01|0,1,2
+embark 01|0,1
+entail 01|0,1
+hay 01|0,1,2,3
+unbelievable 01|0,1,2 02|1,2
+lobby 01|0,1,2
+prey 01|0,1
+dead 01|0,1,2 02|1,2 03|0,1 04|0,1
+flail 01|0,1,2
+sluice 01|0,1 02|1
+etiolate 01|0,1
+disincline 01|0,1
+loosen 01|0,1,2 02|0,1,2 03|1,2 04|0,1,2 05|0,1,2
+dispatch 01|0,1,2
+threshold 01|0,1,2
+breathe 01|0,1,2 02|0,1,2
+lawsuit 04|0,1,2
+hoot 01|0
+torsion 01|0,1
+outrun 01|0,1
+lapse 01|1
+intubate 01|0,1
+reseat 01|0,1,2
+redebate 01|0,1,2
+lukewarm 01|1,2
+oyster 01|0,1,2,3
+ill 01|1,2 02|1
+placate 01|0,1,2
+prick 01|0,1 02|0,1
+deflect 01|0,1
+fondle 01|0,1,2
+empower 01|0,1,2
+recertify 01|0,1,2
+beseech 01|0,1,2
+slide 01|0,1 02|1,2,3,4,5
+previous 01|1,2
+repick 01|0,1,2,3
+slacken 01|0,1
+intuit 01|0,1
+uncommitted 01|0,1,2
+ingratiate 01|0,1,2
+slumber 01|0,1
+pirouette 01|0,1,2
+biff 01|0,1
+derib 01|0,1,2
+retool 01|0,1,2,3
+unaffected 01|0,1
+transmigrate 01|0,1,2
+unground 01|0,1 02|0,1,2 03|0,1 04|0,1 05|0,1
+port 01|0,1
+convoy 01|0,1
+weary 01|0,1,2 02|0,1
+crossfire 07|0,1
+found 01|0,1,2
+weight 01|0,1,2
+gargle 01|0,1,2
+epitomize 01|0,1
+illegitimate 01|0,1 02|1
+brazen 01|0,1
+insurrection 01|0,1,2
+rtc 101|0
+pasteurize 01|0,1
+center 01|0,1,2 02|1,2
+mine 01|0,1
+imagine 01|0,1,2 02|0,1
+disbelieve 01|0,1
+playbyplay 01|0,1
+gratify 01|0,1
+debilitate 01|0,1
+assent 01|0,1
+summon 01|0,1,2 02|0,1
+earnest 01|1,2
+overuse 01|0,1
+handed 01|1,2
+fail 01|0,1,2,3 02|0,1
+injunct 01|0,1,2
+retravel 01|0,1
+ravish 01|0,1
+torpedo 01|0,1
+hike 01|0,1 02|0,1,2
+winnow 01|0,1,2
+bumble 01|0,1
+sled 01|0,1,2,3
+ratify 01|0,1,2
+tickle 01|0,1,2
+bawl 01|0,1 02|0,1
+demineralize 01|0,1
+malign 01|0,1 02|1,2,3
+moisten 01|0,1,2 02|0,1,2
+flunk 01|0,1,2
+actualize 01|0,1 02|1,2
+sigmoid 01|1
+disembark 01|0,1
+bristle 01|0,1
+defeather 01|0,1,2
+despoil 01|0,1,2
+breast 01|1,2
+enrich 01|0,1,2
+edge 01|1,2,3,4,M-MNR,5 03|0,1,2 02|0,1,2 04|1 05|0,1
+show 01|0,1,2 04|0,1,2,3 02|1 03|0,1,2
+slice 01|0,1,2 02|0,1
+preposterous 01|1
+rafter 01|0,1,2
+choke 01|0,1,2 02|0,1 03|0,1 04|0,1
+evade 01|0,1
+spook 01|0,1,2
+oversedate 01|0,1,2
+tilt 01|0,1,2,3
+maintain 01|0,1,2
+overpay 01|0,1,2,3
+congruent 01|1,2
+spruce 01|0,1
+hyperkalemic 01|1,2
+disassociate 01|0,1,2
+sheet 01|1
+fathom 01|0,1
+inveigle 01|0,1,2
+sibilate 01|0,1,2
+establish 01|0,1,2,3
+apprehend 01|0,1,2 03|0,1 02|0,1
+culpable 01|1,2
+censor 01|0,1
+char 01|0,1
+ridicule 01|0,1,2 02|1,2
+buckle 01|0,1,2 04|1,2 02|0 03|0
+allude 01|0,1
+famish 01|0,1,2
+bulk 01|1 02|1,2
+chinese 01|1
+reaffirm 01|0,1
+sanctify 01|0,1
+mumble 01|0,1,2
+harmless 01|0,1,2
+reside 01|0,1
+pronounce 01|0,1,2 02|1
+catheterize 101|0,1
+hoard 01|0,1
+unusual 01|1,2
+herd 01|0,1,2
+coincide 01|1,2
+meditate 01|0,1
+shuffle 01|0 02|0,1,2 03|0,1 05|0,1 04|0,1
+correlate 01|0,1,2 02|0,1,2 03|0,1,2
+disaster 01|1,2
+prejudice 01|0,1,2
+overcook 01|0,1
+acclimate 01|0,1,2
+darn 01|0,1,2
+firm 01|0,1,2,3,4 03|0,1 02|0,1
+replicate 01|0,1
+demote 01|0,1,2,3
+plane 01|0,1,2
+disorient 01|0,1
+extrude 01|0,1,2
+unclip 01|0,1,2
+puzzle 01|0,1,2
+dwindle 01|1,2,3,4
+engross 01|0,1,2
+therapeutic 01|1,2
+refresh 01|0,1,2
+counterfeit 01|0,1
+loud 01|0,1,2 02|1
+chicken 01|0,1
+parboil 01|0,1
+reckon 01|0,1,2 02|0,1
+househunt 01|0,1
+motorize 01|0,1
+ticklish 01|0,1
+cloud 01|0,1,2 02|0,1,2
+spotty 01|1 02|1,2
+finalize 01|0,1
+toot 01|0,1
+consecrate 01|0,1,2 02|0,1,2 03|0,1
+thicken 01|0,1,2 02|1,2 03|1,2 04|1 05|1,2
+congratulate 01|0,1,2
+downgrade 01|0,1,2 02|0,1,2,3,4
+attire 01|0,1,2
+underweight 01|0,1,2
+reindict 01|0,1,2
+resect 01|0,1,2 02|0,1,2
+reexport 01|0,1,2
+midline 01|1,2
+hum 02|0,1 01|0
+hyalinize 01|0,1
+treble 01|0,1
+bode 01|0,1,2
+zilla 01|0,1
+miss 01|0,1 02|0,1,2 03|0,1
+couple 01|0,1,2
+keen 01|0,1 02|1,2
+purple 01|0,1,2 02|0,1
+rife 01|1,2
+gen 01|0,1,2
+tyrannize 01|0,1,2
+twin 01|0,1,2
+entrust 01|0,1,2
+aerosolize 01|0,1
+arrange 01|0,1,2,3,4
+beetle 01|0,1 02|1
+bridge 01|0,1,2 02|0,1,2,3
+forward 01|0,1,2
+shag 01|0,1
+shampoo 01|0,1
+petrify 01|0,1,2
+engage 01|0,1,2 02|1,2,3
+harshen 01|0,1 02|1,2
+awe 01|0,1,2 02|0,1 03|1,2
+conclude 01|0,1,2,3 02|0,1,2,M-TMP
+cycle 01|0 02|1,2,3,4
+obvious 01|1,2
+samba 01|0,1,2
+multitask 01|0
+mass 01|0
+account 01|0,1,2 02|0,1,2 03|0,1,2
+unfurl 01|0,1
+libel 01|0,1,2
+codevelop 01|0,1,2,3
+warm 01|0,1 03|0,1 06|0,1,2 07|0,1 02|0,1 05|0,1 04|0,1
+haul 01|0,1,2,3,4 02|0,1,2 03|0,1
+assault 01|0,1
+plummet 01|1,2,3,4,M-LOC
+branch 01|0,1 02|0,1
+cosset 01|0,1
+index 01|0,1,2
+etch 01|0,1,2
+prefill 01|0,1,2
+fox 01|0,1 02|0,1
+aneurysmal 01|1
+throb 01|1
+fork 01|0,1,2,3 02|0,1,2,3 03|1
+button 01|0,1
+accelerate 01|0,1,2,3,4
+smatter 01|0,1,2
+exempt 01|0,1,2
+fixate 01|0,1,2
+pregame 01|0,1,2
+rescue 01|0,1,2
+reappoint 01|0,1,2
+demand 01|0,1,2
+empathize 01|0,1
+barbecue 01|0,1
+paranoid 01|0,1
+explain 01|0,1,2
+plate 01|0,1,2
+fuss 01|0,1
+masquerade 01|0,1
+quieten 01|0,1 02|0,1 03|0,1 04|1,2 05|0,1
+skin 01|0,1
+lovely 01|1,2
+broach 01|0,1,2
+sift 01|0,1
+skipper 01|0,1
+spiral 01|0,1,2
+demarginate 01|0,1,2
+spoonfeed 01|0,1,2
+nip 01|1,2,3,4 02|0,1,2 03|0,1,2
+blend 01|0,1,2,3
+dyspigmentation 01|0,1,2
+cloy 01|0,1,2
+unite 01|0,1,2,3
+decline 01|1,2,3,4,5 02|0,1
+enrage 01|0,1,2
+scorn 01|0,1
+overbuy 01|0,1,2,3,4,5
+case 01|0,1,2 02|0,1 03|0,1,2 04|1,2
+augment 01|0,1,2
+frost 01|0,1,2 02|0,1,2 03|0,1,2 04|1,2
+nosebleed 01|1
+reticulate 01|0,1 02|0,1,2
+demagogue 01|0,1
+fumble 01|0,1
+race 01|0,1,2 02|0,1,2,3
+gauge 01|0,1,2,3
+collocate 01|0,1,2
+gossip 01|0,1
+bloodshed 04|0,1
+defoam 01|0,1,2
+circulate 01|0,1
+humidify 01|0,1,2 02|0,1
+saponify 01|0,1,2,3
+unaware 01|0,1
+atherosclerotic 01|1
+compose 01|0,1,2 02|0,1,2
+value 01|0,1,2 02|0,1 03|0,1,2
+reassume 01|0,1,2,3,4
+upholster 01|0,1,2
+gorge 01|1,2
+overstock 01|0,1,2
+wager 01|0,1,2,3
+conserve 01|0,1 04|1,2,3 03|0,1,2,3
+increment 01|0,1,2,3,4
+mollify 01|0,1,2
+indispose 01|1,2,3 02|1,2
+wealthy 01|1,2
+quash 01|0,1
+tend 01|0,1 02|1,2
+zigzag 01|0,1
+rob 01|0,1,2
+pathetic 01|1
+include 01|0,1,2
+hyperlink 01|0,1,2,3
+touch 01|0,1,2 07|0,1,2 02|0,1,2,3 06|0,1 03|0,1,2 04|0,1 05|0,1 08|0,1,2 09|0,1 10|0,1,2
+vaccinate 01|0,1,2
+glue 01|0,1,2
+kiss 01|0,1,2
+bite 01|0,1
+liken 01|0,1 02|0,1 04|1,2 03|0,1,2 05|1,2 06|1
+tousle 01|0,1,2,3
+daze 01|0,1,2
+anniversary 01|0,1,2
+interrupt 01|0,1,2
+outdate 01|0,1
+over 01|1
+crystallize 01|0,1,2
+bodyslam 01|0,1,2
+flour 01|0,1,2
+hypermethylate 01|0,1,2
+untie 01|0,1,2
+official 01|1
+cluster 01|0,1,2
+laugh 01|0,1,2,3 02|0,1,2 03|1,2
+byelect 01|0,1,2
+tornado 01|1,2,3,4,5,6
+eschew 01|0,1
+grace 01|0,1 02|0,1,2
+snuffle 01|0,1 02|0,1 03|0,1
+consequential 01|1,2
+foreshorten 01|0,1,2,3,4
+borrow 01|0,1,2,3
+subcutaneous 01|1,2
+coke 01|0,1,2
+gay 01|1,2 02|1 03|1
+menace 01|0,1,2
+yak 01|0,1 02|0
+micromanage 01|0,1
+preeducate 01|0,1,2
+fetter 01|0,1,2,3
+vanquish 01|0,1
+fell 01|0,1
+beget 01|0,1
+design 01|0,1,2,3 02|0,1
+unpack 01|0,1,2
+unconscionable 01|0,1
+prearrange 01|0,1
+recapture 01|0,1
+bail 01|0,1 02|0,1,2
+quaver 01|0,1,2
+tape 01|0,1,2 02|0,1 03|0,1,2
+hypothesize 01|0,1 02|1
+craft 01|0,1 02|1
+worry 01|0,1,2 02|0,1 03|0,1,2
+decriminalize 01|0,1,2,3
+regurgitate 01|0,1
+bewitch 01|0,1,2
+creep 01|0,1 02|0,1 03|0,1,2,3 04|0,1,2,3
+quarrel 01|0,1,2
+upright 01|1 02|1,2
+distend 01|0,1
+catty 01|0,1,2
+spread 01|0,1,2,3 02|1,M-DIR 03|0,1 04|0,1,2
+racialize 01|0,1
+uphold 01|0,1
+unrepentant 01|0,1,2
+nickname 01|0,1,2
+intertwine 01|0,1
+repackage 01|0,1,2,3
+few 01|1,2
+splice 01|0,1,2 02|0,1
+mummify 01|0,1
+boycott 01|0,1
+catholicize 01|0,1
+necrotize 101|0,1
+orphan 01|0,1
+overrule 01|0,1
+subside 01|1,2 02|0,1
+limp 01|0
+ask 01|0,1,2,3 02|0,1,2 03|0,1,2,3 04|0,1,2
+replant 01|0,1,2
+unpin 01|0,1,2
+toe 01|0,1
+coop 01|0,1,M-LOC 02|0,1,M-LOC
+divest 01|0,1,2
+historicize 01|0,1
+devise 01|0,1,2
+discompose 01|0,1,2
+aggregate 01|0,1,2
+shatter 01|0,1,2,3
+boost 01|0,1,2,3,4,M-LOC
+lop 01|0,1,2
+shrink 01|0,1,2,3,4
+recap 01|0,1,2
+trammel 01|0,1,2,3
+interrogate 01|0,1,2
+steer 01|0,1,2 02|0,1
+capture 01|0,1
+bushwhack 01|0,1,2 02|0,1,2
+chunk 01|0,1,2
+fascinate 01|0,1,2
+oil 01|0,1,2,3 02|0,1,2 03|0,1,2,3
+test 01|0,1,2,3
+insult 01|0,1
+pall 01|1,2
+malnutrition 01|0,1,2
+cast 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2
+snarl 01|0,1,2
+purloin 01|0,1,2,3
+lame 01|1 02|0,1
+xray 01|0,1
+harm 01|0,1,2 02|0,1,2
+aversion 01|0,1
+transduce 01|0,1,2
+ululate 01|0,1
+sugar 01|0,1
+pontificate 01|0,1,2
+impose 01|0,1,2
+feint 01|0,1
+intermingle 01|0,1 02|0,1,2
+reoccur 01|1
+power 01|0,1,2 02|1,2
+unfix 01|0,1,2
+effort 01|0,1
+overdo 01|0,1
+echo 01|0,1 02|0,1,2
+dusky 01|1
+constringe 01|0,1,2,3,4
+patch 01|0,1 03|0,1,2 02|0,1
+sparse 01|1
+input 01|0,1,2 02|0,1,2
+seethe 01|0,1,2
+whitewash 01|0,1,2 02|0,1,2 03|0,1
+straighten 01|0,1,2 02|0,1 03|0,1 04|1 05|1 06|0,1,2
+nondisplaced 01|0,1,2
+sandpaper 01|0,1,2,3
+prostitute 01|0,1
+rebuild 01|0,1
+shift 01|0,1,2,3,4
+unattainable 01|0,1
+lunge 01|0,1
+arrest 01|0,1,2 02|0,1
+detassel 01|0,1
+coalesce 01|0,1,2,3
+snail 01|0,1
+deflea 01|0,1,2
+showboat 01|0,1,2
+kneel 01|0
+trill 01|0,1,2
+except 01|0,1,2 02|0,1
+double 01|0,1,2,3,4 02|0,1 03|1,2
+freak 01|1 02|0,1
+leaven 01|0,1,2
+forget 01|0,1
+barrack 01|0,1
+harness 01|0,1
+hypoventilate 01|0,1,2
+passive 01|1,2 02|1
+nonadvantageous 01|1,2
+rigid 01|0,1,2
+motivate 01|0,1,2 02|0,1,2,3,4
+adjudicate 01|0,1
+cap 01|0,1,2,3 02|0,1,2
+whore 01|0,1,2
+effeminate 01|0,1
+gape 01|0,1
+dehead 01|0,1
+salute 01|0,1,2
+violaceous 01|1
+tog 01|0,1,2
+sinter 01|0,2,3
+reconcile 01|0,1,2
+lag 01|0,1,2
+ridden 01|0,1,2
+stupid 01|1
+perpetrate 01|0,1,2
+defray 01|0,1,2
+recanalize 01|0,1
+airtrapping 01|0,1,2
+knight 01|0,1
+supercharge 01|0,1,2,3
+underperform 01|0,1
+hyperextend 01|0,1,2
+overexert 01|0,1,2
+cultivate 01|0,1
+seize 01|0,1,2 03|1 02|1
+loft 01|0,1,2
+acute 01|1,2
+capitulate 01|0,1
+cage 01|0,1,2
+misplace 01|0,1
+restalinize 01|0,1
+backslap 01|0
+interlace 01|0,1,2
+animate 01|0,1 02|0,1
+tapdance 01|0,1,2
+shake 01|0,1 02|0,1,2 03|0,1
+extricate 01|0,1,2
+solemnize 01|0,1
+nonblanching 01|0,1
+chronicle 01|0,1
+redound 01|0,1
+chatter 01|0,1 02|0,1
+poke 01|0,1,2 02|0,1,2
+share 01|0,1,2 02|0,1,2
+waver 01|0,1
+accession 01|0,1,2
+serve 01|0,1,2 02|0,1,2 04|0,1,2 03|0,1,2 05|0,1,2 06|0,1,2
+wax 01|0,1,2 02|1 03|1,2
+afford 01|0,1 02|0,1,2 03|0,1,2
+wrestle 01|0,1,2 02|0,1,2 03|0,1,2
+prawn 01|0,1,2,3
+pneumatize 01|0,1,2
+individualistic 01|1 02|0,1,2
+excommunicate 01|0,1,2
+mushroom 01|1,2,3,4
+reship 01|0,1,2,3
+quake 01|0,1
+endorse 01|0,1,2 02|0,1
+berth 01|0,1,2
+enquire 01|0,1
+frolic 01|0
+reformat 01|0,1,2,3
+tunnel 01|0,1,2,3
+access 01|0,1 02|0,1
+sort 01|0,1,2 02|0,1,2
+volunteer 01|0,1,2 02|0,1,2
+pair 01|0,1,2 02|0,1,2 03|0,1,2,3
+accentuate 01|0,1,2
+dislike 01|0,1
+curette 01|0,1
+prance 01|0,1
+caption 01|0,1,2
+outnumber 01|1,2,3
+retain 01|0,1,3 02|0,1,3
+louse 01|0,1 02|0,1
+hobnob 01|0,1,2 02|0,1,2
+fog 01|0,1 02|1 03|1,2
+video 01|0,1,2
+encrust 01|0,1,2
+cheese 01|0,1 02|0,1
+stay 01|1,2,3 03|0,1 02|1 04|1,2
+mudslide 01|1,2,3,4
+drunk 01|0,1
+sprinkle 01|0,1,2 02|1
+presage 01|0,1
+conceal 01|0,1,2
+elute 01|0,1,2
+chir 01|0
+artifactual 01|1,2
+squeeze 01|0,1 02|0,1,2,3 03|0,1,2,3,4 04|0,1,2
+iron 01|0,1 02|0,1,2
+behead 01|0,1
+pencil 01|0,1,2
+alright 01|0,1,2
+bone 01|0,1 02|0,1
+demyelinate 101|0,1
+resent 01|0,1,2
+fill 01|0,1,2 06|0,1,2 02|0,1,2 03|0,1 04|0,1 05|0,1,2 07|1,2 08|0,1,2 09|1,2 10|1,2
+thwack 01|0,1,2
+delicious 01|1
+tomb 01|0,1,2
+lade 01|0,1,2,3
+pristine 01|1
+hybridize 01|0,1,2
+pocket 01|0,1
+nest 01|0,1
+dote 01|0,1
+rear 01|0,1 02|0,1
+vent 01|0,1
+irritate 01|0,1 02|0,1
+mount 01|0,1 02|1,2,3,4,M-LOC 03|0,1
+detest 01|0,1 02|0,1
+unban 01|0,1,2
+clutter 01|0,1,2
+deliver 01|0,1,2 101|0,1
+vertical 01|1,2
+diffract 01|0,1,2
+pond 01|1,3,4
+infringe 01|0,1
+frequent 01|0,1 02|1
+scar 01|0,1
+viable 01|1,2
+improper 01|1,2
+finger 01|0,1 02|0,1 03|0,1,2
+focus 01|0,1,2
+persevere 01|0,1
+overdose 01|0,1
+gentrify 01|0,1
+advance 01|0,1,2,3,4,5 03|0,1,2,3,4 02|1,2
+bale 01|0,1,2
+consistent 01|1,2 02|1
+extract 01|0,1,2 02|1,2
+lam 01|0,1,2 02|0,1,2
+alien 01|1,2
+wade 01|0,1
+beard 01|0,1 02|0,1
+refract 01|0,1
+slit 01|0,1,2,3,4
+lour 01|0,1 02|0,1,2
+squish 01|0,1,2,3 02|0,1,2
+fluent 01|0,1
+move 01|0,1,2,3 02|0,1 03|0,1,2 04|0,1 05|0,1,2 08|0,1,2,3 06|0,1,2,3 07|0,1
+overcast 01|1,2
+rhapsodize 01|0,1
+cognize 01|0,1
+gorgeous 01|1
+devastate 01|0,1,2,3
+persuade 01|0,1,2 02|0,1,2
+murmur 01|0,1,2
+sleigh 01|0,1,2,3
+wean 01|0,1,2
+promenade 01|0,1,2,3,4
+eventuate 01|1,2
+goof 01|0 02|0,1
+nonrecurrent 01|0
+curtsey 01|0,1
+outspoken 01|0,1
+default 01|1,2,3,4 02|1,2
+space 01|0,1,2 02|0,1 03|1
+codename 01|0,1,2
+rehearse 01|0,1
+sever 01|0,1 02|1,2
+delouse 01|0,1
+unnerve 01|0,1,2
+rad 01|1
+summer 01|0,1
+fish 01|0,1 02|1,2
+graphic 01|1
+boggle 01|0,1
+annualize 01|0,1,2
+land 01|0,1 02|0,1,2
+complacent 01|0,1
+redevelop 01|0,1,2,3,4
+swish 01|0 02|0,1
+inaugurate 01|0,1,2 02|0,1
+visit 01|0,1 02|0,1,2
+whinny 01|0
+disorganize 01|0,1,2
+circumduct 01|0,1
+stumble 01|0,1
+doll 01|0,1,2 02|0,1,2
+pimp 01|0,1,2,3 02|0,1,2 03|0,1,2,3 04|0,1,2
+lane 01|0,1
+handpaint 01|0,1,2
+deflate 01|0,1
+tidy 01|0,1
+outpouring 01|0,1,2,3
+mooch 01|0,1,2
+fluoridate 01|0,1
+doobydoobydo 01|0,1
+mantle 01|0,1,2
+classic 01|1,2
+dunk 01|0,1,2 02|0,1
+compost 01|0,1
+solidify 01|0,1 02|0,1
+turnabout 01|0,1 02|1,2,3
+purposeless 01|1
+undercharge 01|0,1,2,3
+agonize 01|1,2
+oxygenate 01|0,1
+rebear 01|0,1
+overwash 01|0,1
+disclose 01|0,1,2,3
+abhor 01|0,1
+problematic 01|0,1,2
+blacklist 01|0,1
+cornify 01|0,1
+ping 01|0
+ride 01|0,1 02|0,1 03|1,2
+perjure 01|0,1,2
+burl 01|0,1,2
+regenerate 01|0,1
+pelt 01|0,1,2
+nine 01|1
+unbutton 01|0,1,2
+build 01|0,1,2,4 02|0,1,2,3,4 03|0,1,2 05|0,1,2,3,4
+inlay 01|0,1,2
+dirty 01|0,1,2 02|0,1,2
+thud 01|0,1
+misbehave 01|0,1
+refuel 01|0,1
+charcoal 01|0,1,2
+reload 01|0,1,2,3
+skyrocket 01|1,2,3,4,M-LOC
+nonobstruct 01|0,1
+difficult 01|1
+napalm 01|0,1
+madden 01|0,1,2 02|1 03|0,1 04|0,1,2
+sunburn 01|0,1
+blat 01|0
+gazump 01|0,1,2
+mill 01|0,1,2 02|0,1
+catnap 01|0,1
+valet 01|0,1
+mow 01|0,1
+truss 01|0,1,2,M-MNR
+heave 01|0,1,2 02|0,1 03|1
+dramatic 01|1 02|1 03|1
+sizzle 01|0
+certify 01|0,1,2
+rebel 01|0,1,2
+notice 01|0,1 03|0,1,2,3 02|0,1
+chaotic 01|1
+ceasefire 01|0,1
+answer 01|0,1,2 02|1,2,3
+summit 01|0,1,2 02|0,1
+preregister 01|0,1,2,3
+number 01|1,2 02|0,1,2
+backfire 01|1,2
+wrong 01|0,1 02|1,2 03|1,2 04|1,2
+unheard 01|0,1,2
+dollarize 01|0,1
+reason 01|0,1,2 02|1
+marinate 01|0,1,2
+glower 01|0,1
+palaver 01|0,1,2
+void 01|0,1 101|0,1,2 02|0,1 03|0,1,2
+track 01|0,1,2,3 03|1,2 04|0,1 02|0,1,2
+bedwet 01|0
+caricature 01|0,1,2
+flow 01|1,M-DIR 02|1,2,3,4
+pantomime 01|0,1,2
+moult 01|0,1,2
+reeve 01|0,1,2,3
+300 01|1
+cook 01|0,1 02|1,2 03|0,1
+betroth 01|0,1,2
+incur 01|0,1,2
+preselect 01|0,1,2,3
+resettle 01|0,1,2,3,4
+casualties 01|0,1
+tarmac 01|0,1,2
+grass 01|0,1,2
+saute 01|0,1
+queue 01|0,1 02|0,1
+boat 01|0
+irrelevant 01|1,2
+heparinize 01|0,1
+nut 01|0,1,2,3
+diplomatize 01|0,1,2
+salvation 01|0,1,2
+shade 01|0,1
+hoover 01|0,1,2,3
+halve 01|0,1
+blunder 01|0,1 02|0,1
+machinate 01|0,1
+metastasize 101|1,2
+chug 01|0 02|0,1 03|1,2,3
+stub 01|0,1,2
+overprice 01|0,1
+travel 01|0,1,2,4
+malodorous 01|1,2
+overeat 01|0,1
+reschedule 01|0,1,2,3
+occasion 01|0,1 02|1
+admonish 01|0,1,2 02|0,1,2
+motor 01|0,1,2,3
+lave 01|0,1 02|0,1
+defraud 01|0,1,2,3
+arrogant 01|0,1,2
+coevolve 01|1,2,3,4
+unkind 01|0,1,2
+combat 01|0,1,2
+obstinate 01|1,2
+combust 01|0,1,2
+whir 01|1
+seclude 01|0,1,2
+shroud 01|0,1,2
+communist 01|1
+glow 01|0,1
+stoop 01|0,1
+handdeliver 01|0,1,2
+eligible 01|1,2
+procedure 01|0,1,2
+crook 01|0,1
+nonlocal 01|1,2
+moon 01|0,1 02|0,1
+tetramerize 01|0,1,2,3
+adapt 01|0,1,2,3
+prescreen 01|0,1,2
+unsuccessful 01|0,1
+reradiate 01|0,1,2 02|0,1
+evert 01|0,1
+lint 01|0,1
+sabotage 01|0,1,2
+mark 01|0,1 02|0,1,2,3 03|0,1,2 04|0,1 05|0,1
+delete 01|0,1,2
+malnourished 01|1,2
+vow 01|0,1,2
+halter 01|0,1,2
+wreak 01|0,1,2
+rasp 01|0,1,2
+lignify 01|0,1
+crop 01|0,1,2,3,4 02|1
+thumb 01|0,1 02|0,1,2
+innocent 01|1,2
+alter 01|0,1,2,3
+renege 01|0,1
+overread 01|0,1,2
+flag 01|0,1,2,3,4,M-LOC 02|0,1
+feast 01|0,1
+ups 01|0,1,2
+waggle 01|0,1
+slate 01|0,1,2
+tan 01|0,1,2 02|0,1,2
+shadow 01|0,1 02|0,1
+flog 01|0,1
+steamroller 01|0,1,2
+stemmer 01|0,1,2
+quest 01|0,1,2
+personalize 01|0,1 02|1,2
+leer 01|0,1
+assure 01|0,1,2
+pout 01|0,1
+wrack 01|0,1
+nuance 01|0,1,2
+involve 01|0,1,2 02|1
+low 01|0 02|0,1 03|1 04|1,2,3 05|0,1,2,3,4
+free 01|0,1,2,3 03|1,2 04|1,2,3 02|0,1,2,3
+hoop 01|0,1
+strand 01|0,1
+investigate 01|0,1,2
+label 01|0,1,2
+survive 01|0,1 02|0,1,2
+array 01|0,1
+swarm 01|0,1
+broker 01|0,1,2
+harmonize 01|0,1,2
+gird 01|0,1,2 02|0,1,2
+derive 01|0,1,2,3,4
+mainstream 01|0,1 02|0,1
+panhandle 01|0,1,2
+cement 01|0,1
+wag 01|0,1
+streak 01|0
+concatenate 01|0,1,2,3
+atraumatic 01|0,1
+ambulate 01|0,1 02|0,1
+endeavor 01|0,1
+expense 01|0,1,2,3 02|1,2,3
+slope 01|0
+quickstep 01|0,1,2
+triphasic 01|1
+ablate 01|0,1,2 02|0,1,2
+capacitate 01|0,1,2
+unhitch 01|0,1,2
+dread 01|0,1 02|1,2 03|1,2 04|1,2
+swallow 01|0,1 02|0,1
+vacillate 01|0,1
+stereotype 01|0,1,2 02|1,2
+grandfather 01|0,1
+blonde 01|1,2
+shrimp 01|0,1,2,3
+dub 01|0,1,2
+wallow 01|0,1
+americanize 01|0,1,2 02|1
+unfreeze 01|0,1
+bullshit 01|0,1,2
+zealous 01|1,2
+waitress 01|0,1
+conflagrate 01|0,1,2
+signify 01|0,1 02|1
+tower 01|0,1
+pitch 01|0,1,2 02|0,1,2 04|0,1,2,3 03|0,1,2
+fence 01|0,1,2 02|0
+affiliate 01|0,1,2
+rally 01|0,1,2 02|0,1,2,3,4
+hurricane 01|1,2,3,4,5,6
+asymptomatic 01|0,1
+emboss 01|0,1,2
+bake 01|0,1,2,3
+somersault 01|0,1,2,3,4
+violate 01|0,1
+commit 01|0,1,2 02|0,1
+garb 01|0,1,2
+scram 01|1,2,3,4
+pander 01|0,1
+downlink 01|0,1,2,3
+drench 01|0,1,2
+excrete 01|0,1
+furnish 01|0,1,2
+cricket 01|0
+socialize 01|0 02|0,1 03|0
+siphon 01|0,1,2 02|0,1,2
+barter 01|0,1,2,3
+cause 01|0,1
+expectorate 01|0,1
+obtain 01|0,1,2
+spraypaint 01|0,1,2
+devote 01|0,1,2
+backburn 01|0,1,2
+croak 01|1
+transpose 01|0,1,2,3
+squash 01|0,1
+overleap 01|0,1
+coregistration 01|0,1
+discover 01|0,1,2,3
+tinker 01|0,1
+behold 01|0,1
+deliberate 01|0,1
+tipple 01|0,1
+tinsel 01|0,1,2
+lahar 01|1,2,3,4
+enlist 01|0,1,2
+revaccinate 01|0,1,2
+reverse 01|0,1,2
+whump 01|0
+engineer 01|0,1,2,3,4
+retaliate 01|0,1
+pat 01|0,1
+escort 01|0,1,3,4
+approximate 01|0,1
+junk 01|0,1
+boast 01|0,1,2
+string 01|0,1 02|0,1,2
+inferior 01|1,2,3 02|1,2
+subjacent 01|1,2
+reimagine 01|0,1,2
+gripe 01|0,1
+catch 01|0,1,2 02|0,1,2 03|0,1,2 04|1,2 07|0,1,2 05|1,2 06|0,1
+smother 01|0,1,2
+sting 01|0,1,2 02|0,1,2
+depict 01|0,1,2
+warble 01|0
+harvest 01|0,1
+replenish 01|0,1,2
+overcommit 01|0,1,2
+dispute 01|0,1,2
+unreliable 01|0,1,2
+rectal 01|1,2
+settle 01|0,1,2,3 02|0,1,2,3 03|0,1,2,3,4 04|1 05|0,1
+vocalize 01|0,1,2
+obfuscate 01|0,1
+relive 01|0,1
+tabs 01|0,1
+cater 01|0,1,2
+construct 01|0,1,2,4 02|0,1
+possess 01|0,1 02|1 03|0,1
+profound 01|1,2 02|1,2
+refashion 01|0,1
+editorialize 01|0,1,2,M-LOC
+geotag 01|0,1,2
+exploit 01|0,1,2
+lather 01|0,1
+billet 01|0,1,2
+pickpocket 01|0,1,2,3
+scoop 01|0,1,2 02|0,1
+intone 01|0,1
+grim 01|1,2
+birdnest 01|0,1,2,3
+twine 01|0,1,2
+defarnesylate 01|0,1,2,3
+decent 01|1,2 02|1,2
+normotensive 01|1
+sweat 01|0,1 04|0,1 02|1,2 03|0,1 05|0,1
+overshadow 01|0,1
+eye 01|0,1
+independent 01|0,1
+drug 01|0,1,2 02|0,1,2
+uninfect 01|0,1,2
+carol 01|0,1,2
+contest 01|0,1 02|0,1,2,3,4
+inconsistent 01|1,2
+graft 01|0,1,2
+jut 01|1,2 02|1,2
+knell 01|1,2
+predict 01|0,1 02|0,1 03|0,1,2
+coactivate 01|0,1
+reprioritize 01|0,1
+cellular 01|1
+shanghai 01|0,1,2,3
+unionize 01|0,1 02|0,1,2,3,4
+restart 01|0,1
+longwinded 01|0,1,2
+associate 01|0,1,2
+redo 01|0,1,2,3,4
+unacceptable 01|0,1,2,3
+popularize 01|0,1,2 02|1,2
+panel 01|0,1,2
+extinguish 01|0,1,2,3
+stubborn 01|1,2
+souse 01|0,1,2 02|0
+unlikely 01|1
+support 01|0,1
+supply 01|0,1,2
+adulterate 01|0,1,M-MNR
+encroach 01|0,1
+incompetent 01|1,2
+hold 01|0,1,2,3 02|0,1 03|0,1,2 04|0,1,2 13|0,1 14|0,1 05|1 06|0,1,2 07|0,1,2 08|0,1 09|1,2,M-TMP 15|0,1,2 10|0,1,2 11|1 16|0,1,2
+wick 01|0,1
+feudal 01|1
+reprocess 01|0,1,2,3
+monopolize 01|0,1
+bear 01|0,1,2,3 02|0,1 03|1 06|1,2 04|1 05|0,1 09|0,1,2 10|0,1 07|0,1,2,3 08|0,1,2,3
+outlying 01|0
+credential 01|0,1,2
+accede 01|0,1
+overstay 01|0,1
+unorthodox 01|1
+bemoan 01|0,1
+heterodimerize 01|0,1,2,3
+premature 01|1,2
+eulogize 01|0,1,2
+suffice 01|0,1
+mastermind 01|0,1,2,3
+subtype 01|0,1,2,3
+tire 01|0,1 03|0,1 02|0,1
+castrate 01|0,1 02|0,1 03|0,1
+stab 01|0,1,2,3,4
+trough 01|0,1 02|1
+hellish 01|1
+flicker 01|1
+misapprehend 01|0,1
+waterboard 01|0,1,2
+scaly 01|1,2
+itch 01|1 02|0,1
+nonfunctioning 01|0,1
+quantize 01|0,1,2,3
+crewel 01|0,1,2
+weasel 01|0,1,2
+skeptical 01|0,1
+sessile 01|1
+transfix 01|0,1,2
+predispose 01|0,1,2
+monkey 01|0,1
+scruple 01|0,1 02|1,2
+mutiny 01|0,1,2
+scent 01|0,1,2 02|0,1,2 03|0,1,2
+replete 01|0,1
+strengthen 01|0,1,2,3,4 02|1
+intermittent 01|1
+reexplore 01|0,1,2
+testify 01|0,1,2
+douche 01|0,1,2
+half 01|1,2
+calculate 01|0,1,2
+prefer 01|0,1,2 02|0,1,2 03|0,1,2
+scamper 01|0
+ford 01|0,1
+strict 01|0,1,2
+reroute 01|0,1,2
+skitter 01|0,1
+bull 01|1,2
+shimmer 01|1 02|0,1
+devour 01|0,1
+impractical 01|1,2
+plink 01|0,1,2
+sideline 01|0,1,2
+resummon 01|0,1,2
+pragmatic 01|1
+submit 01|0,1,2,3 02|0,1,2
+sex 01|0,1 03|0,1 02|1
+dehorn 01|0,1
+accurse 01|0,1,2
+jockey 01|0,1,2
+riffle 01|0,1
+focalize 01|0,1,2 02|1,2
+generous 01|0,1,2
+postsphincterotomy 01|1
+munch 01|0,1
+perturb 01|0,1
+equivalent 01|1,2,3
+fluff 01|0,1
+barbeque 01|0,1
+empty 01|0,1,2 02|0,1,2
+glass 01|0,1,2 02|0,1,2 03|1
+blare 01|0,1
+daily 01|1
+indulge 01|0,1,2
+foliate 01|0,1,2 02|1,2
+withdraw 01|0,1,2 02|1,2
+slither 01|0
+trudge 01|0,1
+compulsory 01|1,2
+bog 01|0,1
+reactivate 01|0,1
+denervate 01|0,1
+admix 01|0,1,2,3
+doublewrap 01|0,1,2
+rockbottom 01|0,1
+desaturate 101|0,1,2
+sledge 01|0,1,2 02|0,1,2
+process 01|0,1,2,3 02|0,1
+squeak 01|0,1 02|0,1
+acidify 01|0,1
+extort 01|0,1,2
+deprecate 01|0,1
+intern 01|0,1,2 02|0,1,2,3
+underutilize 01|0,1
+blink 01|0,1
+bluff 01|0,1,2
+bestride 01|0,1
+peruse 01|0,1
+differentiate 01|0,1,2 101|0,1,2,3
+fireproof 01|0,1
+discomfit 01|0,1
+globetrot 01|0,1
+emancipate 01|0,1,2
+peal 01|0,1
+overture 01|0,1,2
+cauterize 01|0,1,2
+abolish 01|0,1
+caw 01|0
+better 01|0,1 02|1,2 03|1,2 04|1,2 07|1 08|1,2 14|1,2 05|1,2 09|1 12|1,2 11|0,1,2 06|1,2 10|1 13|1,2
+speculate 01|0,1,2
+winter 01|0,1
+brumate 01|0
+whang 01|0,1,2
+secondguess 01|0,1
+frugal 01|1,2
+canoe 01|0,1,2,3
+dislodge 01|0,1,2
+skydive 01|0,1,2
+constipate 01|0,1,2
+irk 01|0,1,2
+convex 01|1
+ditch 01|0,1
+prophesy 01|0,1,2
+fruitful 01|1,2
+conjugate 01|0,1,2 02|0,1,2,3
+hypoxemic 01|1
+frank 01|0,1,2
+frail 01|0,1
+dig 01|0,1,2,3 04|0,1 05|0,1,2 02|0,1 03|0,1
+simulate 01|0,1,2
+antiwar 01|1
+selfish 01|0,1,2
+bewilder 01|0,1,2
+shut 01|0,1 02|0,1,2 03|0,1,2 04|0,1 05|0,1,2,M-TMP 06|0,1
+encrypt 01|0,1
+indict 01|0,1,2
+downscale 01|0,1,2,3,4
+glance 01|0,1
+boom 01|0,1,2 02|0,1 03|0,1
+defrost 01|0,1,2
+preach 01|0,1
+till 01|0,1
+logroll 01|0
+lash 01|0,1,2 02|0,1
+brace 01|0,1,2 02|0,1,2
+justify 01|0,1,2,3,4 02|0,1,2
+shackle 01|0,1,2,3,4
+intrathoracic 01|1
+notorious 01|1,2
+circularize 01|0,1,2 02|0,1,2
+oversimplify 01|0,1
+retire 01|0,1 02|0,1
+intervene 01|0,1
+recharge 01|0,1,2
+mimeograph 01|0,1
+reorient 01|0,1
+relate 01|0,1,2 02|0,1,2,3 03|0,1,2 04|1,2 05|1,2,3
+oath 01|0,1,2
+sophisticate 01|0,1,2
+masturbate 01|0,1
+rebound 01|1,2,3,4,0
+supinate 01|0,1
+miff 01|0,1,2
+retype 01|0,1
+dissimulate 01|0,1
+appeal 01|0,1,2 02|0,1,2 03|0,1
+grope 01|0,1
+calk 01|0,1,2 02|0,1 03|0,1,2
+repurpose 01|0,1,2
+present 01|0,1,2,3 101|1,2,3 102|0,1,2 02|1,2 03|0,1,2,3
+dawn 01|1,2 02|1
+bike 01|0,1
+humiliate 01|0,1
+diagram 01|0,1
+omit 01|0,1,2
+retake 01|0,1
+vigilant 01|0,1
+contrast 01|0,1,2
+worth 01|1,2,3 02|1,2
+exaggerate 01|0,1
+carve 01|0,1,2 02|0,1,2 03|0,1,2,3,4
+feel 01|0,1,2 02|0,1,2 03|0,1,2 05|1,2 06|0,1 04|0,1,2
+blanket 01|0,1,2
+tube 01|0,1,2
+balance 01|0,1,2 02|0,1,2
+appropriate 01|0,1 02|1,2
+decelerate 01|0,1
+unfold 01|0,1 02|1
+outshine 01|0,1
+annoy 01|0,1,2
+repose 01|0,1,2
+stretch 01|0,1,2,3,4 02|0,1
+lean 01|0,1,2
+dine 01|0,1 02|0
+sandboard 01|0,1
+piggyback 01|0,1
+turmoil 01|1,2
+pain 01|0,1
+onboard 01|1,2 02|1,2
+heavy 01|1,2
+intrude 01|0,1,2
+founder 01|1,2
+wheeze 01|0,1,2 02|0
+neaten 01|0,1,2 02|0,1,2
+solve 01|0,1,2
+assail 01|0,1,2
+stultify 01|0,1,2
+overcome 01|0,1
+eavesdrop 01|0,1
+roost 01|0
+microfilm 01|0,1
+nonlabored 01|0,1
+buffer 01|0,1,2
+hypertrophy 01|0,1
+size 01|0,1,2 02|0,1
+mosey 01|1,2,3
+profiteer 01|0
+oliguric 01|1
+storm 01|1 02|0,1
+delicate 01|1
+venture 01|0 02|0,1
+triumph 01|0,1,2
+nil 01|1
+broadcast 01|0,1,2,3
+modernize 01|0,1 02|0,1
+tint 01|0,1,2
+crepitate 01|1
+gambol 01|1,2,3,4
+gate 01|0,1
+assert 01|0,1 02|0,1,2,3 03|0,1,2,3
+frogwalk 01|0,1,3,4
+defeat 01|0,1,M-LOC
+subtitle 01|0,1,2 02|0,1,2
+fillet 01|0,1,2,3
+downregulate 01|0,1,2
+solace 01|0,1,2
+soil 01|0,1
+doff 01|0,1,2,3
+swamp 01|0,1,2
+froyo 01|0
+pauper 01|0,1
+rarefy 01|0,1 04|0,1 02|1 03|1
+rid 01|0,1,2
+shine 01|0,1,2 02|1
+cheesy 01|1
+glory 01|0,1
+skid 01|0,1 02|1,2,3,4
+coo 01|0,1,2
+widow 01|0,1
+duck 01|0,1
+outmanned 01|0,1
+position 01|0,1,2 02|0,1,2
+sag 01|0,1,2,3,4
+leap 01|1,2,3,4,5 02|0,1 03|0,1
+postmenopausal 01|1
+sniffle 01|0
+evoke 01|0,1,2
+snub 01|0,1
+pullback 08|0,1,2
+dazzle 01|0,1,2
+hightail 01|0,1,2
+woolgather 01|0,1
+ferret 01|0,1
+succor 01|0,1,2
+degenerate 01|0,1,2,3,4
+overrun 01|0,1
+allot 01|0,1,2
+ehh 01|1
+bang 01|0 02|0,1,2 04|0,1 03|0,1,2
+disprove 01|0,1
+aao 01|0,1
+stunt 01|0,1 02|0,1,2
+pray 01|0,1,2
+fume 01|0,1 02|0,1,2
+holiday 01|0,1,2,3
+biphasic 01|1
+incarcerate 01|0,1,2,3
+lubricate 01|0,1,2
+pretry 01|0,1
+implicate 01|0,1,2
+revamp 01|0,1
+rebate 01|0,1,2,3
+plunk 01|0,1,2
+bow 01|0,1,2 02|1 03|1 04|0,1 06|0,1
+resecure 01|0,1,2,3
+disgrace 01|0,1,2
+monophasic 01|1
+eradicate 01|0,1
+understudy 01|0,1
+appraise 01|0,1,2 02|0,1
+slow 01|0,1 02|1,3,4,M-LOC 04|1,2 05|0,1 03|0,1,3,4
+wish 01|0,1,2
+nasalize 01|0,1 02|0,1,2
+counterprogram 01|0,1,2
+swell 01|0,1,2,3,4
+still 01|0,1,2
+incept 01|0,1,2 02|0,1,2
+brim 01|0,1
+circumferential 01|1,2
+stoke 01|0,1 02|0,1
+ignore 01|0,1 02|1,2
+dismount 01|0,1
+scuff 01|0,1
+refit 01|0,1,2,3
+sojourn 01|0,1
+dropship 01|0,1,2,3
+aerate 01|0,1
+crevasse 01|0,1
+cop 01|0,1,2
+truck 01|0,1
+illuminate 01|0,1
+thin 01|0,1,2 03|0,1,2 02|0,1
+pedestrian 01|1
+sleepwalk 01|1,2,3,4
+nonexistent 01|1,2
+prove 01|0,1,2 02|0,1,2
+muscle 01|0,1,2
+refinance 01|0,1,2 02|0,1,2
+fugly 01|1
+renown 01|0,1,2
+clog 01|0 02|0,1,2 03|0,1,2
+scrap 01|0,1 02|0,1
+bolus 01|0,1,2,3
+raid 01|0,1
+addle 01|0,1,2
+embroil 01|0,1,2
+spatter 01|0,1,2
+blast 01|0,1 02|0,1,2 04|0 05|0,1,2,3 07|0,1 03|0,1 06|0
+deface 01|0,1,2
+magnify 01|0,1
+quibble 01|0,1,2
+jerk 01|0,1,2 02|0,1,2
+reincarnate 01|0,1,2
+regularize 01|0,1 02|1,2,3 03|1
+append 01|0,1,2
+unburden 01|0,1,2
+counter 01|0,1,2
+clinical 01|0,1 02|1
+tympanic 01|1
+hazard 01|0,1 02|0,1
+cling 01|0,1 02|1
+perm 01|0,1,2
+anastomose 01|0,1,2
+superinjunction 01|0,1,2
+constant 01|1
+shrill 01|0,1,2
+decrease 01|0,1,2,3,4
+shelve 01|0,1
+cradle 01|0,1
+silicify 01|0,1
+stucco 01|0,1,2
+deglaciate 01|0,1
+tutor 01|0,1,2
+filter 02|0,1,2 03|1,2
+pinpoint 01|0,1
+fap 01|0,1,2 02|0,1,2
+repurchase 01|0,1,2,3,4
+down 01|0,1 02|0,1 03|0,1,2,3 04|0,1
+mottle 01|0,1,2
+arouse 01|0,1 02|0,1
+foam 01|0,1
+campaign 01|0,1
+layover 01|0,1,2
+spam 01|0,1,2
+poor 01|1,2 02|1,2 03|1
+prominent 01|1,2
+beleaguer 01|0,1
+speed 01|0,1 02|0,1 03|0,1
+edit 01|0,1
+verbalize 01|0,1,2
+encapsulate 01|0,1
+fumigate 01|0,1,2,3
+faithful 01|1,2
+grab 01|0,1
+lack 01|0,1
+desiccate 01|0,1,2
+throw 01|0,1,2 03|0,1 07|0,1 02|0,1,2 04|0,1,2 06|0,1 05|0,1
+highlight 01|0,1,2
+unwind 01|0,1 02|1,2
+incorporate 01|0,1,M-LOC 02|0,1,2
+likely 01|1
+stagnate 01|1
+premake 01|0,1,2,3
+corrugate 01|0,1
+fetch 01|0,1,2,3,4
+fna 01|0,1,2
+major 01|0,1 02|1
+garage 01|0,1,2
+peak 01|1,2,3
+evict 01|0,1,2
+unrelated 01|0,1,2 02|1,2
+maim 01|0,1,2
+stalk 01|0 02|0,1
+bugger 01|0,1
+true 01|1,2 02|1,2 03|1,2
+reemerge 01|0,1 02|0,1
+preoptimization 01|0,1
+amend 01|0,1,2 02|0,1,2
+meld 01|0,1,2
+decree 01|0,1,2
+rescan 01|0,1
+pierce 01|0,1,2,3
+appoint 01|0,1,2 02|0,1
+distinguish 01|0,1,2
+transfect 01|0,1,2
+abrogate 01|0,1,2
+inoculate 01|0,1,2,3
+cnn 01|1
+gag 01|0,1,2 02|0,1
+acquire 01|0,1,2,3,4
+intermediate 01|1,2,3
+tandem 01|0,1,2,3
+misconstrue 01|0,1
+reappraise 01|0,1,2
+capitalize 01|0,1,2 02|0,1
+tsunami 01|1,2,3,4,5
+resemble 01|1,2
+feign 01|0,1
+relabel 01|0,1,2
+schedule 01|0,1,2,3
+handicap 01|0,1
+speckle 01|0,1,2
+happen 01|1,2 02|1 03|0,1
+underinflate 01|0,1,2,3,4
+religious 01|0 02|0,1
+chill 01|0,1 02|0,1 03|1 04|0,1 05|0,1
+solarize 01|0,1
+coproduce 01|0,1,2,3,4
+hem 01|0,1,2 02|1,2
+inure 01|0,1,2
+accrue 01|0,1
+meow 01|0
+semipurposeful 01|0,1,2
+amnesty 01|0,1,2
+find 01|0,1,2 02|0,1 03|0,1,2
+readjust 01|0,1
+ponder 01|0,1
+veil 01|0,1
+burglarize 01|0,1 02|0,1,2
+compress 01|0,1,2
+combine 01|0,1,2,3
+experiment 01|0,1,2
+wnwd 01|1
+pad 01|0,1,2
+concentrate 01|0,1,2 02|0,1
+douse 01|0,1,2
+brisk 01|0,1
+reprepare 01|0,1,2
+absent 01|0,1,2
+pillory 01|0,1
+exhale 01|0,1
+prospect 01|0,1,2 02|0,1
+tops 01|1,2
+helicopter 01|0,1,2
+gather 01|0,1,2,3 02|0,1,2 03|0,1
+gleam 01|0
+fawn 01|0,1
+unyielding 01|0,1,2
+curry 01|0,1,2 02|0,1,2 03|0,1
+sugarcoat 01|0,1,2
+pyrosequence 01|0,1,2
+dishearten 01|0,1
+skate 01|0,1
+pink 01|0 02|0,1,2 03|0,1,2,4 04|0,1,2
+ram 01|0,1,2
+taper 01|0,1 02|0,1,2,3,4
+prevail 01|0,1,2 02|1
+coordinate 01|0,1,2
+gravitate 01|0,1
+adsorb 01|1,2
+text 01|0,1,2,3
+reassure 01|0,1,2
+od 01|0,1
+emasculate 01|0,1
+thickskinned 01|1
+nonenhance 01|0,1,2
+shameless 01|1
+prescribe 01|0,1 02|0,1,2
+lurk 01|0
+bully 01|0,1,2
+doubt 01|0,1 02|0,1
+apt 01|1 02|1,2
+backtrack 01|1,2,3,4,M-LOC
+coal 01|0,1 02|0,1,2
+excite 01|0,1,2
+optional 01|1,2
+unwilling 01|0,1
+overflood 01|0,1,2
+comprehend 01|0,1
+misappropriate 01|0,1,2
+scoff 01|0,1
+authoritarian 01|1
+competent 01|1,2
+clamber 01|0
+asthmatic 01|1
+ischemic 01|1
+putter 01|0
+ornament 01|0,1,2
+swab 01|0,1,2
+fear 01|0,1,2
+grandstand 01|0,1,2
+preset 01|0,1,2
+direct 01|0,1,2 02|1
+sunbathe 01|0,1
+kowtow 01|0,1
+restate 01|0,1,2,3 02|0,1,2,3,4
+sit 01|1,2 07|0,1 08|0,1 02|1,2 03|1 04|1,2 05|1,2 06|0,1
+intimate 01|0,1,2 02|1,2
+grimace 01|0,1
+periodize 01|0,1,2
+render 01|0,1,2 02|0,1,2 03|0,1,2
+rupture 01|0,1
+curb 01|0,1,2,3,4,M-VSP
+hyperventilate 01|0,1,2
+loaf 01|0
+aim 01|0,1 02|0,1,2
+dice 01|0,1,2,3
+burst 01|1,2 02|0,1 03|1,2,3,4,5 04|0,1,2
+nitrify 01|0,1,2
+cram 01|0,1,2 02|0,1
+pee 01|0,1
+swelter 01|0,1
+stifle 01|0,1
+shoplift 01|0,1,2,3
+consider 01|0,1 02|0,1,2
+introspect 01|0,1
+brush 01|0,1 02|0,1 03|0,1 05|0,1
+teach 01|0,1,2
+swirl 01|1
+commercialize 01|0,1,2
+leak 01|0,1
+beam 01|0,1 02|0,1
+kitten 01|0,1
+mizzle 01|0,1
+dismay 01|0,1,2
+unable 01|1,2
+rail 01|0,1
+route 01|0,1,2 02|0,1,2 03|0,1,2
+unplayable 01|0,1,2,3 02|0,1,2 03|0,1
+recess 01|0,1 02|0,1
+pummel 01|0,1,2
+earmark 01|0,1,2
+bayonet 01|0,1
+repossess 01|0,1
+reconstitute 01|0,1,2,3
+mew 01|0
+vet 01|0,1,2
+randomize 01|0,1,2 02|1
+fuel 01|0,1,2
+whoosh 01|0,1,2
+review 01|0,1,2,3 02|0,1,2,3 03|1
+rig 01|0,1 02|0,1
+thaw 01|0,1 02|0,1
+saturate 01|0,1,2
+register 01|0,1,2,3 02|0,1,2,3
+gust 01|0,1
+dialogue 01|0,1,2
+message 01|0,1,2
+syndicate 01|0,1,2
+amble 01|0
+credit 01|0,1,2 02|0,1,2
+bunch 01|0,1,2 02|0,1,2
+nonproliferation 01|0
+step 01|0,1,2,3,4 02|1 03|0,1 04|0,1 05|0,1
+wane 01|1
+level 01|0,1,2 03|0,1,2 04|0,1 02|0,1,2
+renationalize 01|0,1
+telegraph 01|0,1,2
+posterior 01|1,2
+sack 01|0,1
+flatten 01|0,1 02|0,1 03|1 04|1 05|1 06|1
+intelligible 01|0,1
+aggravate 01|0,1,2
+carbonify 01|0,1
+bait 01|0,1,2 02|0,1,2,3 03|0,1,2
+kayo 01|0,1,2
+house 01|0,1,2
+wear 01|0,1 06|0,1,2 02|0,1 03|0,1 04|1 05|0,1
+own 01|0,1 02|0,1
+aberrate 01|1,2
+instruct 01|0,1,2,3
+enshrine 01|0,1,2
+stop 01|0,1,2 03|0,1,2 05|0,1,2 02|0,1 04|0,1,2 06|0,1 07|1
+unswerving 01|0,1
+chirp 01|0 02|0
+people 01|1,2
+punt 01|0,1,2,3 02|0,1,2 03|0,1,2
+elaborate 01|0,1
+rephrase 01|0,1,2
+mortify 01|0,1,2 02|0,1
+kayak 01|0,1,2,3
+employ 01|0,1,2 02|0,1,2
+distrust 01|0,1,2
+flout 01|0,1
+ruminate 01|0,1
+articulate 01|0,1,2 02|0,1
+disenfranchise 01|0,1
+rake 01|0,1,2,3 02|0,1
+encounter 01|0,1
+chip 01|0,1,2,3 02|0,1,2
+veneer 01|0,1,2
+suffuse 01|0,1
+bludgeon 01|0,1,2
+teem 01|0,1
+opposite 01|1,2,3
+efficacious 01|0,1,2
+garden 01|0
+theorize 01|0,1
+censure 01|0,1,2
+steam 01|0,1 02|1 03|0,1
+stomach 01|0,1
+catalogue 01|0,1,2
+legitimize 01|0,1 02|0,1
+adipose 01|1
+estrange 01|1,2
+reserve 01|0,1,2,3 02|1 03|0,1
+fracture 01|0,1
+reenact 01|0,1,2
+hmu 01|0,1
+cotransfect 01|0,1,2
+vietnamese 01|1
+blind 01|0,1,2 02|0,1,2
+spark 01|0,1,2
+automate 01|0,1
+exemplify 01|0,1
+nail 01|0,1 02|0,1
+disinvite 01|0,1,2
+recraft 01|0,1
+picket 01|0,1
+coach 01|0,1,2
+toboggan 01|0,1,2,3
+buff 01|0,1
+vroom 01|0
+rind 01|0,1,2
+spreadeagle 01|0,1,2 02|1
+award 01|0,1,2,3
+misconduct 01|0
+compliment 01|0,1,2
+harass 01|0,1,2 02|0,1,2
+lynch 01|0,1
+reclaim 01|0,1,2
+extirpate 01|0,1,2
+nontoxic 01|1,2
+eject 01|0,1,2
+incarnate 01|0,1,2
+diagnose 01|0,1,2
+point 01|0,1,2 02|0,1
+hide 01|0,1,2 02|0
+spot 01|0,1,2,3 02|0,1,2
+cajole 01|0,1,2
+petition 01|0,1
+commission 01|0,1,2
+ovulate 01|0,1
+flatter 01|0,1
+bankroll 01|0,1,2
+unglue 01|0,1,2
+punctuate 01|0,1
+rubbish 01|1 02|1,2 03|1,2
+collateralize 01|0,1,2,3 02|0,1,2
+bilateral 01|1,2
+scatter 01|0,1,2
+disregard 01|0,1
+aa 01|0
+deck 01|0,1,2 02|0,1,2
+precise 01|0,1
+sundown 01|1
+sol 01|1
+prowl 01|0,1
+firefight 05|0,1,2
+fly 01|0,1,2,3,4 02|0,1 03|0,1,2 06|0,1 04|0,1,2 05|0,1,2
+intifada 01|0,1,2
+telex 01|0,1,2
+debulk 01|0,1,2
+close 01|0,1,2 02|1,M-MNR,M-EXT 03|0,1 06|1,2 10|1,2 11|1,2 12|1 13|1,2 04|0,1 05|0,1,2 07|1,2 08|0,1 09|0,1
+fault 01|0,1,2 02|1,2
+barb 01|0,1
+sensationalize 01|0,1
+small 01|1,2
+dial 01|0,1
+wise 01|1 02|0,1 03|0,1,2
+ghost 01|0,1 02|0,1 03|0,1
+atomize 01|0,1,2
+brand 01|0,1,2
+voice 01|0,1,2
+reunify 01|0,1,2,3
+cruise 01|0 02|0,1
+underground 01|1
+picnic 01|0,1
+dysfunction 01|0,1
+snap 01|0,1,2 03|0,1,2 04|0 05|0,1,2,3 07|0,1,2 09|0,1 06|0,1,2 08|0,1,2,3,4
+jumble 01|0,1
+try 01|0,1 02|0,1,2,3 04|0,1,2 03|0,1,2 05|0,1 06|0,1,2
+deplore 01|0,1 02|0,1
+mandate 01|0,1
+ameliorate 01|0,1,2
+hock 01|0,1
+conducive 01|1,2
+buoy 01|0,1 02|0,1
+generate 01|0,1,2,3,4
+muslim 01|1
+style 01|0,1,2
+pasture 01|0,1,2
+affection 01|0,1
+map 01|0,1 02|0,1,2
+intimidate 01|0,1
+redistribute 01|0,1
+ensnare 01|0,1
+misjudge 01|0,1
+mangle 01|0,1,2 02|0,1
+stroke 01|0,1,2,3 02|1
+bump 01|0,1,2 02|0,1,2,3,4,5 03|1,2 04|0,1
+splotch 01|0,1,2
+spritz 01|0,1,2
+shuck 01|0,1,2
+saddle 01|0,1,2
+foreknow 01|0,1,2
+insulate 01|0,1,2,3 02|0,1,2
+alone 01|1,2
+vibrate 01|0,1
+expert 01|1,2
+channel 01|0,1,2,3 02|0,1,2
+indemnify 01|0,1,2
+pulsate 01|1
+chuck 01|0,1
+reinscribe 01|0,1,2
+bankrupt 01|0,1
+osculate 01|0,1 02|1,2 03|1,2
+advil 01|0
+cart 01|0,1 02|0,1,2
+radiosensitize 01|0,1,2
+baa 01|0
+antedate 01|0,1
+trim 01|0,1,2,3 02|0,1,2,3,4 03|0,1,2 04|0,1,2,3,4
+outsmart 01|0,1
+more 01|1,2,3 02|1,2,3
+speak 01|0,1,2,3 04|0,1 02|0 03|0,1 05|0,1
+square 01|0,1 02|0,1,2 04|0,1 03|0,1,2,3
+formalize 01|0,1
+portend 01|0,1,2
+spite 01|0,1,2
+moped 01|0,1,2,3
+anoint 01|0,1
+measure 01|0,1,2,3 02|0,1,2 03|0,1,2,3
+scream 01|0,1,2,3
+incontinent 01|1,2
+moralize 01|0,1,2 02|1
+invoke 01|0,1
+rewire 01|0,1,2
+coin 01|0,1
+spool 01|0,1,2
+advertise 01|0,1
+loathe 01|0,1
+clump 02|0,1,2 03|0,1,2
+end 01|0,1,2,M-TMP 02|1,2,3,4 03|1,2 04|0,1,2
+edentulous 01|1
+polyploidize 01|0,1,2,3,4
+penetrate 01|0,1
+choose 01|0,1,2,3,4
+autopsy 01|0,1,2
+despondent 01|0,1
+nosh 01|0,1
+fledge 01|0,1,2
+supple 01|1
+dilute 01|0,1,2,3,4,5
+mire 01|1,2
+trigger 01|0,1,2,3 02|0,1,2,3
+defecate 01|0
+pinion 01|0,1
+convulse 01|0,1
+interlink 01|0,1,2
+impinge 01|0,1
+venous 01|1
+weld 01|0,1
+examine 01|0,1,2 02|0,1,2
+bark 01|0,1,2 02|0
+entrench 01|0,1,2
+commandeer 01|0,1,2
+destigmatize 01|0,1,2
+boss 01|0,1 02|0,1
+blaspheme 01|0,1
+revote 01|0,1,2
+reinstitute 01|0,1,2
+torch 01|0,1
+suspend 01|0,1,2 02|0,1,2 03|0,1,2,3
+monitor 01|0,1,2
+sprain 01|0,1
+anuric 01|1
+name 01|0,1,2 02|0,1,2 03|0,1,2
+subvert 01|0,1,2
+endear 01|0,1,2
+kosher 01|0,1 02|0,1
+intrigue 01|0,1,2
+rape 01|0,1
+invigorate 01|0,1,2
+bury 01|0,1,2
+manicdepressive 01|1
+conflate 01|0,1,2
+badmouth 01|0,1,2
+hearten 01|0,1
+evacuate 01|0,1,2
+nadire 01|0
+compromise 01|0,1,2 02|0,1
+japan 01|0,1,2
+recalcitrant 01|0,1
+avalanche 01|1,2,3,4
+mock 01|0,1,2
+disconcert 01|0,1
+tranquilize 01|0,1
+morbid 01|1,2 02|1,2
+strum 01|0,1,2
+ubiquitous 01|1,2
+misclassify 01|0,1,2
+precaution 01|0,1,2
+bottlefeed 01|0,1,2
+glint 01|0 02|0,1
+bypass 01|0,1 02|0,1
+vulnerable 01|1,2
+warn 01|0,1,2
+complected 01|1,2
+give 01|0,1,2 14|1,2 16|0,1,2 17|1,2 02|0,1,2 15|0,1,2,3 03|0,1,2 04|0,1 05|1 06|0,1,2 07|0,1 08|0,1,2 09|0,1 10|0,1,2 13|0,1,2
+tease 01|0,1,2 02|0,1,2 03|0,1,2 04|0,1,2
+prime 01|0,1,2
+poohpooh 01|0,1
+outflow 01|1
+heckle 01|0,1
+tithe 01|0,1,2,3
+precious 01|1,2 02|0,1
+cellar 01|0,1,2
+surmount 01|0,1,2 02|0,1
+dock 01|0,1,2
+pod 01|0,1
+bathe 01|0,1,2
+parallel 01|0,1
+puttyduddy 01|0,1 02|0,1
+translucent 01|1,2
+supplant 01|0,1,2
+assimilate 01|0,1,2
+aver 01|0,1
+neutralize 01|0,1 02|0,1
+fanaticize 01|0,1,2
+recast 01|0,1,2
+ratchet 01|0,1,2,3,4
+teethe 01|0,1
+poster 01|0,1,2
+restretch 01|0,1,2,3,4
+repay 01|0,1,2,3
+consent 01|0,1 02|1
+tisk 01|0,1,2
+ligate 01|0,1,2,3
+tackle 01|0,1,2
+pressurize 01|0,1,2,3,4
+overcontrol 01|0,1,2
+barricade 01|0,1,2,3
+confuse 01|0,1,2,3
+strip 01|0,1,2 02|0,1
+big 01|1,2 02|1 03|1,2
+gain 01|1,2,3,4,5 02|0,1,2,3
+officiate 01|0,1,2
+premed 01|1
+soften 01|0,1 02|0,1
+pension 01|0,1,2 02|0,1,2
+abuse 01|0,1 02|0,1 03|0,1,2
+dry 02|0,1,2 04|1 05|1 06|1 07|1,2 08|0,1,2 01|0,1 03|0,1
+secularize 01|0,1,2
+bill 01|0,1,2,3 02|0,1,2
+taboo 01|0,1
+proceed 01|0,1 02|1,2,3
+pride 01|0,1,2
+muffle 01|0,1,2
+brake 01|0,1
+base 01|0,1,M-LOC 02|0,1,2
+yowl 01|0,1,2
+proffer 01|0,1,2
+eyeball 01|0,1
+overarch 01|1
+straggle 01|0
+hyponatremic 01|1,2
+garrison 01|0,1,2
+congeal 01|0,1,2,3,4
+glare 01|0,1
+predetermine 01|0,1
+inactivation 01|0,1
+rat 01|0,1
+dissimilate 01|0,1,2
+misdirect 01|0,1
+crossexamine 01|0,1,2,3
+restent 01|0,1,2
+liquidate 01|0,1
+fair 01|0,1,2 02|1 03|1,2 04|1
+woof 01|0,1,2
+tense 01|0,1 03|0,1
+coextrude 01|0,1
+sequin 01|0,1,2
+stuck 01|1,2
+objective 01|0,1
+aware 01|0,1
+straightforward 01|0,1,2
+selfless 01|0,1,2
+superior 01|1,2,3
+perseverate 01|0,1
+disabuse 01|0,1,2
+cheerlead 01|0,1
+stun 01|0,1,2
+pawn 01|0,1
+cup 01|0,1 02|0,1 03|0,1,2
+deport 01|0,1,2
+oxidize 01|0,1,2
+underreact 01|0,1,2
+hail 01|1 02|0,1,2 04|0,1 05|0,1,2 03|1
+scurry 01|0
+exult 01|0,1
+read 01|0,1,2,3 02|0,1 03|0,1,2
+decry 01|0,1,2
+acquaint 01|0,1,2
+gelatinize 01|0,1,2
+inhumane 01|0,1,2
+conciliate 01|0,1,2
+mind 01|0,1 02|0,1 03|0,1 04|0,1 05|0,1
+beatify 01|0,1
+outlandish 01|1
+anticorruption 01|0,1,2
+vitrify 01|0,1
+pertain 01|0,1
+tassel 01|0,1,2
+assuage 01|0,1
+quantify 01|0,1,2
+powder 01|0,1 02|0,1,2
+escape 01|0,1
+foreclose 01|0,1
+expend 01|0,1,2
+outperform 01|0,1,2
+preorder 01|0,1,2,3
+resume 01|0,1,2
+bunker 01|0,1,2
+bequeath 01|0,1,2
+snooze 01|0,1
+giddy 01|0,1
+hype 01|0,1,2 02|0,1,2
+batmitzvah 01|0,1
+run 01|0,1,2,3,4 02|0,1,2 03|1,2,3 04|0,1,2,3,4,M-MNR 07|0,1 08|0,1,2,3 09|0,1,2 10|0,1,2 13|0,1,2,3 14|0 15|1 16|0,1,2 17|0,1 23|0,1,2 05|1,2 06|0,1 19|0,1,2 11|0,1 21|0,1,2 12|0,1,2 18|0,1,2 24|0,1,2,3 20|0,1,2 22|0,1,2
+key 01|0,1,2 02|1,2 03|0,1,2
+border 01|0,1,2
+giggle 01|0
+vein 01|0,1
+mar 01|0,1,2
+doom 01|0,1,2
+denature 01|0,1,2,3,4
+heartbreak 01|0,1,2
+dabble 01|0,1
+bundle 01|0,1,2 02|0,1,2 03|0,1,2
+upscale 01|0,1,2,3 02|0,1,2,3,4
+subjugate 01|0,1,2
+audition 01|0,1,2 02|0,1
+haunt 01|0,1
+preclude 01|0,1,2,3
+remake 01|0,1,2,3
+accommodate 01|0,1
+cleanse 01|0,1,2
+reinduct 01|0,1,2
+poach 01|0,1,2 02|0,1
+muddy 01|0,1
+excruciate 01|0,1
+weave 01|0,1,2 02|0,1
+love 01|0,1 02|0,1
+nettle 01|0,1,2
+recognize 01|0,1,2,3 02|0,1,2
+softboil 01|0,1,2
+log 01|0,1 03|0,1 02|0,1 04|0,1 05|0,1 06|0,1
+reapportion 01|0,1,2,3
+quadruple 01|0,1,2,3,4
+demean 01|0,1
+sweep 01|0,1,2,3,4 02|0,1,2,3 05|0,1,2 06|0,1,2 03|0,1,2 04|0,1,2,3,4
+afflict 01|0,1,2
+raft 01|0,1,2,3
+augur 01|0,1,2
+tarry 01|0,1
+will 01|0,1,2 02|0,1
+nominate 01|0,1,2
+brainwash 01|0,1,2
+trend 01|1,2
+adjourn 01|0,1 02|0,1
+neoplastic 01|1
+disconnect 01|0,1,2
+camp 01|0 02|0,1
+childbearing 01|0
+shower 01|0,1,2 02|0,1,2
+mistreat 01|0,1
+chelate 01|0,1,2
+underuse 01|0,1
+definite 01|1
+forthcome 01|1
+miscalculate 01|0,1,2
+underscore 01|0,1,2
+discredit 01|0,1
+correct 01|0,1 02|1
+finagle 01|0,1,2
+aphasic 01|0,1,2
+upset 01|0,1,2 02|0,1
+cue 01|0,1,2
+indeterminant 01|1,2
+overheat 01|0,1
+slipcover 01|0,1,2
+feature 01|0,1,2
+derind 01|0,1
+neuter 01|0,1,2
+induce 01|0,1,2 02|0,1,2
+faint 01|0 02|0,1,2 03|0,1
+backstab 01|0,1,2
+mic 01|0,1,2 02|0,1
+activate 01|0,1
+surgery 01|0,1,2 02|1
+tool 01|0,1,2 02|0,1,2 03|0,1,2,3 04|0,1
+poll 01|0,1,2
+infatuate 01|0,1
+outfit 01|0,1,2
+recite 01|0,1,2
+badger 01|0,1,2
+crucial 01|1,2,3
+degrease 01|0,1,2
+advise 01|0,1,2 02|1
+deprive 01|0,1,2
+draw 01|0,1,2 02|0,1,2 05|0,1,2 03|0,1,2 04|1
+digitize 01|0,1,2
+allergic 01|1,2
+persist 01|0,1
+gyrate 01|0,1
+impulsive 01|0,1
+dwarf 01|0,1
+enjoin 01|0,1,2,3
+stockpile 01|0,1,2
+coarctate 01|0,1,2,3,4
+esteem 01|0,1,2
+decimate 01|0,1,2
+precut 01|0,1,2,3,4,5
+overdue 01|1,2 02|1,2
+surplus 01|1,2
+coimmunoprecipitate 01|0,1,2,3,4
+shamble 01|0,1
+furrow 01|1
+outsell 01|0,1,2
+interfere 01|0,1
+protract 01|0,1
+militarize 01|0,1,2
+outbid 01|0,1,2
+surrender 01|0,1,2
+mistype 01|0,1,2
+retie 01|0,1,2,3
+discolor 01|0,1,2
+astound 01|0,1
+repost 01|0,1,2
+akin 01|1,2,3
+incidental 01|1,2
+freckle 01|0,1
+slaver 01|0
+pen 01|0,1,2 02|0,1 03|0,1
+network 01|0,1,2
+import 01|0,1,2
+air 01|0,1,2
+miscount 01|0,1,2
+blather 01|0,1,2
+shear 01|0,1,2,3
+ball 01|0,1,2
+stagewhisper 01|0,1,2
+tuck 01|0,1,2 02|0,1,2 03|0,1
+fatten 01|0,1 02|0,1 03|1,2
+partial 01|1,2
+tiptoe 01|0
+heap 01|0,1,2
+lurch 01|0,1
+particular 01|1,2 02|0,1
+micturate 01|0
+push 01|0,1,2 02|0,1,2 03|1,2 05|0,1 04|0,1 06|0
+lightheaded 01|0,1
+inform 01|0,1,2 02|0,1,2,3
+deaminate 01|0,1,2,3
+lisp 01|0,1,2
+conceptualize 01|0,1,2 02|0,1,2
+adjacent 01|1,2
+confirm 01|0,1,2
+vegan 01|1
+flit 01|1,2,3,4
+lol 01|0,1
+puncture 01|0,1,2
+interleave 01|0,1,2
+benight 01|0,1
+sterilize 01|0,1,2 02|1,2
+unique 01|1,2
+spotlight 01|0,1
+adjunct 01|1,2,3
+convalesce 01|1,2
+mustached 01|1,2
+meander 01|0,1
+resample 01|0,1,2
+contact 01|0,1
+orchestrate 01|0,1
+unresponsive 01|0,1,2
+shallow 01|1
+dodge 01|0,1
+peacekeep 01|0,1
+babysit 01|0,1,2
+zero 01|0,1 02|0,1
+netmail 01|0,1,2
+pulp 01|0,1,2 02|0,1,2
+compatible 01|1,2
+pile 01|0,1,2 03|1,2 02|0,1 04|0,1,2
+plunder 01|0,1,2
+stiffen 01|0,1 02|1 03|0,1,2,3 04|0,1
+interweave 01|0,1,2
+photograph 01|0,1
+alcoholize 01|0,1,2
+hamper 01|0,1,2
+deepen 01|0,1 02|1,2 03|1,2 04|1 05|1
+cede 01|0,1,2
+practical 01|1,2
+flank 01|0,1
+recover 01|1,2 02|0,1,2 03|0,1,2
+haggle 01|0,1,2
+codify 01|0,1,2
+constrain 01|0,1,2,3
+renegotiate 01|0,1,2
+alarm 01|0,1
+hyperproliferate 01|0
+politicize 01|0,1 02|0,1
+relaunch 01|0,1
+airmail 01|0,1,2
+loan 01|0,1,2 02|0,1
+kooky 01|1
+launder 01|0,1
+complete 01|0,1 02|1
+scud 01|0,1
+script 01|0,1,2,3
+intoxicate 01|0,1
+boogie 01|0,1
+incident 01|0,1
+uniform 01|0,1,2 02|1,2
+match 01|0,1,2 03|0,1,2,3 02|0,1,2
+transcribe 01|0,1,2,3
+squirm 01|0,1
+reenter 01|0,1 02|0,1,2,3
+absurd 01|1
+resiliency 01|1,2
+smooth 01|0,1,2 04|1 06|1 05|0,1 02|0,1,2 03|0,1
+convoke 01|0,1
+overplant 01|0,1,2
+berry 01|0,1,2,3
+sear 01|0,1,2
+evangelize 01|0,1,2
+extravagant 01|1,2
+counterbalance 01|0,1
+depend 01|0,1
+fluid 01|1 02|1 03|1
+rrla 01|1
+authorize 01|0,1,2,3
+followup 01|0,1
+ttp 01|1,2
+reassemble 01|0,1,2,4
+plod 01|0,1
+rewrite 01|0,1
+bitter 01|0,1 02|1
+limit 01|0,1,2
+dole 01|0,1,2
+yelp 01|0,1,2
+cascade 01|1
+oversew 01|0,1,2,3,4
+anephric 01|1
+imprison 01|0,1,2,3
+autorefraction 01|0,1,2
+assassinate 01|0,1
+redemonstrate 01|0,1,2
+daub 01|0,1,2
+microinject 01|0,1,2
+rerun 01|0,1 02|0,1 03|0,1
+crisis 01|1,2
+disseminate 01|0,1
+snip 01|0,1,2,3
+sour 01|0,1,2
+shelter 01|0,1,2,3
+chrome 01|0,1,2
+cribriform 01|0,1,2 02|1
+verse 01|0,1,2
+slap 01|0,1,2
+emulsify 01|0,1,2
+rehome 01|0,1,2
+reprogram 01|0,1,2,3
+copay 01|0,1,2,3,4
+enter 01|0,1 02|0,1,2,3 03|0,1,2
+embarrass 01|0,1,2
+cuckoo 01|0 02|0
+stride 01|0,1
+hydrolyze 01|0,1,2,3
+federalize 01|0,1 02|0,1,2
+crab 01|0,1,2,3
+lend 01|0,1,2
+malabsorption 01|0,1,2,3
+add 01|0,1 02|0,1,2,3 03|1,2,4,M-LOC 04|1,2,0 05|0,1,2
+compile 01|0,1,4
+oldfashioned 01|1,2
+ptfo 01|0
+stare 01|0,1 02|0,1
+overdraft 01|0,1,2
+pot 01|0,1,2
+addict 01|0,1,2 02|0,1
+dd 01|0,1
+recommit 01|0,1,2
+nasty 01|0,1,2 02|0,1
+ship 01|0,1,2,3 02|1,2
+noncircumferential 01|1,2
+kick 01|0,1,2 02|0,1 03|0,1,2 04|0,1,2
+witness 01|0,1
+apartheidize 01|0,1
+dehumidify 01|0,1,2
+circumstantial 01|1
+teeter 01|1
+sleazy 01|1
+whimper 01|0
+console 01|0,1,2
+erythematous 01|0,1
+unexpected 01|0,1
+plug 02|0,1 04|0,1,2 01|0,1,2 03|0,1
+deny 01|0,1,2 02|0,1,2
+scallop 01|0,1
+jail 01|0,1,2,3
+tinkle 01|1
+thrum 01|1,2 02|0,1,2 03|0,1,2
+bulldoze 01|0,1
+desalt 01|0,1
+yip 01|0
+toilet 01|0
+compete 01|0,1,2,3 02|0,1,3
+misspeak 01|0,1,2
+calm 01|0,1,2 03|1 02|0,1,2
+sore 01|0,1,2
+scuffle 01|0,1,2
+squander 01|0,1
+juggle 01|0,1
+turtle 01|0,1
+bedeck 01|0,1,2
+trace 01|0,1,2 02|0,1,2
+incinerate 01|0,1
+landslide 01|1,2,3,4
+slim 02|0,1 01|0,1
+ice 01|0,1,2 02|0,1,2
+reproduce 01|0,1,2 02|0,1
+resuscitate 01|0,1
+dysregulate 01|0,1,2
+affix 01|0,1,2,3
+canalize 101|0,1
+draft 01|0,1,2,3 02|0,1,2,3
+chair 01|0,1
+repair 01|0,1
+actuate 01|0,1
+mellow 01|1,2 02|1,2
+adhese 01|0,1,2
+jealous 01|0,1 02|0,1,2
+reestablish 01|0,1
+thread 01|0,1,2
+one 01|1
+grieve 01|0,1,2
+blot 01|0,1
+earthquake 01|1,2,3,4
+eat 01|0,1 02|0,1 03|0,1
+decouple 01|0,1,2
+suicidal 01|0,1
+interface 01|0,1,2
+dispirit 01|0,1,2
+tag 01|0,1,2 02|0,1,3,4
+sow 01|0,1
+infuse 01|0,1,2
+calve 01|0,1 02|0,1,2,3
+rent 01|0,1,2,3,4 02|0,1,2,3,4 03|0,1,2,3,4 04|0,1,2,3,4
+spat 01|0,1,2
+slander 01|0,1
+take 01|0,1,2,3 02|0,1 03|0,1,2 04|0,1,2 14|1,2 15|0,1,2 10|0,1,2 16|0,1,2 17|0,1 25|0,1,2 LV| 32|1,2 34|0,1,2 05|0,1 06|0,1 23|0,1 07|0,1 08|1,2 19|1,2 18|0,1,2 33|0,1,2 09|0,1,2,3,4 21|0,1 11|0,1 26|0,1,2 27|0,1 28|0,1,2 12|0,1,2 13|0,1,2 30|0,1,2 31|0,1 20|0,1 22|0,1 24|0,1 29|0,1
+vaticinate 01|0,1,2
+exclude 01|0,1,2 02|0,1,2
+spear 01|0,1,2,3
+attach 01|0,1,2,3
+reinforce 01|0,1,2
+shellac 01|0,1
+snore 01|0
+hypergranulation 01|1
+sandwich 01|0,1,2
+patrol 01|0,1
+gibe 01|0,1
+band 01|0,1,2,3
+numb 01|0,1,2
+content 01|0,1,2 02|0,1
+euphemize 01|0,1,2
+overrelease 01|0,1,2
+hurtle 01|0,1
+slosh 01|0,1,2
+lateralize 01|0,1,2 02|1,2
+sanitize 01|0,1
+hypofunction 01|0,1
+contrive 01|0,1 02|0,1,2,3
+consummate 01|0,1
+urge 01|0,1,2
+hurl 01|0,1,2
+reocclude 01|0,1,2,3
+triangulate 01|0,1,2 02|0,1,2,3
+nondysmorphic 01|1
+insolate 01|0,1
+lollop 01|1,2,3,4
+download 01|0,1,2
+parapelvic 01|1
+racist 01|1,2
+address 01|0,1,2,3 02|0,1,2 03|0,1,2
+pricecutting 01|0,1,2,3,4
+bribe 01|0,1,2,3
+snuggle 01|0,1
+perform 01|0,1,2 02|0,1,2
+wallpaper 01|0,1,2
+corroborate 01|0,1
+undercut 01|0,1
+writhe 01|1
+shortfall 01|1,2,3,4
+cure 01|0,1,2,3 02|0,1 03|0,1,2,3
+unwelcomed 01|0,1,2
+concede 01|0,1,2 02|0,1,2 03|0,1,2
+hiss 01|0,1
+deglycosylate 01|0,1,2,3
+disqualify 01|0,1,2
+fret 01|0,1
+propagandize 01|0,1
+equivocate 01|0,1
+junction 01|0,1,2
+bunk 02|0,1,2
+circumscribe 01|0,1,2
+respite 01|0,1,2
+brainstorm 01|0,1
+openminded 01|1,2
+practice 01|0,1,2
+study 01|0,1,2 02|0,1
+oversleep 01|0,1
+bag 01|0,1,2 02|0,1
+gut 01|0,1
+pinch 01|0,1,2 02|0,1,2 03|0,1
+rehire 01|0,1,2
+militate 01|0,1
+hope 01|0,1 02|0,1 03|0,1
+standardize 01|0,1 02|1,2
+assist 01|0,1,2
+emaciate 01|0,1,2
+superstition 01|0,1
+crease 01|0,1
+extreme 01|1,2
+petty 01|1
+anticoagulate 101|0,1
+fashion 01|0,1 02|1
+wiggle 01|0,1 02|0,1
+sparkle 01|1
+deburr 01|0,1,2
+bungle 01|0,1
+affirm 01|0,1,2
+indicate 01|0,1,2 101|1,2
+care 01|0,1 02|0,1 03|0,1 04|0,1
+lawmaking 01|0,1
+foretell 01|0,1,2
+attune 01|0,1,2
+docile 01|1
+clang 01|0,1
+incompatible 01|1,2
+bestrew 01|0,1,2
+stitch 01|0,1,2,3 02|0,1,2,4
+fabulous 01|1,2 02|1,2 03|1,2
+jangle 01|0,1
+iconic 01|1,2
+bleak 01|1
+advantageous 01|1,2
+glean 01|0,1,2
+adjoin 01|1,2
+rewatch 01|0,1
+emote 01|0 02|0
+jug 01|0,1
+please 01|0,1,2 02|1,2
+redden 01|0,1,2 02|0,1,2 03|0,1
+rot 01|0,1
+plain 01|0,1,2 02|1,2
+delist 01|0,1,2
+decontaminate 01|0,1
+marginalize 01|0,1 02|1,2,3 03|1,2
+deform 01|0,1 02|0,1,2
+outsource 01|0,1,2
+chitter 01|0
+mutter 01|0,1,2
+contort 01|0,1,2
+urgent 01|1
+forge 01|0,1 02|0,1,2,4
+antagonize 01|0,1 02|1,2
+bridle 01|0,1,2
+clamor 01|0,1
+negotiate 01|0,1,2
+policy 01|0,1,2
+clack 01|0,1,2 02|0,1,2 03|0,1,2,3
+lust 01|0,1
+feasible 01|1,2
+heighten 01|0,1 02|1,2 03|0,1 04|0,1
+jewish 01|1
+babble 01|0,1
+reinsert 01|0,1,2
+flourish 01|1,2
+recalculate 01|0,1,2
+admire 01|0,1 02|0,1
+recount 01|0,1,2
+reinstall 01|0,1
+booze 01|0
+master 01|0,1
+plead 01|0,1,2 02|0,1,2
+wrought 01|0,1,2
+protest 01|0,1 02|0,1,2
+copyright 01|0,1
+hiccup 01|0,1
+clear 01|0,1,2 02|0,1,2,3 03|0,1 06|0,1,2 07|1 08|1,2 09|0,1 04|0,1 05|0,1,2 10|0,1,2
+diurese 01|0,1
+unify 01|0,1,2,3,4
+kill 01|0,1,2 03|0,1,2 04|0,1,2 02|0,1,2
+party 01|0,1
+shark 01|0,1,2,3
+ingenious 01|1
+immature 01|1
+engraft 01|0,1,2
+infeasible 01|1,2
+patter 01|0,1,2
+thumbtack 01|0,1,2,3
+integrate 01|0,1,2,3
+europeanize 01|0,1 02|1
+hyperthyroid 01|1
+televise 01|0,1
+serenade 01|0,1
+reprove 01|0,1,2
+immobilize 01|0,1
+film 01|0,1
+reanimate 01|0,1
+contemporize 01|0,1
+fungate 01|1 02|0,1
+undermine 01|0,1 02|0,1,2
+overpopulate 01|0,1,2
+decapitate 01|0,1
+contiguous 01|1,2
+unscrew 01|0,1,2
+hellenize 01|0,1
+slouch 01|0
+preamble 01|0,1,2
+bechdel 01|0,1
+doctor 01|0,1
+barrel 01|1,2
+elate 01|0,1,2
+gloat 01|0,1
+peg 01|0,1,2 02|0,1
+realize 01|0,1 02|0,1,2 03|1,2 04|1 05|1
+papillary 01|1
+bandy 01|0,1 02|0,1
+outcry 01|0,1,2,3
+theme 01|0,1,2
+egress 01|0,1
+remaster 01|0,1
+jack 01|0,1 02|0,1,2
+represent 01|0,1,2 02|0,1,2
+nap 01|0
+obliterate 01|0,1,2
+vote 01|0,1,2,3 02|0,1,2 03|0,1
+next 01|1,2 02|1,2 03|1,2
+broil 01|0,1,2
+correspond 01|0,1,2 02|1,2
+cushion 01|0,1,2
+veer 01|0,1
+rearrange 01|0,1
+commence 01|0,1,2
+mope 01|0,1
+modify 01|0,1,2,3
+net 02|0,1,2 03|0,1 01|1,2,3
+supplement 01|0,1,2
+dissolve 01|0,1,2,3
+reconnect 01|0,1,2,3
+paddle 01|0,1,2,3
+pleomorphic 01|1
+recede 01|0 02|1,2
+rissole 01|0,1
+crust 01|0,1
+meter 01|0,1,2,3
+silence 01|0,1
+suture 01|0,1,2,3
+defy 01|0,1
+quicken 01|0,1,2,3,4 02|1
+flaw 01|0,1
+titrate 01|0,1,2,3
+auscultate 01|0,1
+outrank 01|0,1
+innumerable 01|0,1
+converge 01|0,1,2
+blizzard 01|1,2,3,4,5
+snare 01|0,1,2
+argentinian 01|1
+sink 01|0,1,2,3,4,5 02|0,1,2
+bedew 01|0,1,2
+up 01|0,1 02|1,2,3,4,5 03|1,2 04|1,2 05|1,2
+sticky 01|1,2 02|1
+timid 01|1
+sorrow 01|0,1
+calcify 01|0,1,2
+repeat 01|0,1,2,3
+duplicate 01|0,1
+poo 01|0,1
+spearhead 01|0,1
+enhance 01|0,1,2,3
+dime 01|0,1
+hijack 01|0,1,2
+treasure 01|0,1
+redecorate 01|0,1,2
+migrate 01|0,1,2
+relegate 01|0,1,2
+entitle 01|0,1,2 02|0,1,2
+hydrate 01|0,1,2
+contemplate 01|0,1,2
+fast 01|0 02|1,2
+counsel 01|0,1,2
+maneuver 01|0,1,2
+outweigh 01|0,1
+dnr 01|0,1
+croon 01|0,1
+beckon 01|0,1
+handfeed 01|0,1,2
+segue 01|0,1,2
+roust 01|0,1,2
+robosign 01|0,1,2
+smell 01|0,1 02|1,2
+screenshot 01|0,1
+comment 01|0,1,2,3
+back 01|0,1 02|0,1 03|0,1 04|0,1 06|0,1 08|0,1 09|0,1,2 10|1 11|0,1
+pant 01|0 02|0,1,2
+increased 01|0,1,2,3,4
+browse 01|0,1,2
+slack 01|1,2
+hire 01|0,1,2
+validate 01|0,1 02|1,2
+widen 01|0,1,2,3,4 02|1,2
+denote 01|0,1,2
+accurate 01|0,1
+derail 01|0,1
+nonlearned 01|0,1,2
+funeral 01|0,1
+vitiate 01|0,1
+sneeze 01|0
+ramp 01|0,1
+astonish 01|0,1,2
+selfestablish 01|0,1,2
+blight 01|0,1,2
+manipulate 01|0,1 02|0,1,2
+disenchant 01|0,1,2
+mull 01|0,1 02|0,1
+scrape 01|0,1,2,3 02|0,1,2,3 03|0,1
+cabbage 01|0,1,2,3
+begin 01|0,1,2 02|1,2
+conization 01|0,1
+hypermobile 01|1
+ceremony 01|0,1,2
+thrombose 01|0,1
+undisputed 01|0,1,2
+crusade 01|0,1
+last 01|1,2 02|1 03|1,2,3,4 04|1,2,3,4
+connect 01|0,1,2,3
+satirize 01|0,1,2
+manicure 01|0,1
+optimize 01|0,1
+shop 01|0,1,2,3 02|0,1,2,3,4
+greedy 01|0,1
+obsess 01|0,1
+swathe 01|0,1,2
+shoot 01|0,1,2 02|0,1,2,3 03|0,1,2 06|0,1,2,3,4,5 04|0,1 05|0,1,2 07|0,1,2 08|0,1,2 09|0,1,2 10|0,1 11|0,1 12|0,1,2
+adventure 01|0,1 02|1
+flurry 01|1
+tagteam 01|0,1,2
+provide 01|0,1,2 02|0,1,2
+interact 01|0,1,2
+waive 01|0,1,2
+strop 01|0,1
+worm 01|0,1
+purify 01|0,1,2 02|0,1,2
+spacewalk 01|0
+jurisdiction 01|0,1
+inquire 01|0,1,2
+incline 01|0,1,2 02|1,2
+unfasten 01|0,1,2
+dissipate 01|0,1
+crossbreed 01|0,1,2,3
+portion 01|0,1,2
+densify 01|0,1
+bubble 01|0,1,2
+burr 01|0 02|0,1
+shitty 01|1
+invent 01|0,1
+confound 01|0,1,2
+irrational 01|1 02|1
+redouble 01|0,1,2,3,4
+farfetched 01|1
+fraction 01|0,1
+proper 01|1,2
+near 01|1,2 02|1,2
+reawaken 01|0,1,2
+donate 01|0,1,2
+mineralize 01|0,1
+natury 01|1
+disavow 01|0,1,2
+anticipate 01|0,1 02|0,1
+seesaw 01|1,2,3,4,5
+reward 01|0,1,2
+amortize 01|0,1,2
+kiyi 01|0
+levitate 01|0,1,2,3,4,5
+preschedule 01|0,1,2,3
+overinflate 01|0,1,2,3,4
+commemorate 01|0,1,2
+acyanotic 01|1
+homer 01|0
+flux 01|1 02|0,1,2 03|0,1,2,3
+anachronistic 01|1
+substitute 01|0,1,2,3
+cryopreserve 01|0,1,2
+thatch 01|0,1,2
+dinner 01|0,1
+gull 01|0,1,2
+bask 01|0,1
+recordkeeping 01|0,1,2,3
+politick 01|0,1
+fundamental 01|0,1,2
+prestate 01|0,1,2
+sample 01|0,1,2
+hose 01|0,1,2,3
+meek 01|1
+neutropenic 01|1
+differ 01|0,1,2 02|1,2,3
+funduscopic 01|1
+follow 01|0,1,2 02|0,1,2 04|1 05|1,2 06|0 07|0,1 08|0,1 03|0,1
+nonunification 01|0,1,2,3,4
+ooh 01|0,1
+glimmer 01|1
+zone 01|0,1,2 02|0,1,2
+icefish 01|0,1,2
+chin 01|0,1
+confer 01|0,1 02|0,1,2 03|0,1,2
+predicate 01|0,1,2
+former 01|1
+transform 01|0,1,2,3
+gamble 01|0,1,2
+blackberry 01|0,1,2,3
+nervous 01|1,2
+reiterate 01|0,1,2
+dedifferentiate 01|1,2,3
+crackle 01|0
+fun 01|0,1 02|0,1 03|0,1
+hospitalize 01|0,1
+hyperbolize 01|0,1,2
+impeach 01|0,1,2
+rebandage 01|0,1
+barrage 01|0,1,2
+humanize 01|0,1 02|1
+exude 01|0,1
+punch 01|0,1
+suffocate 01|0,1,2
+cardiac 01|1
+overbearing 01|0,1,2
+chant 01|0,1
+underappreciated 01|0,1
+baidu 01|0,1
+catechize 01|0,1
+confident 01|1,2
+rehash 01|0,1
+accent 01|0,1,2
+yahoo 01|0,1
+onslaught 01|0,1,2
+stridulate 01|0
+perpetuate 01|0,1
+dip 01|1,2,3,4 02|0,1,2
+resubstantiate 01|0,1
+propagate 01|0,1,2,3
+rev 01|0,1 02|0,1,2
+deploy 01|0,1,2
+average 01|0,1,2,3 03|1,2 04|0,1,2,3 02|0,1,2
+carbonize 01|0,1
+unclog 01|0,1,2
+parch 01|0,1
+elucidate 01|0,1,2
+denigrate 01|0,1,2
+tetraploid 01|1
+pedunculate 01|1
+inflect 01|0,1
+calendar 01|0,1,2
+disapprove 01|0,1
+divvy 01|0,1,2
+ingest 01|0,1
+clatter 01|0 02|0,1
+clip 01|0,1,2 03|0,1,2 02|0,1,2
+scour 01|0,1,2 02|0,1,2
+synthesize 01|0,1,2,3,4
+envisage 01|0,1,2
+outlive 01|1,2
+clothe 01|0,1,2
+declassify 01|0,1
+outdistance 01|0,1
+reprint 01|0,1
+reapply 01|0,1,2
+nontender 01|0,1,2
+shell 01|0,1 02|0,1,2 03|0,1,2,3
+intercede 01|0,1,2
+suborn 01|0,1,2 02|0,1,2
+translate 01|0,1,2,3 02|0,1,2
+team 01|0,1,2 02|0,1,2
+attest 01|0,1
+beg 01|0,1,2
+crack 01|0,1 02|0,1,2 05|0,1,2,3 07|0,1 03|0,1,2 04|1 06|0,1
+knock 01|0,1,2 04|0,1,2,3 07|0,1 02|0,1,2,3,4,5 03|0,1,2 05|0,1 06|0,1 08|0,1,2 09|0,1 10|0,1
+guarantee 01|0,1,2
+print 01|0,1,2 03|0,1,2 02|0,1
+repaint 01|0,1,2 02|0,1,2
+forecast 01|0,1,2
+revere 01|0,1
+unemployed 01|0,1,2
+zip 01|0 03|0,1,2 02|0,1
+overlie 01|0,1
+belie 01|0,1
+misidentify 01|0,1,2
+unbuckle 01|0,1,2
+privy 01|1,2
+wreathe 01|0,1,2 02|0
+parole 01|0,1,2
+premeditate 01|0,1
+typify 01|0,1 02|1,2
+mother 01|0,1
+advocate 01|0,1,2
+crane 01|0,1
+collapse 01|0,1,2,3,4 02|0,1,2,3,4
+displace 01|0,1,2
+price 01|0,1,2,3 02|0,1,2
+immunosuppress 01|0,1
+faze 01|0,1,2
+memorize 01|0,1
+downplay 01|0,1
+dehair 01|0,1
+obese 01|1
+clone 01|0,1
+deluge 01|0,1,2
+nickel 01|0,1
+endow 01|0,1,2
+gunfire 06|0,1
+kvetch 01|0,1,2
+fractionate 01|0,1,2
+retribute 01|0,1,2
+bob 01|0,1
+color 01|0,1,2 02|0,1,2
+massproduce 01|0,1,2,3
+chart 01|0,1 02|0,1
+decode 01|0,1,2,3
+maunder 01|1,2 02|0,1,2
+wine 01|0,1
+barcode 01|0,1
+colonoscopy 01|0,1
+rejuvenate 01|0,1,2
+carp 01|0,1
+trounce 01|0,1,2
+fluctuate 01|1,2,3,4,5
+sovietize 01|0,1,2
+behoove 01|1,2
+hilarious 01|0,1
+ooze 01|0,1
+enough 01|1,2,3
+wobble 01|0
+turbulence 01|1
+abdicate 01|0,1
+outbreak 01|1,2,3,4
+interview 01|0,1,2
+spy 01|0,1
+overrate 01|0,1,2
+symptomatic 01|0,1
+reformulate 01|0,1
+splatter 01|0,1,2
+carry 01|0,1,2,3,4 02|0,1,2,3 03|0,1 04|0,1,2,3 05|0,1
+procrastinate 01|0,1
+tinge 01|0,1,2
+cum 01|0,1
+anicteric 01|1
+caddy 01|0,1,2,3 02|0,1
+secede 01|0,1
+deal 01|0,1,2,3 02|0,1,2 03|1
+toy 01|0,1
+convect 01|0,1,2,3
+cancan 01|0,1
+demast 01|0,1
+repot 01|0,1,2
+imbue 01|0,1,2
+demur 01|0,1
+dismantle 01|0,1
+earn 01|0,1,2,3
+field 01|0,1
+collate 01|0,1,2
+whelk 01|0,1,2,3
+halt 01|0,1,2 02|0,1,2
+counteract 01|0,1,3
+ankylose 01|0,1
+dense 01|1
+ambiguous 01|0,1,2
+gurgle 01|0,1,2
+punish 01|0,1,2,3 02|0,1,2,3
+disengage 01|0,1,2
+sate 01|0,1,2
+revoke 01|0,1
+command 01|0,1 02|0,1,2
+internationalize 01|0,1
+grunt 02|0,1,2
+stencil 01|0,1
+facelift 01|0,1,2
+unharmed 01|0,1,2
+hollow 01|0,1 02|0,1,2
+round 01|0,1 02|0,1 03|1,2 04|0,1,2,3 05|1,2 06|1,2
+disrobe 01|0,1,2
+sedate 01|0,1,2
+ordain 01|0,1
+late 01|1,2 02|1,2 03|1
+chat 01|0,1,2
+mingle 01|0,1 02|0,1,2
+fritter 01|0,1
+convict 01|0,1,2 02|0,1,2
+quack 01|0
+curtail 01|0,1
+tremor 01|1 02|1,2,3,4
+hunker 01|0,1,M-DIR
+latch 01|0,1 02|0,1
+far 01|1,2
+paretic 01|0,1
+deject 01|0,1
+cross 01|0,1 02|0,1 04|0,1,2 05|0,1 03|0,1
+surf 01|0,1,2
+ransom 01|0,1,2,3,4
+reenroll 01|0,1,2
+venerate 01|0,1
+sequester 01|0,1
+nitrosylate 01|0,1,2,3
+widespread 01|1
+uproot 01|0,1
+unsafe 01|0,1
+strut 01|0,1,2
+knot 01|0,1,2,3
+consult 01|0,1,2
+repass 01|0,1,2
+syncopate 01|0,1
+occur 01|1,2
+upraise 01|0,1
+brave 01|0,1 02|0,1
+bowl 01|0 02|0,1
+dilate 01|0,1
+operate 01|0,1,2,3,4 101|0,1 02|0,1 03|0,1,2,3,4
+aggress 01|0,1 02|0
+bide 01|0,1
+revisit 01|0,1
+stir 01|0,1,2 02|0,1,2,3 03|0,1,2 04|0,1
+refund 01|0,1,2,3
+posit 01|0,1
+cripple 01|0,1,2
+nc 01|1
+merit 01|0,1
+affair 01|0,1 02|1,2
+overload 01|0,1,2,3
+bare 01|0,1 02|0,1
+silhouette 01|0,1,2
+goggle 01|0,1
+normocephalic 01|1
+skateboard 01|0,1,2,3
+upgrade 01|0,1,2 02|0,1,2,3,4
+swipe 01|0,1,2 02|0,1,2
+plunge 01|1,2,3,4,5 02|0,1,2
+defend 01|0,1,2,3
+sup 01|0,1
+staple 01|0,1,2
+title 01|0,1,2
+healthy 01|1,2
+nad 01|1
+lessen 01|0,1,2,3,4,M-LOC 02|1,2,3 03|1,2
+hyperinflate 01|0,1,2,3,4
+nonexertional 01|0,1
+vouch 01|0,1
+childish 01|1,2
+mound 01|0,1,2,3
+authenticate 01|0,1 02|1
+smarten 01|0,1,2,3 02|0,1,2,3 03|1,2 04|1 05|1 06|1,2
+promote 01|0,1,2,3 02|0,1,2
+mention 01|0,1,2,3
+sleep 01|0,1,2 02|0,1 03|0,1 04|0,1 05|0 06|0,1,2
+microhemagglutination 01|0,1,2
+rate 01|0,1,2,3
+disgorge 01|0,1,2
+succeed 01|0,1 02|0,1,2 03|1,2
+electrocute 01|0,1,2
+zipcode 01|0,1,2
+groan 01|0,1,2
+sharpen 01|0,1,2 02|0,1
+threaten 01|0,1,2
+overwhelm 01|0,1,2
+appear 01|1 02|1,2
+inhibit 01|0,1
+aviation 01|0,1,2
+dwell 01|0,1
+tether 01|0,1,2
+naive 01|1,2
+denationalize 01|0,1
+forgive 01|0,1,2
+clasp 01|0,1,2
+relish 01|0,1
+consort 01|0,1
+paralyze 01|0,1
+tantalize 01|0,1,2
+wildfire 01|1,2,3,4
+banquet 01|0,1
+ensconce 01|0,1,2
+nt 01|0,1,2 02|0,1,2
+ghostauthor 01|0,1,2
+requisition 01|0,1
+intercourse 01|0,1
+welter 01|0,1
+scrimp 01|0,1
+belay 01|0,1
+turnover 01|0,1 02|0,1,2
+adequate 01|1,2
+retard 01|0,1,2
+resile 01|0,1 02|1
+whish 01|0
+debunk 01|0,1
+drowse 01|0
+rectify 01|0,1
+sulk 01|0,1
+coprecipitate 01|0,1,2
+silkscreen 01|0,1,2
+feedback 01|0,1,2
+remain 01|1,2,3
+introduce 01|0,1,2 02|0,1,2
+unsuitable 01|1,2
+snivel 01|0,1,2
+outwit 01|0,1
+descry 01|0,1,2
+epithelialize 01|1,2
+bend 01|0,1 02|0,1 03|1 04|1,2 05|0,1 06|0,1 07|0,1
+outline 01|0,1
+flop 01|0,1 02|0,1
+heed 01|0,1
+panic 01|0,1
+inflate 01|0,1,2,3,4
+enthrall 01|0,1,2
+deice 01|0,1
+constellate 01|0,1,2 02|0,1,2,3
+dung 01|0,1,2
+riot 01|0,1
+palpate 01|0,1 02|0,1
+man 01|0,1
+crayon 01|0,1,2
+cuff 01|0,1
+disillusion 01|0,1,2
+sport 01|0,1 02|0,1
+culture 01|0,1
+undemocratic 01|1
+underprice 01|0,1
+linger 01|1,2
+defuzz 01|0,1,2
+retry 01|0,1
+eviscerate 01|0,1
+precede 01|0,1,2,3
+undock 01|0,1,2
+matrilineal 01|1
+dissuade 01|0,1,2
+oversee 01|0,1 02|0,1
+chortle 01|0,1,2 02|0,1
+deflesh 01|0,1,2
+violent 01|0,1,2
+phone 01|0,1,2
+uppercase 01|0,1
+redraw 01|0,1,2
+romance 01|0,1 02|0,1 03|0,1 04|0,1
+concoct 01|0,1,2,3,4
+flesh 01|0,1,2
+deteriorate 01|0,1,2
+option 01|0,1
+autograph 01|0,1
+deplete 01|0,1,2
+counterreaction 01|0,1,2
+complain 01|0,1,2
+charge 01|0,1,2,3 02|0,1 03|0,1,2 04|0,1,2 05|0,1,2 06|0,1 08|0,1,2 07|0,1
+reprice 01|0,1,2
+lacquer 01|0,1,2
+pockmark 01|0,1
+mudflow 01|1,2,3,4
+unresolve 01|0,1,2,3
+macerate 01|0,1,2
+compound 01|0,1
+thunk 01|0,1,2
+pretty 01|1
+wheel 01|0,1
+shoehorn 01|0,1,2
+hypersalivate 01|0,1
+peel 01|0,1 02|0,1
+perceive 01|0,1,2 02|0,1,2
+jollify 01|0,1,2
+supersede 01|0,1
+chide 01|0,1,2
+shipbuilding 01|0,1,2,3
+swoosh 01|0,1,2
+jihad 01|0,1,2
+profit 01|0,1,2 02|0,1,2
+concern 01|0,1,2 02|0,1 03|0,1,2
+intact 01|1
+phosphorylate 01|0,1,2,3
+emo 01|1
+hyperdynamic 01|1
+caking 01|0,1
+minimize 01|0,1 02|0,1
+inconceivable 01|0,1,2
+subservient 01|0,1,2
+impugn 01|0,1
+groom 01|0,1,2 02|0,1,2
+undefined 01|0,1,2
+boggy 01|1
+ejaculate 01|0,1 02|0,1
+adhere 01|0,1,2 02|0,1
+experience 01|0,1
+quell 01|0,1
+phosphoresce 01|0,1,2
+skew 01|0,1
+mesh 01|0,1,2
+undress 01|0,1,2
+abate 01|0,1
+upstroke 01|1
+flood 01|0,1,2
+backpedal 01|0,1
+encode 01|0,1
+unsew 01|0,1,2,3
+expect 01|0,1
+hogtie 01|0,1,2
+dialyse 01|0,1,2
+depreciate 01|1
+westernize 01|0,1 02|1 03|1
+institute 01|0,1,2 02|0,1
+whittle 01|0,1,2,4 02|0,1,2,3,4
+ascribe 01|0,1,2
+feud 01|0,1,2
+desensitize 01|0,1,2
+chew 01|0,1 02|0,1
+furlough 01|0,1
+dishonor 01|0,1 02|0,1 03|0,1
+topple 01|0,1,2,3,4
+modem 01|0,1,2
+ossify 01|0,1,2
+pipe 01|0,1,2,3 02|0,1 03|0
+desprout 01|0,1
+reshuffle 01|0,1
+dement 01|0,1
+muddle 01|0,1 02|0,1
+course 01|0,1
+ramble 01|0,1 02|0,1
+farm 01|0,1,2 02|0,1,2
+autonomous 01|0,1
+tango 01|0,1
+guard 01|0,1,2,3
+premonition 01|0,1
+buffet 01|0,1,2
+altercation 01|0,1,2
+recall 01|0,1,2 02|0,1,2,3 03|0,1,2
+frisk 01|0,1,2
+gross 01|0,1 02|0,1 03|1 04|0,1 05|1,2 06|1
+moo 01|0
+corner 01|0,1
+succumb 01|0,1
+overflow 01|1,2
+usual 01|1,2
+clean 01|0,1,2 04|1,3 02|0,1 03|0,1
+hurt 01|0,1,2,3 02|1 03|0,1,2,3
+innovate 01|0,1
+dong 01|1
+smut 01|0,1 02|1 03|0,1,2
+dash 01|0,1 02|0,1,2 03|0,1,2
+tell 01|0,1,2 02|0,1,2 03|0,1
+top 01|0,1,2 02|0,1 03|0,1,2 04|0,1,2 05|0,1,2
+remind 01|0,1,2
+regale 01|0,1,2
+enchain 01|0,1
+suppose 01|0,1,2 02|1,2
+clash 01|0,1,2 02|0,1,2
+hone 01|0,1,2
+comply 01|0,1
+convince 01|0,1,2
+bring 01|0,1,2,3,4 02|0,1,2,3,4,M-LOC 07|0,1,2 08|0,1,2,3,4 03|0,1,2,3,4,M-LOC 04|0,1,2,3,4 05|0,1 06|0,1
+emanate 01|0,1,2,3
+conga 01|0,1
+display 01|0,1,2,3
+unnecessary 01|1,2
+postoperative 01|1,2
+sentimentalize 01|0,1
+cardiovert 01|0,1,2
+castle 01|0
+proprioception 01|0,1
+intersect 01|0,1
+jig 01|0,1
+rockslide 01|1,2,3,4
+whine 01|0,1,2,3
+rinse 01|0,1,2
+wander 01|0,1
+bobsled 01|0,1,2,3
+horrify 01|0,1,2
+terrify 01|0,1,2
+tingle 01|1,2
+dawdle 01|0
+forfeit 01|0,1,2
+liquidize 01|0,1
+remedicate 01|0,1,2,3
+flick 01|0,1,2 02|0,1,2 03|0,1,2
+wireless 01|0,1,2
+slash 01|0,1,2,3 02|0,1,2,3,4
+heft 01|0,1
+majestic 01|1
+overextend 01|0,1
+lace 01|0,1 02|0,1,2
+pretest 01|0,1,2
+philander 01|0
+bug 01|0,1,2 02|0,1
+electrify 01|0,1
+resort 01|0,1
+crude 01|1 02|1
+toughen 01|0,1 02|1,2 03|0,1,2 04|1
+fester 01|1
+trumpet 01|0,1,2
+zoom 01|1,2,3,4,M-MNR 02|0,1,2,3,4 03|0,1,2,3,4 04|0,1,2,3,4
+naturalize 01|0,1 02|1,2 03|1
+fake 01|0,1 02|1
+befuddle 01|0,1
+sidestep 01|0,1
+balloon 01|0 02|0,1,2
+diminutive 01|1
+stanch 01|0,1
+perplex 01|0,1,2
+byo 01|0,1,2
+dress 01|0,1,2 02|0,1,2 03|0,1,2
+preoccupy 01|0,1,2
+amenable 01|0,1
+record 01|0,1
+sockdologize 01|0
+notate 01|0,1,2,3
+order 01|0,1,2 02|0,1,2,3 03|0,1,2 04|0,1
+overstress 01|0,1,2
+unaccompanied 01|0,1,2,3
+curl 01|0,1,2 02|1 03|0
+recoil 01|0,1
+truncate 01|0,1,2,3,4
+recent 01|1
+sedentary 01|1
+careless 01|0,1
+unexplain 01|0,1,2
+shriek 01|0,1,2
+see 01|0,1,2 02|0,1,2 03|0 04|0,1,2 05|0,1
+chirrup 01|0
+prank 01|0,1,2
+mission 01|0,1,2
+spurn 01|0,1
+unstable 01|0,1 02|1,2
+elicit 01|0,1,2
+help 01|0,1,2 02|0,1 03|0,1,2 04|0,1,2
+hand 01|0,1,2 02|0,1,2 03|0,1,2
+pacify 01|0,1
+instagram 01|0,1
+mia 01|0,1
+populate 01|0,1,2
+superimportant 01|1,2
+export 01|0,1,2
+tanwhite 01|1,2
+defuse 01|0,1
+carpet 01|0,1
+simoom 01|1,2,3,4,5
+narrow 01|0,1,2,3,4 02|1 03|0,1,2,3
+overwork 01|0,1
+preempt 01|0,1,2
+swift 01|1
+radiate 01|0,1 02|0,1,2
+chase 01|0,1
+palmitoylate 01|0,1,2,3,4
+constitute 01|0,1 03|0,1 04|0 05|0,1
+cute 01|1
+couch 01|0,1,2
+repute 01|0,1,2
+sms 01|0,1,2
+honeycomb 01|0,1,2
+garrotte 01|0,1,2
+figure 01|0,1 02|0,1,2 03|0,1 04|0,1,2,3 06|1 05|0,1,2,3
+enliven 01|0,1 02|0,1,2
+comminute 01|0,1,2
+torment 01|0,1,2
+trail 01|0,1 03|0,1 02|1
+euvolemic 01|1,2
+require 01|0,1,2
+repeal 01|0,1
+choreograph 01|0,1,2
+transcend 01|0,1
+whale 01|0,1,2,3
+bisexual 01|1
+scarf 01|0,1
+gear 01|0,1,2 02|0,1,2
+sublux 01|0,1
+microprinting 01|0,1,2
+sponge 01|0,1,2,3 02|0,1,2
+nodular 01|1
+soak 01|0,1 02|0,1,2
+project 01|0,1,2 02|0,1,2
+uncommon 01|1,2
+surpass 01|0,1
+vex 01|0,1
+leach 01|0,1,2
+distal 01|1,2
+stipulate 01|0,1
+deflower 01|0,1,2
+nonpalpable 01|0,1
+announce 01|0,1,2,3
+fizz 01|0
+salve 01|0,1
+naked 01|1,2
+hotspot 01|0,1 02|0,1,2
+entice 01|0,1,2,3
+selfdestruct 01|0
+scrutinize 01|0,1,2
+methylate 01|0,1,2,3
+enrapture 01|0,1,2
+staff 01|0,1,2
+rumple 01|0,1 02|0,1
+score 01|0,1,2,3,4 02|0,1,2
+synergize 01|0,1,2
+spice 01|0,1,2
+crowbar 01|0,1,2,3 02|0,1,2
+nondefinitive 01|1,2
+belong 01|0,1
+insert 01|0,1,2
+weigh 01|0,1,2,3 02|0,1 04|0,1,2 03|0,1
+glorify 01|0,1,2
+superficial 01|1,2
+resist 01|0,1
+slake 01|0,1,2 02|0,1,2
+elapse 01|1
+stroll 01|0,1
+displease 01|0,1
+welcome 01|0,1,2
+orthodox 01|1,2
+degum 01|0,1,2
+goosestep 01|1,2,3,4
+pony 01|0,1 02|0,1,2,3
+ally 01|0,1,2
+egg 01|0,1,2 02|0,1,2
+tall 01|1,2
+rivet 01|0,1,2
+acetylate 01|0,1,2,3
+unfair 01|0,1,2
+barnstorm 01|0,1
+bounce 01|0,1,2,3,4 02|1
+extra 01|1
+club 01|0,1 02|1 03|0
+sporadic 01|1
+bivouac 01|0,1
+rival 01|0,1,2
+blackline 01|0,1,2
+silver 01|0,1,2
+jiggle 01|0,1
+unoccupy 01|0,1
+dehusk 01|0,1
+layer 01|0,1,2
+reject 01|0,1,3
+jive 01|0
+hitch 01|0,1,2
+unreasonable 01|1
+provoke 01|0,1,2 02|0,1,2
+compassion 01|0,1
+relandscape 01|0,1,2,3
+revile 01|0,1,2
+disadvantage 01|0,1
+hunt 01|0,1
+image 101|0,1
+slur 01|0,1,2 02|0,1,2,3
+erect 01|0,1
+vasoconstrict 01|0,1,2,3,4
+incomplete 01|1
+squelch 01|0,1
+adore 01|0,1 02|0,1
+mentate 01|0,1
+swag 01|0,1 02|0,1
+outpace 01|0,1,2
+immunize 01|0,1,2 02|1,2
+debrief 01|0,1,2
+trot 01|0,1 02|0,1
+click 01|0,1 02|1,2
+poop 01|0,1
+trek 01|0,1
+joggle 01|0,1
+blindfold 01|0,1,2
+peek 01|0,1
+loony 01|1
+reimplant 01|0,1,2
+federate 01|0,1,2,3
+transition 01|0,1,2,3
+defile 01|0,1,2
+resonate 01|1,2
+lyse 01|0,1,2,3
+shoulder 01|0,1
+drape 01|0,1,2
+crisscross 01|0,1
+christianize 01|0,1
+modulate 01|0,1,2,3
+clam 01|0,1,2,3
+cool 01|0,1 04|1 05|0,1 06|1 02|0,1 03|0,1,3
+wnl 01|1,2
+sclerose 101|0,1
+pilot 01|0,1
+handpick 01|0,1,2,3
+breed 01|0,1
+yawn 01|0
+steep 01|0,1,2 02|0,1
+implement 01|0,1,2
+detract 01|0,1,2
+reprieve 01|0,1,2,3
+metabolize 01|0,1,2
+tweeze 01|0,1,2
+uncap 01|0,1,2
+reconstruct 01|0,1,2
+exceed 01|0,1,2 02|1,2
+young 01|1,2
+infiltrate 01|0,1
+tentative 01|1,2
+swig 01|0,1
+putz 01|0,1 02|0,1
+parse 01|0,1,2
+fling 01|0,1,2
+letter 01|0,1 02|0,1,2
+buttress 01|0,1
+pace 01|0,1,2,3 02|0,1 03|0,1,2
+configure 01|0,1,2,3,4
+marry 01|0,1,2 02|0,1,2
+splay 01|0,1,2,3,4
+aspect 01|0,1
+secrete 01|0,1
+molest 01|0,1
+dialectic 01|1

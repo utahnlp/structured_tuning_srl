@@ -27,7 +27,9 @@ The flow of this readme is:
 
 **Extracting Propbank Frameset**
 
-First make sure propbank frames are downloaded and extracted to ``./data/propbank-frames/frames/``.
+*To use preprocessed frameset:* Frameset updates. For better reproducibility, use the `./data/srl/frameset.txt` instead of running the below extraction.
+
+*To use a different copy of frameset:* First make sure propbank frames are downloaded and extracted to ``./data/propbank-frames/frames/``.
 Then extract framesets:
 ```
 python3 -u -m preprocess.extract_frameset --dir ./data/propbank-frames/frames/ --output ./data/srl/frameset.txt

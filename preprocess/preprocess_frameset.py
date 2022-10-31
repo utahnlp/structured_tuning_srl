@@ -6,7 +6,7 @@ import spacy
 from spacy.tokenizer import Tokenizer
 import h5py
 
-spacy_nlp = spacy.load('en')
+spacy_nlp = spacy.load('en_core_web_sm')
 spacy_nlp.tokenizer = Tokenizer(spacy_nlp.vocab)	# supposedly it tells spacy to only split on space
 
 
