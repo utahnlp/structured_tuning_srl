@@ -239,7 +239,7 @@ Available models are:
 | Model    |  --load_file  |  CoNLL-2012 test F1  |
 |----------|:-------------|:------|
 | RoBERTa+CRF |  tli8hf/robertabase-crf-conll2012 | 85.9* |
-| RoBERTa+U,F,O |  tli8hf/robertabase-structured-tuning-srl-conll2012   | 86.6 |
+| RoBERTa+U,F,O |  utahnlp/robertabase-structured-tuning-srl-conll2012   | 86.6 |
 
 F1 scores with ``*``: trained without gold predicate (i.e. ``--use_gold_predicate 0``).
 
